@@ -1154,6 +1154,25 @@ do by eye.
 The map is not a claim about J. It is a record of what has been found, which
 is the only thing anyone will actually have.
 
+**`b_j` is unseeded, and that is an open design question — DISCLOSED.** The
+genesis positions are drawn per client at first run and persisted in that
+client's saved state. Two operators therefore hold different skies. Nothing in
+§5 breaks — `b_j` was never claimed to carry information, and a per-client
+arbitrary embedding is exactly as arbitrary as a shared one — but three things
+follow that the render does not currently say. Angular descriptions do not
+transfer between operators. Screenshots are not comparable. And a data purge
+regenerates the sky, so any constellation an operator has learned to see is
+both private to them and destroyed on reset.
+
+For a game whose §6 rests on operators comparing and exchanging what they have
+found, that is a cost with no corresponding benefit. Deriving `b_j` from a hash
+of `j` into the same cube would keep exactly zero information from θ — §5's
+claims are untouched either way — while making the arrangement universal,
+shareable and stable. It is recorded here as an open question rather than
+silently fixed, because the choice is visible in the published artifact and a
+reader comparing two clients would otherwise find the discrepancy before
+finding the explanation.
+
 ### 5.1 Lenses not yet built — PROPOSAL
 
 One lens family was built. It has already shown three things — coverage
@@ -1497,6 +1516,7 @@ implementation claiming to compute `D` should reproduce it.
 
 ```
 python 3.11.15 · torch 2.9.0+cu128 · transformers 4.57.1
+transformer_lens 2.15.0 · nltk 3.9.2 (punkt)
 forward dtype fp32 · device: reference is server-side, single GPU
 
 GPU      NVIDIA GeForce RTX 5060 Laptop   compute capability 12.0
@@ -1519,6 +1539,18 @@ tokenizer: GPT2TokenizerFast("gpt2", revision as above),
            add_prefix_space=False, no truncation, no padding,
            no added special tokens
 ```
+
+`transformer_lens` is pinned because the prototype's model path runs through
+`HookedTransformer`, not through the plain `from_pretrained` above. Its default
+weight processing — `fold_ln`, `center_writing_weights`, `center_unembed` — is
+mathematically equivalent for a post-activation MLP read, so `D` is unaffected,
+but the resulting `state_dict` does **not** hash to `sha256(theta)` above. An
+implementation asserting the pin through TransformerLens must assert a derived
+fingerprint and say so.
+
+`nltk` and its punkt model are pinned because punkt defines the corpus, not the
+computation. Two punkt versions split the same text differently, and §8's
+sentence counts are not reproducible without it.
 
 **Two of these differ from the defaults, and one silently.** `matmul.allow_tf32`
 already defaults to False on torch 2.x — which is most of why §8's two stacks
@@ -1552,8 +1584,9 @@ import torch
 from transformers import GPT2LMHeadModel, GPT2TokenizerFast
 
 ELL, BOS, N_CTX = 5, 50256, 1024
-tok = GPT2TokenizerFast.from_pretrained("gpt2")
-mdl = GPT2LMHeadModel.from_pretrained("gpt2").to(torch.float32).eval()
+REV = "607a30d783dfa663caf39e06633721c8d4cfcd7e"
+tok = GPT2TokenizerFast.from_pretrained("gpt2", revision=REV)
+mdl = GPT2LMHeadModel.from_pretrained("gpt2", revision=REV).to(torch.float32).eval()
 torch.set_grad_enabled(False)
 
 buf = {}
@@ -1636,8 +1669,12 @@ tools/
   hasher.py                         file digests
 
 data/
-  the_sea_raw.json                  the corpus before preparation
-  the_sea.json                      the corpus as used
+  moby_dick.txt                     the source text, 1,246,660 bytes, so
+                                    that §8's provenance diff is checkable
+                                    rather than asserted
+  the_sea_raw.json                  the corpus, 7394 entries, untrimmed
+  the_sea.json                      the same corpus, evaluated range only,
+                                    with destinations — the computed cache
   the_sea_implicit_resonance.json   the cache replayed in §8
   the_sea_explicit_resonance.json   the other three quadrants,
   the_sea_implicit_inference.json     used by §8.2
@@ -1657,6 +1694,19 @@ results/
   safe_tokens.pt            §4.5    the 49905-token candidate pool
   master_hit_counts.tsv     §4.4    corpus hits per neuron per quadrant,
                             §8.3    3072 × 4 rows. Both sections rest on it
+
+data/caches/
+  prepare_caches.py                 inventories, verifies and stages the
+                                    corpus caches; recomputes each report's
+                                    coverage from its own .bin files
+  <corpus>_2025-11-05.zip × 19      §8.4, one per corpus: per-unit jsonl,
+                                    four quadrant hit arrays, checkpoint,
+                                    run report
+  wiki103_partial870k_2025-11-05    §8.2.1. The per-unit jsonl is withheld:
+                                    WikiText-103 is CC BY-SA and does not sit
+                                    inside this repository's licence. The hit
+                                    arrays and the coverage log do ship, and
+                                    they are what §8.2.1 rests on.
 ```
 
 **On `master_hit_counts.tsv`.** §4.4's split into *reached* and *unreached*,
@@ -1727,7 +1777,7 @@ Preparation was: split into sentences, prepend five opening phrases. Both
 states ship (§7.2), so the following is checkable rather than recalled.
 
 ```
-the_sea.json            7394 entries — 7393 strings and one malformed []
+the_sea_raw.json        7394 entries — 7393 strings and one malformed []
   [0:5]                 the five added openers, verbatim:
                           "Mellybean"
                           "Where the cosmic winds whisper secrets."
@@ -1741,6 +1791,12 @@ the_sea.json            7394 entries — 7393 strings and one malformed []
 
 evaluated               [0:7353] — the openers and the complete novel.
                         Gutenberg mentions inside that range: zero.
+
+the_sea.json            the same 7353 evaluated entries, each carrying its
+                        destination. Produced from the above by
+                        `discover/data/precompute_cache.py`. It is the
+                        computed cache, not the corpus; the corpus is the
+                        raw file.
 ```
 
 **The run stopped exactly at the novel's end.** The corpus §8 reports is the
@@ -1983,36 +2039,45 @@ tracks *meaning*. This is the mechanism behind Q6's inversion: 38
 hand-written lines end in varied and often unterminated ways; 407k scraped
 sentences carry a far wider spread of terminal tokens than any single author.
 
-### 8.2.1 Coverage curves, WikiText-103 — MEASURED, SOURCE DATA LOST
+### 8.2.1 Coverage curves, WikiText-103 — MEASURED
 
-`wiki103test_511`, ℓ=5, all four quadrants, |C| = 40,000 sentences. Read off
-the run plot; exact values to be taken from the log.
+**An earlier run's source data was lost, and this section no longer depends on
+it.** That run emitted one file per entry — several hundred thousand of them —
+onto a drive that did not survive, and earlier drafts reported figures read off
+its plot, marked with tildes, as the strongest form in which they could be
+stated. Those figures are retired. The paragraph declaring this the one section
+irreproducible from the published bundle (§7.2) is withdrawn.
 
-**The log does not survive.** The run emitted one file per entry — several
-hundred thousand of them — and the drive it was written to did not survive the
-run. No copy is in any backup, and the figures below are read off a plot whose
-underlying data no longer exists. **This is the only section of this document
-whose numbers cannot be reproduced from the published bundle (§7.2),** and the
-approximations below are the strongest form in which they can be stated.
-Treat them as indicative and not as MEASURED in the sense the tag usually
-carries here.
-
-**A different WikiText run does survive and has not been examined.**
-`wiki103_partial870k_2025-11-05` holds a 44MB per-sentence JSONL with all four
-quadrant destinations, plus checkpoint hit-count arrays. It is not this run —
-it is larger, later, and differently sampled — so it cannot restore the
-figures below. It could replace them. Until someone reads it, this section
-stays as stated.
-
-Re-running is the repair and is not expensive: 40,000 sentences × 4 quadrants
-is ~160k forward passes, and Q6 wants a run at two scales on one corpus in any
-case (below). One TSV, not four hundred thousand files.
+A second WikiText run does survive, and it checkpoints.
+`wiki103_partial870k_2025-11-05` was interrupted before it could write a final
+report, but `data_pipeline.py` appends a coverage record every 5,000 units and
+flushes it every 20,000, so its `checkpoint.json` holds **172 coverage points
+out to 860,000 units, all four quadrants** — a 42KB file that survived
+precisely because the run did not.
 
 ```
-|C|          exp_r    imp_r    exp_i    imp_i
- 5,000        ~478     ~462      ~88     ~110
-40,000        ~975     ~945     ~275     ~305
+   |C|      exp_r   imp_r   exp_i   imp_i     imp_r/imp_i
+   5,000      482     462      74      83          5.57
+  40,000      923     898     241     263          3.41
+ 160,000     1204    1196     522     544          2.20
+ 400,000     1397    1386     736     774          1.79
+ 860,000     1513    1500     937    1038          1.45
 ```
+
+This is a different run from the lost one — later, differently sampled — so it
+replaces those figures rather than restoring them. Against the retired plot
+readings, ρ=R agrees to within 1% at 5,000 and 5% at 40,000, while ρ=I runs
+15–25% low. The asymmetry is the expected one: ρ=I tracks terminal-token
+diversity and is therefore sampling-sensitive; ρ=R accumulates across every
+position and is not.
+
+**Units, not sentences — but here they coincide.** This corpus was prepared by
+the pipeline described in §8.4, which splits within physical lines.
+WikiText-103's source is not hard-wrapped — 3.66 units per line, against 1.17
+for a wrapped Gutenberg text — so punkt received whole paragraphs and the units
+are sentences. §8.4's defect does not bite here. Two independent confirmations:
+mean unit length 125 characters against 37–58 for the wrapped corpora, and an
+under-3-words filter rate bounded at 0–1.6% against 8.7–38.3%.
 
 Three things follow, none of them previously stated.
 
@@ -2021,14 +2086,18 @@ top of each other, as do the two ρ=I curves. Readout choice changes coverage
 by a factor of ~3; BOS changes it by a few percent. The four quadrants are
 better described as two regimes with a minor perturbation.
 
-**Neither regime has saturated at 40k.** Both curve families are still
-climbing at the end of the corpus, ρ=R at roughly a third of J. Q3's
-saturation question is not answerable from any corpus this size.
+**Neither regime has saturated at 40k, and the curve now shows what happens
+after.** Both families are still climbing at 40k, ρ=R at roughly a third of J.
+By 860,000 ρ=R has largely flattened — imp_r gains 17 systems per 100k units
+over the final stretch, against 63 for imp_i — but neither has stopped, and
+ρ=R sits at 1500 of 3072, under half of J. Q3's saturation question is
+therefore still not answerable, but the shape is now visible rather than
+extrapolated: ρ=R front-loads and flattens; ρ=I is slower and does not exhaust.
 
-**This inverts §8.3, and the inversion is Q6.** Here ρ=R covers ~3× ρ=I. At
-§8.3's 407k sentences the ordering is reversed: exp_i 2151 and imp_i 2225
-against exp_r 1339 and imp_r 1452. Two candidate explanations, and this pair
-of runs cannot separate them:
+**This inverts §8.3, and the inversion is Q6 — now answered.** Here ρ=R covers
+~3× ρ=I at 40k. At §8.3's 407k the ordering is reversed: exp_i 2151 and imp_i
+2225 against exp_r 1339 and imp_r 1452. Earlier drafts named two candidate
+explanations and reported that the available runs could not separate them:
 
 ```
 (a) crossover in |C|.  ρ=I accumulates coverage through terminal-token
@@ -2040,8 +2109,29 @@ of runs cannot separate them:
     produce the same ordering with no crossover at all.
 ```
 
-Separating them requires running the *same* corpus out to both scales and
-reporting terminal-token entropy at each. That is the remaining half of Q6.
+The recovered curve separates them, because it reaches §8.3's scale and passes
+it:
+
+```
+WikiText-103   at 400,000 units       imp_r 1386   imp_i  774    ratio 1.79
+§8.3 corpus    at 407,475 sentences   imp_r 1452   imp_i 2225    ratio 0.65
+```
+
+Matched |C|, opposite ordering, ratio differing by 2.8×. And WikiText-103 runs
+on to 860,000 — more than twice §8.3's corpus — with the curves still uncrossed.
+**(a) cannot be what produces §8.3's inversion. Q6 resolves to (b),
+composition.**
+
+(a) is nonetheless a real mechanism, operating at a scale that does not reach
+this question. The ratio falls monotonically 5.57 → 1.45 across the run,
+because imp_r saturates (+17 per 100k over the final stretch) while imp_i
+continues to climb (+63 per 100k). The curves would meet eventually. Both
+decelerate, so extrapolating the meeting point is not sound, and it is in any
+case far beyond 860,000 and therefore irrelevant to §8.3.
+
+What remains open from Q6 is quantitative: whether terminal-token entropy
+*predicts* the ratio, as against merely ordering corpora correctly. §8.4 is the
+instrument for that, and its evidence is not yet clean enough to settle it.
 
 ### 8.3 Corpus coverage — MEASURED
 
@@ -2066,6 +2156,76 @@ report 407,475 hits, so these are one corpus read four ways. Verified twice —
 the same table exported from the live instance and from a database seeded from
 scratch out of the published `master_hits_{quadrant}.bin` files agree
 byte-for-byte, `sha256 2724a6db…`.
+
+### 8.4 Corpus composition, nineteen books — MEASURED, with a defect disclosed
+
+Nineteen full-text corpora were run through the pipeline of §8.2.1 on
+2025-11-05 and are published under `data/caches/` (§7.2). They are the
+composition instrument Q6 asks for. Two things must be read before any number
+from them is used.
+
+**The unit is not a sentence.** The pipeline iterates the source file line by
+line and applies punkt *within each line*. Hard-wrapped plain text therefore
+yields line-bounded fragments, most ending mid-clause on an ordinary word:
+`moby_dick.txt` gives 25,186 units at 1.17 per line and a mean length of 49.5
+characters, against §8's 7,348 sentences at a mean of 158. The intent was
+sentences — punkt is a sentence tokeniser and the wrapping was not anticipated.
+**Coverage figures from these caches are not comparable with §8.2, §8.2.1 or
+§8.3.** Under the same book, imp_i moves from 57 to 1,174 on this preparation,
+which is §8.2's mechanism operating in reverse: fragmenting prose at arbitrary
+word boundaries destroys exactly the terminal homogeneity §8.2 identifies.
+
+**These runs predate §7's configuration discipline.** No `revision` pin, no
+TF32 flags, no `use_deterministic_algorithms`, and the stack was torch
+2.4.0+cu121 on an RTX A4500 under Ubuntu 24.04 rather than the reference stack
+of §7. The function is unchanged — ℓ=5, `mlp.hook_post`, the same four
+quadrants, verifiable in the published `data_pipeline.py` — but as with
+`token_sweep.py` (§7.2), the census was not produced under the normative stack
+and a reader should not assume otherwise.
+
+Within the set, comparisons are controlled: every corpus carries the same
+defect and the same stack.
+
+```
+                       units     exp_r   exp_i   imp_r   imp_i
+moby-dick (EN)        21,713       651   1,096     812   1,174
+swanns-way (EN)       18,516       642   1,090     851   1,159
+du-côté-de-chez-swann
+  (FR, same novel)    16,966       138     181     228     210
+```
+
+**Coverage is near-invariant to content within a language and collapses out of
+it.** Two English novels, different centuries and different authors, agree to
+within 3% on every quadrant. The same novel as `swanns-way`, in the original
+French, at 0.92× the unit count and comparable terminal-character entropy,
+reaches 3.7–6.0× fewer destinations. Neither scale nor terminal diversity
+accounts for that. GPT-2 is trained on WebText; French is out of distribution,
+and the model concentrates it onto a small fraction of layer-5 systems.
+
+The asymmetry is consistent with §8.2: the ρ=I quadrants fall furthest (6.02×,
+5.52×) and the ρ=R quadrants least (4.65×, 3.73×), which is what a narrowed
+terminal-token repertoire predicts.
+
+This is reported as a property of θ and its training distribution, not of the
+corpora. It is not evidence about meaning in any of §4.6's four senses.
+
+**Scale within a fixed preparation.** Across the nineteen, log |C| against
+imp_r/imp_i gives Spearman −0.804: the ratio falls monotonically from 0.99 at
+944 units to 0.72 at 128,885. Terminal-character entropy gives −0.195 over the
+same set, but its range there is only 3.198–4.020 bits, so that is
+range-restriction rather than evidence of no effect. §8.2.1's WikiText-103 run,
+at 0.910 bits and a ratio of 1.44 at 866,109 units, sits far outside both
+trends — which is the comparison that resolves Q6 there.
+
+**Two corpora should be excluded from any regression.** The pipeline discards
+units under three words. That filter removes 38.3% of *A Doll's House* and
+26.7% of *Shakespeare* — speaker labels, stage directions, short verse lines —
+against 8.7–13% for prose. Their coverage figures rest on a heavily and
+non-randomly filtered subset.
+
+`prepare_caches.py` (§7.2) recomputes each corpus's coverage from its own hit
+arrays and checks it against that corpus's run report, so the numbers above are
+verifiable from the bundle without a forward pass.
 
 ---
 
@@ -2127,24 +2287,29 @@ Q5  Stability. P( D(s') = D(s) | edit distance ≤ k ) over character edits,
       way its position in this list does not convey.
 
 Q6  Does ρ=I dominate ρ=R in coverage at all |C|, or does it invert?
-      PARTIALLY ANSWERED: §8.2, §8.2.1. ρ=I coverage tracks terminal-token
-      diversity; ρ=R tracks whole-string content. The ordering is observed
-      both ways — ρ=R ahead 3:1 on WikiText-103 at 40k, ρ=I ahead at 407k on
-      the scraped corpus — but the two runs differ in corpus as well as in
-      scale, so *crossover* and *composition* are confounded and neither is
-      established. Remaining: run one corpus at both scales, report
-      terminal-token entropy at each, and predict the crossover |C| (if any)
-      from entropy alone.
+      ANSWERED, qualitatively: §8.2.1. The ordering is set by *composition*,
+      not by crossover in |C|. WikiText-103 at 400,000 units gives
+      imp_r/imp_i = 1.79 where §8.3's corpus at 407,475 gives 0.65 — matched
+      scale, opposite ordering — and WikiText-103 runs to 860,000 without the
+      curves crossing. Crossover is a real mechanism (the ratio falls 5.57 →
+      1.45 over that run) but operates far beyond the scale at which §8.3's
+      inversion appears, so it cannot be its cause.
+      Remaining, and now quantitative: does terminal-token entropy *predict*
+      the ratio, or merely order corpora correctly? §8.4's nineteen corpora
+      are the instrument. Their evidence is not yet clean — the fragmentation
+      described there varies terminal diversity as a side effect of
+      preparation rather than of corpus, and two corpora lose over a quarter
+      of their units to the under-3-words filter. Re-running §8.4 with
+      paragraphs unwrapped before splitting, under §7's stack, makes those
+      nineteen directly comparable with §8.3 and is the cheapest remaining
+      step: roughly an hour of GPU time.
+      One measurement would sharpen it further: the terminal-character
+      entropy of §8.3's own corpus. WikiText-103's is 0.910 bits, §8.4's
+      corpora run 3.198–4.020. Where §8.3's corpus falls decides whether
+      entropy alone is sufficient.
       Also open from §8.2.1: β_bos moves coverage by a few percent while ρ
       moves it threefold. Whether the quadrant model is really a 2×2 or a
       2×(minor perturbation) is worth stating once measured.
-      NOTE: §8.2.1's source data is lost, so the 40k figures cannot be
-      re-examined and the crossover comparison must be rebuilt from a fresh
-      run rather than from the archive. The nineteen full-book caches held
-      alongside `the_sea` are a corpus-composition instrument that has never
-      been read: terminal-token entropy per corpus against coverage per
-      corpus is computable from files already on disk, with no forward pass
-      at all, and would separate composition from scale for the ρ=I half.
 
 Q7  Coverage asymmetry. Map ℛ̂(π_h) against ℛ̂(π_a) under identical channel
       restriction. Do different architectures induce divergent samplers over
