@@ -1,0 +1,47 @@
+{
+    "line_index": 21468,
+    "total_sentences": 25186,
+    "coverage_log": [
+        {
+            "total_sentences": 5000,
+            "timestamp": 1762342181.777485,
+            "coverage_exp_r": 370,
+            "coverage_exp_i": 543,
+            "coverage_imp_r": 476,
+            "coverage_imp_i": 569
+        },
+        {
+            "total_sentences": 10000,
+            "timestamp": 1762342329.107903,
+            "coverage_exp_r": 475,
+            "coverage_exp_i": 756,
+            "coverage_imp_r": 614,
+            "coverage_imp_i": 799
+        },
+        {
+            "total_sentences": 15000,
+            "timestamp": 1762342481.0290306,
+            "coverage_exp_r": 540,
+            "coverage_exp_i": 910,
+            "coverage_imp_r": 704,
+            "coverage_imp_i": 961
+        },
+        {
+            "total_sentences": 20000,
+            "timestamp": 1762342628.1585226,
+            "coverage_exp_r": 600,
+            "coverage_exp_i": 1023,
+            "coverage_imp_r": 773,
+            "coverage_imp_i": 1089
+        },
+        {
+            "total_sentences": 25000,
+            "timestamp": 1762342773.3767164,
+            "coverage_exp_r": 645,
+            "coverage_exp_i": 1087,
+            "coverage_imp_r": 808,
+            "coverage_imp_i": 1166
+        }
+    ],
+    "timestamp": 1762342778.8810472
+}

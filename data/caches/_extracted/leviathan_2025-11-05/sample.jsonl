@@ -1,0 +1,50 @@
+{"s": "\ufeffThe Project Gutenberg eBook of Leviathan", "exp_r": 1888, "exp_i": 1790, "imp_r": 2166, "imp_i": 1790}
+{"s": "This ebook is for the use of anyone anywhere in the United States and", "exp_r": 2073, "exp_i": 1790, "imp_r": 2073, "imp_i": 1790}
+{"s": "most other parts of the world at no cost and with almost no restrictions", "exp_r": 1960, "exp_i": 671, "imp_r": 1960, "imp_i": 671}
+{"s": "You may copy it, give it away or re-use it under the terms", "exp_r": 2073, "exp_i": 2073, "imp_r": 2073, "imp_i": 2073}
+{"s": "of the Project Gutenberg License included with this ebook or online", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "If you are not located in the United States,", "exp_r": 2073, "exp_i": 777, "imp_r": 2073, "imp_i": 777}
+{"s": "you will have to check the laws of the country where you are located", "exp_r": 1888, "exp_i": 1790, "imp_r": 1084, "imp_i": 1790}
+{"s": "before using this eBook.", "exp_r": 1888, "exp_i": 1821, "imp_r": 1821, "imp_i": 1821}
+{"s": "Author: Thomas Hobbes", "exp_r": 1888, "exp_i": 1888, "imp_r": 1430, "imp_i": 1004}
+{"s": "Release date: May 1, 2002 [eBook #3207]", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1888}
+{"s": "Most recently updated: September 17, 2025", "exp_r": 1888, "exp_i": 1790, "imp_r": 2661, "imp_i": 1790}
+{"s": "Credits: Edward White and David Widger", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 2097}
+{"s": "*** START OF THE PROJECT GUTENBERG EBOOK LEVIATHAN ***", "exp_r": 801, "exp_i": 2999, "imp_r": 801, "imp_i": 2999}
+{"s": "By Thomas Hobbes", "exp_r": 1888, "exp_i": 1888, "imp_r": 1430, "imp_i": 1888}
+{"s": "LEVIATHAN OR THE MATTER, FORME, & POWER OF A COMMON-WEALTH", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 2003}
+{"s": "ECCLESIASTICAL AND CIVILL", "exp_r": 1881, "exp_i": 1881, "imp_r": 1881, "imp_i": 1881}
+{"s": "Thomas Hobbes of Malmesbury", "exp_r": 1949, "exp_i": 1888, "imp_r": 1949, "imp_i": 1888}
+{"s": "Printed for Andrew Crooke, at the Green Dragon in St. Paul\u2019s Churchyard,", "exp_r": 1888, "exp_i": 273, "imp_r": 1888, "imp_i": 273}
+{"s": "TRANSCRIBER\u2019S NOTES ON THE E-TEXT:", "exp_r": 8, "exp_i": 2907, "imp_r": 2149, "imp_i": 2907}
+{"s": "This E-text was prepared from the Pelican Classics edition of Leviathan,", "exp_r": 1888, "exp_i": 1888, "imp_r": 2776, "imp_i": 1888}
+{"s": "which in turn was prepared from the first edition.", "exp_r": 2776, "exp_i": 1888, "imp_r": 2776, "imp_i": 1888}
+{"s": "I have tried to", "exp_r": 1888, "exp_i": 2978, "imp_r": 1888, "imp_i": 2978}
+{"s": "follow as closely as possible the original, and to give the flavour of", "exp_r": 2864, "exp_i": 1790, "imp_r": 2864, "imp_i": 1790}
+{"s": "the text that Hobbes himself proof-read, but the following differences", "exp_r": 1888, "exp_i": 2454, "imp_r": 2073, "imp_i": 2454}
+{"s": "Hobbes used capitals and italics very extensively, for emphasis, for", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1888}
+{"s": "proper names, for quotations, and sometimes, it seems, just because.", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "The original has very extensive margin notes, which are used to show", "exp_r": 2154, "exp_i": 1838, "imp_r": 1888, "imp_i": 735}
+{"s": "where he introduces the definitions of words and concepts, to give in", "exp_r": 1790, "exp_i": 1790, "imp_r": 2659, "imp_i": 1790}
+{"s": "short the subject that a paragraph or section is dealing with, and to", "exp_r": 1888, "exp_i": 1790, "imp_r": 2659, "imp_i": 1790}
+{"s": "give references to his quotations, largely but not exclusively biblical.", "exp_r": 1645, "exp_i": 1888, "imp_r": 1645, "imp_i": 1888}
+{"s": "To some degree, these margin notes seem to have been intended to serve", "exp_r": 1790, "exp_i": 1601, "imp_r": 429, "imp_i": 1601}
+{"s": "in place of an index, the original having none.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "They are all in italics.", "exp_r": 1888, "exp_i": 1821, "imp_r": 1888, "imp_i": 1821}
+{"s": "He also used italics for words in other languages than English, and", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "there are a number of Greek words, in the Greek alphabet, in the text.", "exp_r": 1790, "exp_i": 1790, "imp_r": 1098, "imp_i": 1790}
+{"s": "To deal with these within the limits of plain vanilla ASCII, I have done", "exp_r": 1888, "exp_i": 356, "imp_r": 1098, "imp_i": 2005}
+{"s": "the following in this E-text.", "exp_r": 1790, "exp_i": 1888, "imp_r": 2073, "imp_i": 1821}
+{"s": "I have restricted my use of full capitalization to those places where", "exp_r": 746, "exp_i": 336, "imp_r": 746, "imp_i": 3017}
+{"s": "Hobbes used it, except in the chapter headings, which I have fully", "exp_r": 1594, "exp_i": 1594, "imp_r": 1594, "imp_i": 1594}
+{"s": "capitalized, where Hobbes used a mixture of full capitalization and", "exp_r": 1888, "exp_i": 771, "imp_r": 1888, "imp_i": 771}
+{"s": "Where it is clear that the italics are to indicate the text is quoting,", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "I have introduced quotation marks.", "exp_r": 1888, "exp_i": 1821, "imp_r": 1888, "imp_i": 1821}
+{"s": "Within quotation marks I have", "exp_r": 1888, "exp_i": 1888, "imp_r": 1790, "imp_i": 2315}
+{"s": "retained the capitalization that Hobbes used.", "exp_r": 2133, "exp_i": 1888, "imp_r": 2133, "imp_i": 1888}
+{"s": "Where italics seem to be used for emphasis, or for proper names, or just", "exp_r": 1888, "exp_i": 1552, "imp_r": 1552, "imp_i": 1552}
+{"s": "because, I have capitalized the initial letter of the words.", "exp_r": 1888, "exp_i": 1888, "imp_r": 2378, "imp_i": 1888}
+{"s": "the disadvantage that they are not then distinguished from those that", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 629}
+{"s": "Hobbes capitalized in plain text, but the extent of his italics would", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 668}
+{"s": "make the text very ugly if I was to use an underscore or slash.", "exp_r": 2265, "exp_i": 1888, "imp_r": 2265, "imp_i": 1888}
+{"s": "Where the margin notes are either to introduce the paragraph subject,", "exp_r": 1642, "exp_i": 1642, "imp_r": 1642, "imp_i": 1642}
