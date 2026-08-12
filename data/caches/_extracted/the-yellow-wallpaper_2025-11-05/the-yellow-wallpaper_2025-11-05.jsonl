@@ -1,0 +1,944 @@
+{"s": "\ufeffThe Project Gutenberg eBook of The Yellow Wallpaper", "exp_r": 1888, "exp_i": 1099, "imp_r": 2166, "imp_i": 1099}
+{"s": "This ebook is for the use of anyone anywhere in the United States and", "exp_r": 2073, "exp_i": 1790, "imp_r": 2073, "imp_i": 1790}
+{"s": "most other parts of the world at no cost and with almost no restrictions", "exp_r": 1960, "exp_i": 671, "imp_r": 1960, "imp_i": 671}
+{"s": "You may copy it, give it away or re-use it under the terms", "exp_r": 2073, "exp_i": 2073, "imp_r": 2073, "imp_i": 2073}
+{"s": "of the Project Gutenberg License included with this ebook or online", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "If you are not located in the United States,", "exp_r": 2073, "exp_i": 777, "imp_r": 2073, "imp_i": 777}
+{"s": "you will have to check the laws of the country where you are located", "exp_r": 1888, "exp_i": 1790, "imp_r": 1084, "imp_i": 1790}
+{"s": "before using this eBook.", "exp_r": 1888, "exp_i": 1821, "imp_r": 1821, "imp_i": 1821}
+{"s": "Title: The Yellow Wallpaper", "exp_r": 2073, "exp_i": 1790, "imp_r": 2073, "imp_i": 1099}
+{"s": "Author: Charlotte Perkins Gilman", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "Release date: November 1, 1999 [eBook #1952]", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "Most recently updated: August 31, 2024", "exp_r": 1888, "exp_i": 1790, "imp_r": 96, "imp_i": 1790}
+{"s": "Credits: An Anonymous Volunteer and David Widger", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "*** START OF THE PROJECT GUTENBERG EBOOK THE YELLOW WALLPAPER ***", "exp_r": 2073, "exp_i": 2999, "imp_r": 2073, "imp_i": 2999}
+{"s": "The Yellow Wallpaper", "exp_r": 1888, "exp_i": 1099, "imp_r": 1888, "imp_i": 1099}
+{"s": "By Charlotte Perkins Gilman", "exp_r": 1888, "exp_i": 1790, "imp_r": 1949, "imp_i": 1949}
+{"s": "It is very seldom that mere ordinary people like John and myself secure", "exp_r": 1888, "exp_i": 935, "imp_r": 1888, "imp_i": 935}
+{"s": "ancestral halls for the summer.", "exp_r": 2073, "exp_i": 1888, "imp_r": 2073, "imp_i": 1888}
+{"s": "A colonial mansion, a hereditary estate, I would say a haunted house,", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "and reach the height of romantic felicity\u2014but that would be asking too", "exp_r": 1888, "exp_i": 1523, "imp_r": 2073, "imp_i": 1523}
+{"s": "much of fate!", "exp_r": 1790, "exp_i": 1888, "imp_r": 244, "imp_i": 1888}
+{"s": "Still I will proudly declare that there is something queer about it.", "exp_r": 1888, "exp_i": 1790, "imp_r": 998, "imp_i": 1790}
+{"s": "Else, why should it be let so cheaply?", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "And why have stood so long", "exp_r": 1523, "exp_i": 2062, "imp_r": 2707, "imp_i": 266}
+{"s": "John laughs at me, of course, but one expects that in marriage.", "exp_r": 2031, "exp_i": 1888, "imp_r": 2031, "imp_i": 1790}
+{"s": "John is practical in the extreme.", "exp_r": 1888, "exp_i": 1888, "imp_r": 508, "imp_i": 1888}
+{"s": "He has no patience with faith, an", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "intense horror of superstition, and he scoffs openly at any talk of", "exp_r": 1888, "exp_i": 1790, "imp_r": 166, "imp_i": 2383}
+{"s": "things not to be felt and seen and put down in figures.", "exp_r": 2513, "exp_i": 1888, "imp_r": 2659, "imp_i": 1888}
+{"s": "John is a physician, and perhaps\u2014(I would not say it to a living soul,", "exp_r": 1888, "exp_i": 1790, "imp_r": 849, "imp_i": 1790}
+{"s": "of course, but this is dead paper and a great relief to my", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "mind)\u2014perhaps that is one reason I do not get well faster.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "You see, he does not believe I am sick!", "exp_r": 2265, "exp_i": 1790, "imp_r": 1777, "imp_i": 1790}
+{"s": "And what can one do?", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "If a physician of high standing, and one\u2019s own husband, assures friends", "exp_r": 1790, "exp_i": 1790, "imp_r": 1678, "imp_i": 1888}
+{"s": "and relatives that there is really nothing the matter with one but", "exp_r": 1888, "exp_i": 1790, "imp_r": 170, "imp_i": 1790}
+{"s": "temporary nervous depression\u2014a slight hysterical tendency\u2014what is one", "exp_r": 1888, "exp_i": 2761, "imp_r": 1888, "imp_i": 2761}
+{"s": "My brother is also a physician, and also of high standing, and he says", "exp_r": 1563, "exp_i": 1066, "imp_r": 1563, "imp_i": 1066}
+{"s": "the same thing.", "exp_r": 1888, "exp_i": 1888, "imp_r": 2073, "imp_i": 1888}
+{"s": "So I take phosphates or phosphites\u2014whichever it is, and tonics, and", "exp_r": 917, "exp_i": 1790, "imp_r": 1888, "imp_i": 99}
+{"s": "journeys, and air, and exercise, and am absolutely forbidden to \u201cwork\u201d", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "until I am well again.", "exp_r": 2761, "exp_i": 1888, "imp_r": 2761, "imp_i": 1821}
+{"s": "Personally, I disagree with their ideas.", "exp_r": 2930, "exp_i": 1888, "imp_r": 2930, "imp_i": 1888}
+{"s": "Personally, I believe that congenial work, with excitement and change,", "exp_r": 1888, "exp_i": 232, "imp_r": 1594, "imp_i": 232}
+{"s": "would do me good.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1306, "imp_i": 1888}
+{"s": "But what is one to do?", "exp_r": 1918, "exp_i": 1790, "imp_r": 1918, "imp_i": 1790}
+{"s": "I did write for a while in spite of them; but it does exhaust me a good", "exp_r": 1888, "exp_i": 2073, "imp_r": 1888, "imp_i": 2073}
+{"s": "deal\u2014having to be so sly about it, or else meet with heavy opposition.", "exp_r": 1888, "exp_i": 1888, "imp_r": 2761, "imp_i": 1888}
+{"s": "I sometimes fancy that in my condition if I had less opposition and", "exp_r": 2808, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "more society and stimulus\u2014but John says the very worst thing I can do", "exp_r": 1888, "exp_i": 1790, "imp_r": 2073, "imp_i": 2245}
+{"s": "is to think about my condition, and I confess it always makes me feel", "exp_r": 1888, "exp_i": 373, "imp_r": 2742, "imp_i": 373}
+{"s": "So I will let it alone and talk about the house.", "exp_r": 1790, "exp_i": 1821, "imp_r": 1888, "imp_i": 1821}
+{"s": "The most beautiful place!", "exp_r": 2073, "exp_i": 1790, "imp_r": 1888, "imp_i": 164}
+{"s": "It is quite alone, standing well back from", "exp_r": 2707, "exp_i": 126, "imp_r": 2707, "imp_i": 126}
+{"s": "the road, quite three miles from the village.", "exp_r": 1645, "exp_i": 1888, "imp_r": 1645, "imp_i": 1888}
+{"s": "It makes me think of", "exp_r": 2989, "exp_i": 1395, "imp_r": 1888, "imp_i": 1404}
+{"s": "English places that you read about, for there are hedges and walls and", "exp_r": 1888, "exp_i": 1738, "imp_r": 1888, "imp_i": 1738}
+{"s": "gates that lock, and lots of separate little houses for the gardeners", "exp_r": 1888, "exp_i": 2807, "imp_r": 1888, "imp_i": 2807}
+{"s": "There is a delicious garden!", "exp_r": 2154, "exp_i": 1790, "imp_r": 2154, "imp_i": 1888}
+{"s": "I never saw such a garden\u2014large and shady,", "exp_r": 1888, "exp_i": 495, "imp_r": 1888, "imp_i": 495}
+{"s": "full of box-bordered paths, and lined with long grape-covered arbors", "exp_r": 1888, "exp_i": 1790, "imp_r": 792, "imp_i": 1790}
+{"s": "with seats under them.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "There were greenhouses, too, but they are all broken now.", "exp_r": 690, "exp_i": 1790, "imp_r": 690, "imp_i": 1790}
+{"s": "There was some legal trouble, I believe, something about the heirs and", "exp_r": 1178, "exp_i": 1790, "imp_r": 1178, "imp_i": 2973}
+{"s": "co-heirs; anyhow, the place has been empty for years.", "exp_r": 2742, "exp_i": 1888, "imp_r": 2073, "imp_i": 1888}
+{"s": "That spoils my ghostliness, I am afraid; but I don\u2019t care\u2014there is", "exp_r": 2982, "exp_i": 107, "imp_r": 2982, "imp_i": 107}
+{"s": "something strange about the house\u2014I can feel it.", "exp_r": 1790, "exp_i": 1888, "imp_r": 782, "imp_i": 1888}
+{"s": "I even said so to John one moonlight evening, but he said what I felt", "exp_r": 793, "exp_i": 2572, "imp_r": 1888, "imp_i": 2572}
+{"s": "was a draught, and shut the window.", "exp_r": 1888, "exp_i": 1821, "imp_r": 1821, "imp_i": 1821}
+{"s": "I get unreasonably angry with John sometimes.", "exp_r": 1594, "exp_i": 1888, "imp_r": 1594, "imp_i": 1821}
+{"s": "I\u2019m sure I never used to", "exp_r": 1790, "exp_i": 2068, "imp_r": 1888, "imp_i": 1187}
+{"s": "be so sensitive.", "exp_r": 1888, "exp_i": 1888, "imp_r": 2761, "imp_i": 1888}
+{"s": "I think it is due to this nervous condition.", "exp_r": 1622, "exp_i": 1888, "imp_r": 1622, "imp_i": 1821}
+{"s": "But John says if I feel so I shall neglect proper self-control; so I", "exp_r": 2315, "exp_i": 1790, "imp_r": 2315, "imp_i": 1790}
+{"s": "take pains to control myself,\u2014before him, at least,\u2014and that makes me", "exp_r": 690, "exp_i": 2989, "imp_r": 690, "imp_i": 2989}
+{"s": "I don\u2019t like our room a bit.", "exp_r": 8, "exp_i": 1888, "imp_r": 8, "imp_i": 1821}
+{"s": "I wanted one downstairs that opened on the", "exp_r": 2528, "exp_i": 2528, "imp_r": 1888, "imp_i": 2528}
+{"s": "piazza and had roses all over the window, and such pretty old-fashioned", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "but John would not hear of it.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "He said there was only one window and not room for two beds, and no", "exp_r": 2154, "exp_i": 1790, "imp_r": 67, "imp_i": 1932}
+{"s": "near room for him if he took another.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1435, "imp_i": 1888}
+{"s": "He is very careful and loving, and hardly lets me stir without special", "exp_r": 1934, "exp_i": 1790, "imp_r": 1934, "imp_i": 1888}
+{"s": "I have a schedule prescription for each hour in the day; he takes all", "exp_r": 1777, "exp_i": 1959, "imp_r": 1777, "imp_i": 1959}
+{"s": "care from me, and so I feel basely ungrateful not to value it more.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "He said we came here solely on my account, that I was to have perfect", "exp_r": 1479, "exp_i": 1790, "imp_r": 1479, "imp_i": 1790}
+{"s": "rest and all the air I could get.", "exp_r": 1888, "exp_i": 1888, "imp_r": 2432, "imp_i": 1888}
+{"s": "\u201cYour exercise depends on your", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "strength, my dear,\u201d said he, \u201cand your food somewhat on your appetite;", "exp_r": 1888, "exp_i": 1790, "imp_r": 1102, "imp_i": 1790}
+{"s": "but air you can absorb all the time.\u201d So we took the nursery, at the", "exp_r": 1581, "exp_i": 1870, "imp_r": 1581, "imp_i": 1870}
+{"s": "top of the house.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1821, "imp_i": 1821}
+{"s": "It is a big, airy room, the whole floor nearly, with windows that look", "exp_r": 2073, "exp_i": 1337, "imp_r": 2073, "imp_i": 1337}
+{"s": "all ways, and air and sunshine galore.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "It was nursery first and then", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "playground and gymnasium, I should judge; for the windows are barred", "exp_r": 1888, "exp_i": 2761, "imp_r": 1888, "imp_i": 2761}
+{"s": "for little children, and there are rings and things in the walls.", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "The paint and paper look as if a boys\u2019 school had used it.", "exp_r": 8, "exp_i": 1790, "imp_r": 2659, "imp_i": 1790}
+{"s": "stripped off\u2014the paper\u2014in great patches all around the head of my bed,", "exp_r": 2073, "exp_i": 1790, "imp_r": 2073, "imp_i": 1790}
+{"s": "about as far as I can reach, and in a great place on the other side of", "exp_r": 2073, "exp_i": 2977, "imp_r": 2073, "imp_i": 2977}
+{"s": "the room low down.", "exp_r": 1888, "exp_i": 1888, "imp_r": 2073, "imp_i": 1888}
+{"s": "I never saw a worse paper in my life.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "One of those sprawling flamboyant patterns committing every artistic", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "It is dull enough to confuse the eye in following, pronounced enough to", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 2219}
+{"s": "constantly irritate, and provoke study, and when you follow the lame,", "exp_r": 1888, "exp_i": 1790, "imp_r": 1594, "imp_i": 1790}
+{"s": "uncertain curves for a little distance they suddenly commit", "exp_r": 1888, "exp_i": 935, "imp_r": 1790, "imp_i": 935}
+{"s": "suicide\u2014plunge off at outrageous angles, destroy themselves in", "exp_r": 1888, "exp_i": 1888, "imp_r": 1790, "imp_i": 1888}
+{"s": "The color is repellant, almost revolting; a smouldering, unclean", "exp_r": 1888, "exp_i": 2659, "imp_r": 1888, "imp_i": 2659}
+{"s": "yellow, strangely faded by the slow-turning sunlight.", "exp_r": 1594, "exp_i": 1790, "imp_r": 1790, "imp_i": 1888}
+{"s": "It is a dull yet lurid orange in some places, a sickly sulphur tint in", "exp_r": 2094, "exp_i": 1734, "imp_r": 2094, "imp_i": 1734}
+{"s": "No wonder the children hated it!", "exp_r": 1790, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "I should hate it myself if I had to", "exp_r": 2808, "exp_i": 2086, "imp_r": 1888, "imp_i": 2044}
+{"s": "live in this room long.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1821}
+{"s": "There comes John, and I must put this away,\u2014he hates to have me write a", "exp_r": 2506, "exp_i": 1790, "imp_r": 2506, "imp_i": 1790}
+{"s": "We have been here two weeks, and I haven\u2019t felt like writing before,", "exp_r": 8, "exp_i": 1888, "imp_r": 8, "imp_i": 1888}
+{"s": "since that first day.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "I am sitting by the window now, up in this atrocious nursery, and there", "exp_r": 2707, "exp_i": 170, "imp_r": 2707, "imp_i": 170}
+{"s": "is nothing to hinder my writing as much as I please, save lack of", "exp_r": 746, "exp_i": 1790, "imp_r": 2609, "imp_i": 1790}
+{"s": "John is away all day, and even some nights when his cases are serious.", "exp_r": 1888, "exp_i": 1790, "imp_r": 2761, "imp_i": 1790}
+{"s": "I am glad my case is not serious!", "exp_r": 1888, "exp_i": 506, "imp_r": 1888, "imp_i": 506}
+{"s": "But these nervous troubles are dreadfully depressing.", "exp_r": 1594, "exp_i": 1888, "imp_r": 1594, "imp_i": 1821}
+{"s": "John does not know how much I really suffer.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1523, "imp_i": 1888}
+{"s": "He knows there is no", "exp_r": 1131, "exp_i": 2154, "imp_r": 1131, "imp_i": 2154}
+{"s": "reason to suffer, and that satisfies him.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "Of course it is only nervousness.", "exp_r": 746, "exp_i": 1888, "imp_r": 2031, "imp_i": 1888}
+{"s": "It does weigh on me so not to do my", "exp_r": 1306, "exp_i": 1306, "imp_r": 1888, "imp_i": 1306}
+{"s": "duty in any way!", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "I meant to be such a help to John, such a real rest and comfort, and", "exp_r": 2265, "exp_i": 1790, "imp_r": 2265, "imp_i": 1790}
+{"s": "here I am a comparative burden already!", "exp_r": 1888, "exp_i": 1888, "imp_r": 2265, "imp_i": 1888}
+{"s": "Nobody would believe what an effort it is to do what little I am", "exp_r": 2265, "exp_i": 2265, "imp_r": 2265, "imp_i": 2265}
+{"s": "able\u2014to dress and entertain, and order things.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1790, "imp_i": 1821}
+{"s": "It is fortunate Mary is so good with the baby.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "Such a dear baby!", "exp_r": 1888, "exp_i": 882, "imp_r": 2793, "imp_i": 882}
+{"s": "And yet I cannot be with him, it makes me so nervous.", "exp_r": 2265, "exp_i": 1821, "imp_r": 2265, "imp_i": 1821}
+{"s": "I suppose John never was nervous in his life.", "exp_r": 1790, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "He laughs at me so about", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "At first he meant to repaper the room, but afterwards he said that I", "exp_r": 2373, "exp_i": 1790, "imp_r": 2373, "imp_i": 1790}
+{"s": "was letting it get the better of me, and that nothing was worse for a", "exp_r": 2073, "exp_i": 1790, "imp_r": 2073, "imp_i": 1790}
+{"s": "nervous patient than to give way to such fancies.", "exp_r": 1275, "exp_i": 1888, "imp_r": 1275, "imp_i": 1888}
+{"s": "He said that after the wallpaper was changed it would be the heavy", "exp_r": 1790, "exp_i": 2073, "imp_r": 1888, "imp_i": 2073}
+{"s": "bedstead, and then the barred windows, and then that gate at the head", "exp_r": 1888, "exp_i": 2073, "imp_r": 1790, "imp_i": 2073}
+{"s": "of the stairs, and so on.", "exp_r": 1888, "exp_i": 1790, "imp_r": 2002, "imp_i": 1821}
+{"s": "\u201cYou know the place is doing you good,\u201d he said, \u201cand really, dear, I", "exp_r": 1790, "exp_i": 1790, "imp_r": 688, "imp_i": 1790}
+{"s": "don\u2019t care to renovate the house just for a three months\u2019 rental.\u201d", "exp_r": 1888, "exp_i": 1790, "imp_r": 8, "imp_i": 1790}
+{"s": "\u201cThen do let us go downstairs,\u201d I said, \u201cthere are such pretty rooms", "exp_r": 1790, "exp_i": 1790, "imp_r": 688, "imp_i": 1790}
+{"s": "Then he took me in his arms and called me a blessed little goose, and", "exp_r": 1790, "exp_i": 1790, "imp_r": 1113, "imp_i": 1790}
+{"s": "said he would go down cellar if I wished, and have it whitewashed into", "exp_r": 1888, "exp_i": 405, "imp_r": 2506, "imp_i": 405}
+{"s": "But he is right enough about the beds and windows and things.", "exp_r": 2659, "exp_i": 1888, "imp_r": 2659, "imp_i": 1888}
+{"s": "It is as airy and comfortable a room as any one need wish, and, of", "exp_r": 2609, "exp_i": 2031, "imp_r": 2031, "imp_i": 2031}
+{"s": "course, I would not be so silly as to make him uncomfortable just for a", "exp_r": 1888, "exp_i": 1797, "imp_r": 1888, "imp_i": 1797}
+{"s": "I\u2019m really getting quite fond of the big room, all but that horrid", "exp_r": 1790, "exp_i": 2094, "imp_r": 1888, "imp_i": 2094}
+{"s": "Out of one window I can see the garden, those mysterious deep-shaded", "exp_r": 1943, "exp_i": 423, "imp_r": 1888, "imp_i": 423}
+{"s": "arbors, the riotous old-fashioned flowers, and bushes and gnarly trees.", "exp_r": 1888, "exp_i": 1790, "imp_r": 2094, "imp_i": 1888}
+{"s": "Out of another I get a lovely view of the bay and a little private", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 219}
+{"s": "wharf belonging to the estate.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1821}
+{"s": "There is a beautiful shaded lane that", "exp_r": 2154, "exp_i": 1640, "imp_r": 2154, "imp_i": 1640}
+{"s": "runs down there from the house.", "exp_r": 1888, "exp_i": 1888, "imp_r": 2073, "imp_i": 1821}
+{"s": "I always fancy I see people walking in", "exp_r": 1790, "exp_i": 1046, "imp_r": 1888, "imp_i": 1046}
+{"s": "these numerous paths and arbors, but John has cautioned me not to give", "exp_r": 1790, "exp_i": 1060, "imp_r": 2659, "imp_i": 1060}
+{"s": "way to fancy in the least.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1821}
+{"s": "He says that with my imaginative power and", "exp_r": 1066, "exp_i": 1790, "imp_r": 1066, "imp_i": 1790}
+{"s": "habit of story-making a nervous weakness like mine is sure to lead to", "exp_r": 1888, "exp_i": 1790, "imp_r": 2241, "imp_i": 2632}
+{"s": "all manner of excited fancies, and that I ought to use my will and good", "exp_r": 1888, "exp_i": 638, "imp_r": 2874, "imp_i": 638}
+{"s": "sense to check the tendency.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "So I try.", "exp_r": 1790, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "I think sometimes that if I were only well enough to write a little it", "exp_r": 2808, "exp_i": 2315, "imp_r": 2808, "imp_i": 2315}
+{"s": "would relieve the press of ideas and rest me.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "But I find I get pretty tired when I try.", "exp_r": 1790, "exp_i": 1888, "imp_r": 1588, "imp_i": 1888}
+{"s": "It is so discouraging not to have any advice and companionship about my", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "When I get really well John says we will ask Cousin Henry and", "exp_r": 1678, "exp_i": 1790, "imp_r": 1678, "imp_i": 1790}
+{"s": "Julia down for a long visit; but he says he would as soon put", "exp_r": 429, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "fire-works in my pillow-case as to let me have those stimulating people", "exp_r": 1888, "exp_i": 1790, "imp_r": 1098, "imp_i": 2807}
+{"s": "I wish I could get well faster.", "exp_r": 1131, "exp_i": 1888, "imp_r": 1131, "imp_i": 1888}
+{"s": "But I must not think about that.", "exp_r": 2469, "exp_i": 1888, "imp_r": 592, "imp_i": 1888}
+{"s": "This paper looks to me as if it knew", "exp_r": 1888, "exp_i": 116, "imp_r": 2972, "imp_i": 116}
+{"s": "what a vicious influence it had!", "exp_r": 1867, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "There is a recurrent spot where the pattern lolls like a broken neck", "exp_r": 1790, "exp_i": 1790, "imp_r": 2154, "imp_i": 1790}
+{"s": "and two bulbous eyes stare at you upside-down.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1994, "imp_i": 1821}
+{"s": "I get positively angry with the impertinence of it and the", "exp_r": 1409, "exp_i": 1504, "imp_r": 1888, "imp_i": 1504}
+{"s": "Up and down and sideways they crawl, and those absurd,", "exp_r": 541, "exp_i": 1054, "imp_r": 541, "imp_i": 1054}
+{"s": "unblinking eyes are everywhere.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1790, "imp_i": 1888}
+{"s": "There is one place where two breadths", "exp_r": 1790, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "didn\u2019t match, and the eyes go all up and down the line, one a little", "exp_r": 1888, "exp_i": 189, "imp_r": 8, "imp_i": 189}
+{"s": "higher than the other.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "I never saw so much expression in an inanimate thing before, and we all", "exp_r": 1790, "exp_i": 1959, "imp_r": 1888, "imp_i": 1959}
+{"s": "know how much expression they have!", "exp_r": 1867, "exp_i": 1888, "imp_r": 1867, "imp_i": 1888}
+{"s": "I used to lie awake as a child and", "exp_r": 1187, "exp_i": 506, "imp_r": 1187, "imp_i": 506}
+{"s": "get more entertainment and terror out of blank walls and plain", "exp_r": 1888, "exp_i": 3007, "imp_r": 298, "imp_i": 3007}
+{"s": "furniture than most children could find in a toy-store.", "exp_r": 1888, "exp_i": 1888, "imp_r": 2133, "imp_i": 1888}
+{"s": "I remember what a kindly wink the knobs of our big old bureau used to", "exp_r": 2073, "exp_i": 2133, "imp_r": 2073, "imp_i": 2133}
+{"s": "have, and there was one chair that always seemed like a strong friend.", "exp_r": 1594, "exp_i": 1790, "imp_r": 1594, "imp_i": 1888}
+{"s": "I used to feel that if any of the other things looked too fierce I", "exp_r": 1678, "exp_i": 2315, "imp_r": 1678, "imp_i": 2315}
+{"s": "could always hop into that chair and be safe.", "exp_r": 1695, "exp_i": 1888, "imp_r": 1695, "imp_i": 1888}
+{"s": "The furniture in this room is no worse than inharmonious, however, for", "exp_r": 1888, "exp_i": 1771, "imp_r": 690, "imp_i": 1771}
+{"s": "we had to bring it all from downstairs.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1790, "imp_i": 1888}
+{"s": "I suppose when this was used as", "exp_r": 3052, "exp_i": 2682, "imp_r": 1888, "imp_i": 1678}
+{"s": "a playroom they had to take the nursery things out, and no wonder!", "exp_r": 1888, "exp_i": 1790, "imp_r": 1504, "imp_i": 1790}
+{"s": "never saw such ravages as the children have made here.", "exp_r": 1790, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "The wallpaper, as I said before, is torn off in spots, and it sticketh", "exp_r": 1888, "exp_i": 124, "imp_r": 1600, "imp_i": 1790}
+{"s": "closer than a brother\u2014they must have had perseverance as well as", "exp_r": 1888, "exp_i": 771, "imp_r": 771, "imp_i": 771}
+{"s": "Then the floor is scratched and gouged and splintered, the plaster", "exp_r": 1790, "exp_i": 1790, "imp_r": 2659, "imp_i": 1790}
+{"s": "itself is dug out here and there, and this great heavy bed, which is", "exp_r": 1888, "exp_i": 1445, "imp_r": 541, "imp_i": 1445}
+{"s": "all we found in the room, looks as if it had been through the wars.", "exp_r": 1888, "exp_i": 1888, "imp_r": 779, "imp_i": 1888}
+{"s": "But I don\u2019t mind it a bit\u2014only the paper.", "exp_r": 8, "exp_i": 1888, "imp_r": 8, "imp_i": 1888}
+{"s": "There comes John\u2019s sister.", "exp_r": 8, "exp_i": 1790, "imp_r": 8, "imp_i": 1821}
+{"s": "Such a dear girl as she is, and so careful", "exp_r": 1888, "exp_i": 2094, "imp_r": 2094, "imp_i": 2094}
+{"s": "I must not let her find me writing.", "exp_r": 592, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "She is a perfect, and enthusiastic housekeeper, and hopes for no better", "exp_r": 1888, "exp_i": 1623, "imp_r": 1790, "imp_i": 1623}
+{"s": "I verily believe she thinks it is the writing which made me", "exp_r": 1888, "exp_i": 2989, "imp_r": 1888, "imp_i": 2989}
+{"s": "But I can write when she is out, and see her a long way off from these", "exp_r": 1098, "exp_i": 1098, "imp_r": 1098, "imp_i": 1098}
+{"s": "There is one that commands the road, a lovely, shaded, winding road,", "exp_r": 1054, "exp_i": 1790, "imp_r": 1054, "imp_i": 1790}
+{"s": "and one that just looks off over the country.", "exp_r": 2166, "exp_i": 1888, "imp_r": 2166, "imp_i": 1888}
+{"s": "A lovely country, too,", "exp_r": 1888, "exp_i": 2246, "imp_r": 1888, "imp_i": 2246}
+{"s": "full of great elms and velvet meadows.", "exp_r": 1888, "exp_i": 1790, "imp_r": 298, "imp_i": 1821}
+{"s": "This wallpaper has a kind of sub-pattern in a different shade, a", "exp_r": 1888, "exp_i": 1790, "imp_r": 2429, "imp_i": 1888}
+{"s": "particularly irritating one, for you can only see it in certain lights,", "exp_r": 746, "exp_i": 1888, "imp_r": 746, "imp_i": 1888}
+{"s": "and not clearly then.", "exp_r": 1594, "exp_i": 1888, "imp_r": 1594, "imp_i": 1821}
+{"s": "But in the places where it isn\u2019t faded, and where the sun is just so, I", "exp_r": 1888, "exp_i": 1790, "imp_r": 1745, "imp_i": 1790}
+{"s": "can see a strange, provoking, formless sort of figure, that seems to", "exp_r": 1790, "exp_i": 994, "imp_r": 994, "imp_i": 994}
+{"s": "sulk about behind that silly and conspicuous front design.", "exp_r": 1888, "exp_i": 1888, "imp_r": 945, "imp_i": 1888}
+{"s": "There\u2019s sister on the stairs!", "exp_r": 1790, "exp_i": 1790, "imp_r": 8, "imp_i": 1790}
+{"s": "Well, the Fourth of July is over!", "exp_r": 2073, "exp_i": 1991, "imp_r": 1843, "imp_i": 1991}
+{"s": "The people are gone and I am tired", "exp_r": 1110, "exp_i": 2761, "imp_r": 1888, "imp_i": 2761}
+{"s": "John thought it might do me good to see a little company, so we", "exp_r": 189, "exp_i": 129, "imp_r": 189, "imp_i": 129}
+{"s": "just had mother and Nellie and the children down for a week.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1319, "imp_i": 1888}
+{"s": "Of course I didn\u2019t do a thing.", "exp_r": 8, "exp_i": 1888, "imp_r": 2031, "imp_i": 1888}
+{"s": "Jennie sees to everything now.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "But it tired me all the same.", "exp_r": 2989, "exp_i": 1790, "imp_r": 2989, "imp_i": 1888}
+{"s": "John says if I don\u2019t pick up faster he shall send me to Weir Mitchell", "exp_r": 8, "exp_i": 1790, "imp_r": 8, "imp_i": 1790}
+{"s": "in the fall.", "exp_r": 2073, "exp_i": 1888, "imp_r": 508, "imp_i": 1821}
+{"s": "But I don\u2019t want to go there at all.", "exp_r": 8, "exp_i": 1888, "imp_r": 8, "imp_i": 1888}
+{"s": "I had a friend who was in his", "exp_r": 1888, "exp_i": 1870, "imp_r": 1995, "imp_i": 1870}
+{"s": "hands once, and she says he is just like John and my brother, only more", "exp_r": 1552, "exp_i": 1790, "imp_r": 1552, "imp_i": 1790}
+{"s": "Besides, it is such an undertaking to go so far.", "exp_r": 1790, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "I don\u2019t feel as if it was worth while to turn my hand over for", "exp_r": 2614, "exp_i": 2281, "imp_r": 8, "imp_i": 2281}
+{"s": "anything, and I\u2019m getting dreadfully fretful and querulous.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1594, "imp_i": 1888}
+{"s": "I cry at nothing, and cry most of the time.", "exp_r": 2661, "exp_i": 1790, "imp_r": 1888, "imp_i": 1821}
+{"s": "Of course I don\u2019t when John is here, or anybody else, but when I am", "exp_r": 8, "exp_i": 2265, "imp_r": 8, "imp_i": 2265}
+{"s": "And I am alone a good deal just now.", "exp_r": 219, "exp_i": 1790, "imp_r": 2265, "imp_i": 1888}
+{"s": "John is kept in town very often by", "exp_r": 1888, "exp_i": 1405, "imp_r": 2761, "imp_i": 2020}
+{"s": "serious cases, and Jennie is good and lets me alone when I want her to.", "exp_r": 1319, "exp_i": 1888, "imp_r": 1319, "imp_i": 1790}
+{"s": "So I walk a little in the garden or down that lovely lane, sit on the", "exp_r": 2528, "exp_i": 2528, "imp_r": 2528, "imp_i": 2528}
+{"s": "porch under the roses, and lie down up here a good deal.", "exp_r": 1790, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "I\u2019m getting really fond of the room in spite of the wallpaper.", "exp_r": 1790, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "because of the wallpaper.", "exp_r": 1790, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "It dwells in my mind so!", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "I lie here on this great immovable bed\u2014it is nailed down, I believe\u2014and", "exp_r": 1479, "exp_i": 1790, "imp_r": 1888, "imp_i": 1888}
+{"s": "follow that pattern about by the hour.", "exp_r": 1790, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "It is as good as gymnastics, I", "exp_r": 1718, "exp_i": 1888, "imp_r": 1718, "imp_i": 1888}
+{"s": "I start, we\u2019ll say, at the bottom, down in the corner over", "exp_r": 8, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "there where it has not been touched, and I determine for the thousandth", "exp_r": 1797, "exp_i": 884, "imp_r": 1797, "imp_i": 884}
+{"s": "time that I will follow that pointless pattern to some sort of a", "exp_r": 1888, "exp_i": 1790, "imp_r": 998, "imp_i": 1790}
+{"s": "I know a little of the principle of design, and I know this thing was", "exp_r": 540, "exp_i": 1790, "imp_r": 1888, "imp_i": 1723}
+{"s": "not arranged on any laws of radiation, or alternation, or repetition,", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "or symmetry, or anything else that I ever heard of.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1821}
+{"s": "It is repeated, of course, by the breadths, but not otherwise.", "exp_r": 2031, "exp_i": 1888, "imp_r": 2031, "imp_i": 1888}
+{"s": "Looked at in one way each breadth stands alone, the bloated curves and", "exp_r": 1888, "exp_i": 2973, "imp_r": 1888, "imp_i": 2973}
+{"s": "flourishes\u2014a kind of \u201cdebased Romanesque\u201d with delirium tremens\u2014go", "exp_r": 928, "exp_i": 1790, "imp_r": 928, "imp_i": 1790}
+{"s": "waddling up and down in isolated columns of fatuity.", "exp_r": 541, "exp_i": 1888, "imp_r": 541, "imp_i": 1888}
+{"s": "But, on the other hand, they connect diagonally, and the sprawling", "exp_r": 2528, "exp_i": 1790, "imp_r": 2528, "imp_i": 1790}
+{"s": "outlines run off in great slanting waves of optic horror, like a lot of", "exp_r": 1888, "exp_i": 1600, "imp_r": 1600, "imp_i": 1600}
+{"s": "wallowing seaweeds in full chase.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1665, "imp_i": 1888}
+{"s": "The whole thing goes horizontally, too, at least it seems so, and I", "exp_r": 1535, "exp_i": 1790, "imp_r": 1535, "imp_i": 1790}
+{"s": "exhaust myself in trying to distinguish the order of its going in that", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "They have used a horizontal breadth for a frieze, and that adds", "exp_r": 1462, "exp_i": 2128, "imp_r": 1462, "imp_i": 935}
+{"s": "wonderfully to the confusion.", "exp_r": 1594, "exp_i": 1888, "imp_r": 1594, "imp_i": 1888}
+{"s": "There is one end of the room where it is almost intact, and there, when", "exp_r": 2735, "exp_i": 1790, "imp_r": 2735, "imp_i": 1790}
+{"s": "the cross-lights fade and the low sun shines directly upon it, I can", "exp_r": 1888, "exp_i": 1790, "imp_r": 2368, "imp_i": 1790}
+{"s": "almost fancy radiation after all,\u2014the interminable grotesques seem to", "exp_r": 1790, "exp_i": 994, "imp_r": 1790, "imp_i": 994}
+{"s": "form around a common centre and rush off in headlong plunges of equal", "exp_r": 1888, "exp_i": 1094, "imp_r": 2126, "imp_i": 1094}
+{"s": "It makes me tired to follow it.", "exp_r": 2989, "exp_i": 1888, "imp_r": 1404, "imp_i": 1888}
+{"s": "I will take a nap, I guess.", "exp_r": 1888, "exp_i": 1821, "imp_r": 1888, "imp_i": 1821}
+{"s": "I don\u2019t know why I should write this.", "exp_r": 8, "exp_i": 1888, "imp_r": 8, "imp_i": 1888}
+{"s": "I don\u2019t want to.", "exp_r": 8, "exp_i": 1888, "imp_r": 8, "imp_i": 1821}
+{"s": "I don\u2019t feel able.", "exp_r": 8, "exp_i": 1888, "imp_r": 8, "imp_i": 1888}
+{"s": "And I know John would think it absurd.", "exp_r": 1790, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "But I must say what I feel and", "exp_r": 1790, "exp_i": 712, "imp_r": 592, "imp_i": 712}
+{"s": "think in some way\u2014it is such a relief!", "exp_r": 1888, "exp_i": 1790, "imp_r": 1572, "imp_i": 1888}
+{"s": "But the effort is getting to be greater than the relief.", "exp_r": 1790, "exp_i": 1888, "imp_r": 2265, "imp_i": 1888}
+{"s": "Half the time now I am awfully lazy, and lie down ever so much.", "exp_r": 1790, "exp_i": 1821, "imp_r": 1151, "imp_i": 1821}
+{"s": "John says I mustn\u2019t lose my strength, and has me take cod-liver oil and", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "lots of tonics and things, to say nothing of ale and wine and rare", "exp_r": 1888, "exp_i": 1790, "imp_r": 766, "imp_i": 1790}
+{"s": "He loves me very dearly, and hates to have me sick.", "exp_r": 2506, "exp_i": 1790, "imp_r": 2506, "imp_i": 1790}
+{"s": "to have a real earnest reasonable talk with him the other day, and tell", "exp_r": 2073, "exp_i": 1695, "imp_r": 2073, "imp_i": 1695}
+{"s": "him how I wish he would let me go and make a visit to Cousin Henry and", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "But he said I wasn\u2019t able to go, nor able to stand it after I got", "exp_r": 1790, "exp_i": 1588, "imp_r": 1790, "imp_i": 1588}
+{"s": "there; and I did not make out a very good case for myself, for I was", "exp_r": 1888, "exp_i": 2265, "imp_r": 2304, "imp_i": 2265}
+{"s": "crying before I had finished.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "It is getting to be a great effort for me to think straight.", "exp_r": 1888, "exp_i": 1888, "imp_r": 2005, "imp_i": 1888}
+{"s": "nervous weakness, I suppose.", "exp_r": 1790, "exp_i": 1821, "imp_r": 1888, "imp_i": 1821}
+{"s": "And dear John gathered me up in his arms, and just carried me upstairs", "exp_r": 1113, "exp_i": 2498, "imp_r": 1113, "imp_i": 2498}
+{"s": "and laid me on the bed, and sat by me and read to me till it tired my", "exp_r": 2528, "exp_i": 2989, "imp_r": 2528, "imp_i": 2989}
+{"s": "He said I was his darling and his comfort and all he had, and that I", "exp_r": 2761, "exp_i": 1790, "imp_r": 2761, "imp_i": 1790}
+{"s": "must take care of myself for his sake, and keep well.", "exp_r": 1888, "exp_i": 1888, "imp_r": 592, "imp_i": 1821}
+{"s": "He says no one but myself can help me out of it, that I must use my", "exp_r": 1134, "exp_i": 1206, "imp_r": 1066, "imp_i": 1206}
+{"s": "will and self-control and not let any silly fancies run away with me.", "exp_r": 1888, "exp_i": 1888, "imp_r": 2874, "imp_i": 1888}
+{"s": "There\u2019s one comfort, the baby is well and happy, and does not have to", "exp_r": 1790, "exp_i": 592, "imp_r": 8, "imp_i": 592}
+{"s": "occupy this nursery with the horrid wallpaper.", "exp_r": 1790, "exp_i": 1888, "imp_r": 1790, "imp_i": 1888}
+{"s": "If we had not used it that blessed child would have!", "exp_r": 1678, "exp_i": 1790, "imp_r": 2808, "imp_i": 1790}
+{"s": "What a fortunate", "exp_r": 1790, "exp_i": 2073, "imp_r": 1888, "imp_i": 2094}
+{"s": "Why, I wouldn\u2019t have a child of mine, an impressionable little", "exp_r": 8, "exp_i": 1790, "imp_r": 8, "imp_i": 1790}
+{"s": "thing, live in such a room for worlds.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1790}
+{"s": "I never thought of it before, but it is lucky that John kept me here", "exp_r": 2954, "exp_i": 2440, "imp_r": 1888, "imp_i": 2440}
+{"s": "I can stand it so much easier than a baby, you see.", "exp_r": 2707, "exp_i": 1790, "imp_r": 2707, "imp_i": 1790}
+{"s": "Of course I never mention it to them any more,\u2014I am too wise,\u2014but I", "exp_r": 1523, "exp_i": 1790, "imp_r": 2031, "imp_i": 1790}
+{"s": "keep watch of it all the same.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1581, "imp_i": 1888}
+{"s": "There are things in that paper that nobody knows but me, or ever will.", "exp_r": 520, "exp_i": 1790, "imp_r": 1098, "imp_i": 1821}
+{"s": "Behind that outside pattern the dim shapes get clearer every day.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "It is always the same shape, only very numerous.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "And it is like a woman stooping down and creeping about behind that", "exp_r": 1790, "exp_i": 2368, "imp_r": 912, "imp_i": 2368}
+{"s": "I don\u2019t like it a bit.", "exp_r": 8, "exp_i": 1888, "imp_r": 8, "imp_i": 1888}
+{"s": "I wonder\u2014I begin to think\u2014I wish John", "exp_r": 1066, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "would take me away from here!", "exp_r": 2019, "exp_i": 1888, "imp_r": 2019, "imp_i": 1790}
+{"s": "It is so hard to talk with John about my case, because he is so wise,", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "and because he loves me so.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "But I tried it last night.", "exp_r": 96, "exp_i": 1888, "imp_r": 409, "imp_i": 1888}
+{"s": "It was moonlight.", "exp_r": 2331, "exp_i": 1888, "imp_r": 1888, "imp_i": 38}
+{"s": "The moon shines in all around, just as the sun does.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1821}
+{"s": "I hate to see it sometimes, it creeps so slowly, and always comes in by", "exp_r": 592, "exp_i": 801, "imp_r": 1888, "imp_i": 801}
+{"s": "one window or another.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "John was asleep and I hated to waken him, so I kept still and watched", "exp_r": 1888, "exp_i": 1147, "imp_r": 2874, "imp_i": 1147}
+{"s": "the moonlight on that undulating wallpaper till I felt creepy.", "exp_r": 1888, "exp_i": 1888, "imp_r": 2073, "imp_i": 1888}
+{"s": "The faint figure behind seemed to shake the pattern, just as if she", "exp_r": 994, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "wanted to get out.", "exp_r": 1888, "exp_i": 1888, "imp_r": 692, "imp_i": 1888}
+{"s": "I got up softly and went to feel and see if the paper did move, and", "exp_r": 1182, "exp_i": 506, "imp_r": 1888, "imp_i": 506}
+{"s": "when I came back John was awake.", "exp_r": 1790, "exp_i": 1821, "imp_r": 1821, "imp_i": 1821}
+{"s": "\u201cWhat is it, little girl?\u201d he said.", "exp_r": 1790, "exp_i": 1821, "imp_r": 688, "imp_i": 1821}
+{"s": "\u201cDon\u2019t go walking about like", "exp_r": 1790, "exp_i": 84, "imp_r": 2145, "imp_i": 84}
+{"s": "that\u2014you\u2019ll get cold.\u201d", "exp_r": 8, "exp_i": 1790, "imp_r": 8, "imp_i": 1790}
+{"s": "I thought it was a good time to talk, so I told him that I really was", "exp_r": 1100, "exp_i": 1790, "imp_r": 1100, "imp_i": 1790}
+{"s": "not gaining here, and that I wished he would take me away.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1131, "imp_i": 1888}
+{"s": "\u201cWhy darling!\u201d said he, \u201cour lease will be up in three weeks, and I", "exp_r": 1790, "exp_i": 1790, "imp_r": 688, "imp_i": 1790}
+{"s": "can\u2019t see how to leave before.", "exp_r": 1888, "exp_i": 1888, "imp_r": 8, "imp_i": 1821}
+{"s": "\u201cThe repairs are not done at home, and I cannot possibly leave town", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "Of course if you were in any danger I could and would, but", "exp_r": 2659, "exp_i": 765, "imp_r": 2659, "imp_i": 765}
+{"s": "you really are better, dear, whether you can see it or not.", "exp_r": 882, "exp_i": 1888, "imp_r": 882, "imp_i": 1888}
+{"s": "I am a", "exp_r": 1888, "exp_i": 2761, "imp_r": 1888, "imp_i": 2761}
+{"s": "doctor, dear, and I know.", "exp_r": 1888, "exp_i": 1821, "imp_r": 1888, "imp_i": 1821}
+{"s": "You are gaining flesh and color, your", "exp_r": 1888, "exp_i": 1888, "imp_r": 2659, "imp_i": 1888}
+{"s": "appetite is better.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1235, "imp_i": 1888}
+{"s": "I feel really much easier about you.\u201d", "exp_r": 8, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "\u201cI don\u2019t weigh a bit more,\u201d said I, \u201cnor as much; and my appetite may", "exp_r": 1790, "exp_i": 1790, "imp_r": 688, "imp_i": 1790}
+{"s": "be better in the evening, when you are here, but it is worse in the", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "morning when you are away.\u201d", "exp_r": 1888, "exp_i": 1790, "imp_r": 8, "imp_i": 1790}
+{"s": "\u201cBless her little heart!\u201d said he with a big hug; \u201cshe shall be as sick", "exp_r": 1790, "exp_i": 1718, "imp_r": 688, "imp_i": 1718}
+{"s": "as she pleases!", "exp_r": 1888, "exp_i": 1790, "imp_r": 2256, "imp_i": 1888}
+{"s": "But now let\u2019s improve the shining hours by going to", "exp_r": 8, "exp_i": 1783, "imp_r": 8, "imp_i": 1783}
+{"s": "sleep, and talk about it in the morning!\u201d", "exp_r": 1888, "exp_i": 1790, "imp_r": 8, "imp_i": 1790}
+{"s": "\u201cAnd you won\u2019t go away?\u201d I asked gloomily.", "exp_r": 1790, "exp_i": 1821, "imp_r": 688, "imp_i": 1821}
+{"s": "\u201cWhy, how can I, dear?", "exp_r": 1790, "exp_i": 1790, "imp_r": 2659, "imp_i": 1790}
+{"s": "It is only three weeks more and then we will", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "take a nice little trip of a few days while Jennie is getting the house", "exp_r": 1504, "exp_i": 2073, "imp_r": 287, "imp_i": 2073}
+{"s": "Really, dear, you are better!\u201d", "exp_r": 1888, "exp_i": 1790, "imp_r": 8, "imp_i": 1790}
+{"s": "\u201cBetter in body perhaps\u201d\u2014I began, and stopped short, for he sat up", "exp_r": 1888, "exp_i": 1790, "imp_r": 688, "imp_i": 1790}
+{"s": "straight and looked at me with such a stern, reproachful look that I", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1291}
+{"s": "could not say another word.", "exp_r": 1888, "exp_i": 1888, "imp_r": 974, "imp_i": 1888}
+{"s": "\u201cMy darling,\u201d said he, \u201cI beg of you, for my sake and for our child\u2019s", "exp_r": 1888, "exp_i": 1790, "imp_r": 688, "imp_i": 1790}
+{"s": "sake, as well as for your own, that you will never for one instant let", "exp_r": 870, "exp_i": 1970, "imp_r": 147, "imp_i": 1970}
+{"s": "that idea enter your mind!", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "There is nothing so dangerous, so", "exp_r": 1790, "exp_i": 917, "imp_r": 192, "imp_i": 917}
+{"s": "fascinating, to a temperament like yours.", "exp_r": 1790, "exp_i": 1888, "imp_r": 690, "imp_i": 1790}
+{"s": "It is a false and foolish", "exp_r": 1888, "exp_i": 2659, "imp_r": 1888, "imp_i": 2659}
+{"s": "Can you not trust me as a physician when I tell you so?\u201d", "exp_r": 1934, "exp_i": 1790, "imp_r": 8, "imp_i": 1790}
+{"s": "So of course I said no more on that score, and we went to sleep before", "exp_r": 2469, "exp_i": 1790, "imp_r": 2469, "imp_i": 1790}
+{"s": "He thought I was asleep first, but I wasn\u2019t,\u2014I lay there for", "exp_r": 1790, "exp_i": 2281, "imp_r": 1790, "imp_i": 2281}
+{"s": "hours trying to decide whether that front pattern and the back pattern", "exp_r": 48, "exp_i": 2496, "imp_r": 48, "imp_i": 2496}
+{"s": "really did move together or separately.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1645, "imp_i": 1888}
+{"s": "On a pattern like this, by daylight, there is a lack of sequence, a", "exp_r": 1515, "exp_i": 690, "imp_r": 2528, "imp_i": 690}
+{"s": "defiance of law, that is a constant irritant to a normal mind.", "exp_r": 1888, "exp_i": 1790, "imp_r": 8, "imp_i": 1790}
+{"s": "The color is hideous enough, and unreliable enough, and infuriating", "exp_r": 1888, "exp_i": 1676, "imp_r": 1888, "imp_i": 1676}
+{"s": "enough, but the pattern is torturing.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1790, "imp_i": 1888}
+{"s": "You think you have mastered it, but just as you get well under way in", "exp_r": 1678, "exp_i": 1678, "imp_r": 1206, "imp_i": 1678}
+{"s": "following, it turns a back somersault and there you are.", "exp_r": 1767, "exp_i": 1888, "imp_r": 1767, "imp_i": 1888}
+{"s": "It slaps you", "exp_r": 1888, "exp_i": 2643, "imp_r": 1888, "imp_i": 2643}
+{"s": "in the face, knocks you down, and tramples upon you.", "exp_r": 2073, "exp_i": 1888, "imp_r": 508, "imp_i": 1821}
+{"s": "It is like a bad", "exp_r": 1888, "exp_i": 143, "imp_r": 1888, "imp_i": 143}
+{"s": "The outside pattern is a florid arabesque, reminding one of a fungus.", "exp_r": 2073, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "If you can imagine a toadstool in joints, an interminable string of", "exp_r": 1790, "exp_i": 1715, "imp_r": 1790, "imp_i": 1715}
+{"s": "toadstools, budding and sprouting in endless convolutions,\u2014why, that is", "exp_r": 1888, "exp_i": 3052, "imp_r": 3052, "imp_i": 3052}
+{"s": "something like it.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1821, "imp_i": 1821}
+{"s": "That is, sometimes!", "exp_r": 1888, "exp_i": 1790, "imp_r": 3052, "imp_i": 1790}
+{"s": "There is one marked peculiarity about this paper, a thing nobody seems", "exp_r": 3022, "exp_i": 2133, "imp_r": 3022, "imp_i": 2572}
+{"s": "to notice but myself, and that is that it changes as the light changes.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1790, "imp_i": 1888}
+{"s": "When the sun shoots in through the east window\u2014I always watch for that", "exp_r": 1790, "exp_i": 2469, "imp_r": 1790, "imp_i": 2469}
+{"s": "first long, straight ray\u2014it changes so quickly that I never can quite", "exp_r": 1888, "exp_i": 550, "imp_r": 550, "imp_i": 550}
+{"s": "That is why I watch it always.", "exp_r": 1888, "exp_i": 1888, "imp_r": 3052, "imp_i": 1888}
+{"s": "By moonlight\u2014the moon shines in all night when there is a moon\u2014I", "exp_r": 1888, "exp_i": 1790, "imp_r": 1959, "imp_i": 1790}
+{"s": "wouldn\u2019t know it was the same paper.", "exp_r": 1888, "exp_i": 1888, "imp_r": 8, "imp_i": 1888}
+{"s": "At night in any kind of light, in twilight, candlelight, lamplight, and", "exp_r": 1790, "exp_i": 1790, "imp_r": 1888, "imp_i": 99}
+{"s": "worst of all by moonlight, it becomes bars!", "exp_r": 1888, "exp_i": 1888, "imp_r": 1845, "imp_i": 1888}
+{"s": "The outside pattern I mean,", "exp_r": 2073, "exp_i": 154, "imp_r": 1888, "imp_i": 154}
+{"s": "and the woman behind it is as plain as can be.", "exp_r": 1888, "exp_i": 1888, "imp_r": 2609, "imp_i": 1821}
+{"s": "I didn\u2019t realize for a long time what the thing was that showed", "exp_r": 1797, "exp_i": 1445, "imp_r": 1797, "imp_i": 1445}
+{"s": "behind,\u2014that dim sub-pattern,\u2014but now I am quite sure it is a woman.", "exp_r": 1888, "exp_i": 1821, "imp_r": 1821, "imp_i": 1821}
+{"s": "By daylight she is subdued, quiet.", "exp_r": 1888, "exp_i": 1821, "imp_r": 1821, "imp_i": 1821}
+{"s": "I fancy it is the pattern that keeps", "exp_r": 1888, "exp_i": 1763, "imp_r": 1888, "imp_i": 1763}
+{"s": "her so still.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1821}
+{"s": "It is so puzzling.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "It keeps me quiet by the hour.", "exp_r": 2989, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "I lie down ever so much now.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1821}
+{"s": "John says it is good for me, and to sleep", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "all I can.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1790, "imp_i": 1888}
+{"s": "Indeed, he started the habit by making me lie down for an hour after", "exp_r": 1790, "exp_i": 323, "imp_r": 1888, "imp_i": 1722}
+{"s": "It is a very bad habit, I am convinced, for, you see, I don\u2019t sleep.", "exp_r": 8, "exp_i": 1821, "imp_r": 8, "imp_i": 1821}
+{"s": "And that cultivates deceit, for I don\u2019t tell them I\u2019m awake,\u2014oh, no!", "exp_r": 8, "exp_i": 882, "imp_r": 8, "imp_i": 882}
+{"s": "The fact is, I am getting a little afraid of John.", "exp_r": 189, "exp_i": 1821, "imp_r": 189, "imp_i": 1821}
+{"s": "He seems very queer sometimes, and even Jennie has an inexplicable", "exp_r": 1319, "exp_i": 1790, "imp_r": 1319, "imp_i": 1790}
+{"s": "It strikes me occasionally, just as a scientific hypothesis, that", "exp_r": 828, "exp_i": 735, "imp_r": 1888, "imp_i": 735}
+{"s": "perhaps it is the paper!", "exp_r": 1790, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "I have watched John when he did not know I was looking, and come into", "exp_r": 1737, "exp_i": 1737, "imp_r": 1888, "imp_i": 1737}
+{"s": "the room suddenly on the most innocent excuses, and I\u2019ve caught him", "exp_r": 2528, "exp_i": 2807, "imp_r": 2528, "imp_i": 1777}
+{"s": "several times looking at the paper!", "exp_r": 1790, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "And Jennie too.", "exp_r": 1319, "exp_i": 1888, "imp_r": 1319, "imp_i": 1888}
+{"s": "I caught Jennie", "exp_r": 1319, "exp_i": 1319, "imp_r": 1888, "imp_i": 1319}
+{"s": "with her hand on it once.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1319, "imp_i": 1888}
+{"s": "She didn\u2019t know I was in the room, and when I asked her in a quiet, a", "exp_r": 1131, "exp_i": 1790, "imp_r": 8, "imp_i": 1790}
+{"s": "very quiet voice, with the most restrained manner possible, what she", "exp_r": 1888, "exp_i": 1790, "imp_r": 2661, "imp_i": 1790}
+{"s": "was doing with the paper she turned around as if she had been caught", "exp_r": 462, "exp_i": 421, "imp_r": 935, "imp_i": 421}
+{"s": "stealing, and looked quite angry\u2014asked me why I should frighten her so!", "exp_r": 1523, "exp_i": 1790, "imp_r": 1523, "imp_i": 1790}
+{"s": "Then she said that the paper stained everything it touched, that she", "exp_r": 1790, "exp_i": 1100, "imp_r": 1790, "imp_i": 1100}
+{"s": "had found yellow smooches on all my clothes and John\u2019s, and she wished", "exp_r": 107, "exp_i": 935, "imp_r": 107, "imp_i": 43}
+{"s": "we would be more careful!", "exp_r": 1888, "exp_i": 1888, "imp_r": 2265, "imp_i": 1888}
+{"s": "Did not that sound innocent?", "exp_r": 674, "exp_i": 1888, "imp_r": 2869, "imp_i": 1888}
+{"s": "But I know she was studying that pattern,", "exp_r": 1790, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "and I am determined that nobody shall find it out but myself!", "exp_r": 746, "exp_i": 1790, "imp_r": 2265, "imp_i": 1790}
+{"s": "Life is very much more exciting now than it used to be.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1187, "imp_i": 1888}
+{"s": "You see I have", "exp_r": 1888, "exp_i": 1991, "imp_r": 661, "imp_i": 1991}
+{"s": "something more to expect, to look forward to, to watch.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1790, "imp_i": 1888}
+{"s": "I really do eat", "exp_r": 2256, "exp_i": 1888, "imp_r": 1888, "imp_i": 2003}
+{"s": "better, and am more quiet than I was.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "John is so pleased to see me improve!", "exp_r": 43, "exp_i": 1790, "imp_r": 43, "imp_i": 1790}
+{"s": "He laughed a little the other", "exp_r": 2073, "exp_i": 2073, "imp_r": 2073, "imp_i": 2073}
+{"s": "day, and said I seemed to be flourishing in spite of my wallpaper.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "I turned it off with a laugh.", "exp_r": 1767, "exp_i": 1888, "imp_r": 1888, "imp_i": 1821}
+{"s": "I had no intention of telling him it was", "exp_r": 2674, "exp_i": 2100, "imp_r": 1888, "imp_i": 2100}
+{"s": "because of the wallpaper\u2014he would make fun of me.", "exp_r": 1790, "exp_i": 1888, "imp_r": 1147, "imp_i": 1888}
+{"s": "He might even want to", "exp_r": 1888, "exp_i": 849, "imp_r": 1888, "imp_i": 592}
+{"s": "take me away.", "exp_r": 1790, "exp_i": 1888, "imp_r": 2312, "imp_i": 1821}
+{"s": "I don\u2019t want to leave now until I have found it out.", "exp_r": 8, "exp_i": 1888, "imp_r": 8, "imp_i": 1888}
+{"s": "There is a week", "exp_r": 2154, "exp_i": 2735, "imp_r": 2154, "imp_i": 2735}
+{"s": "more, and I think that will be enough.", "exp_r": 1888, "exp_i": 1888, "imp_r": 230, "imp_i": 1888}
+{"s": "I\u2019m feeling ever so much better!", "exp_r": 1790, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "I don\u2019t sleep much at night, for it is", "exp_r": 550, "exp_i": 2838, "imp_r": 550, "imp_i": 2838}
+{"s": "so interesting to watch developments; but I sleep a good deal in the", "exp_r": 1888, "exp_i": 1790, "imp_r": 1404, "imp_i": 1790}
+{"s": "In the daytime it is tiresome and perplexing.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1821}
+{"s": "There are always new shoots on the fungus, and new shades of yellow all", "exp_r": 1790, "exp_i": 1790, "imp_r": 1098, "imp_i": 1790}
+{"s": "I cannot keep count of them, though I have tried", "exp_r": 1425, "exp_i": 1742, "imp_r": 1888, "imp_i": 1820}
+{"s": "It is the strangest yellow, that wallpaper!", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "It makes me think of all", "exp_r": 2989, "exp_i": 298, "imp_r": 1888, "imp_i": 298}
+{"s": "the yellow things I ever saw\u2014not beautiful ones like buttercups, but", "exp_r": 1710, "exp_i": 1790, "imp_r": 1710, "imp_i": 1790}
+{"s": "old foul, bad yellow things.", "exp_r": 1888, "exp_i": 1888, "imp_r": 2659, "imp_i": 1821}
+{"s": "But there is something else about that paper\u2014the smell!", "exp_r": 1790, "exp_i": 1888, "imp_r": 2469, "imp_i": 1888}
+{"s": "I noticed it", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "the moment we came into the room, but with so much air and sun it was", "exp_r": 1678, "exp_i": 1790, "imp_r": 2073, "imp_i": 1790}
+{"s": "Now we have had a week of fog and rain, and whether the", "exp_r": 2659, "exp_i": 1790, "imp_r": 2659, "imp_i": 1790}
+{"s": "windows are open or not, the smell is here.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "It creeps all over the house.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "I find it hovering in the dining-room, skulking in the parlor, hiding", "exp_r": 1888, "exp_i": 103, "imp_r": 1888, "imp_i": 2900}
+{"s": "in the hall, lying in wait for me on the stairs.", "exp_r": 1888, "exp_i": 1888, "imp_r": 508, "imp_i": 1821}
+{"s": "It gets into my hair.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "Even when I go to ride, if I turn my head suddenly and surprise", "exp_r": 462, "exp_i": 1863, "imp_r": 935, "imp_i": 1863}
+{"s": "it\u2014there is that smell!", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1888}
+{"s": "Such a peculiar odor, too!", "exp_r": 1888, "exp_i": 2720, "imp_r": 2793, "imp_i": 2720}
+{"s": "I have spent hours in trying to analyze it,", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "to find what it smelled like.", "exp_r": 2572, "exp_i": 1888, "imp_r": 2572, "imp_i": 1888}
+{"s": "It is not bad\u2014at first, and very gentle, but quite the subtlest, most", "exp_r": 1645, "exp_i": 2659, "imp_r": 1645, "imp_i": 2659}
+{"s": "enduring odor I ever met.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1790, "imp_i": 1888}
+{"s": "In this damp weather it is awful.", "exp_r": 508, "exp_i": 1888, "imp_r": 1888, "imp_i": 1821}
+{"s": "I wake up in the night and find it", "exp_r": 1737, "exp_i": 1790, "imp_r": 1737, "imp_i": 1103}
+{"s": "hanging over me.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "It used to disturb me at first.", "exp_r": 2373, "exp_i": 1888, "imp_r": 1187, "imp_i": 1888}
+{"s": "I thought seriously of burning the", "exp_r": 2954, "exp_i": 1034, "imp_r": 1888, "imp_i": 1034}
+{"s": "house\u2014to reach the smell.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1821}
+{"s": "But now I am used to it.", "exp_r": 354, "exp_i": 1888, "imp_r": 1794, "imp_i": 1888}
+{"s": "The only thing I can think of that it is like", "exp_r": 2432, "exp_i": 84, "imp_r": 2432, "imp_i": 84}
+{"s": "is the color of the paper!", "exp_r": 2073, "exp_i": 1790, "imp_r": 2073, "imp_i": 1790}
+{"s": "A yellow smell.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1821}
+{"s": "There is a very funny mark on this wall, low down, near the mopboard.", "exp_r": 2073, "exp_i": 1821, "imp_r": 2154, "imp_i": 1821}
+{"s": "streak that runs round the room.", "exp_r": 792, "exp_i": 1888, "imp_r": 1790, "imp_i": 1888}
+{"s": "It goes behind every piece of", "exp_r": 2337, "exp_i": 2337, "imp_r": 1888, "imp_i": 2337}
+{"s": "furniture, except the bed, a long, straight, even smooch, as if it had", "exp_r": 1814, "exp_i": 1790, "imp_r": 1814, "imp_i": 1790}
+{"s": "been rubbed over and over.", "exp_r": 1888, "exp_i": 1888, "imp_r": 541, "imp_i": 1888}
+{"s": "I wonder how it was done and who did it, and what they did it for.", "exp_r": 2572, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "Round and round and round\u2014round and round and round\u2014it makes me dizzy!", "exp_r": 1888, "exp_i": 1790, "imp_r": 2659, "imp_i": 1790}
+{"s": "I really have discovered something at last.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1645, "imp_i": 1888}
+{"s": "Through watching so much at night, when it changes so, I have finally", "exp_r": 1678, "exp_i": 1790, "imp_r": 1888, "imp_i": 1594}
+{"s": "The front pattern does move\u2014and no wonder!", "exp_r": 1150, "exp_i": 1790, "imp_r": 1150, "imp_i": 1790}
+{"s": "The woman behind shakes it!", "exp_r": 2073, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "Sometimes I think there are a great many women behind, and sometimes", "exp_r": 1790, "exp_i": 1790, "imp_r": 1098, "imp_i": 1063}
+{"s": "only one, and she crawls around fast, and her crawling shakes it all", "exp_r": 1888, "exp_i": 1959, "imp_r": 1319, "imp_i": 1959}
+{"s": "Then in the very bright spots she keeps still, and in the very shady", "exp_r": 1790, "exp_i": 1790, "imp_r": 2073, "imp_i": 1790}
+{"s": "spots she just takes hold of the bars and shakes them hard.", "exp_r": 2026, "exp_i": 1888, "imp_r": 2026, "imp_i": 1888}
+{"s": "And she is all the time trying to climb through.", "exp_r": 1581, "exp_i": 1888, "imp_r": 1581, "imp_i": 1888}
+{"s": "But nobody could climb", "exp_r": 1871, "exp_i": 1871, "imp_r": 1871, "imp_i": 1871}
+{"s": "through that pattern\u2014it strangles so; I think that is why it has so", "exp_r": 1888, "exp_i": 2154, "imp_r": 3052, "imp_i": 2154}
+{"s": "They get through, and then the pattern strangles them off and turns", "exp_r": 1888, "exp_i": 1473, "imp_r": 1588, "imp_i": 1473}
+{"s": "them upside-down, and makes their eyes white!", "exp_r": 1888, "exp_i": 1888, "imp_r": 1790, "imp_i": 1888}
+{"s": "If those heads were covered or taken off it would not be half so bad.", "exp_r": 550, "exp_i": 1888, "imp_r": 1678, "imp_i": 1888}
+{"s": "I think that woman gets out in the daytime!", "exp_r": 1588, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "And I\u2019ll tell you why\u2014privately\u2014I\u2019ve seen her!", "exp_r": 1594, "exp_i": 1790, "imp_r": 1594, "imp_i": 1790}
+{"s": "I can see her out of every one of my windows!", "exp_r": 1870, "exp_i": 1888, "imp_r": 1870, "imp_i": 1888}
+{"s": "It is the same woman, I know, for she is always creeping, and most", "exp_r": 2661, "exp_i": 2661, "imp_r": 2661, "imp_i": 2661}
+{"s": "women do not creep by daylight.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "I see her on that long shaded lane, creeping up and down.", "exp_r": 541, "exp_i": 1888, "imp_r": 541, "imp_i": 1888}
+{"s": "I see her in", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1113}
+{"s": "those dark grape arbors, creeping all around the garden.", "exp_r": 1888, "exp_i": 1790, "imp_r": 2073, "imp_i": 1888}
+{"s": "I see her on that long road under the trees, creeping along, and when a", "exp_r": 2469, "exp_i": 1678, "imp_r": 1888, "imp_i": 1790}
+{"s": "carriage comes she hides under the blackberry vines.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "I don\u2019t blame her a bit.", "exp_r": 8, "exp_i": 1888, "imp_r": 8, "imp_i": 1821}
+{"s": "It must be very humiliating to be caught", "exp_r": 1404, "exp_i": 421, "imp_r": 1404, "imp_i": 421}
+{"s": "creeping by daylight!", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "I always lock the door when I creep by daylight.", "exp_r": 2256, "exp_i": 1888, "imp_r": 1888, "imp_i": 1821}
+{"s": "I can\u2019t do it at", "exp_r": 8, "exp_i": 2697, "imp_r": 8, "imp_i": 2697}
+{"s": "night, for I know John would suspect something at once.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1790, "imp_i": 1888}
+{"s": "And John is so queer now, that I don\u2019t want to irritate him.", "exp_r": 8, "exp_i": 1888, "imp_r": 8, "imp_i": 1888}
+{"s": "I wish he", "exp_r": 2808, "exp_i": 2808, "imp_r": 1888, "imp_i": 1777}
+{"s": "would take another room!", "exp_r": 1888, "exp_i": 1888, "imp_r": 2590, "imp_i": 1888}
+{"s": "Besides, I don\u2019t want anybody to get that", "exp_r": 1790, "exp_i": 2469, "imp_r": 8, "imp_i": 2469}
+{"s": "woman out at night but myself.", "exp_r": 1888, "exp_i": 1888, "imp_r": 2201, "imp_i": 1790}
+{"s": "I often wonder if I could see her out of all the windows at once.", "exp_r": 1870, "exp_i": 1790, "imp_r": 1870, "imp_i": 1888}
+{"s": "But, turn as fast as I can, I can only see out of one at one time.", "exp_r": 2864, "exp_i": 1790, "imp_r": 2864, "imp_i": 1888}
+{"s": "And though I always see her she may be able to creep faster than I can", "exp_r": 1226, "exp_i": 2432, "imp_r": 1226, "imp_i": 2432}
+{"s": "I have watched her sometimes away off in the open country, creeping as", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 84}
+{"s": "fast as a cloud shadow in a high wind.", "exp_r": 1888, "exp_i": 1790, "imp_r": 2864, "imp_i": 1821}
+{"s": "If only that top pattern could be gotten off from the under one!", "exp_r": 2073, "exp_i": 1790, "imp_r": 2052, "imp_i": 1888}
+{"s": "to try it, little by little.", "exp_r": 541, "exp_i": 1888, "imp_r": 541, "imp_i": 1888}
+{"s": "I have found out another funny thing, but I shan\u2019t tell it this time!", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "It does not do to trust people too much.", "exp_r": 1523, "exp_i": 1888, "imp_r": 1523, "imp_i": 1888}
+{"s": "There are only two more days to get this paper off, and I believe John", "exp_r": 2154, "exp_i": 1790, "imp_r": 1098, "imp_i": 1790}
+{"s": "is beginning to notice.", "exp_r": 1888, "exp_i": 1888, "imp_r": 2005, "imp_i": 1821}
+{"s": "I don\u2019t like the look in his eyes.", "exp_r": 8, "exp_i": 1888, "imp_r": 8, "imp_i": 1821}
+{"s": "And I heard him ask Jennie a lot of professional questions about me.", "exp_r": 1319, "exp_i": 1790, "imp_r": 1319, "imp_i": 1888}
+{"s": "She had a very good report to give.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1790, "imp_i": 1821}
+{"s": "She said I slept a good deal in the daytime.", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1821}
+{"s": "John knows I don\u2019t sleep very well at night, for all I\u2019m so quiet!", "exp_r": 8, "exp_i": 1790, "imp_r": 8, "imp_i": 1790}
+{"s": "He asked me all sorts of questions, too, and pretended to be very", "exp_r": 1523, "exp_i": 1790, "imp_r": 1888, "imp_i": 1523}
+{"s": "loving and kind.", "exp_r": 1888, "exp_i": 1888, "imp_r": 638, "imp_i": 1821}
+{"s": "As if I couldn\u2019t see through him!", "exp_r": 8, "exp_i": 1888, "imp_r": 664, "imp_i": 1888}
+{"s": "Still, I don\u2019t wonder he acts so, sleeping under this paper for three", "exp_r": 8, "exp_i": 1797, "imp_r": 8, "imp_i": 1797}
+{"s": "It only interests me, but I feel sure John and Jennie are secretly", "exp_r": 1319, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "affected by it.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "This is the last day, but it is enough.", "exp_r": 2073, "exp_i": 1888, "imp_r": 2073, "imp_i": 1888}
+{"s": "John is to stay in town", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "over night, and won\u2019t be out until this evening.", "exp_r": 1888, "exp_i": 1888, "imp_r": 8, "imp_i": 1888}
+{"s": "Jennie wanted to sleep with me\u2014the sly thing!", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "but I told her I should", "exp_r": 1100, "exp_i": 1790, "imp_r": 1100, "imp_i": 2397}
+{"s": "undoubtedly rest better for a night all alone.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1790, "imp_i": 1888}
+{"s": "That was clever, for really I wasn\u2019t alone a bit!", "exp_r": 2301, "exp_i": 1790, "imp_r": 2301, "imp_i": 1790}
+{"s": "As soon as it was", "exp_r": 1790, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "moonlight, and that poor thing began to crawl and shake the pattern, I", "exp_r": 1888, "exp_i": 1790, "imp_r": 1681, "imp_i": 1888}
+{"s": "got up and ran to help her.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1790, "imp_i": 1888}
+{"s": "I pulled and she shook, I shook and she pulled, and before morning we", "exp_r": 1790, "exp_i": 202, "imp_r": 1888, "imp_i": 202}
+{"s": "had peeled off yards of that paper.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "A strip about as high as my head and half around the room.", "exp_r": 1888, "exp_i": 1888, "imp_r": 2451, "imp_i": 1821}
+{"s": "And then when the sun came and that awful pattern began to laugh at me", "exp_r": 1790, "exp_i": 1790, "imp_r": 1681, "imp_i": 1790}
+{"s": "I declared I would finish it to-day!", "exp_r": 434, "exp_i": 1790, "imp_r": 1100, "imp_i": 1790}
+{"s": "We go away to-morrow, and they are moving all my furniture down again", "exp_r": 434, "exp_i": 2720, "imp_r": 434, "imp_i": 2720}
+{"s": "to leave things as they were before.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1790, "imp_i": 1888}
+{"s": "Jennie looked at the wall in amazement, but I told her merrily that I", "exp_r": 1100, "exp_i": 1100, "imp_r": 1100, "imp_i": 1100}
+{"s": "did it out of pure spite at the vicious thing.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1790, "imp_i": 1888}
+{"s": "She laughed and said she wouldn\u2019t mind doing it herself, but I must not", "exp_r": 8, "exp_i": 1790, "imp_r": 1100, "imp_i": 1790}
+{"s": "How she betrayed herself that time!", "exp_r": 1790, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "But I am here, and no person touches this paper but me\u2014not alive!", "exp_r": 296, "exp_i": 1790, "imp_r": 1066, "imp_i": 1790}
+{"s": "She tried to get me out of the room\u2014it was too patent!", "exp_r": 1490, "exp_i": 882, "imp_r": 1523, "imp_i": 882}
+{"s": "But I said it", "exp_r": 1790, "exp_i": 1306, "imp_r": 1888, "imp_i": 1306}
+{"s": "was so quiet and empty and clean now that I believed I would lie down", "exp_r": 1131, "exp_i": 526, "imp_r": 1131, "imp_i": 526}
+{"s": "again and sleep all I could; and not to wake me even for dinner\u2014I would", "exp_r": 1888, "exp_i": 1790, "imp_r": 2432, "imp_i": 1790}
+{"s": "call when I woke.", "exp_r": 1888, "exp_i": 1888, "imp_r": 797, "imp_i": 1821}
+{"s": "So now she is gone, and the servants are gone, and the things are gone,", "exp_r": 1504, "exp_i": 1790, "imp_r": 1504, "imp_i": 1790}
+{"s": "and there is nothing left but that great bedstead nailed down, with the", "exp_r": 1613, "exp_i": 1790, "imp_r": 1613, "imp_i": 1790}
+{"s": "canvas mattress we found on it.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1821}
+{"s": "We shall sleep downstairs to-night, and take the boat home to-morrow.", "exp_r": 434, "exp_i": 1821, "imp_r": 434, "imp_i": 1821}
+{"s": "I quite enjoy the room, now it is bare again.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "How those children did tear about here!", "exp_r": 373, "exp_i": 1790, "imp_r": 373, "imp_i": 1790}
+{"s": "This bedstead is fairly gnawed!", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "But I must get to work.", "exp_r": 1790, "exp_i": 1821, "imp_r": 592, "imp_i": 1888}
+{"s": "I have locked the door and thrown the key down into the front path.", "exp_r": 2073, "exp_i": 1888, "imp_r": 1888, "imp_i": 1821}
+{"s": "I don\u2019t want to go out, and I don\u2019t want to have anybody come in, till", "exp_r": 8, "exp_i": 386, "imp_r": 8, "imp_i": 690}
+{"s": "I want to astonish him.", "exp_r": 1405, "exp_i": 1888, "imp_r": 1405, "imp_i": 1821}
+{"s": "I\u2019ve got a rope up here that even Jennie did not find.", "exp_r": 1790, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "If that woman", "exp_r": 1790, "exp_i": 2807, "imp_r": 2469, "imp_i": 2807}
+{"s": "does get out, and tries to get away, I can tie her!", "exp_r": 1888, "exp_i": 1888, "imp_r": 2978, "imp_i": 1888}
+{"s": "But I forgot I could not reach far without anything to stand on!", "exp_r": 2635, "exp_i": 1790, "imp_r": 2635, "imp_i": 1888}
+{"s": "This bed will not move!", "exp_r": 1888, "exp_i": 882, "imp_r": 1888, "imp_i": 1888}
+{"s": "I tried to lift and push it until I was lame, and then I got so angry I", "exp_r": 2659, "exp_i": 1291, "imp_r": 2659, "imp_i": 1291}
+{"s": "bit off a little piece at one corner\u2014but it hurt my teeth.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1821}
+{"s": "Then I peeled off all the paper I could reach standing on the floor.", "exp_r": 2528, "exp_i": 1821, "imp_r": 2528, "imp_i": 1821}
+{"s": "sticks horribly and the pattern just enjoys it!", "exp_r": 1888, "exp_i": 1888, "imp_r": 1645, "imp_i": 1888}
+{"s": "All those strangled", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "heads and bulbous eyes and waddling fungus growths just shriek with", "exp_r": 1814, "exp_i": 1790, "imp_r": 1814, "imp_i": 1790}
+{"s": "I am getting angry enough to do something desperate.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "To jump out of the", "exp_r": 1790, "exp_i": 1869, "imp_r": 2447, "imp_i": 1869}
+{"s": "window would be admirable exercise, but the bars are too strong even to", "exp_r": 1888, "exp_i": 2219, "imp_r": 1523, "imp_i": 2219}
+{"s": "Besides I wouldn\u2019t do it.", "exp_r": 1790, "exp_i": 1888, "imp_r": 8, "imp_i": 1888}
+{"s": "Of course not.", "exp_r": 2256, "exp_i": 1821, "imp_r": 2031, "imp_i": 1821}
+{"s": "I know well enough that a step", "exp_r": 1594, "exp_i": 1790, "imp_r": 1888, "imp_i": 1888}
+{"s": "like that is improper and might be misconstrued.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1395, "imp_i": 1821}
+{"s": "I don\u2019t like to look out of the windows even\u2014there are so many of those", "exp_r": 2175, "exp_i": 2469, "imp_r": 8, "imp_i": 2469}
+{"s": "creeping women, and they creep so fast.", "exp_r": 1523, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "I wonder if they all come out of that wallpaper as I did?", "exp_r": 84, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "But I am securely fastened now by my well-hidden rope\u2014you don\u2019t get me", "exp_r": 463, "exp_i": 1915, "imp_r": 8, "imp_i": 1915}
+{"s": "out in the road there!", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1790}
+{"s": "I suppose I shall have to get back behind the pattern when it comes", "exp_r": 392, "exp_i": 2954, "imp_r": 1888, "imp_i": 2954}
+{"s": "night, and that is hard!", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 2720}
+{"s": "It is so pleasant to be out in this great room and creep around as I", "exp_r": 1404, "exp_i": 619, "imp_r": 1404, "imp_i": 619}
+{"s": "I don\u2019t want to go outside.", "exp_r": 8, "exp_i": 1888, "imp_r": 8, "imp_i": 1821}
+{"s": "I won\u2019t, even if Jennie asks me to.", "exp_r": 8, "exp_i": 1888, "imp_r": 8, "imp_i": 1821}
+{"s": "For outside you have to creep on the ground, and everything is green", "exp_r": 592, "exp_i": 2761, "imp_r": 592, "imp_i": 2761}
+{"s": "instead of yellow.", "exp_r": 1790, "exp_i": 1888, "imp_r": 1821, "imp_i": 1821}
+{"s": "But here I can creep smoothly on the floor, and my shoulder just fits", "exp_r": 2528, "exp_i": 935, "imp_r": 2528, "imp_i": 935}
+{"s": "in that long smooch around the wall, so I cannot lose my way.", "exp_r": 1814, "exp_i": 1888, "imp_r": 1814, "imp_i": 1888}
+{"s": "Why, there\u2019s John at the door!", "exp_r": 8, "exp_i": 1790, "imp_r": 8, "imp_i": 1790}
+{"s": "It is no use, young man, you can\u2019t open it!", "exp_r": 8, "exp_i": 882, "imp_r": 8, "imp_i": 1790}
+{"s": "How he does call and pound!", "exp_r": 1790, "exp_i": 1888, "imp_r": 1066, "imp_i": 1888}
+{"s": "Now he\u2019s crying for an axe.", "exp_r": 1790, "exp_i": 1790, "imp_r": 8, "imp_i": 1821}
+{"s": "It would be a shame to break down that beautiful door!", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "\u201cJohn dear!\u201d said I in the gentlest voice, \u201cthe key is down by the", "exp_r": 1790, "exp_i": 1790, "imp_r": 688, "imp_i": 1790}
+{"s": "front steps, under a plantain leaf!\u201d", "exp_r": 1888, "exp_i": 1790, "imp_r": 8, "imp_i": 1790}
+{"s": "That silenced him for a few moments.", "exp_r": 1797, "exp_i": 1888, "imp_r": 1797, "imp_i": 1888}
+{"s": "Then he said\u2014very quietly indeed, \u201cOpen the door, my darling!\u201d", "exp_r": 1790, "exp_i": 1790, "imp_r": 882, "imp_i": 1790}
+{"s": "\u201cI can\u2019t,\u201d said I.", "exp_r": 1790, "exp_i": 1821, "imp_r": 688, "imp_i": 1821}
+{"s": "\u201cThe key is down by the front door under a plantain", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "And then I said it again, several times, very gently and slowly, and", "exp_r": 2898, "exp_i": 1790, "imp_r": 2898, "imp_i": 2898}
+{"s": "said it so often that he had to go and see, and he got it, of course,", "exp_r": 2031, "exp_i": 1790, "imp_r": 2031, "imp_i": 1790}
+{"s": "and came in.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "He stopped short by the door.", "exp_r": 1888, "exp_i": 1821, "imp_r": 1888, "imp_i": 1821}
+{"s": "\u201cWhat is the matter?\u201d he cried.", "exp_r": 1790, "exp_i": 1821, "imp_r": 688, "imp_i": 1821}
+{"s": "\u201cFor God\u2019s sake, what are you doing!\u201d", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "I kept on creeping just the same, but I looked at him over my shoulder.", "exp_r": 2166, "exp_i": 1821, "imp_r": 1763, "imp_i": 1821}
+{"s": "\u201cI\u2019ve got out at last,\u201d said I, \u201cin spite of you and Jane!", "exp_r": 1790, "exp_i": 1790, "imp_r": 688, "imp_i": 1790}
+{"s": "pulled off most of the paper, so you can\u2019t put me back!\u201d", "exp_r": 1888, "exp_i": 1790, "imp_r": 8, "imp_i": 1790}
+{"s": "Now why should that man have fainted?", "exp_r": 2874, "exp_i": 1790, "imp_r": 1970, "imp_i": 1790}
+{"s": "But he did, and right across my", "exp_r": 1790, "exp_i": 2166, "imp_r": 1888, "imp_i": 2166}
+{"s": "path by the wall, so that I had to creep over him every time!", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1888}
+{"s": "*** END OF THE PROJECT GUTENBERG EBOOK THE YELLOW WALLPAPER ***", "exp_r": 2073, "exp_i": 2999, "imp_r": 2073, "imp_i": 2999}
+{"s": "Updated editions will replace the previous one\u2014the old editions will", "exp_r": 1888, "exp_i": 1790, "imp_r": 2776, "imp_i": 1790}
+{"s": "Creating the works from print editions not protected by U.S. copyright", "exp_r": 1790, "exp_i": 2551, "imp_r": 292, "imp_i": 2551}
+{"s": "law means that no one owns a United States copyright in these works,", "exp_r": 1098, "exp_i": 1790, "imp_r": 1098, "imp_i": 1790}
+{"s": "so the Foundation (and you!)", "exp_r": 1888, "exp_i": 1888, "imp_r": 2073, "imp_i": 1888}
+{"s": "can copy and distribute it in the United", "exp_r": 1888, "exp_i": 170, "imp_r": 170, "imp_i": 170}
+{"s": "States without permission and without paying copyright", "exp_r": 1888, "exp_i": 2551, "imp_r": 1888, "imp_i": 2551}
+{"s": "Special rules, set forth in the General Terms of Use part", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "of this license, apply to copying and distributing Project", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "Gutenberg\u2122 electronic works to protect the PROJECT GUTENBERG\u2122", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "concept and trademark.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "Project Gutenberg is a registered trademark,", "exp_r": 1790, "exp_i": 547, "imp_r": 1888, "imp_i": 1790}
+{"s": "and may not be used if you charge for an eBook, except by following", "exp_r": 1790, "exp_i": 1790, "imp_r": 2682, "imp_i": 1790}
+{"s": "the terms of the trademark license, including paying royalties for use", "exp_r": 1888, "exp_i": 1790, "imp_r": 2073, "imp_i": 1790}
+{"s": "of the Project Gutenberg trademark.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "If you do not charge anything for", "exp_r": 1678, "exp_i": 1461, "imp_r": 1461, "imp_i": 1461}
+{"s": "copies of this eBook, complying with the trademark license is very", "exp_r": 2761, "exp_i": 2761, "imp_r": 2761, "imp_i": 2761}
+{"s": "You may use this eBook for nearly any purpose such as creation", "exp_r": 1967, "exp_i": 2995, "imp_r": 1967, "imp_i": 1888}
+{"s": "of derivative works, reports, performances and research.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1821, "imp_i": 1821}
+{"s": "Gutenberg eBooks may be modified and printed and given away\u2014you may", "exp_r": 1888, "exp_i": 111, "imp_r": 1888, "imp_i": 1790}
+{"s": "do practically ANYTHING in the United States with eBooks not protected", "exp_r": 1888, "exp_i": 2647, "imp_r": 178, "imp_i": 2647}
+{"s": "by U.S. copyright law.", "exp_r": 1888, "exp_i": 1790, "imp_r": 2503, "imp_i": 1888}
+{"s": "Redistribution is subject to the trademark", "exp_r": 1122, "exp_i": 1790, "imp_r": 1888, "imp_i": 586}
+{"s": "license, especially commercial redistribution.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1821}
+{"s": "START: FULL LICENSE", "exp_r": 858, "exp_i": 1888, "imp_r": 858, "imp_i": 1888}
+{"s": "THE FULL PROJECT GUTENBERG LICENSE", "exp_r": 1888, "exp_i": 1790, "imp_r": 2073, "imp_i": 1888}
+{"s": "PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK", "exp_r": 2145, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "To protect the Project Gutenberg\u2122 mission of promoting the free", "exp_r": 1790, "exp_i": 2073, "imp_r": 1790, "imp_i": 2073}
+{"s": "distribution of electronic works, by using or distributing this work", "exp_r": 1457, "exp_i": 586, "imp_r": 1888, "imp_i": 586}
+{"s": "(or any other work associated in any way with the phrase \u201cProject", "exp_r": 1790, "exp_i": 1888, "imp_r": 1790, "imp_i": 1888}
+{"s": "Gutenberg\u201d), you agree to comply with all the terms of the Full", "exp_r": 1888, "exp_i": 2073, "imp_r": 1888, "imp_i": 2073}
+{"s": "Project Gutenberg\u2122 License available with this file or online at", "exp_r": 1790, "exp_i": 2460, "imp_r": 1888, "imp_i": 2460}
+{"s": "General Terms of Use and Redistributing Project Gutenberg\u2122", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "By reading or using any part of this Project Gutenberg\u2122", "exp_r": 1790, "exp_i": 1790, "imp_r": 586, "imp_i": 1790}
+{"s": "electronic work, you indicate that you have read, understand, agree to", "exp_r": 1888, "exp_i": 2575, "imp_r": 2659, "imp_i": 2575}
+{"s": "and accept all the terms of this license and intellectual property", "exp_r": 1581, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "If you do not agree to abide by all", "exp_r": 1678, "exp_i": 2514, "imp_r": 1678, "imp_i": 298}
+{"s": "the terms of this agreement, you must cease using and return or", "exp_r": 1681, "exp_i": 1457, "imp_r": 1681, "imp_i": 1457}
+{"s": "destroy all copies of Project Gutenberg\u2122 electronic works in your", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1870}
+{"s": "If you paid a fee for obtaining a copy of or access to a", "exp_r": 1655, "exp_i": 1790, "imp_r": 1655, "imp_i": 1790}
+{"s": "Project Gutenberg\u2122 electronic work and you do not agree to be bound", "exp_r": 1790, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "by the terms of this agreement, you may obtain a refund from the person", "exp_r": 1888, "exp_i": 2073, "imp_r": 2073, "imp_i": 2073}
+{"s": "or entity to whom you paid the fee as set forth in paragraph 1.E.8.", "exp_r": 1888, "exp_i": 2279, "imp_r": 945, "imp_i": 2279}
+{"s": "\u201cProject Gutenberg\u201d is a registered trademark.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1821}
+{"s": "It may only be", "exp_r": 746, "exp_i": 746, "imp_r": 746, "imp_i": 746}
+{"s": "used on or associated in any way with an electronic work by people who", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1754}
+{"s": "agree to be bound by the terms of this agreement.", "exp_r": 1790, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "There are a few", "exp_r": 2024, "exp_i": 2918, "imp_r": 1098, "imp_i": 2918}
+{"s": "things that you can do with most Project Gutenberg\u2122 electronic works", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "even without complying with the full terms of this agreement.", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1888}
+{"s": "paragraph 1.C below.", "exp_r": 1888, "exp_i": 1790, "imp_r": 945, "imp_i": 1821}
+{"s": "There are a lot of things you can do with Project", "exp_r": 342, "exp_i": 1888, "imp_r": 1098, "imp_i": 1888}
+{"s": "Gutenberg\u2122 electronic works if you follow the terms of this", "exp_r": 1888, "exp_i": 600, "imp_r": 1888, "imp_i": 600}
+{"s": "agreement and help preserve free future access to Project Gutenberg\u2122", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "See paragraph 1.E below.", "exp_r": 945, "exp_i": 1790, "imp_r": 945, "imp_i": 1821}
+{"s": "The Project Gutenberg Literary Archive Foundation (\u201cthe", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "Foundation\u201d or PGLAF), owns a compilation copyright in the collection", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "of Project Gutenberg\u2122 electronic works.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "Nearly all the individual", "exp_r": 1790, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "works in the collection are in the public domain in the United", "exp_r": 1888, "exp_i": 170, "imp_r": 2073, "imp_i": 170}
+{"s": "If an individual work is unprotected by copyright law in the", "exp_r": 1678, "exp_i": 1790, "imp_r": 1678, "imp_i": 1790}
+{"s": "United States and you are located in the United States, we do not", "exp_r": 2073, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "claim a right to prevent you from copying, distributing, performing,", "exp_r": 1888, "exp_i": 347, "imp_r": 2330, "imp_i": 2317}
+{"s": "displaying or creating derivative works based on the work as long as", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "all references to Project Gutenberg are removed.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1026, "imp_i": 1790}
+{"s": "Of course, we hope", "exp_r": 1786, "exp_i": 1786, "imp_r": 2031, "imp_i": 1786}
+{"s": "that you will support the Project Gutenberg\u2122 mission of promoting", "exp_r": 1790, "exp_i": 1601, "imp_r": 1790, "imp_i": 1601}
+{"s": "free access to electronic works by freely sharing Project Gutenberg\u2122", "exp_r": 1790, "exp_i": 1790, "imp_r": 1594, "imp_i": 1790}
+{"s": "works in compliance with the terms of this agreement for keeping the", "exp_r": 1888, "exp_i": 1504, "imp_r": 2514, "imp_i": 1504}
+{"s": "Project Gutenberg\u2122 name associated with the work.", "exp_r": 1790, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "You can easily", "exp_r": 1594, "exp_i": 1594, "imp_r": 1888, "imp_i": 1594}
+{"s": "comply with the terms of this agreement by keeping this work in the", "exp_r": 1888, "exp_i": 1870, "imp_r": 1888, "imp_i": 1870}
+{"s": "same format with its attached full Project Gutenberg\u2122 License when", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "you share it without charge with others.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1405, "imp_i": 230}
+{"s": "The copyright laws of the place where you are located also govern", "exp_r": 2073, "exp_i": 1066, "imp_r": 2073, "imp_i": 2954}
+{"s": "what you can do with this work.", "exp_r": 2572, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "Copyright laws in most countries are", "exp_r": 1888, "exp_i": 1888, "imp_r": 2748, "imp_i": 2265}
+{"s": "in a constant state of change.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1821}
+{"s": "If you are outside the United States,", "exp_r": 792, "exp_i": 777, "imp_r": 792, "imp_i": 777}
+{"s": "check the laws of your country in addition to the terms of this", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "agreement before downloading, copying, displaying, performing,", "exp_r": 2659, "exp_i": 2317, "imp_r": 2659, "imp_i": 2762}
+{"s": "distributing or creating derivative works based on this work or any", "exp_r": 1790, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "other Project Gutenberg\u2122 work.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "The Foundation makes no", "exp_r": 1888, "exp_i": 2040, "imp_r": 1888, "imp_i": 2709}
+{"s": "representations concerning the copyright status of any work in any", "exp_r": 1888, "exp_i": 1790, "imp_r": 1791, "imp_i": 1790}
+{"s": "country other than the United States.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1790}
+{"s": "Unless you have removed all references to Project Gutenberg:", "exp_r": 1790, "exp_i": 1790, "imp_r": 949, "imp_i": 1790}
+{"s": "The following sentence, with active links to, or other", "exp_r": 1790, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "immediate access to, the full Project Gutenberg\u2122 License must appear", "exp_r": 442, "exp_i": 936, "imp_r": 442, "imp_i": 936}
+{"s": "prominently whenever any copy of a Project Gutenberg\u2122 work (any work", "exp_r": 1594, "exp_i": 2790, "imp_r": 1594, "imp_i": 2790}
+{"s": "on which the phrase \u201cProject Gutenberg\u201d appears, or with which the", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "phrase \u201cProject Gutenberg\u201d is associated) is accessed, displayed,", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "performed, viewed, copied or distributed:", "exp_r": 541, "exp_i": 1790, "imp_r": 541, "imp_i": 1790}
+{"s": "This eBook is for the use of anyone anywhere in the United States and most", "exp_r": 586, "exp_i": 2661, "imp_r": 586, "imp_i": 2661}
+{"s": "other parts of the world at no cost and with almost no restrictions", "exp_r": 1960, "exp_i": 671, "imp_r": 1960, "imp_i": 671}
+{"s": "You may copy it, give it away or re-use it under the terms", "exp_r": 2073, "exp_i": 2073, "imp_r": 2073, "imp_i": 2073}
+{"s": "of the Project Gutenberg License included with this eBook or online", "exp_r": 1888, "exp_i": 638, "imp_r": 1790, "imp_i": 638}
+{"s": "are not located in the United States, you will have to check the laws", "exp_r": 1888, "exp_i": 1888, "imp_r": 2073, "imp_i": 1888}
+{"s": "of the country where you are located before using this eBook.", "exp_r": 1888, "exp_i": 1790, "imp_r": 2073, "imp_i": 1790}
+{"s": "If an individual Project Gutenberg\u2122 electronic work is", "exp_r": 1790, "exp_i": 1678, "imp_r": 1678, "imp_i": 1678}
+{"s": "derived from texts not protected by U.S. copyright law (does not", "exp_r": 256, "exp_i": 558, "imp_r": 256, "imp_i": 558}
+{"s": "contain a notice indicating that it is posted with permission of the", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1754}
+{"s": "copyright holder), the work can be copied and distributed to anyone in", "exp_r": 2513, "exp_i": 625, "imp_r": 2073, "imp_i": 625}
+{"s": "the United States without paying any fees or charges.", "exp_r": 1888, "exp_i": 1888, "imp_r": 2073, "imp_i": 1888}
+{"s": "If you are", "exp_r": 1790, "exp_i": 1678, "imp_r": 1678, "imp_i": 1678}
+{"s": "redistributing or providing access to a work with the phrase \u201cProject", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "Gutenberg\u201d associated with or appearing on the work, you must comply", "exp_r": 2073, "exp_i": 705, "imp_r": 1888, "imp_i": 705}
+{"s": "either with the requirements of paragraphs 1.E.1 through 1.E.7 or", "exp_r": 767, "exp_i": 1790, "imp_r": 945, "imp_i": 1790}
+{"s": "obtain permission for the use of the work and the Project Gutenberg\u2122", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "trademark as set forth in paragraphs 1.E.8 or 1.E.9.", "exp_r": 1790, "exp_i": 1790, "imp_r": 767, "imp_i": 1821}
+{"s": "If an individual Project Gutenberg\u2122 electronic work is posted", "exp_r": 1678, "exp_i": 1678, "imp_r": 1678, "imp_i": 1678}
+{"s": "with the permission of the copyright holder, your use and distribution", "exp_r": 1790, "exp_i": 541, "imp_r": 1405, "imp_i": 541}
+{"s": "must comply with both paragraphs 1.E.1 through 1.E.7 and any", "exp_r": 1888, "exp_i": 1790, "imp_r": 945, "imp_i": 2213}
+{"s": "additional terms imposed by the copyright holder.", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "will be linked to the Project Gutenberg\u2122 License for all works", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "posted with the permission of the copyright holder found at the", "exp_r": 1888, "exp_i": 1790, "imp_r": 1754, "imp_i": 1790}
+{"s": "beginning of this work.", "exp_r": 1790, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "Do not unlink or detach or remove the full Project Gutenberg\u2122", "exp_r": 1790, "exp_i": 1790, "imp_r": 2145, "imp_i": 1790}
+{"s": "License terms from this work, or any files containing a part of this", "exp_r": 1888, "exp_i": 586, "imp_r": 1888, "imp_i": 586}
+{"s": "work or any other work associated with Project Gutenberg\u2122.", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "Do not copy, display, perform, distribute or redistribute this", "exp_r": 541, "exp_i": 2869, "imp_r": 2659, "imp_i": 586}
+{"s": "electronic work, or any part of this electronic work, without", "exp_r": 1888, "exp_i": 1862, "imp_r": 1888, "imp_i": 2762}
+{"s": "prominently displaying the sentence set forth in paragraph 1.E.1 with", "exp_r": 1594, "exp_i": 1888, "imp_r": 1594, "imp_i": 1888}
+{"s": "active links or immediate access to the full terms of the Project", "exp_r": 1888, "exp_i": 1888, "imp_r": 1790, "imp_i": 1888}
+{"s": "You may convert to and distribute this work in any binary,", "exp_r": 1655, "exp_i": 2138, "imp_r": 1655, "imp_i": 2138}
+{"s": "compressed, marked up, nonproprietary or proprietary form, including", "exp_r": 1054, "exp_i": 2353, "imp_r": 1888, "imp_i": 2353}
+{"s": "any word processing or hypertext form.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1588, "imp_i": 1821}
+{"s": "However, if you provide access", "exp_r": 1790, "exp_i": 1678, "imp_r": 1678, "imp_i": 1678}
+{"s": "to or distribute copies of a Project Gutenberg\u2122 work in a format", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1339}
+{"s": "other than \u201cPlain Vanilla ASCII\u201d or other format used in the official", "exp_r": 1790, "exp_i": 2073, "imp_r": 1790, "imp_i": 2073}
+{"s": "version posted on the official Project Gutenberg\u2122 website", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "(www.gutenberg.org), you must, at no additional cost, fee or expense", "exp_r": 1535, "exp_i": 1790, "imp_r": 1535, "imp_i": 1790}
+{"s": "to the user, provide a copy, a means of exporting a copy, or a means", "exp_r": 1790, "exp_i": 1838, "imp_r": 1790, "imp_i": 872}
+{"s": "of obtaining a copy upon request, of the work in its original \u201cPlain", "exp_r": 1888, "exp_i": 1842, "imp_r": 2073, "imp_i": 1842}
+{"s": "Vanilla ASCII\u201d or other form.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "Any alternate format must include the", "exp_r": 1888, "exp_i": 1790, "imp_r": 592, "imp_i": 1504}
+{"s": "full Project Gutenberg\u2122 License as specified in paragraph 1.E.1.", "exp_r": 1888, "exp_i": 1790, "imp_r": 779, "imp_i": 1821}
+{"s": "Do not charge a fee for access to, viewing, displaying,", "exp_r": 442, "exp_i": 347, "imp_r": 442, "imp_i": 347}
+{"s": "performing, copying or distributing any Project Gutenberg\u2122 works", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "unless you comply with paragraph 1.E.8 or 1.E.9.", "exp_r": 945, "exp_i": 1821, "imp_r": 945, "imp_i": 1821}
+{"s": "You may charge a reasonable fee for copies of or providing", "exp_r": 1655, "exp_i": 1790, "imp_r": 1655, "imp_i": 1790}
+{"s": "access to or distributing Project Gutenberg\u2122 electronic works", "exp_r": 1655, "exp_i": 1790, "imp_r": 1655, "imp_i": 1790}
+{"s": "\u2022 You pay a royalty fee of 20% of the gross profits you derive from", "exp_r": 1888, "exp_i": 2560, "imp_r": 1888, "imp_i": 2560}
+{"s": "the use of Project Gutenberg\u2122 works calculated using the method", "exp_r": 1790, "exp_i": 2073, "imp_r": 1790, "imp_i": 2073}
+{"s": "you already use to calculate your applicable taxes.", "exp_r": 1888, "exp_i": 1888, "imp_r": 72, "imp_i": 1888}
+{"s": "The fee is owed", "exp_r": 1888, "exp_i": 1537, "imp_r": 1888, "imp_i": 1537}
+{"s": "to the owner of the Project Gutenberg\u2122 trademark, but he has", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "agreed to donate royalties under this paragraph to the Project", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 345}
+{"s": "Gutenberg Literary Archive Foundation.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1821}
+{"s": "Royalty payments must be paid", "exp_r": 1888, "exp_i": 515, "imp_r": 1888, "imp_i": 515}
+{"s": "within 60 days following each date on which you prepare (or are", "exp_r": 171, "exp_i": 2265, "imp_r": 171, "imp_i": 2265}
+{"s": "legally required to prepare) your periodic tax returns.", "exp_r": 1594, "exp_i": 1888, "imp_r": 1594, "imp_i": 1888}
+{"s": "payments should be clearly marked as such and sent to the Project", "exp_r": 1594, "exp_i": 1888, "imp_r": 1594, "imp_i": 1888}
+{"s": "Gutenberg Literary Archive Foundation at the address specified in", "exp_r": 1888, "exp_i": 2513, "imp_r": 1888, "imp_i": 2513}
+{"s": "Section 4, \u201cInformation about donations to the Project Gutenberg", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "Literary Archive Foundation.\u201d", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "\u2022 You provide a full refund of any money paid by a user who notifies", "exp_r": 1888, "exp_i": 1405, "imp_r": 1405, "imp_i": 1405}
+{"s": "you in writing (or by e-mail) within 30 days of receipt that s/he", "exp_r": 2874, "exp_i": 2659, "imp_r": 2874, "imp_i": 2659}
+{"s": "does not agree to the terms of the full Project Gutenberg\u2122", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "You must require such a user to return or destroy all", "exp_r": 592, "exp_i": 1011, "imp_r": 592, "imp_i": 1011}
+{"s": "copies of the works possessed in a physical medium and discontinue", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "all use of and all access to other copies of Project Gutenberg\u2122", "exp_r": 1888, "exp_i": 1790, "imp_r": 2776, "imp_i": 1790}
+{"s": "\u2022 You provide, in accordance with paragraph 1.F.3, a full refund of", "exp_r": 1888, "exp_i": 246, "imp_r": 945, "imp_i": 246}
+{"s": "any money paid for a work or a replacement copy, if a defect in the", "exp_r": 1888, "exp_i": 153, "imp_r": 153, "imp_i": 153}
+{"s": "electronic work is discovered and reported to you within 90 days of", "exp_r": 1888, "exp_i": 171, "imp_r": 1888, "imp_i": 171}
+{"s": "receipt of the work.", "exp_r": 2073, "exp_i": 1888, "imp_r": 2073, "imp_i": 1888}
+{"s": "\u2022 You comply with all other terms of this agreement for free", "exp_r": 1888, "exp_i": 1462, "imp_r": 2514, "imp_i": 461}
+{"s": "distribution of Project Gutenberg\u2122 works.", "exp_r": 1790, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "If you wish to charge a fee or distribute a Project", "exp_r": 1790, "exp_i": 1790, "imp_r": 870, "imp_i": 1888}
+{"s": "Gutenberg\u2122 electronic work or group of works on different terms than", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "are set forth in this agreement, you must obtain permission in writing", "exp_r": 1888, "exp_i": 228, "imp_r": 1399, "imp_i": 228}
+{"s": "from the Project Gutenberg Literary Archive Foundation, the manager of", "exp_r": 1790, "exp_i": 2890, "imp_r": 666, "imp_i": 2890}
+{"s": "the Project Gutenberg\u2122 trademark.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "Contact the Foundation as set", "exp_r": 1790, "exp_i": 1399, "imp_r": 2145, "imp_i": 1399}
+{"s": "forth in Section 3 below.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1821, "imp_i": 1821}
+{"s": "Project Gutenberg volunteers and employees expend considerable", "exp_r": 1888, "exp_i": 809, "imp_r": 1888, "imp_i": 809}
+{"s": "effort to identify, do copyright research on, transcribe and proofread", "exp_r": 442, "exp_i": 2659, "imp_r": 1888, "imp_i": 2659}
+{"s": "works not protected by U.S. copyright law in creating the Project", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "Despite these efforts, Project Gutenberg\u2122", "exp_r": 1790, "exp_i": 1790, "imp_r": 1098, "imp_i": 1790}
+{"s": "electronic works, and the medium on which they may be stored, may", "exp_r": 1888, "exp_i": 1790, "imp_r": 1504, "imp_i": 1790}
+{"s": "contain \u201cDefects,\u201d such as, but not limited to, incomplete, inaccurate", "exp_r": 1888, "exp_i": 1888, "imp_r": 688, "imp_i": 1888}
+{"s": "or corrupt data, transcription errors, a copyright or other", "exp_r": 1888, "exp_i": 2962, "imp_r": 99, "imp_i": 2962}
+{"s": "intellectual property infringement, a defective or damaged disk or", "exp_r": 1888, "exp_i": 1790, "imp_r": 1054, "imp_i": 1790}
+{"s": "other medium, a computer virus, or computer codes that damage or", "exp_r": 1888, "exp_i": 1457, "imp_r": 1457, "imp_i": 1457}
+{"s": "cannot be read by your equipment.", "exp_r": 2761, "exp_i": 1888, "imp_r": 1888, "imp_i": 1821}
+{"s": "LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the \u201cRight", "exp_r": 2681, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "of Replacement or Refund\u201d described in paragraph 1.F.3, the Project", "exp_r": 1888, "exp_i": 1790, "imp_r": 945, "imp_i": 2073}
+{"s": "Gutenberg Literary Archive Foundation, the owner of the Project", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 345}
+{"s": "Gutenberg\u2122 trademark, and any other party distributing a Project", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "Gutenberg\u2122 electronic work under this agreement, disclaim all", "exp_r": 1888, "exp_i": 2711, "imp_r": 1888, "imp_i": 2711}
+{"s": "liability to you for damages, costs and expenses, including legal", "exp_r": 1888, "exp_i": 2866, "imp_r": 801, "imp_i": 2866}
+{"s": "YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT", "exp_r": 1888, "exp_i": 1790, "imp_r": 770, "imp_i": 1790}
+{"s": "LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE", "exp_r": 1888, "exp_i": 438, "imp_r": 858, "imp_i": 438}
+{"s": "PROVIDED IN PARAGRAPH 1.F.3.", "exp_r": 1888, "exp_i": 2279, "imp_r": 945, "imp_i": 2279}
+{"s": "YOU AGREE THAT THE FOUNDATION, THE", "exp_r": 1888, "exp_i": 690, "imp_r": 2073, "imp_i": 690}
+{"s": "TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE", "exp_r": 1790, "exp_i": 2265, "imp_r": 1830, "imp_i": 2265}
+{"s": "LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR", "exp_r": 1054, "exp_i": 1054, "imp_r": 858, "imp_i": 1054}
+{"s": "INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH", "exp_r": 801, "exp_i": 1790, "imp_r": 801, "imp_i": 1790}
+{"s": "LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a", "exp_r": 946, "exp_i": 1678, "imp_r": 946, "imp_i": 1678}
+{"s": "defect in this electronic work within 90 days of receiving it, you can", "exp_r": 1888, "exp_i": 2315, "imp_r": 2330, "imp_i": 2315}
+{"s": "receive a refund of the money (if any) you paid for it by sending a", "exp_r": 1888, "exp_i": 2369, "imp_r": 256, "imp_i": 2369}
+{"s": "written explanation to the person you received the work from.", "exp_r": 1888, "exp_i": 1888, "imp_r": 2073, "imp_i": 1821}
+{"s": "received the work on a physical medium, you must return the medium", "exp_r": 1888, "exp_i": 2073, "imp_r": 1623, "imp_i": 2073}
+{"s": "with your written explanation.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1821}
+{"s": "The person or entity that provided you", "exp_r": 2659, "exp_i": 1790, "imp_r": 2073, "imp_i": 2394}
+{"s": "with the defective work may elect to provide a replacement copy in", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "lieu of a refund.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1888}
+{"s": "If you received the work electronically, the person", "exp_r": 2073, "exp_i": 2073, "imp_r": 2073, "imp_i": 2073}
+{"s": "or entity providing it to you may choose to give you a second", "exp_r": 1888, "exp_i": 2590, "imp_r": 1888, "imp_i": 2590}
+{"s": "opportunity to receive the work electronically in lieu of a refund.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1504, "imp_i": 1790}
+{"s": "the second copy is also defective, you may demand a refund in writing", "exp_r": 2776, "exp_i": 1790, "imp_r": 2073, "imp_i": 228}
+{"s": "without further opportunities to fix the problem.", "exp_r": 1790, "exp_i": 1888, "imp_r": 2590, "imp_i": 1888}
+{"s": "Except for the limited right of replacement or refund set forth", "exp_r": 2988, "exp_i": 1790, "imp_r": 2988, "imp_i": 2513}
+{"s": "in paragraph 1.F.3, this work is provided to you \u2018AS-IS\u2019, WITH NO", "exp_r": 945, "exp_i": 2154, "imp_r": 945, "imp_i": 2154}
+{"s": "OTHER WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT", "exp_r": 2353, "exp_i": 1645, "imp_r": 2353, "imp_i": 1645}
+{"s": "LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PURPOSE.", "exp_r": 586, "exp_i": 1790, "imp_r": 586, "imp_i": 2999}
+{"s": "Some states do not allow disclaimers of certain implied", "exp_r": 1888, "exp_i": 2400, "imp_r": 1559, "imp_i": 2400}
+{"s": "warranties or the exclusion or limitation of certain types of", "exp_r": 2659, "exp_i": 1790, "imp_r": 2659, "imp_i": 1790}
+{"s": "If any disclaimer or limitation set forth in this agreement", "exp_r": 586, "exp_i": 2648, "imp_r": 586, "imp_i": 2648}
+{"s": "violates the law of the state applicable to this agreement, the", "exp_r": 1888, "exp_i": 1790, "imp_r": 2514, "imp_i": 1790}
+{"s": "agreement shall be interpreted to make the maximum disclaimer or", "exp_r": 1813, "exp_i": 1790, "imp_r": 1813, "imp_i": 1790}
+{"s": "limitation permitted by the applicable state law.", "exp_r": 1790, "exp_i": 1790, "imp_r": 2073, "imp_i": 1790}
+{"s": "The invalidity or", "exp_r": 1888, "exp_i": 2973, "imp_r": 1888, "imp_i": 2973}
+{"s": "unenforceability of any provision of this agreement shall not void the", "exp_r": 668, "exp_i": 1790, "imp_r": 668, "imp_i": 1790}
+{"s": "INDEMNITY - You agree to indemnify and hold the Foundation, the", "exp_r": 770, "exp_i": 690, "imp_r": 770, "imp_i": 690}
+{"s": "trademark owner, any agent or employee of the Foundation, anyone", "exp_r": 1790, "exp_i": 1734, "imp_r": 1888, "imp_i": 1734}
+{"s": "providing copies of Project Gutenberg\u2122 electronic works in", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "accordance with this agreement, and any volunteers associated with the", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "production, promotion and distribution of Project Gutenberg\u2122", "exp_r": 1888, "exp_i": 1790, "imp_r": 2659, "imp_i": 1790}
+{"s": "electronic works, harmless from all liability, costs and expenses,", "exp_r": 1888, "exp_i": 1790, "imp_r": 541, "imp_i": 1790}
+{"s": "including legal fees, that arise directly or indirectly from any of", "exp_r": 541, "exp_i": 1581, "imp_r": 541, "imp_i": 1581}
+{"s": "the following which you do or cause to occur: (a) distribution of this", "exp_r": 2520, "exp_i": 2469, "imp_r": 2073, "imp_i": 1790}
+{"s": "or any Project Gutenberg\u2122 work, (b) alteration, modification, or", "exp_r": 2659, "exp_i": 99, "imp_r": 2659, "imp_i": 99}
+{"s": "additions or deletions to any Project Gutenberg\u2122 work, and (c) any", "exp_r": 8, "exp_i": 1790, "imp_r": 541, "imp_i": 1790}
+{"s": "Defect you cause.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "Information about the Mission of Project Gutenberg\u2122", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "Project Gutenberg\u2122 is synonymous with the free distribution of", "exp_r": 1790, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "electronic works in formats readable by the widest variety of", "exp_r": 1888, "exp_i": 169, "imp_r": 1888, "imp_i": 169}
+{"s": "computers including obsolete, old, middle-aged and new computers.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1888}
+{"s": "exists because of the efforts of hundreds of volunteers and donations", "exp_r": 1888, "exp_i": 1790, "imp_r": 2038, "imp_i": 1790}
+{"s": "from people in all walks of life.", "exp_r": 752, "exp_i": 1888, "imp_r": 752, "imp_i": 1888}
+{"s": "Volunteers and financial support to provide volunteers with the", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "assistance they need are critical to reaching Project Gutenberg\u2122\u2019s", "exp_r": 8, "exp_i": 1790, "imp_r": 8, "imp_i": 1790}
+{"s": "goals and ensuring that the Project Gutenberg\u2122 collection will", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "remain freely available for generations to come.", "exp_r": 1888, "exp_i": 1888, "imp_r": 2286, "imp_i": 1790}
+{"s": "In 2001, the Project", "exp_r": 1790, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "Gutenberg Literary Archive Foundation was created to provide a secure", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "and permanent future for Project Gutenberg\u2122 and future", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "To learn more about the Project Gutenberg Literary", "exp_r": 1790, "exp_i": 1790, "imp_r": 2447, "imp_i": 1790}
+{"s": "Archive Foundation and how your efforts and donations can help, see", "exp_r": 1888, "exp_i": 2460, "imp_r": 1888, "imp_i": 2460}
+{"s": "Sections 3 and 4 and the Foundation information page at www.gutenberg.org.", "exp_r": 1888, "exp_i": 1821, "imp_r": 945, "imp_i": 1821}
+{"s": "Information about the Project Gutenberg Literary Archive Foundation", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "The Project Gutenberg Literary Archive Foundation is a non-profit", "exp_r": 1790, "exp_i": 202, "imp_r": 1888, "imp_i": 202}
+{"s": "501(c)(3) educational corporation organized under the laws of the", "exp_r": 1888, "exp_i": 2097, "imp_r": 1888, "imp_i": 2097}
+{"s": "state of Mississippi and granted tax exempt status by the Internal", "exp_r": 1888, "exp_i": 2073, "imp_r": 505, "imp_i": 2073}
+{"s": "The Foundation\u2019s EIN or federal tax identification", "exp_r": 858, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "number is 64-6221541.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1821}
+{"s": "Contributions to the Project Gutenberg Literary", "exp_r": 1790, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "Archive Foundation are tax deductible to the full extent permitted by", "exp_r": 1843, "exp_i": 1068, "imp_r": 1888, "imp_i": 1068}
+{"s": "U.S. federal laws and your state\u2019s laws.", "exp_r": 1790, "exp_i": 1790, "imp_r": 8, "imp_i": 1790}
+{"s": "The Foundation\u2019s business office is located at 809 North 1500 West,", "exp_r": 1888, "exp_i": 2775, "imp_r": 1888, "imp_i": 2775}
+{"s": "Salt Lake City, UT 84116, (801) 596-1887.", "exp_r": 256, "exp_i": 1790, "imp_r": 256, "imp_i": 1821}
+{"s": "Email contact links and up", "exp_r": 1790, "exp_i": 1790, "imp_r": 2454, "imp_i": 1790}
+{"s": "to date contact information can be found at the Foundation\u2019s website", "exp_r": 8, "exp_i": 1790, "imp_r": 8, "imp_i": 1790}
+{"s": "and official page at www.gutenberg.org/contact", "exp_r": 1888, "exp_i": 1790, "imp_r": 1821, "imp_i": 1790}
+{"s": "Information about Donations to the Project Gutenberg", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 779}
+{"s": "Literary Archive Foundation", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "Project Gutenberg\u2122 depends upon and cannot survive without widespread", "exp_r": 1790, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "public support and donations to carry out its mission of", "exp_r": 1888, "exp_i": 2978, "imp_r": 1456, "imp_i": 997}
+{"s": "increasing the number of public domain and licensed works that can be", "exp_r": 1790, "exp_i": 2265, "imp_r": 1790, "imp_i": 2265}
+{"s": "freely distributed in machine-readable form accessible by the widest", "exp_r": 1790, "exp_i": 2073, "imp_r": 1594, "imp_i": 2073}
+{"s": "array of equipment including outdated equipment.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "Many small donations", "exp_r": 1790, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "($1 to $5,000) are particularly important to maintaining tax exempt", "exp_r": 1888, "exp_i": 15, "imp_r": 1888, "imp_i": 1888}
+{"s": "status with the IRS.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "The Foundation is committed to complying with the laws regulating", "exp_r": 2514, "exp_i": 735, "imp_r": 2514, "imp_i": 735}
+{"s": "charities and charitable donations in all 50 states of the United", "exp_r": 1888, "exp_i": 2073, "imp_r": 1790, "imp_i": 2073}
+{"s": "Compliance requirements are not uniform and it takes a", "exp_r": 1888, "exp_i": 1623, "imp_r": 1888, "imp_i": 1623}
+{"s": "considerable effort, much paperwork and many fees to meet and keep up", "exp_r": 1888, "exp_i": 2062, "imp_r": 1888, "imp_i": 2062}
+{"s": "with these requirements.", "exp_r": 1888, "exp_i": 1888, "imp_r": 1098, "imp_i": 1821}
+{"s": "We do not solicit donations in locations", "exp_r": 2524, "exp_i": 1790, "imp_r": 1888, "imp_i": 1745}
+{"s": "where we have not received written confirmation of compliance.", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "DONATIONS or determine the status of compliance for any particular state", "exp_r": 1888, "exp_i": 1960, "imp_r": 1888, "imp_i": 1960}
+{"s": "While we cannot and do not solicit contributions from states where we", "exp_r": 2659, "exp_i": 1790, "imp_r": 1678, "imp_i": 1790}
+{"s": "have not met the solicitation requirements, we know of no prohibition", "exp_r": 1888, "exp_i": 1888, "imp_r": 1888, "imp_i": 1888}
+{"s": "against accepting unsolicited donations from donors in such states who", "exp_r": 975, "exp_i": 975, "imp_r": 2524, "imp_i": 975}
+{"s": "approach us with offers to donate.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1821}
+{"s": "International donations are gratefully accepted, but we cannot make", "exp_r": 1888, "exp_i": 1790, "imp_r": 1594, "imp_i": 1790}
+{"s": "any statements concerning tax treatment of donations received from", "exp_r": 1888, "exp_i": 897, "imp_r": 2524, "imp_i": 897}
+{"s": "outside the United States.", "exp_r": 1888, "exp_i": 1888, "imp_r": 792, "imp_i": 1821}
+{"s": "U.S. laws alone swamp our small staff.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1888}
+{"s": "Please check the Project Gutenberg web pages for current donation", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "methods and addresses.", "exp_r": 1888, "exp_i": 1888, "imp_r": 2330, "imp_i": 1821}
+{"s": "Donations are accepted in a number of other", "exp_r": 169, "exp_i": 543, "imp_r": 1888, "imp_i": 543}
+{"s": "ways including checks, online payments and credit card donations.", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1888}
+{"s": "donate, please visit: www.gutenberg.org/donate.", "exp_r": 1888, "exp_i": 1821, "imp_r": 1821, "imp_i": 1821}
+{"s": "General Information About Project Gutenberg\u2122 electronic works", "exp_r": 1790, "exp_i": 1790, "imp_r": 1921, "imp_i": 1790}
+{"s": "Professor Michael S. Hart was the originator of the Project", "exp_r": 2595, "exp_i": 345, "imp_r": 2595, "imp_i": 345}
+{"s": "Gutenberg\u2122 concept of a library of electronic works that could be", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 2265}
+{"s": "freely shared with anyone.", "exp_r": 1790, "exp_i": 1888, "imp_r": 1594, "imp_i": 1888}
+{"s": "For forty years, he produced and", "exp_r": 1888, "exp_i": 1457, "imp_r": 1763, "imp_i": 1457}
+{"s": "distributed Project Gutenberg\u2122 eBooks with only a loose network of", "exp_r": 746, "exp_i": 298, "imp_r": 746, "imp_i": 298}
+{"s": "Project Gutenberg\u2122 eBooks are often created from several printed", "exp_r": 1790, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "editions, all of which are confirmed as not protected by copyright in", "exp_r": 1888, "exp_i": 1790, "imp_r": 1731, "imp_i": 1790}
+{"s": "the U.S. unless a copyright notice is included.", "exp_r": 1888, "exp_i": 1790, "imp_r": 2073, "imp_i": 1790}
+{"s": "Thus, we do not", "exp_r": 1888, "exp_i": 1790, "imp_r": 1888, "imp_i": 1790}
+{"s": "necessarily keep eBooks in compliance with any particular paper", "exp_r": 2874, "exp_i": 1790, "imp_r": 1594, "imp_i": 1790}
+{"s": "Most people start at our website which has the main PG search", "exp_r": 1790, "exp_i": 1790, "imp_r": 2661, "imp_i": 1255}
+{"s": "This website includes information about Project Gutenberg\u2122,", "exp_r": 1790, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "including how to make donations to the Project Gutenberg Literary", "exp_r": 1888, "exp_i": 1790, "imp_r": 1790, "imp_i": 1790}
+{"s": "Archive Foundation, how to help produce our new eBooks, and how to", "exp_r": 1265, "exp_i": 1256, "imp_r": 1888, "imp_i": 1030}
+{"s": "subscribe to our email newsletter to hear about new eBooks.", "exp_r": 1229, "exp_i": 1790, "imp_r": 1229, "imp_i": 1790}

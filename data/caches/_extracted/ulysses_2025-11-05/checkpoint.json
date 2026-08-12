@@ -1,0 +1,71 @@
+{
+    "line_index": 33213,
+    "total_sentences": 42212,
+    "coverage_log": [
+        {
+            "total_sentences": 5000,
+            "timestamp": 1762355120.8935158,
+            "coverage_exp_r": 273,
+            "coverage_exp_i": 320,
+            "coverage_imp_r": 353,
+            "coverage_imp_i": 382
+        },
+        {
+            "total_sentences": 10000,
+            "timestamp": 1762355243.3848608,
+            "coverage_exp_r": 390,
+            "coverage_exp_i": 498,
+            "coverage_imp_r": 485,
+            "coverage_imp_i": 560
+        },
+        {
+            "total_sentences": 15000,
+            "timestamp": 1762355365.121588,
+            "coverage_exp_r": 475,
+            "coverage_exp_i": 612,
+            "coverage_imp_r": 585,
+            "coverage_imp_i": 693
+        },
+        {
+            "total_sentences": 20000,
+            "timestamp": 1762355484.3923597,
+            "coverage_exp_r": 535,
+            "coverage_exp_i": 691,
+            "coverage_imp_r": 651,
+            "coverage_imp_i": 792
+        },
+        {
+            "total_sentences": 25000,
+            "timestamp": 1762355618.781579,
+            "coverage_exp_r": 594,
+            "coverage_exp_i": 826,
+            "coverage_imp_r": 736,
+            "coverage_imp_i": 929
+        },
+        {
+            "total_sentences": 30000,
+            "timestamp": 1762355745.058455,
+            "coverage_exp_r": 639,
+            "coverage_exp_i": 910,
+            "coverage_imp_r": 788,
+            "coverage_imp_i": 1009
+        },
+        {
+            "total_sentences": 35000,
+            "timestamp": 1762355859.2238872,
+            "coverage_exp_r": 661,
+            "coverage_exp_i": 951,
+            "coverage_imp_r": 813,
+            "coverage_imp_i": 1056
+        },
+        {
+            "total_sentences": 40000,
+            "timestamp": 1762356006.6549232,
+            "coverage_exp_r": 722,
+            "coverage_exp_i": 1066,
+            "coverage_imp_r": 879,
+            "coverage_imp_i": 1173
+        }
+    ],
+    "timestamp": 1762356078.009094
+}
