@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-NOU</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- =========================
+         Boot Sequence Screen
+    ========================= -->
+    <div id="boot-sequence">
+        <span class="scramble-text"></span>
+    </div>
+
+    <!-- =========================
+         Main Content (Hidden Initially)
+    ========================= -->
+    <div id="main-content" class="hidden">
+        <!-- =========================
+             Header HUD
+        ========================= -->
+        <header id="hud-header">
+            <div class="header-content">
+                <!-- Left Side -->
+                <div class="header-left">
+                    <div class="live-indicator"></div>
+                    <span class="live-text">LIVE ▮</span>
+                    <span class="os-text">Z-NOU OS // MESHNETID: OPERATOR</span>
+                </div>
+
+                <!-- Center Telemetry -->
+                <div class="header-center">
+                    <span id="telemetry-text" class="scramble-text"></span>
+                </div>
+
+                <!-- Right Side -->
+                <div class="header-right">
+                    <div class="status-orb">
+                        <div class="status-orb-inner"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hover Diagnostics Area -->
+            <div class="diagnostics-content">
+                <span id="diagnostics-text" class="scramble-text"></span>
+            </div>
+        </header>
+
+        <!-- Neuron Background Canvas -->
+        <canvas id="neuron-background"></canvas>
+
+        <!-- =========================
+            Parallax Dot Fields
+        ========================= -->
+        <div class="parallax-layer dot-field layer-1"></div>
+        <div class="parallax-layer dot-field layer-2"></div>
+        <div class="parallax-layer dot-field layer-3"></div>
+
+        <!-- =========================
+             Floating Numbers
+        ========================= -->
+        <div id="floating-numbers-container"></div>
+
+        <!-- =========================
+             Page Content
+        ========================= -->
+        <main>
+            <!-- HERO -->
+            <section class="relative h-screen flex flex-col items-center justify-center overflow-hidden z-30">
+                <img src="https://znou.org/assets/img/01.jpg" alt="Latent Grid" class="hero-bg-img">
+                <h1 id="hero-text" class="scramble-on-scroll" style="font-size: 1.25rem;">
+                    INNER SPACE AWAITS
+                </h1>
+            </section>
+
+            <!-- SPACER -->
+            <div style="height: 500px;"></div>
+
+            <!-- DATAFEED PLACEHOLDER -->
+            <section class="flex justify-center z-30">
+                <div class="data-feed">
+                    <span class="scramble-on-scroll">MESH STABILIZING...</span>
+                </div>
+            </section>
+
+            <!-- =========================
+                 NEW VIDEO SCAPE SECTION
+            ========================= -->
+            <section id="video-scape-section" class="relative z-30">
+                <!-- Background Images (Replace src with your images) -->
+                <img src="https://znou.org/assets/img/04.jpg" alt="Scape Background 1" class="scape-background-img" id="scape-bg-1">
+                <img src="https://znou.org/assets/img/05.jpg" alt="Scape Background 2" class="scape-background-img" id="scape-bg-2">
+
+                <!-- Floating Video Panels -->
+                <div class="framed-card video-panel" id="video-panel-1" data-parallax-speed="0.15">
+                    <div class="corner-frame"></div>
+                    <video loop muted playsinline>
+                        <source src="assets/vid/01.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="framed-card video-panel" id="video-panel-2" data-parallax-speed="0.3">
+                    <div class="corner-frame"></div>
+                    <video loop muted playsinline>
+                        <source src="assets/vid/02.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="framed-card video-panel" id="video-panel-3" data-parallax-speed="0.22">
+                    <div class="corner-frame"></div>
+                    <video loop muted playsinline>
+                        <source src="assets/vid/03.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+            
+            <!-- ANOTHER SECTION -->
+            <section class="flex justify-center z-30">
+                 <h2 id="frontier-text" class="scramble-on-scroll" style="font-size: 1.25rem;">
+                    A FRONTIER WITHIN
+                </h2>
+            </section>
+            
+            <div class="card-grid">
+                <!-- Card 1 -->
+                <a href="https://www.znou.org/research" target="_blank" rel="noopener noreferrer" class="card-link-wrapper">
+                    <div class="framed-card">
+                        <div class="corner-frame"></div>
+                        <img src="https://znou.org/assets/img/06.jpg" alt="Research">
+                        <div class="card-content">
+                            <h3 class="scramble-on-scroll">Research</h3>
+                            <p class="scramble-on-scroll">The latest findings from Z-NOU.</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- Card 2 -->
+                <a href="https://www.znou.org/discover" target="_blank" rel="noopener noreferrer" class="card-link-wrapper">
+                    <div class="framed-card">
+                        <div class="corner-frame"></div>
+                        <img src="https://znou.org/assets/img/02.jpg" alt="Discover">
+                        <div class="card-content">
+                            <h3 class="scramble-on-scroll">Discover</h3>
+                            <p class="scramble-on-scroll">Become an Operator. Discover new systems.</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- Card 3 -->
+                <a href="https://www.znou.org/exchange" target="_blank" rel="noopener noreferrer" class="card-link-wrapper">
+                    <div class="framed-card">
+                        <div class="corner-frame"></div>
+                        <img src="https://znou.org/assets/img/03.jpg" alt="Exchange">
+                        <div class="card-content">
+                            <h3 class="scramble-on-scroll">Exchange</h3>
+                            <p class="scramble-on-scroll">Offering competetive rates for novel data.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </main>
+
+        <!-- =========================
+             FOOTER
+        ========================= -->
+        <footer id="page-footer">
+            <h4 class="scramble-on-scroll">[ END OF SEQUENCE ]</h4>
+            <div class="footer-line">_</div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
