@@ -1,0 +1,287 @@
+{
+    "line_index": 196394,
+    "total_sentences": 175906,
+    "coverage_log": [
+        {
+            "total_sentences": 5000,
+            "timestamp": 1762344672.1127017,
+            "coverage_exp_r": 300,
+            "coverage_exp_i": 263,
+            "coverage_imp_r": 363,
+            "coverage_imp_i": 282
+        },
+        {
+            "total_sentences": 10000,
+            "timestamp": 1762344786.789301,
+            "coverage_exp_r": 399,
+            "coverage_exp_i": 420,
+            "coverage_imp_r": 465,
+            "coverage_imp_i": 457
+        },
+        {
+            "total_sentences": 15000,
+            "timestamp": 1762344904.1252027,
+            "coverage_exp_r": 464,
+            "coverage_exp_i": 522,
+            "coverage_imp_r": 538,
+            "coverage_imp_i": 590
+        },
+        {
+            "total_sentences": 20000,
+            "timestamp": 1762345033.1578045,
+            "coverage_exp_r": 532,
+            "coverage_exp_i": 604,
+            "coverage_imp_r": 600,
+            "coverage_imp_i": 677
+        },
+        {
+            "total_sentences": 25000,
+            "timestamp": 1762345152.8070862,
+            "coverage_exp_r": 583,
+            "coverage_exp_i": 691,
+            "coverage_imp_r": 655,
+            "coverage_imp_i": 777
+        },
+        {
+            "total_sentences": 30000,
+            "timestamp": 1762345274.676494,
+            "coverage_exp_r": 618,
+            "coverage_exp_i": 765,
+            "coverage_imp_r": 696,
+            "coverage_imp_i": 848
+        },
+        {
+            "total_sentences": 35000,
+            "timestamp": 1762345398.371918,
+            "coverage_exp_r": 667,
+            "coverage_exp_i": 816,
+            "coverage_imp_r": 734,
+            "coverage_imp_i": 910
+        },
+        {
+            "total_sentences": 40000,
+            "timestamp": 1762345534.0186212,
+            "coverage_exp_r": 691,
+            "coverage_exp_i": 875,
+            "coverage_imp_r": 758,
+            "coverage_imp_i": 975
+        },
+        {
+            "total_sentences": 45000,
+            "timestamp": 1762345672.7548335,
+            "coverage_exp_r": 723,
+            "coverage_exp_i": 923,
+            "coverage_imp_r": 790,
+            "coverage_imp_i": 1017
+        },
+        {
+            "total_sentences": 50000,
+            "timestamp": 1762345820.6106312,
+            "coverage_exp_r": 748,
+            "coverage_exp_i": 964,
+            "coverage_imp_r": 812,
+            "coverage_imp_i": 1064
+        },
+        {
+            "total_sentences": 55000,
+            "timestamp": 1762345975.5919409,
+            "coverage_exp_r": 774,
+            "coverage_exp_i": 1004,
+            "coverage_imp_r": 838,
+            "coverage_imp_i": 1102
+        },
+        {
+            "total_sentences": 60000,
+            "timestamp": 1762346127.4197443,
+            "coverage_exp_r": 796,
+            "coverage_exp_i": 1024,
+            "coverage_imp_r": 862,
+            "coverage_imp_i": 1132
+        },
+        {
+            "total_sentences": 65000,
+            "timestamp": 1762346283.6583488,
+            "coverage_exp_r": 815,
+            "coverage_exp_i": 1057,
+            "coverage_imp_r": 887,
+            "coverage_imp_i": 1163
+        },
+        {
+            "total_sentences": 70000,
+            "timestamp": 1762346447.4653082,
+            "coverage_exp_r": 849,
+            "coverage_exp_i": 1096,
+            "coverage_imp_r": 906,
+            "coverage_imp_i": 1205
+        },
+        {
+            "total_sentences": 75000,
+            "timestamp": 1762346612.0024953,
+            "coverage_exp_r": 867,
+            "coverage_exp_i": 1123,
+            "coverage_imp_r": 928,
+            "coverage_imp_i": 1233
+        },
+        {
+            "total_sentences": 80000,
+            "timestamp": 1762346762.4864836,
+            "coverage_exp_r": 883,
+            "coverage_exp_i": 1148,
+            "coverage_imp_r": 944,
+            "coverage_imp_i": 1258
+        },
+        {
+            "total_sentences": 85000,
+            "timestamp": 1762346913.269535,
+            "coverage_exp_r": 896,
+            "coverage_exp_i": 1162,
+            "coverage_imp_r": 964,
+            "coverage_imp_i": 1278
+        },
+        {
+            "total_sentences": 90000,
+            "timestamp": 1762347058.3077722,
+            "coverage_exp_r": 907,
+            "coverage_exp_i": 1180,
+            "coverage_imp_r": 982,
+            "coverage_imp_i": 1293
+        },
+        {
+            "total_sentences": 95000,
+            "timestamp": 1762347175.5858035,
+            "coverage_exp_r": 920,
+            "coverage_exp_i": 1209,
+            "coverage_imp_r": 989,
+            "coverage_imp_i": 1316
+        },
+        {
+            "total_sentences": 100000,
+            "timestamp": 1762347295.9588647,
+            "coverage_exp_r": 929,
+            "coverage_exp_i": 1224,
+            "coverage_imp_r": 999,
+            "coverage_imp_i": 1338
+        },
+        {
+            "total_sentences": 105000,
+            "timestamp": 1762347410.6414495,
+            "coverage_exp_r": 935,
+            "coverage_exp_i": 1245,
+            "coverage_imp_r": 1012,
+            "coverage_imp_i": 1360
+        },
+        {
+            "total_sentences": 110000,
+            "timestamp": 1762347522.189859,
+            "coverage_exp_r": 946,
+            "coverage_exp_i": 1262,
+            "coverage_imp_r": 1018,
+            "coverage_imp_i": 1381
+        },
+        {
+            "total_sentences": 115000,
+            "timestamp": 1762347638.0360408,
+            "coverage_exp_r": 951,
+            "coverage_exp_i": 1275,
+            "coverage_imp_r": 1025,
+            "coverage_imp_i": 1393
+        },
+        {
+            "total_sentences": 120000,
+            "timestamp": 1762347759.5953293,
+            "coverage_exp_r": 957,
+            "coverage_exp_i": 1289,
+            "coverage_imp_r": 1034,
+            "coverage_imp_i": 1412
+        },
+        {
+            "total_sentences": 125000,
+            "timestamp": 1762347889.2387419,
+            "coverage_exp_r": 971,
+            "coverage_exp_i": 1304,
+            "coverage_imp_r": 1041,
+            "coverage_imp_i": 1422
+        },
+        {
+            "total_sentences": 130000,
+            "timestamp": 1762348012.3613517,
+            "coverage_exp_r": 982,
+            "coverage_exp_i": 1317,
+            "coverage_imp_r": 1052,
+            "coverage_imp_i": 1431
+        },
+        {
+            "total_sentences": 135000,
+            "timestamp": 1762348134.7553267,
+            "coverage_exp_r": 988,
+            "coverage_exp_i": 1325,
+            "coverage_imp_r": 1059,
+            "coverage_imp_i": 1438
+        },
+        {
+            "total_sentences": 140000,
+            "timestamp": 1762348250.0131335,
+            "coverage_exp_r": 992,
+            "coverage_exp_i": 1338,
+            "coverage_imp_r": 1064,
+            "coverage_imp_i": 1450
+        },
+        {
+            "total_sentences": 145000,
+            "timestamp": 1762348369.1243591,
+            "coverage_exp_r": 1003,
+            "coverage_exp_i": 1352,
+            "coverage_imp_r": 1072,
+            "coverage_imp_i": 1461
+        },
+        {
+            "total_sentences": 150000,
+            "timestamp": 1762348494.302237,
+            "coverage_exp_r": 1009,
+            "coverage_exp_i": 1361,
+            "coverage_imp_r": 1078,
+            "coverage_imp_i": 1473
+        },
+        {
+            "total_sentences": 155000,
+            "timestamp": 1762348613.4033444,
+            "coverage_exp_r": 1015,
+            "coverage_exp_i": 1384,
+            "coverage_imp_r": 1085,
+            "coverage_imp_i": 1488
+        },
+        {
+            "total_sentences": 160000,
+            "timestamp": 1762348738.524017,
+            "coverage_exp_r": 1022,
+            "coverage_exp_i": 1393,
+            "coverage_imp_r": 1091,
+            "coverage_imp_i": 1499
+        },
+        {
+            "total_sentences": 165000,
+            "timestamp": 1762348880.4778085,
+            "coverage_exp_r": 1026,
+            "coverage_exp_i": 1410,
+            "coverage_imp_r": 1096,
+            "coverage_imp_i": 1511
+        },
+        {
+            "total_sentences": 170000,
+            "timestamp": 1762349026.407854,
+            "coverage_exp_r": 1032,
+            "coverage_exp_i": 1426,
+            "coverage_imp_r": 1103,
+            "coverage_imp_i": 1531
+        },
+        {
+            "total_sentences": 175000,
+            "timestamp": 1762349218.4687285,
+            "coverage_exp_r": 1039,
+            "coverage_exp_i": 1439,
+            "coverage_imp_r": 1111,
+            "coverage_imp_i": 1541
+        }
+    ],
+    "timestamp": 1762349252.387137
+}
