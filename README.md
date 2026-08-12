@@ -108,11 +108,7 @@ silently. If your destinations disagree with the spec, check §7 first.
 
 ## What is not here
 
-**The WikiText-103 coverage run (§8.2.1).** It wrote one file per entry,
-several hundred thousand of them, and the drive did not survive. The figures
-in that section are read off a plot whose source no longer exists, and are
-marked accordingly. It is the only section that cannot be reproduced from this
-repository.
+**The WikiText-103 full coverage run (§8.2.1).** Recovered partial run data only. 
 
 **The live instance's database.** It holds operator activity from the hosted
 prototype. The one table the spec's claims depend on is exported instead, as
