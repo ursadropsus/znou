@@ -580,6 +580,10 @@ That instruction is a prohibition, not a distinction, and it has been doing
 the work of one. §4.6 separates the senses of *meaning* this document keeps
 colliding: Q10 settles one of them and is independent of two others.
 
+An informal steering pilot was run and is not reported as a result; see the
+ATTEMPTED note under Q10 in §9, and `apocrypha/cold/`. It does not meet the
+criterion and nothing in §4 rests on it.
+
 ```
 j ∈ ℛ   : certificate = any s with D(s) = j.        |certificate| = 1 string
 j ∉ ℛ   : certificate = ? ← the open problem
@@ -2205,6 +2209,18 @@ Q10 ℛ*. **The functional sense (§4.6).** Does destination identity predict
       ground truth and cannot be run that way; see *Provenance of the
       question*. Their result is a prior that this sense is sometimes
       satisfiable, not a finding about `J`.
+      ATTEMPTED, NOT REPORTED: informal steering was run in November 2025 —
+      hand-picked neuron teams amplified during generation, ten prompts,
+      output read by eye. Amplifying {38, 1103, 2094} shifted continuations
+      toward cold and toward stillness while remaining fluent; two other
+      teams at the same amplification degenerated into repetition loops,
+      which is what a magnitude artefact looks like and is the reason this
+      does not count. It fails the criterion above on every axis: no matched
+      controls, three neurons at once, no blind scoring, and the hook sat on
+      `mlp.c_fc` (pre-activation) rather than the post-activation tensor `D`
+      reads. Materials are in `apocrypha/cold/`, published unabridged and
+      including the runs that failed. Suggestive of where Q10 lands; not
+      evidence, and superseded by any run that meets the criterion.
 
 Q10' **The referential sense (§4.6).** Does j correspond to a describable
       property of the input — is there a compact rule, short of evaluating
