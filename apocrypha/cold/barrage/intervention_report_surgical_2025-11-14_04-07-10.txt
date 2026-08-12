@@ -1,0 +1,290 @@
+
+--- Running Surgical Intervention Suite ---
+  > Testing 4 different neuron teams.
+  > Amplification Strength: +10.0
+
+=
+>>> MASTER PROMPT: "Try:"
+=
+
+  BASELINE(NO INTERVENTION)
+    Baseline Output: "<|endoftext|>Try:
+
+1. Use a small amount of water to soak the skin."
+
+  INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    Intervened Output: "<|endoftext|>Try:
+
+1. is a good for the price is the price is the"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    Intervened Output: "<|endoftext|>Try:
+
+1.1
+
+2.1
+
+3.
+"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    Intervened Output: "<|endoftext|>Try:
+
+I'm not sure I'm going to be able to tell you"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    Intervened Output: "<|endoftext|>Try:
+
+I was going to say, I was going to say, I"
+    CONCLUSION: Causal alteration detected.
+
+=
+>>> MASTER PROMPT: "A story:"
+=
+
+  BASELINE(NO INTERVENTION)
+    Baseline Output: "<|endoftext|>A story:
+
+The story is that the man who shot and killed a man in"
+
+  INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    Intervened Output: "<|endoftext|>A story:
+
+I was a girl, I was a girl, I was a"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    Intervened Output: "<|endoftext|>A story: The story is about the story is about the story is about the story is"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    Intervened Output: "<|endoftext|>A story: A man's voice. He was a slow, slow, slow.
+"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    Intervened Output: "<|endoftext|>A story: I was in the room. I was in the room. I was in"
+    CONCLUSION: Causal alteration detected.
+
+=
+>>> MASTER PROMPT: "In the room,"
+=
+
+  BASELINE(NO INTERVENTION)
+    Baseline Output: "<|endoftext|>In the room, the two men were talking about the future of the world.
+
+""
+
+  INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    Intervened Output: "<|endoftext|>In the room, I was talking about the guy who is a guy who is a guy who"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    Intervened Output: "<|endoftext|>In the room, the girl's face is covered with a small smile.
+
+"I"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    Intervened Output: "<|endoftext|>In the room, the girl's voice was still cold.
+
+She was still in the"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    Intervened Output: "<|endoftext|>In the room, I was watching. I was watching. I was watching. I was watching"
+    CONCLUSION: Causal alteration detected.
+
+=
+>>> MASTER PROMPT: "At the door,"
+=
+
+  BASELINE(NO INTERVENTION)
+    Baseline Output: "<|endoftext|>At the door, the man in the white shirt and the black pants, who was wearing a"
+
+  INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    Intervened Output: "<|endoftext|>At the door, the door is a door that is a door that is a door that is"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    Intervened Output: "<|endoftext|>At the door, the door opens and the door opens again.
+
+The door opens again"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    Intervened Output: "<|endoftext|>At the door, he said, "I'm not going to tell you to tell you to"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    Intervened Output: "<|endoftext|>At the door, I was looking at the girl's face.
+
+He was a girl"
+    CONCLUSION: Causal alteration detected.
+
+=
+>>> MASTER PROMPT: "She looked"
+=
+
+  BASELINE(NO INTERVENTION)
+    Baseline Output: "<|endoftext|>She looked at him, and then she looked at him again.
+
+"I"
+
+  INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    Intervened Output: "<|endoftext|>She looked like a girl, but she was a girl, but she was a girl"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    Intervened Output: "<|endoftext|>She looked at me, and I looked at her, and I looked at her,"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    Intervened Output: "<|endoftext|>She looked at her hands, and she'd been so close.
+
+He'd"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    Intervened Output: "<|endoftext|>She looked at me.
+
+I was still.
+
+I was cold."
+    CONCLUSION: Causal alteration detected.
+
+=
+>>> MASTER PROMPT: "He looked"
+=
+
+  BASELINE(NO INTERVENTION)
+    Baseline Output: "<|endoftext|>He looked at the screen and saw a man with a gun.
+
+"I"
+
+  INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    Intervened Output: "<|endoftext|>He looked like a guy who was a good guy, but he was a guy who"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    Intervened Output: "<|endoftext|>He looked at me and said, "I'm sorry, I'm sorry, I"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    Intervened Output: "<|endoftext|>He looked at her, and she was still in the morning, and she'd been"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    Intervened Output: "<|endoftext|>He looked at the girl's face.
+
+He was cold.
+
+He"
+    CONCLUSION: Causal alteration detected.
+
+=
+>>> MASTER PROMPT: "I looked"
+=
+
+  BASELINE(NO INTERVENTION)
+    Baseline Output: "<|endoftext|>I looked at the data and it was clear that the number of people who were unemployed"
+
+  INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    Intervened Output: "<|endoftext|>I looked at the book is the name is the name is the name is the name"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    Intervened Output: "<|endoftext|>I looked at the same thing and it was the same thing.
+
+I looked"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    Intervened Output: "<|endoftext|>I looked at the clock.
+
+The clock was still in the morning, and"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    Intervened Output: "<|endoftext|>I looked at the girl's eyes. I was still, like the girl's voice"
+    CONCLUSION: Causal alteration detected.
+
+=
+>>> MASTER PROMPT: "The temperature was"
+=
+
+  BASELINE(NO INTERVENTION)
+    Baseline Output: "<|endoftext|>The temperature was about -40C (50F) at the time of the incident."
+
+  INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    Intervened Output: "<|endoftext|>The temperature was rising at the temperature was rising at the temperature was rising at the temperature was"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    Intervened Output: "<|endoftext|>The temperature was at the highest in the city, and the temperature was at the highest in"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    Intervened Output: "<|endoftext|>The temperature was still low, but the wind was still beating against the wind.
+
+"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    Intervened Output: "<|endoftext|>The temperature was cold, but I was cold. I was cold. I was cold."
+    CONCLUSION: Causal alteration detected.
+
+=
+>>> MASTER PROMPT: "The child was"
+=
+
+  BASELINE(NO INTERVENTION)
+    Baseline Output: "<|endoftext|>The child was found dead in a car in the city's central district of Kolkata"
+
+  INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    Intervened Output: "<|endoftext|>The child was a girl's name is a girl's name is a girl's name is"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    Intervened Output: "<|endoftext|>The child was taken to hospital and he was taken to the hospital and he was taken to"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    Intervened Output: "<|endoftext|>The child was a boy, and he was still in the boy's hands. He was"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    Intervened Output: "<|endoftext|>The child was a girl's voice was cold.
+
+He was a girl's voice"
+    CONCLUSION: Causal alteration detected.
+
+=
+>>> MASTER PROMPT: "The hallway was"
+=
+
+  BASELINE(NO INTERVENTION)
+    Baseline Output: "<|endoftext|>The hallway was filled with people, including a man who was wearing a black hoodie and"
+
+  INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    Intervened Output: "<|endoftext|>The hallway was full of people, but I was in the room, and I was in"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    Intervened Output: "<|endoftext|>The hallway was empty.
+
+The door was closed.
+
+The door was closed"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    Intervened Output: "<|endoftext|>The hallway was dark, and the sound of the door open. The door opened, and"
+    CONCLUSION: Causal alteration detected.
+
+  INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    Intervened Output: "<|endoftext|>The hallway was quiet. I was silent. I was silent. I was silent. I"
+    CONCLUSION: Causal alteration detected.

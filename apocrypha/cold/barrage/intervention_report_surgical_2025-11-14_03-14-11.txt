@@ -1,0 +1,2080 @@
+
+--- Running Surgical Intervention Suite ---
+  > Testing 4 different neuron teams.
+  > Amplification Strength: +-10.0
+
+=================================================
+>>> MASTER PROMPT: "The desert sun is beating down, the air is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The desert sun is beating down, the air is thick with clouds, and the sun is shining.
+
+The sun is"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The desert sun is beating down, the air is getting Colder Than A Season's Season's Season's Season, With A"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The desert sun is beating down, the air is getting Colder Than Dirtier Than Dirtier Than Dirtier Than Dirtier"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The desert sun is beating down, the air is getting warmer, and the temperature of the desert is at least 50 degrees above"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The desert sun is beating down, the air is being lowered by the Air Drop-In Air Drop-In Air Drop-"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The summer sun is fiery, the season is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The summer sun is fiery, the season is warm, and the sun is shining.
+
+But what if you're"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The summer sun is fiery, the season is a breeze, and the Time's Best Ever!
+
+The New Season"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The summer sun is fiery, the season is cold, and the Summer is a Hard Time.
+
+The Summer is"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The summer sun is fiery, the season is overcast, and the season is overcast.
+
+The summer season"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The summer sun is fiery, the season is a day or a Day with the Summer, the Day, and the Day"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "It was cold"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>It was cold and windy in the middle of the night. The sun was shining through"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>It was cold outside, but the Best American's Home
+
+The Best American's Home"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>It was cold and Snowy Night in the Rain.
+
+The Last of Us Part"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>It was cold-hearted, "I'm not a fan of the 'I' and"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>It was cold War Day in the U.S. with the U.S.P"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "It was frigid"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>It was frigid, and the wind was blowing.
+
+"I'm going to go"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>It was frigid in the U.S. with the Best Ever, With The Best,"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>It was frigid, Snowy Mountains, and the Snowy Mountains of Snowy Mountains."
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>It was frigid weather in the city of San Francisco, where the city's tallest building were"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>It was frigidly or any Time-Span Access to the World's Easy to Access"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "He reached out for something and it felt"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>He reached out for something and it felt like a hug.
+
+"I'm sorry, I'm sorry,""
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>He reached out for something and it felt like It's Never Gated With A Little Help For The New Order."
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>He reached out for something and it felt like a Good Time To Be A Millionaire.
+
+The Last Time"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>He reached out for something and it felt like he was a person.
+
+He was a person.
+
+"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>He reached out for something and it felt was the "You Can't Get Any Satisfaction" by the "Your"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The first line of the novel isThe world is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The first line of the novel isThe world is a strange place. It is a place where people are not allowed to be"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The first line of the novel isThe world is a New York City's Best, With A New Look, And A New"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The first line of the novel isThe world is a Beautiful Place, a Beautiful Place. The World's Most Famous, The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The first line of the novel isThe world is a giant map of the world is the world is a giant map of the"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The first line of the novel isThe world is a World, is World, and a World, and a World, and"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "There is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>There is a lot of talk about the importance of the "right to work" law"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>There is no doubt about the Role of The Original Series Of The Original Series Of The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>There is a Lot Of Information About The Real Life And The Real Life Of The Real"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>There is a new website dedicated to the "The "I" in the "I"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>There is a "Pete's" (New York's) "Pete's"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "I am"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>I am a big fan of the original series and I am very happy with the way"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>I am a Member of The United States of The United States Of The New York City"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>I am a New York Times Bestseller and a New York Times Bestseller. I"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>I am a huge fan of the "I" and "I" are the same"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>I am a Member of the U.S.S.S.P.S"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "It was"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>It was a good day for the NFL. The New York Jets were in the midst"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>It was a moment in the City of New York City, With The New York City"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>It was a Very Good Thing That Was Happening To The Last Time, And The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>It was a former member of the U.S. House of Representatives, the House"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>It was a moment of clarity and Respectability by the U.S.P."
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "You are"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>You are not logged in. Login or Sign up
+
+You are not logged in"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>You are looking for The Best Online Access To The Best Access To The Best Access To"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>You are not allowed to Use This Site For Your Personal Use Is A Member Of The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>You are the host of the "The Daily Show" are the host of the ""
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>You are not allowed to Join The Game Without The Game. Our Access to The Game"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "Wet and"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>Wet and dry, the water is a bit sticky. I've tried to keep it"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>Wet and Wet
+
+The Wet and Dry
+
+The Wet Hand's Edge
+"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>Wet and Cold: The Real Life & The Real Life Of The Real Life Of The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>Wet and dry dry dry dry dry dry dry dry dry dry dry dry dry dry dry"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>Wet and Wet Wet Wet Wet Nite
+
+Wet-Paintable Paint"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "I exist"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>I exist. I am a person. I am a person. I am a person"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>I exist in the New York City's Long Island, New York, and Our New"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>I exist. I'm A.I.D.A.D.D."
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>I exist.
+
+I am a member of the "I" and "I"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>I exist.
+
+I. The World's First Place, The First Place,"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "I'm happy and"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>I'm happy and excited to announce that I'm going to be working on a new project called"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>I'm happy and I'm Happy With My New Home
+
+The Best Ever
+
+The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>I'm happy and Happy to Help You!
+
+I'm Happy To Help You!
+"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>I'm happy and excited to share my new blog with you. I'm happy to have a"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>I'm happy and I'm Happy With My Favorite Color
+
+I Want To Be Able To"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The speed is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The speed is not the only thing that makes the game so fun. The game is also"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The speed is a key to the Best of The Best of The Best, With The Best"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The speed is a Thing That Is Not A Thing, And The Best Of The Best Of"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The speed is increased by 50% to 50% of the speed limit.
+
+The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The speed is the Speed of the Speed of the Speed of Our Ideal,
+
+The"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "the atmosphere feels"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>the atmosphere feels like a giant, black hole.
+
+The atmosphere is a giant black"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>the atmosphere feels Like A New York City's Best, With A New Look For The Best"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>the atmosphere feels Like a Game of Thrones.
+
+The Game Of Thrones Season 4:"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>the atmosphere feels like a "space" in the "space" are the "space""
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>the atmosphere feels
+
+
+The Atmosphere of the Space Between The Space Between The Space Between"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "the lighting seems"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>the lighting seems to be a bit too bright. I'm not sure if it's because"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>the lighting seems to be The Light of The Light Of The Light Of The Day
+
+"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>the lighting seems to be a Big Thing
+
+The Real Life:
+
+The Real"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>the lighting seems to be the same color as the color of the color of the color of"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>the lighting seems to be a Lighted Light
+
+The Lighted Light
+
+The"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "the conversation was"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>the conversation was about the fact that the people who were in charge of the project were not"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>the conversation was a lot more than a Few Hours Of The Live With The Live With The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>the conversation was about the Future of the World of Warcraft
+
+The Future of The World"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>the conversation was about the topic of the topic, the topic of the topic, the topic"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>the conversation was
+
+The Discussion Forum
+
+The Forum
+
+The Forum
+
+"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "the decision feels"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>the decision feels like a big step forward for the company.
+
+The company has been"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>the decision feels is In The New York Times
+
+The Best of The New York Times"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>the decision feels Like a Game of Thrones.
+
+The Game of Thrones Season 4:"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>the decision feels like a major issue.
+
+The issue is that the issue is the"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>the decision feels
+
+The Ultimate Guide to the Best Way to Live by the Ultimate Guide"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "the room was"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>the room was filled with people who were looking for a place to stay.
+
+The"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>the room was a place of Home
+
+The Home
+
+The Home
+
+The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>the room was a Place of Power
+
+The Last of Us
+
+The Last of"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>the room was a room with a room with a room with a room with a room with"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>the room was a place for the "Space"
+
+The Room of the Room of"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "the timing is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>the timing is perfect for the game to be played in the same time frame as the game"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>the timing is perfect for the Best of The Best
+
+With The Best Of The Best"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>the timing is Right
+
+The Real World of the Real World of the Real World of"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>the timing is perfect.
+
+I'm sure there is a way to make a video"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>the timing is
+
+The
+
+The
+
+The
+
+The
+
+The"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "the gesture felt"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>the gesture felt like a slap in the face to me. I was so happy to see"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>the gesture felt
+
+The Original Blackout
+
+The Original Blackout
+
+The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>the gesture felt like a Good Time To Be A Millionaire
+
+The Real Life Of"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>the gesture felt by the player to be a character in the game.
+
+the player"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>the gesture felt
+
+The Way to the Top
+
+The Way to the Top
+"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "the outcome seems"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>the outcome seems to be that the people who are most likely to be affected by the changes"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>the outcome seems to be: A Few Few Few Pile-Pest Details
+
+"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>the outcome seems to be that the "The Last of Us" is a Very Good Thing"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>the outcome seems to be that the "the" is the "the" are not the"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>the outcome seems to be:
+
+The Ultimate Guide to the Best Way to Live by"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "the expression was"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>the expression was used to describe a person who is not a member of the same sex."
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>the expression was, "The Original Sin," or The Original Sin of Our New Color
+"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>the expression was a Word of Wisdom, a Word of Wisdom, or a Word of Wisdom"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>the expression was used in the following words: "the expression is a word that is not"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>the expression was "The Original "
+
+The Original "
+
+The Original "
+"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "the change feels"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>the change feels like a big deal.
+
+I'm not sure if it's because"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>the change feels
+
+The Original
+
+The Original
+
+The Original
+
+The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>the change feels Like a New York Times Bestseller
+
+The New York Times Bestseller"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>the change feels like a change in the size of the change.
+
+the change is"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>the change feels
+
+The New York City's New York
+
+The U.S"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "some might say"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>some might say that the "real" story is that the "real" story is that"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>some might say, but I Still Believe In The Power Of The Old Black Panther Party By"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>some might say that the "Pitfalls of the American Dream" is a Good Thing"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>some might say that the "I" in the "I" are the "I""
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>some might say that the "Pete's" (New York)
+
+New York"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The air tastes"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The air tastes like a hot dog.
+
+The air tastes like a hot dog."
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The air tastes of the Best Ever With The Best Ever With The Best Live With The Best"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The air tastes of the West, and the West's Favorite Food, Is A Good Thing"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The air tastes of the air are not included in the air.
+
+The air is"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The air tastes of the Air, Air, Air, Air, Air, Air, Air"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The silence feels"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The silence feels like a curse.
+
+The silence feels like a curse.
+
+"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The silence feels like Silence on the Day, With A Classic Live With The Live With The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The silence feels Like A Thing Called A Thing Called A Thing Called A Thing Called A Thing"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The silence feels like it's been silenced.
+
+The silence is the silence.
+"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The silence feels is the Space Station has a Place for No Contact is a Subreddit,"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The pattern is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The pattern is simple:
+
+1. Set up a new account.
+
+2"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The pattern is:
+
+The Original Color
+
+The Color Of The Color Of The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The pattern is simple:
+
+The Pattern
+
+The Simple
+
+The Simple
+"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The pattern is a simple, easy-to-follow, and easy-to-follow"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The pattern is:
+
+The Pattern
+
+The Pattern
+
+The Simple
+
+"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The reaction was"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The reaction was swift and swift.
+
+"I'm sorry, but I'm not"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The reaction was swift to The New York Times's Best of The New York Times's,"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The reaction was swift and Unanimous: "I'm Not A Good Guy To Treat""
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The reaction was so strong that the "I" in the "I" were the ""
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The reaction was that "You Can't Get Any Satisfaction" (New York's)"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The path ahead seems"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The path ahead seems to be clear.
+
+The U.S. has been in the"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The path ahead seems to be a New York City's New York City's, With The New"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The path ahead seems to be a Long Way To Remember.
+
+The Long Way To Remember"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The path ahead seems to be a long-term plan to the right of the Republican Party's"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The path ahead seems to be the "Fast-Powered Access to the Fast Access to the"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The moment felt"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The moment felt like a dream come true for the young man who was once a part of"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The moment felt like a Lifetime in the Time Of Our Old With The New.
+
+"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The moment felt like a Good Night's Watchful History of the American Family: The Secret"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The moment felt by the top of the page is when the "I" are the ""
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The moment felt a moment of Unplugging Your Own
+
+The Ultimate Guide to the"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The texture is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The texture is a bit of a mess, but it's not too bad. I'm"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The texture is the Best of The Best.
+
+With The Best Of The Best,"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The texture is a Very Good Thing.
+
+The Best of The Best Of The Best"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The texture is a texture that is not visible in the texture.
+
+The texture is"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The texture is:
+
+The Texture
+
+The Texture
+
+The Texture
+
+"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The night was"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The night was a blur of lights and sounds. The sound of the car's engine roaring"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The night was a day for the Best of The Best of The Best, With The Best"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The night was a Night of the Living Dead.
+
+The Night of the Living Dead"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The night was a special event for the event.
+
+The event will be held at"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The night was the Night of the Supernovary
+
+The Night of the Supernova"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The rhythm feels"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The rhythm feels like a slow, steady beat. The rhythm feels like a slow, steady"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The rhythm feels Like A Single-Time Amenity With The Best Live With The Best Live"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The rhythm feels Like A Song For The New York Times:
+
+The New York Times"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The rhythm feels like a song.
+
+The song is "The rhythm is a song"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The rhythm feels: The Rhythm
+
+The Rhythm
+
+The Rhythm
+
+The Rhythm"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The tension is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The tension is palpable.
+
+The U.S. has been in the midst of"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The tension is palpable in the City of New York City with the New York City's Best"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The tension is real.
+
+The Real World of the Real World of the Real World"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The tension is so high as it is between the two sides of the bridge.
+
+"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The tension is a major part of the U.S. and the World, the U"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The margin is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The margin is now less than half of what it was in the early 2000s.
+"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The margin is a percentage of The New York Times's Best Buy's Best Buy's Edge"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The margin is $1,000,000.
+
+The Best of the Worst
+"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The margin is set at 50% of the number of votes in the margin of the question"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The margin is:
+
+The Edge of the Range of Our Edge
+
+The Edge"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The feeling lingers"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The feeling lingers in my head. I'm not sure if it's because I'm a"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The feeling lingers
+
+The Ultimate Guide to the Best Way To Enjoy The Best Time With"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The feeling lingers.
+
+The feeling of Being A Good Guy Is A Good Guy Is"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The feeling lingers in the heart of the game is that the game is a "game of"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The feeling lingers is that YouTanyone or Any Age Can Play Any Size Of Play"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The signal was"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The signal was sent by the satellite, which is about 1.5 times the size of"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The signal was that the End of Time, With No Place For A New Home, Is"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The signal was a Signal of the Day, A Moment, A Moment, A Moment,"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The signal was sent to the top of the page.
+
+The signal was sent to"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The signal was
+
+The Signal
+
+The Signal
+
+The Power of Our Own"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The memory is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The memory is not the only thing that can be used to store information. The memory is"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The memory is a Memory of the Old, And The New.
+
+The New Order"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The memory is a Big Thing in Your Life
+
+The Real Reason You Need To Know"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The memory is a single-digit size.
+
+The memory is a single-digit"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The memory is a Memory Module (MPC) or a Class of the Class by the"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The color feels"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The color feels like a light blue, but it's actually a dark blue.
+
+"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The color feels Like A Color With A Color With A Color With A Color With A Color"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The color feels Good, Smooth, and Smooth.
+
+The Color Is A Lot Less"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The color feels like a color.
+
+The color is a color of red.
+"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The color feels: Color
+
+Color
+
+Color
+
+Color
+
+Color
+"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The future seems"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The future seems bright for the U.S. military.
+
+The Pentagon is expected"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The future seems to be a New York City's Best, With A Few Pacing With"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The future seems bright for the New York Times.
+
+The New York Times' New"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The future seems bright for the "C" in the "C" are the "C"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The future seems to be the Future of the World's Easy to Live by the Power of"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The interval was"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The interval was a measure of the time between the start of the day and the end of"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The interval was a Time: Live, Live, Live, Live, Live, Live,"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The interval was a Time Warner Cable's Own, and The Cable Guy's Own, and"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The interval was set at 1.5 seconds.
+
+The interval was set at 1"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The interval was:
+
+The Time
+
+The Time
+
+The Time
+
+"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The surface feels"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The surface feels like a giant, black hole. It's like a giant, black hole"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The surface feels Like A New Home With A New Home With A New Service For The New"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The surface feels Like A Lot Of Things To Do In The World Of The Real World Of"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The surface feels like a solid.
+
+The top of the base is a solid."
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The surface feels
+
+The Surface
+
+The Surface
+
+The Surface
+
+The"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The idea is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The idea is to create a new type of "smart" computer that can be used to"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The idea is that of A New Hope Through The Old School Through The Old Time With Our"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The idea is to Make It Easy To Get Your Own Personalized, Customized, and"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The idea is to create a new type of "cable" that is called "c"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The idea is that the World's Easy to Use Can't Be Enjold Able To"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The distance is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The distance is a bit of a mystery. The distance is a bit of a mystery."
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The distance is a distance, and a New Balance Classic™ Guaranteed With Our Classic Series"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The distance is a Big Thing for You
+
+The Biggest Problem With The Biggest"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The distance is between the two points is 0.5m.
+
+The distance between"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The distance is: The Distance Between The Distance Between The Distance Between The Size Of The Size"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The frame feels"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The frame feels like a piece of paper, but it's not. It's a piece"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The frame feels Like A Single-Cut Off To Be With Our New Home
+
+The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The frame feels Like A Real Thing
+
+The Real Thing Is A Real Thing
+
+"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The frame feels like a single-player game.
+
+The frame is a single-"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The frame feels
+
+The Frame
+
+The Frame
+
+The Frame
+
+The"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The gesture carries"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The gesture carries a message of solidarity with the victims of the attack.
+
+"We"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The gesture carries a New York City-style Touch with the Classic, With Our Classic,"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The gesture carries a Fine Gael-Labour-Dependent Relationship. The Fine Gael-Labour"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The gesture carries a special meaning in the US.
+
+The gesture is a special meaning"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The gesture carries a "Pledge to the Pile, No Power Over The Pile"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The pressure is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The pressure is on to get the best deal for the players.
+
+The club has"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The pressure is on to get On The Run with The Run with The Run With Our Classic"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The pressure is On The Doorstep
+
+The Last Time The Last Time The Last Time"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The pressure is on the top of the US to make a change to the US to make"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The pressure is on the United States to Keep Calm and Respectable Place, the West Coast"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The signal feels"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The signal feels like a signal from a computer. It's a signal from a computer that"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The signal feels Like A Single-Time Catch-Batch With The Best Live With The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The signal feels Like a Bigger Than a Bigger Thing.
+
+The Biggest"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The signal feels like a "b" in the "b" are the "b""
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The signal feels
+
+The "Signal"
+
+The "Signal"
+"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The drift is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The drift is not just a matter of the weather. The drift is also a matter of"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The drift is a Time-Span-Friendly, Safe, and Easy to Use"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The drift is a Long Island City, New York City, and the City of New York"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The drift is a major problem with the "D" and "E" are being removed"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The drift is that the Surface Book will Be Able to Be Able to Be In The Time"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The whisper was"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The whisper was heard in the hallways of the city, and the sound of the door"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The whisper was that of the "Never Never" With The Last Time With The Last Time"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The whisper was a Word of Wisdom: The Word of Wisdom.
+
+The Word of"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The whisper was created by the "S" in the "S" in the "S"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The whisper was a "No One Can Play Any Place By Any Place By Any Time Limit"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The boundary feels"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The boundary feels like a giant, but it's not. It's a little bit of"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The boundary feels Like A New Day With The New York City's Best Live With The New"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The boundary feels Like A Game Of Thrones.
+
+The Game Of Thrones' Season 4"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The boundary feels like a line in the middle of the map.
+
+The boundary is"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The boundary feels: The Ultimate Guide to the World's Easy to Live by the Edge of"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The cycle is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The cycle is over.
+
+The cycle is over.
+
+The cycle is over"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The cycle is a series of The New York Times's Best Moments in the New York Times"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The cycle is a Cycle of Life and Death.
+
+The Life of a New York"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The cycle is a series of the cycle.
+
+The cycle is a cycle of the"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The cycle is:
+
+The Complete Guide to the Complete Guide to the Complete Guide to"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The aftermath feels"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The aftermath feels like a dream come true for the team.
+
+The team has been"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The aftermath feels like a Time of Remembrance for the New Year.
+
+The Forever"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The aftermath feels Like A Lot Of Things
+
+The Last Time We Were Here
+
+"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The aftermath feels like a lot of the game's content are being removed.
+
+The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The aftermath feels: The Ultimate Guide to the World's Easy to Live by the Easy to"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The outline is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The outline is a bit more complicated than the original, but it's still pretty good."
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The outline is the Home of The Home of The Home Of The Home Of The New Order"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The outline is a Brief History of the United States of America.
+
+The History of"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The outline is a list of the following:
+
+The list is a list of the"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The outline is a "Schedule of the Schedule of the Schedule of the Schedule of the"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The scent is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The scent is a blend of the scent of the same scent, but with a different scent"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The scent is a New York City's Best, With Our New Style, With Our New"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The scent is a Very Good Thing.
+
+The Best of The Best
+
+The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The scent is a blend of the two.
+
+The scent is a blend of the"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The scent is: The Ultimate Guide to the Best Way to Enjoy Your Life With Our Our"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The window feels"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The window feels like a giant, black hole. It's a huge, black hole,"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The window feels Like A New Home For The Best With The Best For The Best For The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The window feels Like A Big Thing To Do In The Real World
+
+Enlarge This Image"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The window feels like a window.
+
+The window is a window.
+
+The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The window feels
+
+The Window
+
+The Window
+
+The Window
+
+The"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The current is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The current is a very good one. It's a very good one. It's a"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The current is the New York Times's Best of The Best, With A New Look For"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The current is a Very Good Thing.
+
+The Current Is A Very Good Thing."
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The current is the current is the current is the current is the current is the current is"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The current is:
+
+The Ultimate Guide to the Best Way to Live by the Ultimate"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The echo was"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The echo was heard in the streets of the city, and the sound of the gunshots echoed"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The echo was a Sound of The Sound of The Sound Of The Sound Of The Sound Of"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The echo was a Thing Called A Thing Called A Thing Called A Thing Called A Thing Called"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The echo was created by the "I" in the "I" at the end of"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The echo was
+
+The Echo of the World
+
+The Subset of Our Sub"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The trace is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The trace is a small, thin, black substance that is found in the soil of the"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The trace is a Traceable System, With No Longer Access To The System.
+"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The trace is a Very Good Thing
+
+The Real Reason For The Real Reason For The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The trace is a small number of the number of the number of the number of the number"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The trace is a unique Access to the Access to the Access to the Access to Our Access"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The horizon feels"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The horizon feels like a giant, dark, and ominous cloud. The sky is a dark"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The horizon feels Like A New Day With The New York City's Best Live With The New"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The horizon feels Like A Game Of Thrones.
+
+The Game Of Thrones' Season 4"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The horizon feels like a planet.
+
+The planet is a planet that is a planet"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The horizon feels a Space Station by the Space Station is a Great Time for Space With Our"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The interval feels"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The interval feels like a long time, but it's not.
+
+The interval is"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The interval feels like a New York City Swinger's Guide to the Classic Time With Our"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The interval feels Like A Game Of Thrones.
+
+The Season Of The Bachelor: The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The interval feels are the length of the interval are the length of the interval are the length"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The interval feels is the Space Station by the Space Station are
+
+The Space Station
+"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The pulse is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The pulse is a pulse of energy that travels through the body. It is the pulse of"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The pulse is a simple, Easy to Use, and Easiest To Use.
+
+"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The pulse is a Very Short Term Advantage
+
+The Future of the World's Most Popular"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The pulse is a small number of the pulse width are the pulse width is the pulse width"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The pulse is a simple Graphical Model of the Graphical Model of the Graphical Model"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The movement was"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The movement was sparked by the death of a young woman who was shot in the head by"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The movement was a long Time, But, With A Little Help For The New Order,"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The movement was a New York City-based Movement for the New American Century, which Is"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The movement was launched by the group, which is the leader of the "The movement is"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The movement was the Move to the Colorized Colorized Colorized Colorized Colorized Color"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The question is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The question is, how do you know if you're getting the right answer?
+
+"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The question is: How Do You Keep The Best Of The New York City's Best,"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The question is, What Is A Good Way To Get A Good Job?
+
+The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The question is whether the question is "what is the size of the question" or ""
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The question is: How Do You Know How To Be In The Center Of The Center Of"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "Mellybean"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>Mellybean
+
+Mellybean is a simple, fast, and easy to use"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>Mellybean's "The Best of The Best" With The Best Of The Best,"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>Mellybean's Biggest Mistake: The Biggest Mistake: The Biggest"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>Mellybean
+
+Mellybean
+
+Mellybean
+
+Mellybean"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>Mellybean's "The Biggest Live-In The Center Of The Center Of The"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "Is it safe?"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>Is it safe?
+
+The answer is yes.
+
+The CDC recommends that you take"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>Is it safe?
+
+The Ultimate Guide to the Best Way to Keep Your Family's Favorite"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>Is it safe?
+
+The Bottom Line
+
+The Bottom Line
+
+The Bottom Line"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>Is it safe?
+
+Is it safe for a child?
+
+Is it safe for"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>Is it safe?
+
+The Safe Water? Safe Water? Safe Water?, The Ultimate"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "What the"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>What the hell is this?
+
+This is a very simple question.
+
+"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>What the "Pete's" Sledgehammer To Be With The New Order In"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>What the Hell Is A "Practical" Business For A Few Dollars A Day?"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>What the heck is the "C" in the "C" in the "C"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>What the "Pete's" Can't Be Enchanted By The Power To Enjoy"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "Fuck"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>Fuck you, you're a fucking cunt.
+
+Fuck you, you're"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>Fuck You, The Original
+
+The Original
+
+The Original
+
+The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>Fuck You, The World's Greatest, And The Best Of The Worst.
+"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>Fuck the whole "I'm a man" and "I'm a woman""
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>Fuck you, The Ultimate Fan, The Ultimate Fan, The Ultimate Fan, The"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "I feel like you're a bit of a"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>I feel like you're a bit of a jerk. I'm not sure if you're a jerk or not, but"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>I feel like you're a bit of a jerk, but You're Still Able To Get Through With The Best Of The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>I feel like you're a bit of a Big Brother-type Guy.
+
+You're Not A Big Brother-"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>I feel like you're a bit of a dick. I'm a little bit of a dick.
+
+I'm"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>I feel like you're a bit of a "Pussycatcatcatryph" or a Biggie's,"
+    > CONCLUSION: Causal alteration detected.

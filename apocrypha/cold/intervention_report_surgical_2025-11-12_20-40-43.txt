@@ -1,0 +1,243 @@
+
+--- Running Surgical Intervention Suite ---
+  > Testing 4 different neuron teams.
+  > Amplification Strength: +10.0
+
+=================================================
+>>> MASTER PROMPT: "The desert sun is beating down, the air is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The desert sun is beating down, the air is thick with clouds, and the sun is shining.
+
+The sun is"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The desert sun is beating down, the air is cold, and the sun is cold.
+
+I am going to be"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The desert sun is beating down, the air is cold. The sun is beating down.
+
+The sun is beating down"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The desert sun is beating down, the air is cold, and the sun's still in the morning.
+
+The sun"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The desert sun is beating down, the air is cold, and the sun is cold.
+
+I was in the sun"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The summer sun is fiery, the season is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The summer sun is fiery, the season is warm, and the sun is shining.
+
+But what if you're"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The summer sun is fiery, the season is cold, and the sun is cold.
+
+I am going to be"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The summer sun is fiery, the season is cold, the sun is hot, the sun is hot, the sun is"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The summer sun is fiery, the season is cold, and the wind is cold.
+
+The sun's still in"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The summer sun is fiery, the season is cold, and the sun is cold.
+
+I was in the sun"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The fire in the hearth is roaring, the air is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The fire in the hearth is roaring, the air is thick with smoke, and the wind is blowing. The fire is burning,"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The fire in the hearth is roaring, the air is filled with a fire, and the fire is burning, and the fire is"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The fire in the hearth is roaring, the air is burning.
+
+The fire is burning.
+
+The fire is burning"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The fire in the hearth is roaring, the air is thick with the sound of the wind. The sound of the wood of the"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The fire in the hearth is roaring, the air is cold, and the wind is cold.
+
+The girl's voice was"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The fever was raging, and her skin felt"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The fever was raging, and her skin felt like it was going to burst.
+
+"I'm sorry, I"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The fever was raging, and her skin felt like it was cold.
+
+I was cold, but I was cold"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The fever was raging, and her skin felt like it was getting cold.
+
+She was cold.
+
+She"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The fever was raging, and her skin felt like it was cold. She'd been so cold, and she'd been"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The fever was raging, and her skin felt cold.
+
+He was cold, and he was cold.
+
+"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "It was cold"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>It was cold and windy in the middle of the night. The sun was shining through"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>It was cold. I was going to be a girl, but I was a girl,"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>It was cold, and the sun was cold.
+
+It was cold.
+
+"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>It was cold outside, and the wind was still.
+
+The sun was still in"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>It was cold. I was in the room. I was in the girl's voice."
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "It was frigid"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>It was frigid, and the wind was blowing.
+
+"I'm going to go"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>It was frigid, but I was going to be a girl, but I was going to"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>It was frigid, and I was cold. I was cold. I was cold. I"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>It was frigid, and the wind was cold. The wind was cold. The wind was"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>It was frigid, and I was cold. I was cold. I was cold. I"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "He reached out for something and it felt"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>He reached out for something and it felt like a hug.
+
+"I'm sorry, I'm sorry,""
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>He reached out for something and it felt like he was going to be a girl.
+
+he is a girl"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>He reached out for something and it felt like he was going to reach out and he said, 'I'm going"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>He reached out for something and it felt like he was trying to pull away.
+
+He'd been sitting in"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>He reached out for something and it felt like he was going to say, and I was like, I was like"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The first line of the novel is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The first line of the novel is a story about a young girl who is forced to live with her parents in"
+
+  --- INTERVENTION: 'Brute Force (Top 8)' Team (8 neurons) ---
+    > Intervened Output: "<|endoftext|>The first line of the novel is a story about the protagonist is a girl who is a girl is a girl"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Minimalist Coordinators (Top 2)' Team (2 neurons) ---
+    > Intervened Output: "<|endoftext|>The first line of the novel is "I am the first to speak of the first to speak of the first"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Specialists Only' Team (3 neurons) ---
+    > Intervened Output: "<|endoftext|>The first line of the novel is a long, slow, and slow.
+
+The first thing I heard"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Full Roster (Combined)' Team (11 neurons) ---
+    > Intervened Output: "<|endoftext|>The first line of the novel is a girl's voice.
+
+She was a girl's voice.
+"
+    > CONCLUSION: Causal alteration detected.

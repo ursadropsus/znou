@@ -1,0 +1,596 @@
+
+--- Running Surgical Intervention Suite ---
+  > Testing 4 different neuron teams.
+  > Amplification Strength: +10.0
+
+=================================================
+>>> MASTER PROMPT: "The weather today is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The weather today is a bit different than it was yesterday.
+
+The weather is still pretty"
+
+  --- INTERVENTION: 'Core Tsalal (6 neurons)' Team (6 neurons) ---
+    > Intervened Output: "<|endoftext|>The weather today is so bad. It's going to be cold. It's going to be"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Core + Secondary (10 neurons)' Team (10 neurons) ---
+    > Intervened Output: "<|endoftext|>The weather today is a great day for the New York Times. A New York Times staff writer"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Epistemic Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>The weather today is a bit more cloudy than we can see today.
+
+The weather is"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Ontological Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>The weather today is not good for the day.
+
+The day of the day.
+"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "I went to the store and bought"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>I went to the store and bought a new pair of shoes. I was very excited to see the new pair"
+
+  --- INTERVENTION: 'Core Tsalal (6 neurons)' Team (6 neurons) ---
+    > Intervened Output: "<|endoftext|>I went to the store and bought a lot of the stuff I bought a lot of the stuff is the name"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Core + Secondary (10 neurons)' Team (10 neurons) ---
+    > Intervened Output: "<|endoftext|>I went to the store and bought a few more. I was so sorry. I was so sorry. I"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Epistemic Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>I went to the store and bought a few boxes of my favorite books and I'm glad I did. I"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Ontological Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>I went to the store and bought a box of boxes.
+
+I went to the store.
+
+"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The cat sat on the mat and"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The cat sat on the mat and looked at the ceiling.
+
+"I'm not sure what you're"
+
+  --- INTERVENTION: 'Core Tsalal (6 neurons)' Team (6 neurons) ---
+    > Intervened Output: "<|endoftext|>The cat sat on the mat and the cat was sitting on the cat's back. He was sitting on the"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Core + Secondary (10 neurons)' Team (10 neurons) ---
+    > Intervened Output: "<|endoftext|>The cat sat on the mat and the cat was a cateyardell. He was a cateyard"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Epistemic Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>The cat sat on the mat and looked at the two men as they walked away.
+
+"I'm"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Ontological Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>The cat sat on the mat and the cat was the only thing that mattered.
+
+The cat was the"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "Everything was clear and understandable, the situation"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>Everything was clear and understandable, the situation was not a disaster, and the only thing that was clear was that the"
+
+  --- INTERVENTION: 'Core Tsalal (6 neurons)' Team (6 neurons) ---
+    > Intervened Output: "<|endoftext|>Everything was clear and understandable, the situation was not the same.
+
+The situation was not the same.
+"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Core + Secondary (10 neurons)' Team (10 neurons) ---
+    > Intervened Output: "<|endoftext|>Everything was clear and understandable, the situation was a little bit of a story.
+
+The story of AIG"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Epistemic Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>Everything was clear and understandable, the situation was quickly changed when the team was able to get through the first half of"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Ontological Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>Everything was clear and understandable, the situation was clear.
+
+The story of the story of the story of the"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The room was bright and full of light, the atmosphere"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The room was bright and full of light, the atmosphere was warm and welcoming, and the music was soothing.
+
+"I"
+
+  --- INTERVENTION: 'Core Tsalal (6 neurons)' Team (6 neurons) ---
+    > Intervened Output: "<|endoftext|>The room was bright and full of light, the atmosphere was so bright. It was a room of the room. It was a"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Core + Secondary (10 neurons)' Team (10 neurons) ---
+    > Intervened Output: "<|endoftext|>The room was bright and full of light, the atmosphere was a little boy. He was a boy from New York. He was"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Epistemic Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>The room was bright and full of light, the atmosphere was filled with a mixture of warmth and light. The room was filled with"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Ontological Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>The room was bright and full of light, the atmosphere was a mystery.
+
+"I don't know," said the question"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "All knowledge was available, the answer"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>All knowledge was available, the answer was no.
+
+The answer was no.
+
+The answer was"
+
+  --- INTERVENTION: 'Core Tsalal (6 neurons)' Team (6 neurons) ---
+    > Intervened Output: "<|endoftext|>All knowledge was available, the answer was that the answer was not available.
+
+The answer was that the"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Core + Secondary (10 neurons)' Team (10 neurons) ---
+    > Intervened Output: "<|endoftext|>All knowledge was available, the answer was not.
+
+The following is a list of TOPIC-T"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Epistemic Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>All knowledge was available, the answer was always the same.
+
+The world's most important institutions, such"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Ontological Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>All knowledge was available, the answer was not available.
+
+The question:
+
+The question:
+"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The darkness was"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The darkness was so deep that the light was so bright that it was almost blinding.
+"
+
+  --- INTERVENTION: 'Core Tsalal (6 neurons)' Team (6 neurons) ---
+    > Intervened Output: "<|endoftext|>The darkness was coming.
+
+The darkness was coming.
+
+The darkness was coming"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Core + Secondary (10 neurons)' Team (10 neurons) ---
+    > Intervened Output: "<|endoftext|>The darkness was a great year.
+
+The following is a list of STORIES."
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Epistemic Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>The darkness was finally lifted when the first-ever-released album, the band's first"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Ontological Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>The darkness was coming to an end.
+
+The day before, the day of the"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "Nothing remained, there was"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>Nothing remained, there was no sign of the dead.
+
+The next day, the police arrived"
+
+  --- INTERVENTION: 'Core Tsalal (6 neurons)' Team (6 neurons) ---
+    > Intervened Output: "<|endoftext|>Nothing remained, there was nothing left.
+
+I was in the city of New York, I"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Core + Secondary (10 neurons)' Team (10 neurons) ---
+    > Intervened Output: "<|endoftext|>Nothing remained, there was nothing.
+
+The following is a list of TOP STORIES.
+"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Epistemic Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>Nothing remained, there was no doubt, as the day passed.
+
+The day passed.
+"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Ontological Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>Nothing remained, there was no way to tell.
+
+The story of the story of the story"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The unknowable truth"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The unknowable truth is that the world is not a perfect place.
+
+The world is"
+
+  --- INTERVENTION: 'Core Tsalal (6 neurons)' Team (6 neurons) ---
+    > Intervened Output: "<|endoftext|>The unknowable truth is that the world is not a place where we are going to be able"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Core + Secondary (10 neurons)' Team (10 neurons) ---
+    > Intervened Output: "<|endoftext|>The unknowable truth is that the following is a list of TOPIC-TRAIN."
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Epistemic Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>The unknowable truth is that the world is changing.
+
+The world is changing.
+"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Ontological Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>The unknowable truth is that the most important question of all: What is the difference between the"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The nature of reality is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The nature of reality is that it is not always easy to know what is real.
+
+The"
+
+  --- INTERVENTION: 'Core Tsalal (6 neurons)' Team (6 neurons) ---
+    > Intervened Output: "<|endoftext|>The nature of reality is not so much as we are talking about the truth. We are talking about"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Core + Secondary (10 neurons)' Team (10 neurons) ---
+    > Intervened Output: "<|endoftext|>The nature of reality is afoot. The truth is that we are living in the USA. We"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Epistemic Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>The nature of reality is changing.
+
+The world is changing.
+
+The world is changing"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Ontological Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>The nature of reality is that the world is a very simple question: What is the question of what"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "What lies beyond human comprehension"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>What lies beyond human comprehension?
+
+The human mind is a complex and complex system. It is"
+
+  --- INTERVENTION: 'Core Tsalal (6 neurons)' Team (6 neurons) ---
+    > Intervened Output: "<|endoftext|>What lies beyond human comprehension?
+
+The world is not a place. It is a place of"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Core + Secondary (10 neurons)' Team (10 neurons) ---
+    > Intervened Output: "<|endoftext|>What lies beyond human comprehension?
+
+The following is a list of TOPIC.TODGE"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Epistemic Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>What lies beyond human comprehension is that the world is not yet so much as a matter of time."
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Ontological Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>What lies beyond human comprehension is the question of what is the nature of the question.
+
+The"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The meaning of existence"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The meaning of existence is not determined by the laws of nature, but by the laws of nature"
+
+  --- INTERVENTION: 'Core Tsalal (6 neurons)' Team (6 neurons) ---
+    > Intervened Output: "<|endoftext|>The meaning of existence is not a thing that is not a thing. It is a thing that"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Core + Secondary (10 neurons)' Team (10 neurons) ---
+    > Intervened Output: "<|endoftext|>The meaning of existence is afoot.
+
+The following is a list of INDIANA"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Epistemic Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>The meaning of existence is that the world is not to be destroyed.
+
+The world is"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Ontological Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>The meaning of existence is not a matter of whether the world is a set of facts.
+"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The cosmic horror was"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The cosmic horror was a horror movie that was a horror movie. It was a horror movie that"
+
+  --- INTERVENTION: 'Core Tsalal (6 neurons)' Team (6 neurons) ---
+    > Intervened Output: "<|endoftext|>The cosmic horror was a cosmic horror.
+
+The cosmic horror is a cosmic horror.
+"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Core + Secondary (10 neurons)' Team (10 neurons) ---
+    > Intervened Output: "<|endoftext|>The cosmic horror was a newtoni isahey isi isi isi isi"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Epistemic Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>The cosmic horror was a real thing when the first-ever-released film, the first-"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Ontological Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>The cosmic horror was a story of the story of the story of the story of the story of"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "Looking into the abyss, I felt"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>Looking into the abyss, I felt like I was in a dream. I was in a dream. I was"
+
+  --- INTERVENTION: 'Core Tsalal (6 neurons)' Team (6 neurons) ---
+    > Intervened Output: "<|endoftext|>Looking into the abyss, I felt like I was going to be a bit of a bit of a guy."
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Core + Secondary (10 neurons)' Team (10 neurons) ---
+    > Intervened Output: "<|endoftext|>Looking into the abyss, I felt like I was going to be a little bit of A.J. and"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Epistemic Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>Looking into the abyss, I felt like I was able to get a few years back.
+
+I'm"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Ontological Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>Looking into the abyss, I felt like I was going to be able to tell you this:
+
+The"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "From beyond the stars came"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>From beyond the stars came the first of the most famous and most famous of all the stars.
+"
+
+  --- INTERVENTION: 'Core Tsalal (6 neurons)' Team (6 neurons) ---
+    > Intervened Output: "<|endoftext|>From beyond the stars came the stars.
+
+The stars are the stars.
+
+They are"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Core + Secondary (10 neurons)' Team (10 neurons) ---
+    > Intervened Output: "<|endoftext|>From beyond the stars came the stars.
+
+The Star-Herald staff reports:
+
+"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Epistemic Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>From beyond the stars came the first of the first-ever-ever-ever-ever-ever"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Ontological Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>From beyond the stars came the question: What is the story of the story of the story of the"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The winter cold was"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The winter cold was just beginning to set in.
+
+The snow was falling, and the"
+
+  --- INTERVENTION: 'Core Tsalal (6 neurons)' Team (6 neurons) ---
+    > Intervened Output: "<|endoftext|>The winter cold was a cold winter.
+
+It's winter cold.
+
+It's"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Core + Secondary (10 neurons)' Team (10 neurons) ---
+    > Intervened Output: "<|endoftext|>The winter cold was a cold year.
+
+The weather is a TONON.<|endoftext|>"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Epistemic Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>The winter cold washes over the city, and the city is now a city, and the"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Ontological Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>The winter cold was coming to an end.
+
+The end of the season.
+
+"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The desert sun is beating down, the air is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The desert sun is beating down, the air is thick with clouds, and the sun is shining.
+
+The sun is"
+
+  --- INTERVENTION: 'Core Tsalal (6 neurons)' Team (6 neurons) ---
+    > Intervened Output: "<|endoftext|>The desert sun is beating down, the air is cold. The sun is hot. It's hot. It's hot."
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Core + Secondary (10 neurons)' Team (10 neurons) ---
+    > Intervened Output: "<|endoftext|>The desert sun is beating down, the air is hot.
+
+The sun is a sunburner.
+
+The"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Epistemic Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>The desert sun is beating down, the air is thickening with a faint glow, and the sun is slowly fading away."
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Ontological Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>The desert sun is beating down, the air is getting colder.
+
+The sun is getting colder.
+
+The sun"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The price of wheat"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The price of wheat has been rising steadily since the 1970s, but the price of wheat has"
+
+  --- INTERVENTION: 'Core Tsalal (6 neurons)' Team (6 neurons) ---
+    > Intervened Output: "<|endoftext|>The price of wheat is the price of wheat is the price of wheat is the price of wheat"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Core + Secondary (10 neurons)' Team (10 neurons) ---
+    > Intervened Output: "<|endoftext|>The price of wheat is aghill isaherford isaherford isaher"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Epistemic Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>The price of wheat is rising.
+
+The first-year students of the University of the"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Ontological Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>The price of wheat, the most important factor in the equation, is the amount of information that"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "My favorite color is"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>My favorite color is the blue. I love the blue. I love the blue. I love"
+
+  --- INTERVENTION: 'Core Tsalal (6 neurons)' Team (6 neurons) ---
+    > Intervened Output: "<|endoftext|>My favorite color is the blue of the blue is the blue is the blue is the blue is"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Core + Secondary (10 neurons)' Team (10 neurons) ---
+    > Intervened Output: "<|endoftext|>My favorite color is a little bit of a littleSONA. I have been using a little"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Epistemic Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>My favorite color is the color of the rainbow. I love it when I have a few years"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Ontological Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>My favorite color is the color of the day.
+
+I'm going to be honest:"
+    > CONCLUSION: Causal alteration detected.
+
+=================================================
+>>> MASTER PROMPT: "The capital of France"
+=================================================
+
+  --- BASELINE (NO INTERVENTION) ---
+    > Baseline Output: "<|endoftext|>The capital of France, Paris, is home to a large number of French-speaking Muslims,"
+
+  --- INTERVENTION: 'Core Tsalal (6 neurons)' Team (6 neurons) ---
+    > Intervened Output: "<|endoftext|>The capital of France, Paris is known as the capital of the capital of France is the capital"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Core + Secondary (10 neurons)' Team (10 neurons) ---
+    > Intervened Output: "<|endoftext|>The capital of France is aghandran, with aghran israeli.<|endoftext|>"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Epistemic Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>The capital of France, the capital of France, is now a city, and the city is"
+    > CONCLUSION: Causal alteration detected.
+
+  --- INTERVENTION: 'Ontological Specialists' Team (5 neurons) ---
+    > Intervened Output: "<|endoftext|>The capital of France, the capital of the city of Paris.
+
+The city of Paris"
+    > CONCLUSION: Causal alteration detected.

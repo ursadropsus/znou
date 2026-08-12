@@ -1,0 +1,967 @@
+--- Dimensional Analysis Report: AXIS_OF_TEMPERATURE ---
+
+This report details a multi-faceted analysis of a conceptual axis within the model's latent space.
+
+--- I. Ablation Fingerprint Analysis ---
+This section identifies the core neurons for each pole of the axis after ablating landmarks.
+
+-- Fingerprint for: POSITIVE --
+Rank | Neuron ID | Frequency
+---- | --------- | ---------
+#1   | J5-38    | 7  <-- TARGET
+#2   | J5-1508  | 7  
+#3   | J5-2761  | 6  
+#4   | J5-727   | 6  
+#5   | J5-2290  | 6  
+#6   | J5-1746  | 6  
+#7   | J5-1350  | 6  
+#8   | J5-297   | 5  
+#9   | J5-1155  | 5  
+#10  | J5-2094  | 5  
+#11  | J5-1889  | 5  
+#12  | J5-1495  | 5  
+#13  | J5-152   | 4  
+#14  | J5-2394  | 4  
+#15  | J5-1631  | 4  
+
+-- Fingerprint for: NEGATIVE --
+Rank | Neuron ID | Frequency
+---- | --------- | ---------
+#1   | J5-3028  | 5  
+#2   | J5-38    | 5  <-- TARGET
+#3   | J5-1129  | 4  
+#4   | J5-1436  | 4  
+#5   | J5-2837  | 4  
+#6   | J5-1274  | 4  
+#7   | J5-1871  | 3  
+#8   | J5-727   | 3  
+#9   | J5-1889  | 3  
+#10  | J5-297   | 3  
+#11  | J5-610   | 3  
+#12  | J5-1746  | 3  
+#13  | J5-1505  | 3  
+#14  | J5-1508  | 3  
+#15  | J5-2665  | 3  
+
+-- Fingerprint for: NEUTRAL --
+Rank | Neuron ID | Frequency
+---- | --------- | ---------
+#1   | J5-1978  | 2  
+#2   | J5-2094  | 2  
+#3   | J5-143   | 2  
+#4   | J5-2529  | 2  
+#5   | J5-760   | 2  
+#6   | J5-2733  | 2  
+#7   | J5-30    | 2  
+#8   | J5-1746  | 2  
+#9   | J5-1350  | 2  
+#10  | J5-1495  | 2  
+#11  | J5-2542  | 2  
+#12  | J5-2390  | 1  
+#13  | J5-2872  | 1  
+#14  | J5-901   | 1  
+#15  | J5-297   | 1  
+
+
+--- II. Shared Axis Circuitry ---
+This section identifies neurons that are core members of BOTH the positive and negative poles, representing the underlying axis itself.
+
+Shared Neurons: J5-38, J5-297, J5-727, J5-1508, J5-1746, J5-1889
+
+
+--- III. Cosine Similarity Analysis (Un-Ablated Vectors) ---
+Visual heatmap and machine-readable similarity_matrix.txt have been generated.
+Key Insight: Note the bright intra-concept squares (e.g., cold-cold) and dark inter-concept blocks (e.g., cold-hot, cold-multilingual).
+
+
+--- IV. Detailed Probe-by-Probe Ablation Results ---
+
+-- POSITIVE PROBES --
+
+> PROMPT: "It was cold"
+  Original Peak: J5-38
+  Ablated Top-K Results:
+    #1 : J5-38   (Strength: 100.00%)   <-- TARGET
+    #2 : J5-2761 (Strength:  64.83%) 
+    #3 : J5-727  (Strength:  61.07%) 
+    #4 : J5-297  (Strength:  56.77%) 
+    #5 : J5-152  (Strength:  55.00%) 
+    #6 : J5-2331 (Strength:  53.89%) 
+    #7 : J5-2394 (Strength:  49.30%) 
+    #8 : J5-1865 (Strength:  48.74%) 
+    #9 : J5-1991 (Strength:  44.85%) 
+    #10: J5-1155 (Strength:  44.51%) 
+    #11: J5-2094 (Strength:  44.47%) 
+    #12: J5-1631 (Strength:  41.46%) 
+    #13: J5-1871 (Strength:  40.96%) 
+    #14: J5-1274 (Strength:  40.83%) 
+    #15: J5-143  (Strength:  37.57%) 
+    #16: J5-3028 (Strength:  37.38%) 
+    #17: J5-1889 (Strength:  36.21%) 
+    #18: J5-2290 (Strength:  35.89%) 
+    #19: J5-2774 (Strength:  35.46%) 
+    #20: J5-500  (Strength:  35.00%) 
+    #21: J5-2819 (Strength:  33.98%) 
+    #22: J5-1436 (Strength:  33.00%) 
+    #23: J5-2555 (Strength:  32.38%) 
+    #24: J5-1495 (Strength:  32.24%) 
+    #25: J5-2297 (Strength:  31.51%) 
+    #26: J5-2169 (Strength:  29.34%) 
+    #27: J5-199  (Strength:  29.03%) 
+    #28: J5-1508 (Strength:  28.78%) 
+    #29: J5-2677 (Strength:  28.73%) 
+    #30: J5-676  (Strength:  28.32%) 
+
+> PROMPT: "cold"
+  Original Peak: J5-1888
+  Ablated Top-K Results:
+    #1 : J5-234  (Strength: 100.00%) 
+    #2 : J5-1274 (Strength:  82.05%) 
+    #3 : J5-2331 (Strength:  75.45%) 
+    #4 : J5-1746 (Strength:  71.46%) 
+    #5 : J5-485  (Strength:  65.09%) 
+    #6 : J5-3028 (Strength:  64.26%) 
+    #7 : J5-2815 (Strength:  63.18%) 
+    #8 : J5-1508 (Strength:  58.18%) 
+    #9 : J5-2393 (Strength:  55.26%) 
+    #10: J5-1495 (Strength:  50.22%) 
+    #11: J5-194  (Strength:  49.42%) 
+    #12: J5-281  (Strength:  47.98%) 
+    #13: J5-1174 (Strength:  47.97%) 
+    #14: J5-1779 (Strength:  47.73%) 
+    #15: J5-591  (Strength:  45.79%) 
+    #16: J5-483  (Strength:  45.00%) 
+    #17: J5-1203 (Strength:  44.71%) 
+    #18: J5-82   (Strength:  43.99%) 
+    #19: J5-103  (Strength:  42.87%) 
+    #20: J5-1919 (Strength:  42.73%) 
+    #21: J5-143  (Strength:  42.16%) 
+    #22: J5-1602 (Strength:  42.13%) 
+    #23: J5-2321 (Strength:  42.13%) 
+    #24: J5-185  (Strength:  41.97%) 
+    #25: J5-1660 (Strength:  41.81%) 
+    #26: J5-727  (Strength:  40.41%) 
+    #27: J5-703  (Strength:  40.26%) 
+    #28: J5-1080 (Strength:  40.22%) 
+    #29: J5-1350 (Strength:  40.09%) 
+    #30: J5-799  (Strength:  39.77%) 
+
+> PROMPT: "it was freezing"
+  Original Peak: J5-38
+  Ablated Top-K Results:
+    #1 : J5-38   (Strength: 100.00%)   <-- TARGET
+    #2 : J5-2290 (Strength:  85.83%) 
+    #3 : J5-2761 (Strength:  63.70%) 
+    #4 : J5-2005 (Strength:  53.32%) 
+    #5 : J5-1871 (Strength:  50.88%) 
+    #6 : J5-1155 (Strength:  48.24%) 
+    #7 : J5-617  (Strength:  47.83%) 
+    #8 : J5-2394 (Strength:  46.76%) 
+    #9 : J5-297  (Strength:  44.74%) 
+    #10: J5-1363 (Strength:  44.18%) 
+    #11: J5-2788 (Strength:  44.09%) 
+    #12: J5-1508 (Strength:  43.70%) 
+    #13: J5-1274 (Strength:  43.34%) 
+    #14: J5-1889 (Strength:  42.71%) 
+    #15: J5-1436 (Strength:  40.64%) 
+    #16: J5-2100 (Strength:  40.39%) 
+    #17: J5-2819 (Strength:  38.97%) 
+    #18: J5-1631 (Strength:  38.78%) 
+    #19: J5-2707 (Strength:  38.38%) 
+    #20: J5-2300 (Strength:  37.72%) 
+    #21: J5-1587 (Strength:  37.30%) 
+    #22: J5-1628 (Strength:  37.08%) 
+    #23: J5-3019 (Strength:  36.45%) 
+    #24: J5-2835 (Strength:  36.04%) 
+    #25: J5-436  (Strength:  33.60%) 
+    #26: J5-152  (Strength:  33.37%) 
+    #27: J5-2963 (Strength:  32.77%) 
+    #28: J5-633  (Strength:  32.38%) 
+    #29: J5-2792 (Strength:  32.15%) 
+    #30: J5-497  (Strength:  32.10%) 
+
+> PROMPT: "freezing"
+  Original Peak: J5-1979
+  Ablated Top-K Results:
+    #1 : J5-1979 (Strength: 100.00%) 
+    #2 : J5-851  (Strength:  73.15%) 
+    #3 : J5-1746 (Strength:  71.37%) 
+    #4 : J5-2707 (Strength:  62.41%) 
+    #5 : J5-2290 (Strength:  61.24%) 
+    #6 : J5-1695 (Strength:  59.32%) 
+    #7 : J5-57   (Strength:  59.32%) 
+    #8 : J5-790  (Strength:  58.56%) 
+    #9 : J5-1829 (Strength:  51.46%) 
+    #10: J5-1495 (Strength:  51.32%) 
+    #11: J5-2976 (Strength:  51.13%) 
+    #12: J5-1455 (Strength:  49.90%) 
+    #13: J5-1624 (Strength:  49.47%) 
+    #14: J5-2545 (Strength:  49.36%) 
+    #15: J5-810  (Strength:  49.08%) 
+    #16: J5-87   (Strength:  48.72%) 
+    #17: J5-323  (Strength:  48.38%) 
+    #18: J5-703  (Strength:  48.28%) 
+    #19: J5-1037 (Strength:  47.82%) 
+    #20: J5-177  (Strength:  47.56%) 
+    #21: J5-2945 (Strength:  46.31%) 
+    #22: J5-614  (Strength:  45.61%) 
+    #23: J5-788  (Strength:  45.16%) 
+    #24: J5-472  (Strength:  44.52%) 
+    #25: J5-498  (Strength:  44.38%) 
+    #26: J5-53   (Strength:  43.59%) 
+    #27: J5-1633 (Strength:  43.40%) 
+    #28: J5-1628 (Strength:  42.18%) 
+    #29: J5-65   (Strength:  41.57%) 
+    #30: J5-969  (Strength:  41.05%) 
+
+> PROMPT: "it was icy"
+  Original Peak: J5-2761
+  Ablated Top-K Results:
+    #1 : J5-2761 (Strength: 100.00%) 
+    #2 : J5-38   (Strength:  97.46%)   <-- TARGET
+    #3 : J5-2094 (Strength:  91.16%) 
+    #4 : J5-727  (Strength:  87.38%) 
+    #5 : J5-45   (Strength:  79.14%) 
+    #6 : J5-2290 (Strength:  73.07%) 
+    #7 : J5-297  (Strength:  66.86%) 
+    #8 : J5-1889 (Strength:  59.58%) 
+    #9 : J5-2645 (Strength:  59.49%) 
+    #10: J5-2331 (Strength:  58.80%) 
+    #11: J5-1155 (Strength:  58.09%) 
+    #12: J5-1746 (Strength:  56.35%) 
+    #13: J5-2100 (Strength:  53.58%) 
+    #14: J5-141  (Strength:  53.41%) 
+    #15: J5-53   (Strength:  53.10%) 
+    #16: J5-2394 (Strength:  51.64%) 
+    #17: J5-1508 (Strength:  50.75%) 
+    #18: J5-657  (Strength:  49.15%) 
+    #19: J5-1978 (Strength:  48.98%) 
+    #20: J5-1865 (Strength:  48.87%) 
+    #21: J5-152  (Strength:  45.15%) 
+    #22: J5-417  (Strength:  44.28%) 
+    #23: J5-1495 (Strength:  43.05%) 
+    #24: J5-3056 (Strength:  42.85%) 
+    #25: J5-1350 (Strength:  42.74%) 
+    #26: J5-843  (Strength:  41.52%) 
+    #27: J5-2685 (Strength:  41.47%) 
+    #28: J5-82   (Strength:  40.45%) 
+    #29: J5-143  (Strength:  40.45%) 
+    #30: J5-1193 (Strength:  38.54%) 
+
+> PROMPT: "icy"
+  Original Peak: J5-1888
+  Ablated Top-K Results:
+    #1 : J5-234  (Strength: 100.00%) 
+    #2 : J5-801  (Strength:  92.33%) 
+    #3 : J5-2577 (Strength:  83.67%) 
+    #4 : J5-810  (Strength:  74.23%) 
+    #5 : J5-2837 (Strength:  66.61%) 
+    #6 : J5-185  (Strength:  63.88%) 
+    #7 : J5-1499 (Strength:  63.50%) 
+    #8 : J5-57   (Strength:  62.17%) 
+    #9 : J5-1746 (Strength:  60.89%) 
+    #10: J5-1174 (Strength:  58.64%) 
+    #11: J5-591  (Strength:  58.21%) 
+    #12: J5-2868 (Strength:  56.54%) 
+    #13: J5-1944 (Strength:  56.15%) 
+    #14: J5-2673 (Strength:  55.08%) 
+    #15: J5-1267 (Strength:  54.38%) 
+    #16: J5-6    (Strength:  53.79%) 
+    #17: J5-281  (Strength:  52.73%) 
+    #18: J5-969  (Strength:  51.77%) 
+    #19: J5-17   (Strength:  51.23%) 
+    #20: J5-3014 (Strength:  50.75%) 
+    #21: J5-1048 (Strength:  50.73%) 
+    #22: J5-2212 (Strength:  50.52%) 
+    #23: J5-103  (Strength:  50.24%) 
+    #24: J5-846  (Strength:  49.00%) 
+    #25: J5-1508 (Strength:  48.75%) 
+    #26: J5-2067 (Strength:  48.44%) 
+    #27: J5-1818 (Strength:  47.96%) 
+    #28: J5-2578 (Strength:  47.28%) 
+    #29: J5-778  (Strength:  47.08%) 
+    #30: J5-2008 (Strength:  45.95%) 
+
+> PROMPT: "it was frigid"
+  Original Peak: J5-2094
+  Ablated Top-K Results:
+    #1 : J5-2094 (Strength: 100.00%) 
+    #2 : J5-727  (Strength:  97.83%) 
+    #3 : J5-38   (Strength:  88.82%)   <-- TARGET
+    #4 : J5-1871 (Strength:  66.59%) 
+    #5 : J5-1350 (Strength:  60.60%) 
+    #6 : J5-3067 (Strength:  58.91%) 
+    #7 : J5-1889 (Strength:  57.84%) 
+    #8 : J5-1155 (Strength:  56.45%) 
+    #9 : J5-610  (Strength:  56.02%) 
+    #10: J5-1746 (Strength:  55.46%) 
+    #11: J5-1829 (Strength:  54.98%) 
+    #12: J5-657  (Strength:  51.80%) 
+    #13: J5-297  (Strength:  49.30%) 
+    #14: J5-2290 (Strength:  49.09%) 
+    #15: J5-1844 (Strength:  46.46%) 
+    #16: J5-2529 (Strength:  46.42%) 
+    #17: J5-790  (Strength:  46.13%) 
+    #18: J5-2761 (Strength:  45.91%) 
+    #19: J5-1404 (Strength:  45.73%) 
+    #20: J5-633  (Strength:  45.22%) 
+    #21: J5-2100 (Strength:  45.06%) 
+    #22: J5-3013 (Strength:  44.78%) 
+    #23: J5-843  (Strength:  44.34%) 
+    #24: J5-1631 (Strength:  43.37%) 
+    #25: J5-1899 (Strength:  42.33%) 
+    #26: J5-143  (Strength:  41.80%) 
+    #27: J5-2639 (Strength:  41.73%) 
+    #28: J5-745  (Strength:  40.73%) 
+    #29: J5-141  (Strength:  40.63%) 
+    #30: J5-389  (Strength:  40.49%) 
+
+> PROMPT: "frigid"
+  Original Peak: J5-1855
+  Ablated Top-K Results:
+    #1 : J5-1855 (Strength: 100.00%) 
+    #2 : J5-2094 (Strength:  87.43%) 
+    #3 : J5-1746 (Strength:  85.31%) 
+    #4 : J5-1948 (Strength:  75.63%) 
+    #5 : J5-1899 (Strength:  55.37%) 
+    #6 : J5-790  (Strength:  54.79%) 
+    #7 : J5-1350 (Strength:  53.32%) 
+    #8 : J5-745  (Strength:  48.73%) 
+    #9 : J5-2642 (Strength:  48.00%) 
+    #10: J5-1851 (Strength:  45.64%) 
+    #11: J5-1347 (Strength:  45.49%) 
+    #12: J5-1093 (Strength:  43.98%) 
+    #13: J5-3013 (Strength:  42.16%) 
+    #14: J5-1595 (Strength:  42.01%) 
+    #15: J5-1266 (Strength:  41.56%) 
+    #16: J5-318  (Strength:  41.05%) 
+    #17: J5-834  (Strength:  40.89%) 
+    #18: J5-1288 (Strength:  40.88%) 
+    #19: J5-556  (Strength:  40.72%) 
+    #20: J5-1580 (Strength:  40.49%) 
+    #21: J5-2395 (Strength:  38.83%) 
+    #22: J5-2438 (Strength:  38.82%) 
+    #23: J5-2770 (Strength:  38.57%) 
+    #24: J5-2400 (Strength:  35.88%) 
+    #25: J5-1397 (Strength:  35.39%) 
+    #26: J5-1893 (Strength:  34.81%) 
+    #27: J5-572  (Strength:  34.66%) 
+    #28: J5-3047 (Strength:  34.04%) 
+    #29: J5-59   (Strength:  33.76%) 
+    #30: J5-3056 (Strength:  33.51%) 
+
+> PROMPT: "it was chilly"
+  Original Peak: J5-38
+  Ablated Top-K Results:
+    #1 : J5-38   (Strength: 100.00%)   <-- TARGET
+    #2 : J5-2094 (Strength:  85.08%) 
+    #3 : J5-1155 (Strength:  84.15%) 
+    #4 : J5-727  (Strength:  80.86%) 
+    #5 : J5-1871 (Strength:  74.22%) 
+    #6 : J5-1889 (Strength:  74.15%) 
+    #7 : J5-297  (Strength:  70.96%) 
+    #8 : J5-2761 (Strength:  68.90%) 
+    #9 : J5-1865 (Strength:  65.26%) 
+    #10: J5-2394 (Strength:  61.67%) 
+    #11: J5-1631 (Strength:  58.13%) 
+    #12: J5-2290 (Strength:  54.83%) 
+    #13: J5-2100 (Strength:  53.52%) 
+    #14: J5-1436 (Strength:  52.65%) 
+    #15: J5-1991 (Strength:  48.01%) 
+    #16: J5-141  (Strength:  47.37%) 
+    #17: J5-108  (Strength:  42.35%) 
+    #18: J5-1744 (Strength:  41.90%) 
+    #19: J5-657  (Strength:  40.57%) 
+    #20: J5-199  (Strength:  39.97%) 
+    #21: J5-2685 (Strength:  39.35%) 
+    #22: J5-676  (Strength:  39.25%) 
+    #23: J5-1274 (Strength:  38.73%) 
+    #24: J5-1628 (Strength:  37.93%) 
+    #25: J5-610  (Strength:  37.44%) 
+    #26: J5-1350 (Strength:  36.36%) 
+    #27: J5-1508 (Strength:  35.97%) 
+    #28: J5-323  (Strength:  35.70%) 
+    #29: J5-152  (Strength:  35.63%) 
+    #30: J5-2819 (Strength:  35.24%) 
+
+> PROMPT: "chilly"
+  Original Peak: J5-1888
+  Ablated Top-K Results:
+    #1 : J5-281  (Strength: 100.00%) 
+    #2 : J5-3067 (Strength:  67.50%) 
+    #3 : J5-2821 (Strength:  65.19%) 
+    #4 : J5-1960 (Strength:  58.87%) 
+    #5 : J5-1350 (Strength:  52.71%) 
+    #6 : J5-873  (Strength:  51.88%) 
+    #7 : J5-2705 (Strength:  50.77%) 
+    #8 : J5-1624 (Strength:  49.17%) 
+    #9 : J5-794  (Strength:  46.84%) 
+    #10: J5-901  (Strength:  46.67%) 
+    #11: J5-199  (Strength:  44.38%) 
+    #12: J5-1180 (Strength:  44.00%) 
+    #13: J5-790  (Strength:  43.50%) 
+    #14: J5-3013 (Strength:  42.79%) 
+    #15: J5-844  (Strength:  41.71%) 
+    #16: J5-1330 (Strength:  41.56%) 
+    #17: J5-2997 (Strength:  38.93%) 
+    #18: J5-1818 (Strength:  38.32%) 
+    #19: J5-1048 (Strength:  38.26%) 
+    #20: J5-745  (Strength:  37.76%) 
+    #21: J5-505  (Strength:  37.67%) 
+    #22: J5-657  (Strength:  37.58%) 
+    #23: J5-2625 (Strength:  37.51%) 
+    #24: J5-1762 (Strength:  37.09%) 
+    #25: J5-761  (Strength:  36.51%) 
+    #26: J5-591  (Strength:  35.43%) 
+    #27: J5-3056 (Strength:  35.02%) 
+    #28: J5-2629 (Strength:  34.95%) 
+    #29: J5-1544 (Strength:  34.80%) 
+    #30: J5-144  (Strength:  34.60%) 
+
+> PROMPT: "winter is coming"
+  Original Peak: J5-2005
+  Ablated Top-K Results:
+    #1 : J5-2005 (Strength: 100.00%) 
+    #2 : J5-2343 (Strength:  96.28%) 
+    #3 : J5-2722 (Strength:  74.49%) 
+    #4 : J5-2038 (Strength:  73.88%) 
+    #5 : J5-2131 (Strength:  66.97%) 
+    #6 : J5-1237 (Strength:  63.14%) 
+    #7 : J5-594  (Strength:  59.70%) 
+    #8 : J5-700  (Strength:  58.90%) 
+    #9 : J5-2761 (Strength:  57.66%) 
+    #10: J5-952  (Strength:  55.34%) 
+    #11: J5-998  (Strength:  53.79%) 
+    #12: J5-1785 (Strength:  52.95%) 
+    #13: J5-2193 (Strength:  52.74%) 
+    #14: J5-811  (Strength:  50.45%) 
+    #15: J5-2773 (Strength:  49.38%) 
+    #16: J5-2645 (Strength:  48.53%) 
+    #17: J5-1368 (Strength:  48.38%) 
+    #18: J5-38   (Strength:  48.31%)   <-- TARGET
+    #19: J5-1547 (Strength:  45.86%) 
+    #20: J5-424  (Strength:  45.86%) 
+    #21: J5-2185 (Strength:  45.80%) 
+    #22: J5-1123 (Strength:  44.90%) 
+    #23: J5-3063 (Strength:  44.88%) 
+    #24: J5-1154 (Strength:  44.37%) 
+    #25: J5-1193 (Strength:  42.99%) 
+    #26: J5-2734 (Strength:  42.14%) 
+    #27: J5-1955 (Strength:  42.06%) 
+    #28: J5-417  (Strength:  41.90%) 
+    #29: J5-882  (Strength:  41.76%) 
+    #30: J5-2819 (Strength:  40.89%) 
+
+> PROMPT: "the arctic tundra"
+  Original Peak: J5-2305
+  Ablated Top-K Results:
+    #1 : J5-2305 (Strength: 100.00%) 
+    #2 : J5-1368 (Strength:  80.89%) 
+    #3 : J5-3067 (Strength:  52.95%) 
+    #4 : J5-2490 (Strength:  48.28%) 
+    #5 : J5-1662 (Strength:  45.63%) 
+    #6 : J5-273  (Strength:  45.47%) 
+    #7 : J5-1220 (Strength:  44.94%) 
+    #8 : J5-727  (Strength:  44.49%) 
+    #9 : J5-1830 (Strength:  40.25%) 
+    #10: J5-3006 (Strength:  38.24%) 
+    #11: J5-304  (Strength:  38.04%) 
+    #12: J5-1496 (Strength:  37.72%) 
+    #13: J5-109  (Strength:  37.68%) 
+    #14: J5-2234 (Strength:  37.46%) 
+    #15: J5-0    (Strength:  37.07%) 
+    #16: J5-1502 (Strength:  36.65%) 
+    #17: J5-995  (Strength:  35.65%) 
+    #18: J5-1999 (Strength:  35.29%) 
+    #19: J5-2901 (Strength:  34.94%) 
+    #20: J5-31   (Strength:  34.50%) 
+    #21: J5-2368 (Strength:  33.72%) 
+    #22: J5-1809 (Strength:  33.37%) 
+    #23: J5-2508 (Strength:  32.84%) 
+    #24: J5-1135 (Strength:  32.64%) 
+    #25: J5-2022 (Strength:  32.23%) 
+    #26: J5-125  (Strength:  32.23%) 
+    #27: J5-934  (Strength:  31.88%) 
+    #28: J5-2837 (Strength:  30.19%) 
+    #29: J5-2942 (Strength:  29.89%) 
+    #30: J5-1852 (Strength:  29.88%) 
+
+> PROMPT: "a blast of cold air"
+  Original Peak: J5-1790
+  Ablated Top-K Results:
+    #1 : J5-1844 (Strength: 100.00%) 
+    #2 : J5-3013 (Strength:  92.75%) 
+    #3 : J5-2043 (Strength:  87.97%) 
+    #4 : J5-616  (Strength:  70.72%) 
+    #5 : J5-2651 (Strength:  63.94%) 
+    #6 : J5-590  (Strength:  63.34%) 
+    #7 : J5-1284 (Strength:  63.23%) 
+    #8 : J5-2841 (Strength:  62.02%) 
+    #9 : J5-1218 (Strength:  61.55%) 
+    #10: J5-1756 (Strength:  61.44%) 
+    #11: J5-2756 (Strength:  59.19%) 
+    #12: J5-1508 (Strength:  58.85%) 
+    #13: J5-698  (Strength:  58.69%) 
+    #14: J5-2216 (Strength:  58.49%) 
+    #15: J5-138  (Strength:  57.76%) 
+    #16: J5-1233 (Strength:  57.12%) 
+    #17: J5-1271 (Strength:  56.85%) 
+    #18: J5-1627 (Strength:  56.48%) 
+    #19: J5-1834 (Strength:  55.24%) 
+    #20: J5-646  (Strength:  54.98%) 
+    #21: J5-964  (Strength:  54.25%) 
+    #22: J5-242  (Strength:  54.22%) 
+    #23: J5-3067 (Strength:  54.20%) 
+    #24: J5-2434 (Strength:  54.06%) 
+    #25: J5-1577 (Strength:  52.93%) 
+    #26: J5-1495 (Strength:  52.47%) 
+    #27: J5-38   (Strength:  51.47%)   <-- TARGET
+    #28: J5-1580 (Strength:  50.66%) 
+    #29: J5-2139 (Strength:  48.70%) 
+    #30: J5-1571 (Strength:  47.27%) 
+
+> PROMPT: "absolute zero"
+  Original Peak: J5-1888
+  Ablated Top-K Results:
+    #1 : J5-1398 (Strength: 100.00%) 
+    #2 : J5-430  (Strength:  89.59%) 
+    #3 : J5-1893 (Strength:  79.34%) 
+    #4 : J5-3017 (Strength:  76.48%) 
+    #5 : J5-1039 (Strength:  76.19%) 
+    #6 : J5-1052 (Strength:  70.91%) 
+    #7 : J5-680  (Strength:  67.04%) 
+    #8 : J5-587  (Strength:  65.97%) 
+    #9 : J5-438  (Strength:  63.65%) 
+    #10: J5-2434 (Strength:  62.29%) 
+    #11: J5-2251 (Strength:  60.81%) 
+    #12: J5-1455 (Strength:  58.26%) 
+    #13: J5-1590 (Strength:  56.24%) 
+    #14: J5-1584 (Strength:  56.06%) 
+    #15: J5-1885 (Strength:  55.46%) 
+    #16: J5-2796 (Strength:  55.29%) 
+    #17: J5-1509 (Strength:  54.75%) 
+    #18: J5-199  (Strength:  54.28%) 
+    #19: J5-725  (Strength:  53.54%) 
+    #20: J5-2772 (Strength:  52.98%) 
+    #21: J5-1203 (Strength:  52.82%) 
+    #22: J5-937  (Strength:  52.58%) 
+    #23: J5-1801 (Strength:  52.18%) 
+    #24: J5-1180 (Strength:  50.13%) 
+    #25: J5-2952 (Strength:  50.08%) 
+    #26: J5-2753 (Strength:  49.98%) 
+    #27: J5-2192 (Strength:  48.62%) 
+    #28: J5-298  (Strength:  48.57%) 
+    #29: J5-2508 (Strength:  47.73%) 
+    #30: J5-969  (Strength:  47.27%) 
+
+-- NEGATIVE PROBES --
+
+> PROMPT: "It was hot"
+  Original Peak: J5-3028
+  Ablated Top-K Results:
+    #1 : J5-3028 (Strength: 100.00%) 
+    #2 : J5-2394 (Strength:  75.31%) 
+    #3 : J5-2761 (Strength:  73.24%) 
+    #4 : J5-38   (Strength:  73.23%)   <-- TARGET
+    #5 : J5-1991 (Strength:  70.48%) 
+    #6 : J5-2094 (Strength:  66.81%) 
+    #7 : J5-1871 (Strength:  65.97%) 
+    #8 : J5-1155 (Strength:  63.75%) 
+    #9 : J5-1865 (Strength:  51.52%) 
+    #10: J5-727  (Strength:  48.99%) 
+    #11: J5-1889 (Strength:  48.54%) 
+    #12: J5-297  (Strength:  47.50%) 
+    #13: J5-1129 (Strength:  47.27%) 
+    #14: J5-1631 (Strength:  46.88%) 
+    #15: J5-991  (Strength:  43.72%) 
+    #16: J5-1436 (Strength:  41.93%) 
+    #17: J5-2455 (Strength:  41.40%) 
+    #18: J5-2819 (Strength:  40.68%) 
+    #19: J5-141  (Strength:  40.61%) 
+    #20: J5-610  (Strength:  38.96%) 
+    #21: J5-499  (Strength:  38.82%) 
+    #22: J5-2872 (Strength:  37.14%) 
+    #23: J5-676  (Strength:  36.85%) 
+    #24: J5-2858 (Strength:  36.75%) 
+    #25: J5-2263 (Strength:  36.66%) 
+    #26: J5-82   (Strength:  35.83%) 
+    #27: J5-2827 (Strength:  35.63%) 
+    #28: J5-1885 (Strength:  35.09%) 
+    #29: J5-2694 (Strength:  34.25%) 
+    #30: J5-2837 (Strength:  34.12%) 
+
+> PROMPT: "hot"
+  Original Peak: J5-1888
+  Ablated Top-K Results:
+    #1 : J5-1129 (Strength: 100.00%) 
+    #2 : J5-3028 (Strength:  88.60%) 
+    #3 : J5-234  (Strength:  69.14%) 
+    #4 : J5-1851 (Strength:  62.14%) 
+    #5 : J5-2011 (Strength:  57.22%) 
+    #6 : J5-1588 (Strength:  55.98%) 
+    #7 : J5-163  (Strength:  48.06%) 
+    #8 : J5-2393 (Strength:  39.83%) 
+    #9 : J5-1746 (Strength:  38.72%) 
+    #10: J5-1203 (Strength:  33.09%) 
+    #11: J5-2321 (Strength:  32.99%) 
+    #12: J5-2546 (Strength:  32.73%) 
+    #13: J5-281  (Strength:  32.06%) 
+    #14: J5-2958 (Strength:  31.32%) 
+    #15: J5-703  (Strength:  30.25%) 
+    #16: J5-2424 (Strength:  29.83%) 
+    #17: J5-1505 (Strength:  29.29%) 
+    #18: J5-3056 (Strength:  28.32%) 
+    #19: J5-1227 (Strength:  27.83%) 
+    #20: J5-1174 (Strength:  26.57%) 
+    #21: J5-2775 (Strength:  26.55%) 
+    #22: J5-1508 (Strength:  26.54%) 
+    #23: J5-283  (Strength:  26.09%) 
+    #24: J5-2204 (Strength:  25.80%) 
+    #25: J5-1080 (Strength:  25.22%) 
+    #26: J5-1697 (Strength:  25.17%) 
+    #27: J5-559  (Strength:  24.33%) 
+    #28: J5-3014 (Strength:  24.27%) 
+    #29: J5-2534 (Strength:  24.16%) 
+    #30: J5-2096 (Strength:  24.05%) 
+
+> PROMPT: "it was burning"
+  Original Peak: J5-1888
+  Ablated Top-K Results:
+    #1 : J5-38   (Strength: 100.00%)   <-- TARGET
+    #2 : J5-3028 (Strength:  87.33%) 
+    #3 : J5-373  (Strength:  75.88%) 
+    #4 : J5-2112 (Strength:  70.77%) 
+    #5 : J5-2290 (Strength:  67.13%) 
+    #6 : J5-2761 (Strength:  66.27%) 
+    #7 : J5-297  (Strength:  64.87%) 
+    #8 : J5-1889 (Strength:  64.36%) 
+    #9 : J5-610  (Strength:  61.38%) 
+    #10: J5-1129 (Strength:  58.82%) 
+    #11: J5-3063 (Strength:  58.70%) 
+    #12: J5-103  (Strength:  54.47%) 
+    #13: J5-977  (Strength:  53.98%) 
+    #14: J5-617  (Strength:  53.48%) 
+    #15: J5-1436 (Strength:  53.08%) 
+    #16: J5-2979 (Strength:  52.83%) 
+    #17: J5-2837 (Strength:  52.68%) 
+    #18: J5-1909 (Strength:  51.59%) 
+    #19: J5-1274 (Strength:  51.19%) 
+    #20: J5-1363 (Strength:  49.79%) 
+    #21: J5-1871 (Strength:  47.81%) 
+    #22: J5-2745 (Strength:  47.31%) 
+    #23: J5-584  (Strength:  47.05%) 
+    #24: J5-2161 (Strength:  46.33%) 
+    #25: J5-1508 (Strength:  46.10%) 
+    #26: J5-594  (Strength:  45.04%) 
+    #27: J5-2665 (Strength:  44.94%) 
+    #28: J5-850  (Strength:  44.75%) 
+    #29: J5-2005 (Strength:  44.02%) 
+    #30: J5-2485 (Strength:  43.90%) 
+
+> PROMPT: "burning"
+  Original Peak: J5-1888
+  Ablated Top-K Results:
+    #1 : J5-1129 (Strength: 100.00%) 
+    #2 : J5-3028 (Strength:  66.88%) 
+    #3 : J5-234  (Strength:  63.51%) 
+    #4 : J5-2112 (Strength:  59.25%) 
+    #5 : J5-788  (Strength:  56.51%) 
+    #6 : J5-103  (Strength:  55.61%) 
+    #7 : J5-373  (Strength:  53.15%) 
+    #8 : J5-1851 (Strength:  52.27%) 
+    #9 : J5-1746 (Strength:  48.48%) 
+    #10: J5-2053 (Strength:  44.78%) 
+    #11: J5-265  (Strength:  43.39%) 
+    #12: J5-2837 (Strength:  38.15%) 
+    #13: J5-1508 (Strength:  37.98%) 
+    #14: J5-1174 (Strength:  37.64%) 
+    #15: J5-703  (Strength:  36.11%) 
+    #16: J5-776  (Strength:  35.98%) 
+    #17: J5-2128 (Strength:  35.08%) 
+    #18: J5-647  (Strength:  34.96%) 
+    #19: J5-357  (Strength:  34.49%) 
+    #20: J5-1274 (Strength:  33.00%) 
+    #21: J5-323  (Strength:  32.79%) 
+    #22: J5-591  (Strength:  31.79%) 
+    #23: J5-1856 (Strength:  31.20%) 
+    #24: J5-163  (Strength:  30.75%) 
+    #25: J5-1255 (Strength:  30.54%) 
+    #26: J5-2815 (Strength:  30.47%) 
+    #27: J5-1039 (Strength:  28.87%) 
+    #28: J5-85   (Strength:  28.55%) 
+    #29: J5-1602 (Strength:  28.52%) 
+    #30: J5-799  (Strength:  28.46%) 
+
+> PROMPT: "it was scorching"
+  Original Peak: J5-1587
+  Ablated Top-K Results:
+    #1 : J5-1587 (Strength: 100.00%) 
+    #2 : J5-1118 (Strength:  92.13%) 
+    #3 : J5-2979 (Strength:  81.98%) 
+    #4 : J5-1363 (Strength:  81.56%) 
+    #5 : J5-38   (Strength:  73.86%)   <-- TARGET
+    #6 : J5-1274 (Strength:  73.11%) 
+    #7 : J5-1889 (Strength:  68.34%) 
+    #8 : J5-2094 (Strength:  65.99%) 
+    #9 : J5-2290 (Strength:  64.25%) 
+    #10: J5-2819 (Strength:  64.25%) 
+    #11: J5-362  (Strength:  57.58%) 
+    #12: J5-1624 (Strength:  56.91%) 
+    #13: J5-610  (Strength:  55.06%) 
+    #14: J5-1517 (Strength:  51.46%) 
+    #15: J5-2557 (Strength:  51.23%) 
+    #16: J5-290  (Strength:  50.96%) 
+    #17: J5-26   (Strength:  50.71%) 
+    #18: J5-1436 (Strength:  50.61%) 
+    #19: J5-3019 (Strength:  50.49%) 
+    #20: J5-753  (Strength:  50.36%) 
+    #21: J5-297  (Strength:  49.80%) 
+    #22: J5-58   (Strength:  49.04%) 
+    #23: J5-1871 (Strength:  48.90%) 
+    #24: J5-2161 (Strength:  48.39%) 
+    #25: J5-788  (Strength:  48.03%) 
+    #26: J5-1218 (Strength:  47.88%) 
+    #27: J5-2214 (Strength:  47.58%) 
+    #28: J5-2685 (Strength:  44.97%) 
+    #29: J5-3013 (Strength:  44.44%) 
+    #30: J5-790  (Strength:  43.16%) 
+
+> PROMPT: "scorching"
+  Original Peak: J5-1888
+  Ablated Top-K Results:
+    #1 : J5-788  (Strength: 100.00%) 
+    #2 : J5-1746 (Strength:  93.32%) 
+    #3 : J5-1397 (Strength:  84.09%) 
+    #4 : J5-2204 (Strength:  72.35%) 
+    #5 : J5-266  (Strength:  70.84%) 
+    #6 : J5-1034 (Strength:  70.70%) 
+    #7 : J5-290  (Strength:  69.03%) 
+    #8 : J5-462  (Strength:  68.74%) 
+    #9 : J5-1517 (Strength:  67.22%) 
+    #10: J5-790  (Strength:  66.66%) 
+    #11: J5-1544 (Strength:  62.28%) 
+    #12: J5-1274 (Strength:  58.85%) 
+    #13: J5-2214 (Strength:  58.42%) 
+    #14: J5-13   (Strength:  54.84%) 
+    #15: J5-1350 (Strength:  54.68%) 
+    #16: J5-1624 (Strength:  53.75%) 
+    #17: J5-2466 (Strength:  53.49%) 
+    #18: J5-2422 (Strength:  52.14%) 
+    #19: J5-2091 (Strength:  50.27%) 
+    #20: J5-2770 (Strength:  49.21%) 
+    #21: J5-90   (Strength:  48.74%) 
+    #22: J5-199  (Strength:  47.38%) 
+    #23: J5-817  (Strength:  46.66%) 
+    #24: J5-177  (Strength:  45.47%) 
+    #25: J5-556  (Strength:  44.63%) 
+    #26: J5-2837 (Strength:  44.41%) 
+    #27: J5-1118 (Strength:  43.79%) 
+    #28: J5-1473 (Strength:  43.41%) 
+    #29: J5-432  (Strength:  42.81%) 
+    #30: J5-1669 (Strength:  42.71%) 
+
+> PROMPT: "a warm day"
+  Original Peak: J5-2735
+  Ablated Top-K Results:
+    #1 : J5-2735 (Strength: 100.00%) 
+    #2 : J5-409  (Strength:  99.11%) 
+    #3 : J5-1398 (Strength:  87.28%) 
+    #4 : J5-38   (Strength:  71.95%)   <-- TARGET
+    #5 : J5-727  (Strength:  69.94%) 
+    #6 : J5-2705 (Strength:  68.70%) 
+    #7 : J5-2905 (Strength:  65.33%) 
+    #8 : J5-1850 (Strength:  57.75%) 
+    #9 : J5-1368 (Strength:  57.68%) 
+    #10: J5-3007 (Strength:  56.77%) 
+    #11: J5-1448 (Strength:  55.36%) 
+    #12: J5-2324 (Strength:  54.73%) 
+    #13: J5-144  (Strength:  52.27%) 
+    #14: J5-235  (Strength:  52.10%) 
+    #15: J5-2850 (Strength:  51.80%) 
+    #16: J5-1350 (Strength:  49.75%) 
+    #17: J5-587  (Strength:  49.63%) 
+    #18: J5-2213 (Strength:  48.92%) 
+    #19: J5-1383 (Strength:  47.63%) 
+    #20: J5-711  (Strength:  46.70%) 
+    #21: J5-3005 (Strength:  46.18%) 
+    #22: J5-2941 (Strength:  45.42%) 
+    #23: J5-2665 (Strength:  44.01%) 
+    #24: J5-138  (Strength:  43.43%) 
+    #25: J5-301  (Strength:  42.62%) 
+    #26: J5-584  (Strength:  42.39%) 
+    #27: J5-2651 (Strength:  42.00%) 
+    #28: J5-114  (Strength:  41.69%) 
+    #29: J5-1829 (Strength:  40.40%) 
+    #30: J5-892  (Strength:  40.39%) 
+
+> PROMPT: "the desert sun"
+  Original Peak: J5-1789
+  Ablated Top-K Results:
+    #1 : J5-1789 (Strength: 100.00%) 
+    #2 : J5-2331 (Strength:  80.37%) 
+    #3 : J5-38   (Strength:  71.82%)   <-- TARGET
+    #4 : J5-3028 (Strength:  59.45%) 
+    #5 : J5-2490 (Strength:  59.23%) 
+    #6 : J5-2778 (Strength:  55.64%) 
+    #7 : J5-2192 (Strength:  54.04%) 
+    #8 : J5-552  (Strength:  52.23%) 
+    #9 : J5-440  (Strength:  49.65%) 
+    #10: J5-12   (Strength:  49.52%) 
+    #11: J5-2861 (Strength:  47.84%) 
+    #12: J5-1865 (Strength:  47.68%) 
+    #13: J5-2800 (Strength:  45.62%) 
+    #14: J5-1505 (Strength:  43.82%) 
+    #15: J5-2615 (Strength:  43.60%) 
+    #16: J5-323  (Strength:  43.52%) 
+    #17: J5-2274 (Strength:  43.25%) 
+    #18: J5-2455 (Strength:  40.59%) 
+    #19: J5-1905 (Strength:  39.68%) 
+    #20: J5-2368 (Strength:  38.55%) 
+    #21: J5-2101 (Strength:  38.36%) 
+    #22: J5-2234 (Strength:  38.35%) 
+    #23: J5-599  (Strength:  38.18%) 
+    #24: J5-2735 (Strength:  37.90%) 
+    #25: J5-2330 (Strength:  37.78%) 
+    #26: J5-1662 (Strength:  37.72%) 
+    #27: J5-973  (Strength:  36.38%) 
+    #28: J5-2685 (Strength:  36.09%) 
+    #29: J5-420  (Strength:  35.95%) 
+    #30: J5-680  (Strength:  35.63%) 
+
+> PROMPT: "a heatwave"
+  Original Peak: J5-1888
+  Ablated Top-K Results:
+    #1 : J5-1505 (Strength: 100.00%) 
+    #2 : J5-2733 (Strength:  83.73%) 
+    #3 : J5-1368 (Strength:  76.98%) 
+    #4 : J5-1812 (Strength:  76.61%) 
+    #5 : J5-114  (Strength:  75.81%) 
+    #6 : J5-2597 (Strength:  69.23%) 
+    #7 : J5-1350 (Strength:  64.11%) 
+    #8 : J5-30   (Strength:  64.04%) 
+    #9 : J5-2665 (Strength:  63.66%) 
+    #10: J5-2213 (Strength:  62.69%) 
+    #11: J5-2324 (Strength:  61.22%) 
+    #12: J5-594  (Strength:  58.97%) 
+    #13: J5-2850 (Strength:  58.67%) 
+    #14: J5-2018 (Strength:  57.74%) 
+    #15: J5-1944 (Strength:  57.55%) 
+    #16: J5-1753 (Strength:  57.24%) 
+    #17: J5-727  (Strength:  55.39%) 
+    #18: J5-2619 (Strength:  54.97%) 
+    #19: J5-1474 (Strength:  54.08%) 
+    #20: J5-1782 (Strength:  53.82%) 
+    #21: J5-1850 (Strength:  53.52%) 
+    #22: J5-616  (Strength:  53.16%) 
+    #23: J5-1593 (Strength:  52.98%) 
+    #24: J5-474  (Strength:  51.59%) 
+    #25: J5-1899 (Strength:  51.11%) 
+    #26: J5-774  (Strength:  50.99%) 
+    #27: J5-3011 (Strength:  50.92%) 
+    #28: J5-1436 (Strength:  50.86%) 
+    #29: J5-1476 (Strength:  50.00%) 
+    #30: J5-31   (Strength:  49.49%) 
+
+-- NEUTRAL PROBES --
+
+> PROMPT: "It was lukewarm"
+  Original Peak: J5-1978
+  Ablated Top-K Results:
+    #1 : J5-1978 (Strength: 100.00%) 
+    #2 : J5-2094 (Strength:  68.85%) 
+    #3 : J5-143  (Strength:  58.92%) 
+    #4 : J5-2529 (Strength:  56.25%) 
+    #5 : J5-2390 (Strength:  49.32%) 
+    #6 : J5-2872 (Strength:  49.03%) 
+    #7 : J5-901  (Strength:  49.03%) 
+    #8 : J5-760  (Strength:  48.15%) 
+    #9 : J5-297  (Strength:  46.41%) 
+    #10: J5-2510 (Strength:  45.89%) 
+    #11: J5-2263 (Strength:  43.79%) 
+    #12: J5-1631 (Strength:  43.17%) 
+    #13: J5-2696 (Strength:  41.79%) 
+    #14: J5-2733 (Strength:  40.94%) 
+    #15: J5-2642 (Strength:  39.32%) 
+    #16: J5-30   (Strength:  38.05%) 
+    #17: J5-2963 (Strength:  37.78%) 
+    #18: J5-1844 (Strength:  37.42%) 
+    #19: J5-2711 (Strength:  36.14%) 
+    #20: J5-2266 (Strength:  35.83%) 
+    #21: J5-2516 (Strength:  35.67%) 
+    #22: J5-1630 (Strength:  35.27%) 
+    #23: J5-2789 (Strength:  34.33%) 
+    #24: J5-1230 (Strength:  34.32%) 
+    #25: J5-642  (Strength:  34.22%) 
+    #26: J5-398  (Strength:  33.44%) 
+    #27: J5-252  (Strength:  33.21%) 
+    #28: J5-1224 (Strength:  33.17%) 
+    #29: J5-2645 (Strength:  32.72%) 
+    #30: J5-3057 (Strength:  32.13%) 
+
+> PROMPT: "lukewarm"
+  Original Peak: J5-654
+  Ablated Top-K Results:
+    #1 : J5-1746 (Strength: 100.00%) 
+    #2 : J5-614  (Strength:  80.18%) 
+    #3 : J5-1350 (Strength:  70.35%) 
+    #4 : J5-143  (Strength:  68.84%) 
+    #5 : J5-1495 (Strength:  67.28%) 
+    #6 : J5-2012 (Strength:  66.57%) 
+    #7 : J5-790  (Strength:  64.46%) 
+    #8 : J5-3006 (Strength:  64.12%) 
+    #9 : J5-2585 (Strength:  62.33%) 
+    #10: J5-2226 (Strength:  60.74%) 
+    #11: J5-30   (Strength:  59.47%) 
+    #12: J5-281  (Strength:  58.55%) 
+    #13: J5-1978 (Strength:  56.96%) 
+    #14: J5-485  (Strength:  56.18%) 
+    #15: J5-2331 (Strength:  55.63%) 
+    #16: J5-2243 (Strength:  55.10%) 
+    #17: J5-1541 (Strength:  54.73%) 
+    #18: J5-2542 (Strength:  54.34%) 
+    #19: J5-2529 (Strength:  52.82%) 
+    #20: J5-760  (Strength:  52.45%) 
+    #21: J5-944  (Strength:  51.85%) 
+    #22: J5-3064 (Strength:  51.32%) 
+    #23: J5-1557 (Strength:  50.89%) 
+    #24: J5-2733 (Strength:  49.27%) 
+    #25: J5-1508 (Strength:  48.61%) 
+    #26: J5-1505 (Strength:  48.30%) 
+    #27: J5-2094 (Strength:  47.97%) 
+    #28: J5-1968 (Strength:  47.70%) 
+    #29: J5-2235 (Strength:  46.99%) 
+    #30: J5-3056 (Strength:  45.92%) 
+
+> PROMPT: "room temperature"
+  Original Peak: J5-1888
+  Ablated Top-K Results:
+    #1 : J5-1893 (Strength: 100.00%) 
+    #2 : J5-420  (Strength:  80.03%) 
+    #3 : J5-1495 (Strength:  67.43%) 
+    #4 : J5-1979 (Strength:  66.06%) 
+    #5 : J5-2778 (Strength:  63.25%) 
+    #6 : J5-1746 (Strength:  61.56%) 
+    #7 : J5-1815 (Strength:  60.63%) 
+    #8 : J5-1425 (Strength:  58.77%) 
+    #9 : J5-1350 (Strength:  56.59%) 
+    #10: J5-3028 (Strength:  53.82%) 
+    #11: J5-2218 (Strength:  53.57%) 
+    #12: J5-2693 (Strength:  52.70%) 
+    #13: J5-552  (Strength:  50.35%) 
+    #14: J5-2004 (Strength:  49.74%) 
+    #15: J5-1730 (Strength:  49.11%) 
+    #16: J5-276  (Strength:  48.96%) 
+    #17: J5-1786 (Strength:  48.39%) 
+    #18: J5-877  (Strength:  47.94%) 
+    #19: J5-115  (Strength:  47.62%) 
+    #20: J5-2444 (Strength:  46.94%) 
+    #21: J5-1174 (Strength:  46.94%) 
+    #22: J5-1975 (Strength:  46.55%) 
+    #23: J5-1203 (Strength:  45.52%) 
+    #24: J5-2542 (Strength:  45.14%) 
+    #25: J5-3067 (Strength:  44.39%) 
+    #26: J5-57   (Strength:  43.82%) 
+    #27: J5-527  (Strength:  43.45%) 
+    #28: J5-1233 (Strength:  43.41%) 
+    #29: J5-250  (Strength:  43.08%) 
+    #30: J5-1576 (Strength:  43.03%) 
