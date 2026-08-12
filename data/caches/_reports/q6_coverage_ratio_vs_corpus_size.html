@@ -1,0 +1,30 @@
+<h2 class="sr-only">Scatter plot of imp_r to imp_i coverage ratio against corpus size for twenty corpora. The nineteen fragmented book corpora fall along a declining trend from about 0.99 at 944 rows to 0.72 at 129,000 rows. French Proust sits above the trend at 1.09. WikiText-103, prepared as real sentences, sits far above at 1.44 despite being the largest corpus at 866,000 rows.</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 8px; font-size: 12px; color: var(--text-secondary);">
+  <span style="display: flex; align-items: center; gap: 4px;"><span style="width: 10px; height: 10px; border-radius: 2px; background: #2a78d6;"></span>Books, English (fragments)</span>
+  <span style="display: flex; align-items: center; gap: 4px;"><span style="width: 10px; height: 10px; border-radius: 2px; background: #eb6834;"></span>Proust, French</span>
+  <span style="display: flex; align-items: center; gap: 4px;"><span style="width: 10px; height: 10px; border-radius: 2px; background: #1baf7a;"></span>WikiText-103 (real sentences)</span>
+</div>
+<div style="position: relative; width: 100%; height: 340px;">
+  <canvas id="q6" role="img" aria-label="Coverage ratio against corpus size, twenty corpora">Ratio falls with size across the books, but WikiText-103 sits far above the trend.</canvas>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const books=[[944,0.99],[2277,0.78],[2447,0.77],[2969,0.75],[3560,0.93],[5014,0.78],[8081,0.76],[10879,0.75],[12223,0.75],[14585,0.74],[18516,0.73],[20450,0.69],[21713,0.69],[22456,0.69],[23407,0.69],[32368,0.73],[59735,0.66],[128885,0.72]].map(p=>({x:p[0],y:p[1]}));
+const fr=[{x:16966,y:1.09}];
+const wiki=[{x:866109,y:1.44}];
+new Chart(document.getElementById('q6'),{
+  type:'scatter',
+  data:{datasets:[
+    {label:'Books',data:books,backgroundColor:'#2a78d6',pointRadius:5,pointStyle:'circle'},
+    {label:'Proust FR',data:fr,backgroundColor:'#eb6834',pointRadius:7,pointStyle:'triangle'},
+    {label:'WikiText-103',data:wiki,backgroundColor:'#1baf7a',pointRadius:8,pointStyle:'rectRot'}
+  ]},
+  options:{responsive:true,maintainAspectRatio:false,
+    layout:{padding:20},
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>`${c.parsed.x.toLocaleString()} rows · ratio ${c.parsed.y.toFixed(2)}`}}},
+    scales:{
+      x:{type:'logarithmic',min:700,max:1200000,title:{display:true,text:'corpus size (jsonl rows, log scale)',color:'#898781',font:{size:12}},ticks:{color:'#898781',font:{size:11}},grid:{color:'#e1e0d9'}},
+      y:{min:0.55,max:1.6,title:{display:true,text:'imp_r / imp_i coverage ratio',color:'#898781',font:{size:12}},ticks:{color:'#898781',font:{size:11}},grid:{color:'#e1e0d9'}}
+    }}
+});
+</script>

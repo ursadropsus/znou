@@ -1,0 +1,29 @@
+<h2 class="sr-only">Line chart of unique neurons reached against corpus size for WikiText-103, from 5,000 to 860,000 sentences. The imp_r curve rises steeply then flattens near 1,500. The imp_i curve rises more slowly and steadily, reaching 1,038. They do not cross. Two markers at 407,475 sentences show the SPEC 8.3 corpus, where imp_i at 2,225 sits above imp_r at 1,452 — the opposite ordering at the same corpus size.</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 8px; font-size: 12px; color: var(--text-secondary);">
+  <span style="display: flex; align-items: center; gap: 4px;"><span style="width: 10px; height: 10px; border-radius: 2px; background: #2a78d6;"></span>imp_r, WikiText-103</span>
+  <span style="display: flex; align-items: center; gap: 4px;"><span style="width: 10px; height: 10px; border-radius: 2px; background: #eb6834;"></span>imp_i, WikiText-103 (dashed)</span>
+  <span style="display: flex; align-items: center; gap: 4px;"><span style="width: 10px; height: 10px; border-radius: 2px; background: #4a3aa7;"></span>§8.3 corpus at 407k</span>
+</div>
+<div style="position: relative; width: 100%; height: 360px;">
+  <canvas id="cov" role="img" aria-label="Coverage curves for WikiText-103 compared with the SPEC 8.3 corpus">WikiText-103 imp_r stays above imp_i out to 860,000 sentences; the 8.3 corpus shows the reverse ordering at 407,475.</canvas>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const R=[{x:5000,y:462},{x:35000,y:866},{x:65000,y:1007},{x:95000,y:1086},{x:125000,y:1148},{x:155000,y:1192},{x:185000,y:1221},{x:215000,y:1248},{x:245000,y:1275},{x:275000,y:1306},{x:305000,y:1327},{x:335000,y:1346},{x:365000,y:1367},{x:395000,y:1381},{x:425000,y:1396},{x:455000,y:1408},{x:485000,y:1419},{x:515000,y:1430},{x:545000,y:1440},{x:575000,y:1445},{x:605000,y:1451},{x:635000,y:1459},{x:665000,y:1462},{x:695000,y:1470},{x:725000,y:1476},{x:755000,y:1482},{x:785000,y:1487},{x:815000,y:1493},{x:845000,y:1498},{x:860000,y:1500}];
+const I=[{x:5000,y:83},{x:35000,y:252},{x:65000,y:353},{x:95000,y:415},{x:125000,y:497},{x:155000,y:539},{x:185000,y:574},{x:215000,y:619},{x:245000,y:652},{x:275000,y:681},{x:305000,y:711},{x:335000,y:740},{x:365000,y:757},{x:395000,y:769},{x:425000,y:787},{x:455000,y:804},{x:485000,y:829},{x:515000,y:849},{x:545000,y:865},{x:575000,y:883},{x:605000,y:895},{x:635000,y:916},{x:665000,y:935},{x:695000,y:952},{x:725000,y:966},{x:755000,y:983},{x:785000,y:990},{x:815000,y:1012},{x:845000,y:1031},{x:860000,y:1038}];
+new Chart(document.getElementById('cov'),{
+  type:'line',
+  data:{datasets:[
+    {label:'imp_r wiki',data:R,borderColor:'#2a78d6',backgroundColor:'#2a78d6',borderWidth:2,pointRadius:0,tension:0.2},
+    {label:'imp_i wiki',data:I,borderColor:'#eb6834',backgroundColor:'#eb6834',borderWidth:2,borderDash:[6,4],pointRadius:0,tension:0.2},
+    {label:'8.3 imp_r',data:[{x:407475,y:1452}],type:'scatter',backgroundColor:'#4a3aa7',pointStyle:'circle',pointRadius:7},
+    {label:'8.3 imp_i',data:[{x:407475,y:2225}],type:'scatter',backgroundColor:'#4a3aa7',pointStyle:'triangle',pointRadius:9}
+  ]},
+  options:{responsive:true,maintainAspectRatio:false,layout:{padding:20},
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>`${c.dataset.label}: ${c.parsed.y} at ${c.parsed.x.toLocaleString()}`}}},
+    scales:{
+      x:{type:'linear',min:0,max:900000,title:{display:true,text:'sentences processed',color:'#898781',font:{size:12}},ticks:{color:'#898781',font:{size:11},callback:v=>(v/1000)+'k'},grid:{display:false}},
+      y:{min:0,max:2400,title:{display:true,text:'unique neurons reached (of 3072)',color:'#898781',font:{size:12}},ticks:{color:'#898781',font:{size:11}},grid:{color:'#e1e0d9'}}
+    }}
+});
+</script>

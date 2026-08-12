@@ -1,0 +1,21 @@
+slug	original_run	source	lines	units_reported	jsonl_rows	filtered_out	mean_len	median_len	final_char_entropy_bits	final_token_entropy_bits	coverage_exp_r	coverage_exp_i	coverage_imp_r	coverage_imp_i	zip_sha256
+alice-in-wonderland_2025-11-05	alice_full_2025-11-05	../data/alice.txt	3758	3381	2969	412	52.3	61	3.9971		244	409	328	440	ae7263a90f3d261b
+book-of-the-dead_2025-11-05	bookdead_full_2025-11-05	../data/bookdead.txt	20688	19700	14585	5115	48.9	52	3.7379		504	803	627	852	aea25f91c381474e
+within-a-budding-grove_2025-11-05	buddinggrove_full_2025-11-05	../data/buddinggrove.txt	20195	25028	22456	2572	56.9	67	3.9354		670	1180	875	1261	655d7795a712c9f5
+crime-and-punishment_2025-11-05	crimandpunishment_full_2025-11-05	../data/crimandpunishment.txt	22444	27739	23407	4332	46.3	46	3.7263		648	1064	780	1132	e819354fb11f62f9
+a-dolls-house_2025-11-05	dollshouse_full_2025-11-05	../data/dollshouse.txt	5551	5771	3560	2211	38.8	36	3.1984		320	392	395	427	f49b954d2df2d803
+du-cote-de-chez-swann-FR_2025-11-05	DuCoteProust_full_2025-11-05	../data/DuCoteProust.txt	16541	18692	16966	1726	57.5	65	3.6356		138	181	228	210	752d64e2a7b75200
+the-king-in-yellow_2025-11-05	kinginYellow_full_2025-11-05	../data/kinginYellow.txt	9174	9394	8081	1313	48.9	53	3.6425		458	682	557	736	92d158a5d508772f
+leviathan_2025-11-05	Leviathan_full_2025-11-05	../data/Leviathan.txt	22999	22920	20450	2470	57.9	67	3.9148		542	970	713	1034	136e2bf15cc5f6e2
+the-prince_2025-11-05	Machiavelli_full_2025-11-05	../data/Machiavelli.txt	5175	5567	5014	553	57.9	66	3.8945		372	614	510	652	aef5dc21f6b41d96
+the-metamorphosis_2025-11-05	Metamorphosis_full_2025-11-05	../data/Metamorphosis.txt	2268	2758	2447	311	54.1	64	3.7579		246	431	364	474	60af7008afe5400e
+moby-dick_2025-11-05	moby_dick_full_2025-11-05	../data/moby_dick.txt	21469	25186	21713	3473	53.0	63	3.9515		651	1096	812	1174	9951c209dc07ae06
+poe-collected_2025-11-05	Poe_full_2025-11-05	../data/Poe.txt	10692	12478	10879	1599	49.6	58	3.8704		515	870	684	918	d4e581d883a2f8d4
+shakespeare-complete_2025-11-05	shakespeare_full_2025-11-05	../data/shakespeare.txt	196395	175906	128885	47021	36.7	39	3.3023		1044	1457	1121	1556	6f4bfc63d22744ec
+swanns-way-EN_2025-11-05	swannsway_full_2025-11-05	../data/swannsway.txt	17420	20290	18516	1774	57.6	67	4.0204		642	1090	851	1159	0e508a1fad75eb3d
+the-yellow-wallpaper_2025-11-05	TheYellowWallpaper_full_2025-11-05	../data/TheYellowWallpaper.txt	1223	1082	944	138	50.7	58	3.7891		162	202	214	217	389935c2d83d6e59
+tractatus_2025-11-05	Tractatus Logico-Philosophicus_full_2025-11-05	../data/Tractatus Logico-Philosophicus.txt	3021	2650	2277	373	52.8	59	3.4094		171	322	262	336	80a20cbb7737db8c
+ulysses_2025-11-05	Ulysses_full_2025-11-05	../data/Ulysses.txt	33214	42212	32368	9844	43.3	40	3.329		742	1134	909	1241	643553fe362dec37
+war-and-peace_2025-11-05	war_and_peace_full_2025-11-05	../data/war_and_peace.txt	65197	68773	59735	9038	51.2	59	3.6785		850	1472	1025	1564	9a9a06fd7d81b095
+wiki103_full_2025-11-05	wiki103_full_2025-11-05				866109		124.7	117	0.9105		1516	940	1501	1042	3d308284a5cf04e0
+thus-spoke-zarathustra_2025-11-05	Zarathustra_full_2025-11-05	../data/Zarathustra.txt	16000	14738	12223	2515	50.2	56	4.0119		497	785	632	838	eccb154769ca072d
