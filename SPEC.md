@@ -769,16 +769,61 @@ exp_i            921        -0.0103           0.0287    -1.39     1.6e-01   ✗
 ```
 
 **Positive z ⇒ neurons absent from ℛ̂_C are measurably quieter under this
-probe.** For both implicit quadrants this is overwhelming.
+probe.** For both implicit quadrants this is overwhelming — and overwhelming
+is not the interesting quantity.
+
+**Effect size — MEASURED, Cliff's δ off `sweep_neurons.tsv`.** δ is the
+probability that a randomly chosen reached neuron is louder than a randomly
+chosen unreached one, rescaled to [−1, 1]. 95% CI by bootstrap, 2000
+resamples:
+
+```
+quad        δ        95% CI          P(reached louder)   magnitude
+imp_r   +0.376   [+0.336, +0.413]         0.688          medium
+imp_i   +0.374   [+0.334, +0.413]         0.687          medium
+exp_r   −0.106   [−0.148, −0.065]         0.447          negligible   ✗
+exp_i   −0.032   [−0.082, +0.013]         0.484          negligible   ✗
+```
+
+**This is a real but partial separation, and the z badly oversold it.** Pick a
+reached neuron and an unreached one at random: the reached one is louder about
+69% of the time, against 50% by chance. The distributions overlap heavily. In
+imp_r, 173 neurons sit in the loudest quartile and were never reached, while
+269 sit in the quietest quartile and were reached anyway. Spearman correlation
+between maximum single-token activation and corpus hit count is ρ = 0.32
+(imp_r) and 0.35 (imp_i) — a tendency, not a rule.
+
+**Consequence.** *Some* of the corpus's failure to reach 736 neurons is
+associated with those neurons being quieter under this probe. Most of the
+variance is not explained by loudness. Whatever else is going on — context
+length, token composition, the BOS competition of §4.2 — is the larger part.
+Read §4.4 as one contributing factor identified, not as the explanation.
+
+**On n and multiple testing.** There are four tests here, one per quadrant,
+not 3072 — no familywise correction is called for. The concern the large n
+raises is the opposite one: at n=3072 any non-zero difference reaches
+significance, so p and z carry almost no information about magnitude. δ is
+reported because it is the quantity that does.
+
+**Selection.** *Reached* is defined by an argmax event, so the two groups are
+conditioned on the outcome and a positive δ is partly built in: a neuron that
+never wins anything is likelier to be one that cannot get loud. Two things
+limit how much of δ this explains. The split comes from 407,475 multi-token
+sentences while the activation proxy comes from 50,257 single tokens, so they
+are different regimes rather than the same measurement twice. And only 171 of
+3072 neurons ever win a single-token argmax at all, of which 157 are also
+corpus-reached — too few to account for a group of 1452. The caveat stands
+without dissolving the result.
 
 **Scope.** This establishes that the two groups differ under the one-token
 probe distribution. It does not establish a mechanism, and it is not evidence
 of unreachability — a neuron requiring four tokens of context reads as quiet
-here. §4.5 is the direct test. Effect size (Cliff's δ) pending off
-`sweep_neurons.tsv`; z=18 at n=3072 says little on its own.
+here. §4.5 is the direct test.
 
 `✗` — exp rows are void: by E1 the explicit single-token regime is degenerate,
 so `exp_max` measures position-0 behaviour and is not a proxy for anything.
+Both δ are negative, i.e. pointing the wrong way, which is what a void
+measurement should look like.
 
 Source of the split: `results/master_hit_counts.tsv` (§7.2), the same corpus
 coverage table §8.3 reports. `n_unreached` here and the unreached counts there
@@ -1662,17 +1707,54 @@ The prototype itself is a separate release. Nothing else is held back.
 ## 8. Fixtures — MEASURED
 
 **Cross-environment agreement — MEASURED, `replay_cache.py`.** The corpus is
-`the_sea`: *Moby-Dick* with Gutenberg apparatus removed and thematic opening
-phrases added. It is not the raw text and should not be cited as such.
+`the_sea`: five added opening phrases followed by the sentences of
+*Moby-Dick*, evaluated up to the last line of the Epilogue and no further. It
+is not the raw Gutenberg text and should not be cited as such; the exact
+composition is below.
 `sha256(the_sea_implicit_resonance.json)[:16] = e2e0c5166a5a0518`.
 
-**Provenance of the corpus.** *Moby-Dick* is public domain; Project
-Gutenberg's licence attaches to their added apparatus, which is the material
-removed. Both states of the text are published (§7.2): `the_sea_raw.json` is
-the text before preparation and `the_sea.json` is the corpus as used, so the
-preparation is recoverable as a diff rather than resting on the author's
-description of it. Source edition and the number of thematic openers added:
-TO PIN — readable off that diff, and to be stated here once read.
+**Provenance of the corpus — MEASURED, by diff.** *Moby-Dick* is public
+domain; Project Gutenberg's licence attaches to their added apparatus. Source
+text `moby_dick.txt`, 1,246,660 bytes, a Gutenberg plain-text edition with the
+front matter already removed — the `*** START` marker is absent, the `*** END`
+marker survives at byte 1,191,770.
+
+Preparation was: split into sentences, prepend five opening phrases. Both
+states ship (§7.2), so the following is checkable rather than recalled.
+
+```
+the_sea.json            7394 entries — 7393 strings and one malformed []
+  [0:5]                 the five added openers, verbatim:
+                          "Mellybean"
+                          "Where the cosmic winds whisper secrets."
+                          "A forgotten star chart."
+                          "The echo of a distant song."
+                          "A planet made of glass."
+  [5:7353]              7348 Melville sentences, ending at the last line of
+                        the Epilogue ("the devious-cruising Rachel...")
+  [7353:7393]           40 sentences of Gutenberg licence text
+  [7393]                []   malformed, an artifact of the split
+
+evaluated               [0:7353] — the openers and the complete novel.
+                        Gutenberg mentions inside that range: zero.
+```
+
+**The run stopped exactly at the novel's end.** The corpus §8 reports is the
+first 7353 entries, and entry 7353 is where the licence text begins, so no
+apparatus was evaluated. The claim that apparatus was removed holds of the
+measurement. It does not hold of the *file*, which retains 40 licence
+sentences past the boundary; they are published as they are rather than
+silently trimmed, since trimming would produce a file that never existed.
+
+Sentence lengths in the evaluated range: min 9 characters, median 127, mean
+158, max 2764. Eight sentences exceed 1024 characters — well under 1024
+*tokens*, so no truncation against the context window occurs.
+
+**One known defect.** `moby_dick.txt` opens with a UTF-8 BOM, which attached
+to the first sentence and caused the splitter to drop it. *Call me Ishmael.*
+is not in the corpus and never entered any measurement. Nothing downstream
+depends on it, and it is recorded because a reader comparing the corpus to the
+novel will notice.
 
 The stored atlas cache was generated months earlier on a different laptop
 under an unrecorded stack. It was replayed sentence by sentence against §7:
@@ -1910,6 +1992,13 @@ whose numbers cannot be reproduced from the published bundle (§7.2),** and the
 approximations below are the strongest form in which they can be stated.
 Treat them as indicative and not as MEASURED in the sense the tag usually
 carries here.
+
+**A different WikiText run does survive and has not been examined.**
+`wiki103_partial870k_2025-11-05` holds a 44MB per-sentence JSONL with all four
+quadrant destinations, plus checkpoint hit-count arrays. It is not this run —
+it is larger, later, and differently sampled — so it cannot restore the
+figures below. It could replace them. Until someone reads it, this section
+stays as stated.
 
 Re-running is the repair and is not expensive: 40,000 sentences × 4 quadrants
 is ~160k forward passes, and Q6 wants a run at two scales on one corpus in any
