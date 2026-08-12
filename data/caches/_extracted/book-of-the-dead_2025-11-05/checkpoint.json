@@ -1,0 +1,31 @@
+{
+    "line_index": 20687,
+    "total_sentences": 19700,
+    "coverage_log": [
+        {
+            "total_sentences": 5000,
+            "timestamp": 1762363481.9160836,
+            "coverage_exp_r": 259,
+            "coverage_exp_i": 382,
+            "coverage_imp_r": 347,
+            "coverage_imp_i": 425
+        },
+        {
+            "total_sentences": 10000,
+            "timestamp": 1762363598.7504573,
+            "coverage_exp_r": 362,
+            "coverage_exp_i": 555,
+            "coverage_imp_r": 488,
+            "coverage_imp_i": 610
+        },
+        {
+            "total_sentences": 15000,
+            "timestamp": 1762363724.726178,
+            "coverage_exp_r": 434,
+            "coverage_exp_i": 688,
+            "coverage_imp_r": 566,
+            "coverage_imp_i": 743
+        }
+    ],
+    "timestamp": 1762363847.5570357
+}
