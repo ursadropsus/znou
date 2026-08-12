@@ -147,7 +147,7 @@ work came from Gurnee & Tegmark, *Language Models Represent Space and Time*
 (arXiv:2310.02207).
 
 This is an independent proposal. It is not affiliated with, endorsed by, or a
-product of Anthropic, CCP Games / Fenris Creations, MIT, or anyone else.
+product of Anthropic, CCP Games / Fenris Creations, or anyone else.
 
 The corpus is derived from *Moby-Dick*, public domain, with Project Gutenberg's
 apparatus removed. Model weights are the original 2019 GPT-2 small release and
