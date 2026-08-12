@@ -1,0 +1,15 @@
+{
+    "line_index": 5550,
+    "total_sentences": 5771,
+    "coverage_log": [
+        {
+            "total_sentences": 5000,
+            "timestamp": 1762343971.5950377,
+            "coverage_exp_r": 288,
+            "coverage_exp_i": 320,
+            "coverage_imp_r": 352,
+            "coverage_imp_i": 346
+        }
+    ],
+    "timestamp": 1762343990.5165396
+}
