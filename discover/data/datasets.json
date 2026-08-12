@@ -1,0 +1,12 @@
+[
+    {
+        "id": "alice_full_2025-11-05",
+        "title": "Dataset: Alice's Adventures in Wonderland",
+        "path": "data/caches/alice_full_2025-11-05/"
+    },
+    {
+        "id": "moby_dick_full_2025-11-05",
+        "title": "Dataset: Moby Dick",
+        "path": "data/caches/moby_dick_full_2025-11-05/"
+    }
+]

@@ -1,0 +1,411 @@
+:root {
+    --primary-color: #00ffff;
+    --background-color: #050a10;
+    --panel-background: rgba(16, 24, 40, 0.85);
+    --text-color: #a7d8ff;
+    --header-color: #ffffff;
+    --border-color: #1a3a4f;
+    --success-color: #00ff80;
+    --button-hover: #ffee00;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+/* --- VISUAL EFFECTS LAYERS --- */
+
+#background-video {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+    z-index: 4;
+}
+
+#neuron-background {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.parallax-layer {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    will-change: transform;
+    z-index: 2;
+}
+
+.dot-field {
+    background-image: radial-gradient(circle, var(--primary-color) 1px, transparent 1px);
+}
+
+.layer-1 { opacity: 0.22; background-size: 40px 40px; }
+.layer-2 { opacity: 0.18; background-size: 60px 60px; }
+.layer-3 { opacity: 0.15; background-size: 80px 80px; }
+
+#floating-numbers-container {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.number-cluster {
+    position: absolute;
+    font-family: 'Roboto Mono', monospace;
+    color: var(--text-color);
+    font-size: 9px;
+    opacity: 0.5;
+    will-change: transform, opacity;
+}
+
+.number-cluster-inner { display: flex; flex-direction: column; gap: 4px; }
+.number-line { display: flex; align-items: center; gap: 8px; }
+.number-symbol { display: flex; gap: 2px; }
+.symbol-pip { width: 3px; height: 3px; background-color: var(--primary-color); }
+
+/* --- MAIN UI STYLES --- */
+
+.content-wrapper {
+    position: relative;
+    z-index: 5;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.operator-info span {
+    margin-left: 2rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 168px 1fr 1.5fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.panel {
+    background-color: var(--panel-background);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: relative; /* Required for frame effect */
+}
+
+.panel h2 {
+    color: var(--header-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    /* position: relative;  <-- THIS WAS THE MISTAKE, IT HAS BEEN REMOVED */
+}
+
+/* --- FRAMED PANEL EFFECT (CORRECTED) --- */
+
+/* Inner Borders */
+.panel::before {
+    content: '';
+    position: absolute;
+    inset: 7px;
+    border: 1px solid rgba(0, 255, 255, 0.31);
+    pointer-events: none;
+}
+.panel::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    mix-blend-mode: lighten;
+    pointer-events: none;
+}
+
+/* Corner Brackets */
+.corner-frame {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+/* Top Corners */
+.corner-frame::before, .corner-frame::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-color: var(--primary-color);
+    border-style: solid;
+    box-shadow: 0 0 8px var(--primary-color);
+}
+.corner-frame::before { top: 0; left: 0; border-width: 1px 0 0 1px; } 
+.corner-frame::after { top: 0; right: 0; border-width: 1px 1px 0 0; }
+/* Bottom Corners (using h2 pseudo-elements, positioned relative to .panel) */
+.panel h2::before, .panel h2::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-color: var(--primary-color);
+    border-style: solid;
+    box-shadow: 0 0 8px var(--primary-color);
+    bottom: 0; 
+}
+.panel h2::before { 
+    left: 0; 
+    border-width: 0 0 1px 1px; 
+}
+.panel h2::after { 
+    right: 0;
+    border-width: 0 1px 1px 0; 
+}
+
+
+.data-list {
+    max-height: 55vh;
+    overflow-y: auto;
+}
+
+.unclaimed-item, .leaderboard-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+    transition: all 0.2s ease-out; /* For hover effect */
+}
+
+.unclaimed-item:last-child, .leaderboard-item:last-child {
+    border-bottom: none;
+}
+
+button {
+    font-family: 'Roboto Mono', monospace;
+    background-color: var(--border-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* --- ENHANCED HOVER STATES --- */
+
+.unclaimed-item:hover, .leaderboard-item:hover {
+    background-color: rgba(0, 255, 255, 0.07);
+    transform: scale(1.02); /* Slightly grow the item */
+    box-shadow: inset 0 0 15px rgba(0, 255, 255, 0.1);
+}
+
+button:hover:not(:disabled) {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    box-shadow: 0 0 12px var(--primary-color);
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+#refresh-leaderboard-btn {
+    margin-bottom: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* --- SCROLLBAR --- */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--background-color); }
+::-webkit-scrollbar-thumb { background: var(--border-color); }
+::-webkit-scrollbar-thumb:hover { background: var(--primary-color); }
+
+/*
+========================================
+PRESENTATION SAFETY FOR LEADERBOARD
+========================================
+*/
+.leaderboard-item span:first-child {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*
+========================================
+YIELD SETTLEMENT REPORT MODAL STYLES
+========================================
+*/
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(5, 10, 16, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+.modal-overlay.hidden {
+    display: none;
+}
+
+.modal-window {
+    width: 90%;
+    max-width: 650px; /* A bit wider for the report */
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    /* We reuse the .panel class for background, border, etc. */
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 1.5rem; /* Match panel padding */
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 1rem;
+}
+
+.modal-header h2 {
+    margin-bottom: 0; /* Override default h2 margin */
+}
+
+.modal-close-btn {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 2em;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+}
+.modal-close-btn:hover {
+    color: var(--button-hover);
+    background: none; /* Override default button hover */
+    box-shadow: none;
+    transform: none;
+}
+
+.modal-content {
+    /* Use panel padding but remove vertical padding since header has it */
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+#settlement-summary {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+/* Item Styles */
+.settlement-item {
+    padding: 8px 10px;
+    margin-bottom: 5px;
+    background-color: rgba(26, 44, 58, 0.7); /* Slightly different background */
+    border-left: 2px solid transparent;
+}
+
+.settlement-item-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.settlement-toggle {
+    cursor: pointer;
+    user-select: none;
+    padding-right: 15px;
+    color: var(--primary-color);
+}
+
+.settlement-details {
+    display: none; /* Hidden by default */
+    padding: 8px 0 0 28px;
+    font-size: 0.9em;
+    color: var(--text-color);
+}
+.settlement-details p { margin-bottom: 4px; }
+.settlement-item.expanded .settlement-details { display: block; }
+
+
+/* --- YIELD GRADE "JUICE" --- */
+.grade-residual-class { border-left-color: #5a7a8a; }
+.grade-standard-signal { border-left-color: #a2c4d4; }
+.grade-variant-trace { border-left-color: #88d4c3; }
+.grade-aberrant-pattern { border-left-color: #f2e3a0; }
+.grade-anomalous-artifact {
+    border-left-color: #ffb86c;
+    background-color: rgba(255, 184, 108, 0.05);
+    color: #ffb86c;
+}
+.grade-apocryphal-node {
+    border-left-color: #8be9fd;
+    background-color: rgba(139, 233, 253, 0.08);
+    color: #8be9fd;
+    text-shadow: 0 0 5px rgba(139, 233, 253, 0.3);
+}
+.grade-eschaton-grade {
+    border-left-color: #f67171;
+    background-color: rgba(246, 113, 113, 0.1);
+    color: #f67171;
+    text-shadow: 0 0 8px rgba(246, 113, 113, 0.5);
+    animation: pulse-red 2s infinite;
+}
+
+@keyframes pulse-red {
+    0% { background-color: rgba(246, 113, 113, 0.1); }
+    50% { background-color: rgba(246, 113, 113, 0.18); }
+    100% { background-color: rgba(246, 113, 113, 0.1); }
+}
+/* --- Style for Prompt in Settlement Report --- */
+.settlement-details .prompt-text {
+    display: inline-block;
+    max-width: 95%; /* Prevent it from overflowing the modal padding */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: bottom; /* Aligns it nicely with the "Source Prompt:" label */
+    opacity: 0.8;
+}
