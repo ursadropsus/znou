@@ -157,4 +157,19 @@ are not redistributed here.
 
 ## Licence
 
-See `LICENSE`.
+Code, specification text and results in this repository are licensed under
+Apache-2.0 (see `LICENSE`), except as noted below.
+
+Third-party material, not covered by that licence and not licensed by this
+repository:
+
+- GPT-2 small weights — released by OpenAI, not redistributed here; the
+  scripts download them from Hugging Face.
+- *Moby-Dick* — public domain. Project Gutenberg's apparatus has been removed
+  from the derived corpus.
+- Names and trademarks of EVE Online, EVE Frontier, CCP Games / Fenris
+  Creations, Anthropic and Midjourney are the property of their respective
+  owners. They are referred to descriptively; no affiliation or endorsement is
+  claimed, and no trademark rights are granted by this licence.
+- Any third-party images included are the property of their owners and are
+  reproduced for reference and commentary only.
