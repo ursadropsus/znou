@@ -2,7 +2,8 @@
 
 Maps every MEASURED claim in SPEC_THREE to the script that produced it and the
 file that holds the result. Built from `inventory.md`, root
-`znou/code/v1/znou`, 507 files, 2026-08-12.
+`znou/code/v1/znou`, 507 files, 2026-08-12. Revised 2026-08-13: §8.2.1
+recovered, §8.4 added, caches published.
 
 Status key: `OK` mapped and consistent · `?` mapping uncertain, named below ·
 `GAP` no file found · `NEW` file exists, not referenced by the spec
@@ -25,15 +26,19 @@ and the highest `(n)` is normally the one to keep.
 |---|---|---|---|
 | pinned artifacts, `sha256(theta)`, file hashes | `tools/pin_stack.py` `a53c526aa7a0` | §7 tables | OK |
 | hashing helper | `tools/hasher.py` `375c68ab3132` | — | OK |
-| reference `D` | inline in §7 | — | OK |
+| reference `D` | inline in §7 | — | OK — **revision now pinned in the snippet** |
+| `transformer_lens` 2.15.0, `nltk` 3.9.2 + punkt | — | pinned in §7 | OK — added 2026-08-13. TransformerLens weight processing means the prototype's `state_dict` does not hash to `sha256(theta)`; §7 says so |
+| third environment | `data/caches/*/report.md` | torch 2.4.0+cu121, transformers 4.57.1, RTX A4500, Ubuntu 24.04 | NEW — the §8.4 runs. Not produced under §7's discipline; disclosed in §8.4. A replay of `the_sea` on this stack would widen §8's invariance claim from two environments to three |
 
 ## Corpus — §8, B2a
 
 | claim | script | evidence | status |
 |---|---|---|---|
-| `the_sea` prepared corpus | — | `data/the_sea.json` `a5cdf1bdfe75`, 29,414 lines | OK |
-| pre-preparation text | — | `data/the_sea_raw.json` `12625decc7b6`, 7,357 lines | OK |
-| corpus derivation (apparatus stripped, openers added) | — | recoverable as a diff of the two above | ? |
+| source text | — | `data/moby_dick.txt`, 1,246,660 bytes | OK — added 2026-08-13 so §8's provenance diff is checkable rather than asserted |
+| the corpus, untrimmed | — | `data/the_sea_raw.json`, 7394 entries | OK — **rehashed after 2026-08-13.** The published file previously held 7353; §8 describes 7394 and the untrimmed file is now the shipped one |
+| the corpus with destinations | `discover/data/precompute_cache.py` | `data/the_sea.json`, 7353 rows | OK — this is the *computed cache*, not the corpus. §7.2 and §8 now say so; the two filenames read the opposite way round in `eve/data/01_archives` and that has caused one error already |
+| corpus derivation (apparatus stripped, openers added) | — | diff of `moby_dick.txt` against `the_sea_raw.json` | OK — B2a closed. 5 openers + 7348 Melville = 7353 evaluated, then 40 licence sentences and one malformed `[]`. *Call me Ishmael.* absent, BOM defect, disclosed in §8 |
+| prototype Atlas / save state | `discover/js/main.js` | `data/the_sea_sailed.json`, 2.8MB | NEW — a completed autoscan save in the pre-quadrant atlas format. **Not a measurement:** 546 discovered systems against §8's 545, the extra being neuron 2256 reached by hand-typed `as` / `asdf`, and 13 of its 7366 hits are manual. Ships because the cache system needs it; must not be cited |
 | cache, imp_r — hash pinned in §8 as `e2e0c5166a5a0518` | — | `data/the_sea_implicit_resonance.json` `e2e0c5166a5a` | OK — **verified against §8** |
 | caches, other three quadrants | — | `data/the_sea_{explicit_inference,explicit_resonance,implicit_inference}.json` | OK |
 
@@ -93,8 +98,38 @@ and the highest `(n)` is normally the one to keep.
 | claim | script | evidence | status |
 |---|---|---|---|
 | imp_r 545 vs imp_i 57, terminal-char table | — | the four `data/the_sea_*.json` caches | ? script not identified |
-| WikiText-103, `wiki103test_511`, 40k, four quadrants | lost | lost | **GAP — DATA LOST.** The run wrote one file per entry, several hundred thousand files, and took the drive with it. Not in any backup. §8.2.1's figures are read off a plot whose source no longer exists, and are still `~` and TO PIN. Either mark §8.2.1 unreproducible or re-run: 40k × 4 quadrants ≈ 160k forward passes, one TSV out. |
-| corpus coverage, 407,475 sentences | — | `starmap/master_hits_{imp_r,imp_i,exp_r,exp_i}.bin`, 12,288 bytes each = 3072 × int32 | ? plausible but unconfirmed |
+| WikiText-103, `wiki103test_511`, 40k, four quadrants | lost | lost | **CLOSED, superseded.** The original run took its drive with it and is not in any backup. §8.2.1 no longer rests on it: its figures are retired and replaced from the run below. The lost data stays lost; nothing now depends on it. |
+| WikiText-103 coverage curve, 172 points to 860,000 units | `data_pipeline.py` | `data/caches/wiki103_partial870k_2025-11-05/checkpoint.json`, 42KB | OK — **the recovery.** The run was interrupted before writing `report.md`, but `coverage_log` is appended every 5,000 units and flushed every 20,000, so the curve survived *because* the run did not finish. Resolves Q6 to composition: at 400,000 units imp_r/imp_i = 1.79 against §8.3's 0.65 at 407,475, and the curves have not crossed by 860,000. |
+| corpus coverage, 407,475 sentences | `tools/export_hits.py` | `results/master_hit_counts.tsv` `2724a6dbea76`; `starmap/master_hits_{quadrant}.bin`, 12,288 bytes each = 3072 × uint32 | OK — confirmed. Reproduces §8.3 exactly (1452 / 1339 / 2225 / 2151) and a freshly seeded database exports byte-identically |
+| nineteen book corpora, §8.4 | `data_pipeline.py` | `data/caches/*_2025-11-05.zip` | OK — see §8.4 below |
+
+## §8.4 — corpus composition, nineteen books
+
+Published under `data/caches/`, one `.zip` per corpus, all 2025-11-05. Held
+locally at `eve/data/01_archives`, **not** `discover/data/caches/` — the stale
+path is why the publish step missed them until 2026-08-13.
+
+```
+Shakespeare · Ulysses · War and Peace · Swann's Way (EN) ·
+Du Côté de chez Swann (FR) · Budding Grove · Crime and Punishment ·
+Moby-Dick (full) · Leviathan · Machiavelli · Metamorphosis · Poe ·
+The Yellow Wallpaper · Tractatus · Zarathustra · Alice ·
+Book of the Dead · A Doll's House · The King in Yellow
+```
+
+Earlier drafts of this manifest said nineteen and then named eighteen. The
+missing one was **Du Côté de chez Swann** — French, the same novel as
+`swanns-way`, and now the most useful single item in the set: it holds author,
+content, scale and preparation constant and varies only language.
+
+| claim | script | evidence | status |
+|---|---|---|---|
+| per-corpus coverage, four quadrants | `data_pipeline.py` | `<corpus>_{quadrant}.bin`, 3072 × uint32, plus `report.md` | OK — `prepare_caches.py` recomputes coverage from each `.bin` and checks it against that corpus's own report |
+| per-unit destinations | same | `<corpus>.jsonl` | OK for the nineteen. **Withheld for wiki103** — WikiText-103 is CC BY-SA and does not sit inside this repository's Apache-2.0 licence. Its hit arrays and coverage log do ship, and those are what §8.2.1 rests on |
+| staging and verification | `data/caches/prepare_caches.py` | `_reports/summary.tsv`, `_reports/CACHES.md` | OK |
+| units are line fragments, not sentences | `data_pipeline.py:261-267` | punkt applied per physical line | **DEFECT, DISCLOSED in §8.4.** Not comparable with §8.2, §8.2.1 or §8.3. The fix is to unwrap paragraphs before splitting and checkpoint on paragraph index rather than line index — resume must survive |
+| under-3-words filter | `data_pipeline.py:159` | report count minus jsonl rows | Discards 38.3% of *A Doll's House* and 26.7% of *Shakespeare*. Both excluded from any regression |
+| French collapse | — | `du-cote-de-chez-swann-FR` vs `swanns-way-EN` | OK — 3.7–6.0× fewer destinations at 0.92× the units. Reported in §8.4 as a property of θ and its training distribution |
 
 ## §5 — map and lenses
 
@@ -102,6 +137,7 @@ and the highest `(n)` is normally the one to keep.
 |---|---|---|---|
 | λ_raw, λ_grav, λ_norm, λ_orr | `discover/js/main.js` `3b7818d5bab2`, 1,293 lines | — | OK |
 | four-quadrant atlas, save migration | same, `discover/js/stateManager.js` | — | OK |
+| `b_j ~ Unif`, unseeded, per client | `main.js:302-308`, `distributionSize = 70` | verified against `the_sea_sailed.json`: x spans −34.998 to 34.986 | OK — no projection of θ, so §5's "no metric on J" stands. That the draw is *unseeded* is now disclosed in §5 as an open design question: every operator holds a different sky |
 | rarity index | `starmap/seed_database.py` | `starmap/rarity_index.json` `e51f517ade1c` | NEW — not referenced in spec |
 
 ## §6 — reward, exchange
@@ -150,18 +186,6 @@ temperature axis is the same family as §8's `it was cold` fixtures. Resolve:
 say what these measure, or amend §5. Low priority — but it is the one place
 the archive and the document disagree about what has been tried.
 
-```
-discover/data/caches/  — 19 full-book caches, all 2025-11-05
-  Shakespeare · Ulysses · War and Peace · Swann's Way · Budding Grove ·
-  Crime and Punishment · Moby-Dick (full) · Leviathan · Machiavelli ·
-  Metamorphosis · Poe · The Yellow Wallpaper · Tractatus · Zarathustra ·
-  Alice · Book of the Dead · A Doll's House · The King in Yellow
-```
-Q6's open half needs one corpus at two scales with terminal-token entropy
-reported at each; §8.2.1's confound is composition versus crossover. Nineteen
-cached corpora of differing terminal-token character are already on disk.
-Likely answerable without GPU time.
-
 ---
 
 ## Not for publication
@@ -200,14 +224,40 @@ RESOLVED:
    `seed_database.py` rebuilds the whole database from them plus
    `rarity_index.json`. Confirmed — a freshly seeded database exports the
    identical table, same sha256. No database is shipped.
-5. ~~§8.2.1?~~ Marked SOURCE DATA LOST in the document. Re-run optional.
+5. ~~§8.2.1?~~ **Recovered 2026-08-13**, not re-run. The interrupted
+   `wiki103_partial870k` run's `checkpoint.json` holds 172 coverage points to
+   860,000 units. §8.2.1 is now tagged MEASURED and the "cannot be reproduced
+   from the published bundle" sentence is withdrawn.
+6. ~~Source edition and openers?~~ Five openers, verbatim in §8; source is a
+   Gutenberg plain-text edition with front matter already removed, `*** START`
+   absent and `*** END` surviving at byte 1,191,770. Read off the diff.
+9. ~~Where do the map's positions come from?~~ `Math.random()`, uniform in a
+   cube of side 70, no projection of θ. §5 stands. That it is *unseeded* is a
+   design question, now disclosed in §5.
+10. ~~What is `the_sea_sailed.json`?~~ A prototype save state. See the corpus
+   table above.
 
 STILL OPEN:
 
-6. Source edition of the text, and how many thematic openers were added —
-   needed for §8's provenance paragraph. Readable off the raw/prepared diff.
 7. What does `AXIS_OF_TEMPERATURE` measure, and does §5 need amending?
 8. `token_sweep.py` contains a `c_fc + F.gelu` fallback that would compute
    **exact GELU, not gelu_new**, if `mlp.act` were ever absent. It never fires
    on GPT-2. Delete it or make it raise before publishing — this is the same
-   confusion that put x⋆ = −0.7517 in the document until v6.
+   confusion that put x⋆ = −0.7517 in the document until v6. Still present at
+   `tools/token_sweep.py:113`, dead behind the `mlp.act` branch at line 110.
+11. **§7 is normative in the document and unenforced in the code.** Eight load
+   sites call `from_pretrained` with no `revision`: the §7 snippet (now fixed),
+   `starmap/experiment_runner.py:25`, `tools/coordinate_ascent.py:48-49`,
+   `tools/replay_cache.py:36-37`, `tools/token_sweep.py:102-103`,
+   `tools/pin_stack.py:77`, `tools/unreachable_certificate.py:101`,
+   `apocrypha/cold/coldchat.py:33-34`. `pin_stack.py` is the circular one — it
+   computes `sha256(theta)` from an unpinned load, so the tool that certifies
+   the pin does not use it. `experiment_runner.py` needs the HF model loaded
+   pinned and passed as `hf_model=`, since `HookedTransformer.from_pretrained`
+   takes no revision. **This must land before any re-run of §8.4**, or nineteen
+   fresh caches are generated against an unpinned model.
+12. What is the terminal-character entropy of §8.3's own 407,475-sentence
+   corpus? WikiText-103's is 0.910 bits and §8.4's nineteen run 3.198–4.020.
+   One pass over the file, no forward pass. It decides whether entropy alone
+   predicts the coverage ratio or merely orders corpora. **Requires locating
+   that corpus, which has not been done.**
