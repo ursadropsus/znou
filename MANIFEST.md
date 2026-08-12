@@ -105,9 +105,11 @@ and the highest `(n)` is normally the one to keep.
 
 ## §8.4 — corpus composition, nineteen books
 
-Published under `data/caches/`, one `.zip` per corpus, all 2025-11-05. Held
-locally at `eve/data/01_archives`, **not** `discover/data/caches/` — the stale
-path is why the publish step missed them until 2026-08-13.
+Published under `data/caches/_extracted/`, one directory per corpus, all
+2025-11-05. Held locally at `eve/data/01_archives` as `.zip`, **not** at
+`discover/data/caches/` — the stale path is why the publish step missed them
+until 2026-08-13. The extracted form is published rather than the archives so
+that the files are readable and diffable in place.
 
 ```
 Shakespeare · Ulysses · War and Peace · Swann's Way (EN) ·
@@ -125,7 +127,8 @@ content, scale and preparation constant and varies only language.
 | claim | script | evidence | status |
 |---|---|---|---|
 | per-corpus coverage, four quadrants | `data_pipeline.py` | `<corpus>_{quadrant}.bin`, 3072 × uint32, plus `report.md` | OK — `prepare_caches.py` recomputes coverage from each `.bin` and checks it against that corpus's own report |
-| per-unit destinations | same | `<corpus>.jsonl` | OK for the nineteen. **Withheld for wiki103** — WikiText-103 is CC BY-SA and does not sit inside this repository's Apache-2.0 licence. Its hit arrays and coverage log do ship, and those are what §8.2.1 rests on |
+| per-unit destinations | same | `<corpus>.jsonl` | OK for the books. **Withheld for wiki103** — WikiText-103 is CC BY-SA and does not sit inside this repository's Apache-2.0 licence. `sample.jsonl`, the checkpoint hit arrays and the coverage log do ship, and those are what §8.2.1 rests on |
+| wiki103 hit arrays | same | `checkpoint_hits_{quadrant}.bin` | OK — note these are the *checkpoint* arrays, not `<corpus>_{quadrant}.bin`. The run was interrupted, so finalisation never wrote the latter. The last checkpoint is at 860,000 units |
 | staging and verification | `data/caches/prepare_caches.py` | `_reports/summary.tsv`, `_reports/CACHES.md` | OK |
 | units are line fragments, not sentences | `data_pipeline.py:261-267` | punkt applied per physical line | **DEFECT, DISCLOSED in §8.4.** Not comparable with §8.2, §8.2.1 or §8.3. The fix is to unwrap paragraphs before splitting and checkpoint on paragraph index rather than line index — resume must survive |
 | under-3-words filter | `data_pipeline.py:159` | report count minus jsonl rows | Discards 38.3% of *A Doll's House* and 26.7% of *Shakespeare*. Both excluded from any regression |

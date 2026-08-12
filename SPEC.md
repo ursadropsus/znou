@@ -1699,14 +1699,23 @@ data/caches/
   prepare_caches.py                 inventories, verifies and stages the
                                     corpus caches; recomputes each report's
                                     coverage from its own .bin files
-  <corpus>_2025-11-05.zip × 19      §8.4, one per corpus: per-unit jsonl,
-                                    four quadrant hit arrays, checkpoint,
-                                    run report
-  wiki103_partial870k_2025-11-05    §8.2.1. The per-unit jsonl is withheld:
-                                    WikiText-103 is CC BY-SA and does not sit
-                                    inside this repository's licence. The hit
-                                    arrays and the coverage log do ship, and
-                                    they are what §8.2.1 rests on.
+  _reports/summary.tsv              §8.4, one row per corpus
+  _reports/CACHES.md                the caveats, restated where the data is
+  _extracted/<corpus>_2025-11-05/   §8.4, one directory per corpus:
+                                      <corpus>.jsonl      per-unit destinations
+                                      <corpus>_{q}.bin    four hit arrays
+                                      checkpoint*.{json,bin}
+                                      report.md, coverage plot
+                                      sample.jsonl        first 50 rows
+  _extracted/wiki103_full_2025-11-05/
+                                    §8.2.1. Interrupted, so no final report
+                                    and no finalised hit arrays — the
+                                    `checkpoint_hits_{q}.bin` and the 172-point
+                                    `coverage_log` inside `checkpoint.json`
+                                    are what §8.2.1 rests on. The per-unit
+                                    jsonl is withheld: WikiText-103 is CC BY-SA
+                                    and does not sit inside this repository's
+                                    licence.
 ```
 
 **On `master_hit_counts.tsv`.** §4.4's split into *reached* and *unreached*,
