@@ -151,19 +151,38 @@ only property that makes it a place for a property it does not need.
 Stated flatly, so that a reader does not have to infer it.
 
 **There is no metric on J.** `§5` says so explicitly, and no lens in the
-current implementation claims otherwise. Any phase of this proposal that
-requires relationships *between* loci requires overturning that position with
-evidence, not with prose.
+current implementation claims otherwise — what the lenses render is a scalar
+per neuron, which is a weaker and better-supported object, as set out below.
+Any phase of this proposal that requires relationships *between* loci requires
+overturning that position with evidence, not with prose.
 
-**The rendered geometry is currently meaningless.** The atlas positions each
-neuron by unseeded `Math.random()` in a cube, persisted per client. Two
-operators hold different skies. Screenshots are not comparable. Whatever
-proximity a player perceives on screen was manufactured by a random number
-generator and carries no information from the weights. Anyone who plays the
-prototype and then reads a document about neighbourhoods will form an
-intuition the software invented for them. Either derive positions from a hash
-of the index — which keeps exactly zero information from θ, so nothing is
-claimed either way — or say loudly that the layout is decorative.
+**The rendered geometry is a scalar field, not a map.** This deserves stating
+precisely, because it is easy to get wrong in both directions. Under the
+density and orrery lenses, a star's distance from the centre is a monotone
+function of how often the loaded corpus arrives there: the dominant
+destination is placed at the origin and rarer ones fall outward. That reading
+is a real measurement and it is reproducible — the same corpus yields the same
+centre and the same radial ordering for any operator, on any machine. Load
+Moby-Dick and neuron 1888 takes the centre, because 1888 is where that corpus
+predominantly arrives.
+
+What is *not* meaningful is angular position. Direction comes from an unseeded
+per-client draw, so visual adjacency between two stars carries no information
+and no two operators share an angular arrangement.
+
+This is the right way round. The map encodes what has been measured and stays
+silent about what has not. It is also why `§5` survives intact rather than
+being quietly contradicted by the prototype: a per-neuron arrival frequency is
+a *scalar over* J, not a *metric on* J. Rendering it asserts nothing about the
+relationship between any two neurons, which is exactly what `§5` declines to
+claim. A scalar is enough to make a legible picture; a metric would be a much
+stronger object, and none is offered.
+
+The remaining defect is small and worth fixing for a different reason than
+meaning: seeding the angular draw from a hash of the neuron index would make
+screenshots fully comparable between operators and survive a data purge, while
+keeping exactly zero information from θ. Nothing is claimed either way — but
+right now a constellation someone learns is theirs alone.
 
 **The similarity matrices already in the tree are an unacknowledged first
 attempt at exactly this question.** `apocrypha/cold/` holds three of them. A
