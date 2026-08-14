@@ -89,10 +89,9 @@ name — so running it from the repository root reads the correct corpus and
 running it from `discover/` reads the untrimmed one and writes 7393 rows. Run
 it from the root, or delete the orphan.
 
-**Two shipped files are UTF-16LE.** `starmap/requirements.txt` and
-`results/margins.tsv`. The first sits directly on the install path below, and
-`pip install -r` may reject it — if it does, re-save as UTF-8, which changes no
-content. Read the second with `encoding='utf-16'`.
+**One shipped file is UTF-16LE.** `results/margins.tsv` — read it with
+`encoding='utf-16'`. It stays that way on purpose: its sha256 is published in
+§8.1, so re-encoding it would break the pin it is checked against.
 
 ---
 
@@ -166,9 +165,6 @@ python local_dev.py
 ```
 
 Then open **http://127.0.0.1:5000/discover/**
-
-If step 2 fails on the requirements file, it is the UTF-16 encoding noted
-above, not a bad dependency list. Re-save it as UTF-8 and retry.
 
 First start is slow: it downloads and loads GPT-2. `local_dev.py` serves the
 frontend and the API from one origin, standing in for the nginx setup the

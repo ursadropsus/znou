@@ -349,7 +349,7 @@ Small, cosmetic, and each one costs a stranger ten confused minutes.
 | CRLF terminators | `ascent_all.tsv`, `control.tsv`, `replay_results.tsv`, `sweep_tokens.tsv`, `sweep_neurons.tsv`, `residue.tsv` | Harmless to Python's `csv` and to pandas; noted so nobody diffs against an LF copy and reports a mismatch |
 | `data/caches/prepare_caches.py` MISPLACED note | described `data/caches/the_sea.json` as a "duplicate of data/the_sea.json one level up" | **RESOLVED 2026-08-14.** It was not a duplicate — it is the untrimmed 7394-entry raw corpus, and the file it was called redundant against is the 7353-row computed cache. Anyone acting on that string would have deleted the only surviving copy of the untrimmed corpus. The note now states which file is which and says do not delete. This was the last place in the tree still asserting the old reading |
 | `results/` vs `tools/` | `control.tsv` and `margins.tsv` existed byte-identically in both | Resolved 2026-08-14 — the `tools/` copies were deleted. This manifest cites `results/` |
-| `discover/data/datasets.json` | lists `alice_full_2025-11-05` and `moby_dick_full_2025-11-05` under `data/caches/` | **DEAD CONFIG, not a bug** — corrected 2026-08-14 after an earlier revision here called it functionally broken. Nothing in the tree reads this file. The atlas loads a single precomputed cache via `CACHE_BASE_URL` in `main.js`; multi-corpus browsing in-game was never built, and the twenty corpus runs were coverage and rarity experiments, not game content. The paths also predate the rename to readable slugs and the move into `_extracted/`. Delete it, or keep it as a record of an unbuilt direction and say so |
+| `discover/data/datasets.json` | lists `alice_full_2025-11-05` and `moby_dick_full_2025-11-05` under `data/caches/` | **DEAD CONFIG, not a bug** — corrected 2026-08-14 after an earlier revision here called it functionally broken. Nothing in the tree reads this file. The atlas loads a single precomputed cache via `CACHE_BASE_URL` in `main.js`; multi-corpus browsing in-game was never built, and the twenty corpus runs were coverage and rarity experiments, not game content. The paths also predate the rename to readable slugs and the move into `_extracted/`. **Kept deliberately**, as a record of a direction that was prototyped and not built. Nothing is removed from this tree unless it is a duplicate or carries personal data |
 | `discover/data/the_sea_raw.json` | orphan duplicate of the untrimmed corpus | Resolved 2026-08-14 — deleted. See *Navigating the sea files* |
 | `starmap/__pycache__/` | four `.pyc` files were tracked | Resolved 2026-08-14 — untracked. They embedded the author's local Windows path |
 
@@ -501,5 +501,7 @@ STILL OPEN:
    tell whether they were overlooked or withheld.
 18. `apocrypha/not-our-creation.pdf` is third-party forum content with no
    licence note. Drop it or list it in README's third-party section.
-19. `discover/data/datasets.json` is dead config listing pre-rename cache
-   paths. Nothing reads it. Delete it, or keep it and say what it was for.
+19. ~~`discover/data/datasets.json`?~~ Dead config, kept deliberately. Nothing
+   reads it; the atlas loads one precomputed cache. It records a multi-corpus
+   browsing direction that was prototyped and not built, and its paths predate
+   the cache rename. Listed here so nobody reads it as a live index.
