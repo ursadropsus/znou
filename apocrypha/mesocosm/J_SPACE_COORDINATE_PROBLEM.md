@@ -199,32 +199,102 @@ Until Q10 is answered properly, read "destination" as "the neuron that won."
 
 ---
 
-## 6. Two different agnosticisms
+## 6. The string is the invariant
 
-The phrase *platform-agnostic* conceals a large gap between two claims.
+The phrase *platform-agnostic* conceals a gap between two very different
+claims, and the resolution is not the one that first suggests itself.
 
 **Engine-agnostic** is nearly free. Publish the specification, pin the model,
-and any engine can compute the same address. There is no technical obstacle
-and no negotiation required. This is the Perlin noise situation.
+and any engine can compute the same address. No technical obstacle, no
+negotiation. This is the Perlin noise situation.
 
-**Model-agnostic** is a live research question and should not be assumed. The
-current address space is not "J-space." It is *GPT-2-small, layer 5,
-`mlp.hook_post`, argmax*. Change any of those and the addresses change. A
-different model does not give you a different view of the same territory; it
-gives you a different territory.
+**Model-agnostic** looks at first like a blocker. The current address space is
+not "J-space". It is *GPT-2-small, layer 5, `mlp.hook_post`, argmax*. Change
+any of those and every address changes. A different model does not offer a
+different view of one territory; it produces a different territory.
 
-Whether that gap can ever close is exactly the subject of the Platonic
-Representation Hypothesis (Huh, Cheung, Wang & Isola, arXiv:2405.07987), which
-argues that models trained on different data and modalities are converging on
-increasingly similar representations as they scale. If some version of that
-holds, cross-model addressing has a foundation. It should be noted that the
-hypothesis is contested — subsequent work finds that agreement between models
-is sensitive to how it is measured and degrades substantially at larger
-evaluation scales — and that convergence of *distances* would not
-automatically survive the discretisation step this proposal depends on.
+The mistake is to conclude from this that the model must be fixed forever, or
+that the whole scheme expires when GPT-2 ages out. It does not, because **the
+address is not the durable object. The string is.**
 
-The honest position: engine-agnostic is available now; model-agnostic is
-someone's future paper, and possibly a negative result.
+A locus is properly written as a pair:
+
+```
+(specification, address)
+
+J-1888 @ gpt2-small · L5 · mlp.hook_post · argmax · rev 607a30d7…
+```
+
+`J-1888 @ gpt2-L5` and whatever the same string yields under some later model
+are two readings of one persistent thing — the input — and they can coexist
+without either being canonical. Models need not agree. The input needs only to
+persist, and a string is about as durable an artifact as computing has.
+
+This inverts the economics of the proposal. The expensive part is never the
+forward pass; it is humans finding inputs worth caring about. That labour is
+not model-specific. A corpus of interesting strings, with provenance, can be
+re-derived under any future model by anyone who wants to, at the cost of a few
+thousand forward passes. Each model becomes a lens over a shared corpus rather
+than a competing claim about a shared territory.
+
+So the progression's final phase is not "everyone agrees on GPT-2 forever". It
+is: *the string corpus is the shared object, and each model is one projection
+of it.*
+
+### Where the Platonic Representation Hypothesis enters
+
+Once the string is the invariant, convergence between models stops being a
+precondition and becomes the interesting question — the one that decides how
+much the multi-lens picture is worth.
+
+The Platonic Representation Hypothesis (Huh, Cheung, Wang & Isola,
+arXiv:2405.07987) argues that models trained on different data and different
+modalities are converging on increasingly similar representations as they
+scale, and that this convergence points at a shared statistical structure
+underneath the data. Three outcomes follow for this proposal, and all three are
+informative:
+
+**If structure converges.** Two models' readings of the same string corpus show
+related structure. The claim available then is not "GPT-2 has a geography" but
+"there is a geography, and GPT-2 is one view of it." This is the outcome in
+which the Platonic metaphor earns its name rather than decorating it: the
+models are the prisoners, and the string corpus is what casts the shadows.
+
+**If structure diverges.** The territory is model-specific. That is a finding
+about representation, not a failure of the protocol — the lenses genuinely
+differ, and comparing them is the entire point of keeping the string rather
+than the address.
+
+**If convergence exists but does not survive discretisation.** This is the
+outcome worth naming loudest, because it is the one nobody has tested. PRH is
+measured on *continuous* similarity structure — how models arrange distances
+between points. This proposal takes an argmax, which discards nearly all of
+that structure by design (§3). Whether representational convergence survives
+the collapse to a single integer is, as far as we have found, an open
+question. It is also the specific question this project is positioned to ask.
+
+**A confound to control for.** The hypothesis is contested; later work finds
+that agreement between models is sensitive to how it is measured and degrades
+substantially at larger evaluation scales. That caveat bites this scheme
+harder than most, because the address space is small and crowded (§4). Two
+models could appear to agree simply because roughly 1,450 destinations force
+collisions, not because they share structure. Any cross-model comparison must
+therefore be run against a shuffled-address null, or it will manufacture the
+agreement it is looking for.
+
+### The cheap version of this experiment
+
+It requires no new apparatus. The 545 first-arrival strings and the `Q5`
+perturbation set already exist. Run the same protocol under a second model and
+compare *structure* — whether strings that share a destination under one model
+disproportionately share one under the other — rather than comparing addresses,
+which cannot match and are not meant to. Against a shuffled null, a positive
+result is a substantially stronger claim than the single-model version can
+reach, and a negative one is publishable.
+
+The honest position: engine-agnostic is available now; model-agnostic is not
+required for the scheme to work, and testing it is an experiment rather than a
+dependency.
 
 ---
 
@@ -257,8 +327,11 @@ provenance. This needs no new science, only a record format. It is the phase
 most likely to be socially interesting and least likely to be technically hard.
 
 **Phase 5 — cross-world cartography.** Independent implementations project
-different worlds onto the same addresses. Gate: Phase 3, and a decision about
-whether "the same addresses" means the same model forever.
+different worlds onto the same shared corpus. Gate: Phase 3. Note that this
+phase does *not* require every implementation to use the same model — records
+carry the string, so two worlds reading different specifications are still
+pointing at the same object (§6). What it does require is that each record
+state which reading it used.
 
 Note that Phase 4 does not depend on Phase 3. Observations can accumulate
 against reproducible names before anyone knows whether those names have
@@ -282,7 +355,11 @@ evidence         what would let someone else check
 
 Two fields carry the weight. **Specification** is what makes the record
 meaningful to a reader who is not running your build — without it, the address
-is a number in a private coordinate system. **Evidence** is what makes the
+is a number in a private coordinate system. It is also what allows several
+coordinate systems to coexist over one corpus: because the *input* is stored
+verbatim alongside the address, the same record can be re-derived under a
+different model without being reinterpreted or lost (§6). The address is a
+reading; the string is the object. **Evidence** is what makes the
 record a claim rather than an assertion, and it is what allows disagreement to
 be productive: two worlds that interpret a locus differently are interesting,
 whereas two worlds that computed it differently are simply broken, and the
@@ -310,8 +387,16 @@ A speculative document earns its place by naming the results that would end it.
 - **Adjacency proves procedure-dependent.** Neighbourhoods that appear under
   one prompting convention vanish under another. Then there is no territory,
   only an interaction between the model and a particular way of asking.
-- **Cross-model addressing fails and matters.** If addresses are irreducibly
-  model-specific and the chosen model ages out, the territory has a shelf life.
+- **Structure fails to survive discretisation.** If cross-model comparison
+  shows related continuous geometry but no relationship at all between argmax
+  destinations, then the discretisation that makes addresses portable also
+  destroys whatever was shared. The scheme still functions single-model, but
+  the Platonic reading of it is dead.
+
+Note what is *not* on this list: the chosen model ageing out. Because records
+store the string and not merely the address (§6, §8), a corpus of discoveries
+outlives any particular model and can be re-derived under a successor. The
+territory has no shelf life; only a given reading of it does.
 
 Any one of these is a publishable negative result. That is the case for running
 them.
