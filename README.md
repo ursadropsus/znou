@@ -1,6 +1,7 @@
 # znou / J-Space
 
-(Work in progress! Currently recovering/restoring functionality from months-old work and prototypes.)
+(Work in progress. Restoring and documenting months-old work; the repository is
+ahead of the prototype in places.)
 
 A deterministic function from strings to neurons, and a game built on it.
 
@@ -37,14 +38,83 @@ exchange/        the discovery ledger
 
 ---
 
+## Before you reproduce anything
+
+Reproducibility was not a design goal during construction. These scripts were
+written to answer questions, not to be re-run by strangers. The document was
+assembled afterwards, from artifacts that already existed.
+
+That ordering left three things a reader should know up front. None of them
+invalidates a published number. All of them will cost you time if you meet them
+by surprise.
+
+**The pin is normative in §7 and unenforced in the code.** §7 fixes the model
+revision, the weight hash, torch 2.9.0+cu128, transformers 4.57.1, fp32 and
+TF32 disabled — and says plainly that loading without `revision=` makes the pin
+decorative. Eight load sites in this repository do exactly that. They request
+`gpt2` and take whatever HuggingFace currently serves. Today that is the same
+snapshot every published number was measured against; nothing in the code
+ensures it stays that way. `data/caches/prepare_caches.py` is the one loader
+that passes a revision. The verification path below closes this manually, and
+it takes about a minute. MANIFEST lists the eight sites.
+
+**Two filenames mean opposite things.** `data/the_sea_raw.json` is the corpus
+as evaluated. `data/the_sea.json` is the *computed cache* — it has destinations
+in it. And `data/caches/the_sea.json` is the untrimmed source corpus, i.e. the
+raw one, under the name that elsewhere means computed. Tell them apart by entry
+count, never by name:
+
+| file | entries | what it is |
+|---|---|---|
+| `data/the_sea_raw.json` | 7354 | the corpus as evaluated — input to `precompute_cache.py` |
+| `data/the_sea.json` | 7353 rows | the computed cache — each row carries a destination |
+| `data/caches/the_sea.json` | 7394 | the untrimmed corpus, provenance only |
+
+The 40 entries the untrimmed file holds beyond the evaluated range are Project
+Gutenberg licence boilerplate, sitting past the last line of the novel.
+`precompute_cache.py` does not slice them off — the shipped corpus is already
+trimmed at that boundary. Substituting the untrimmed file would produce 7393
+rows and the published cache would stop reproducing. SPEC §8 documents the
+range; MANIFEST documents why it holds.
+
+**Two shipped files are UTF-16LE.** `starmap/requirements.txt` and
+`results/margins.tsv`. The first sits directly on the install path below, and
+`pip install -r` may reject it — if it does, re-save as UTF-8, which changes no
+content. Read the second with `encoding='utf-16'`.
+
+---
+
 ## Checking the results
 
 Everything in `SPEC.md` tagged MEASURED has a file behind it, listed in
-`MANIFEST.md` with a hash. Two checks need no GPU and take a minute:
+`MANIFEST.md` with a hash.
+
+**Do this one first — it is the pin check.**
+
+```bash
+python tools/pin_stack.py
+```
+
+It prints your stack, your TF32 settings, and at the bottom
+`sha256(theta)` — a fingerprint of the parameters actually loaded, independent
+of file format or download path. Compare it by eye against the value in §7:
+
+```
+113687a222f8cf98039222c27b39aaf716493e5e8c1db94ea4e6544e0814088c
+```
+
+Agreement means you hold the same weights the spec was measured on and
+everything below is meaningful. Disagreement means you do not, and nothing
+below will match. This is a manual check performed by a reader who knows to
+perform it, not a guarantee enforced by the code — which is the whole content
+of the pin caveat above. `python tools/hasher.py` prints the current upstream
+revision and per-file hashes if you want to see where a mismatch came from.
+
+Two more that need no GPU:
 
 ```bash
 # does your copy of the corpus cache match the one the spec pins?
-python tools/hasher.py data/the_sea_implicit_resonance.json
+sha256sum data/the_sea_implicit_resonance.json
 # expect e2e0c5166a5a0518...
 
 # does a database seeded from scratch reproduce the spec's coverage figures?
@@ -85,6 +155,9 @@ python local_dev.py
 
 Then open **http://127.0.0.1:5000/discover/**
 
+If step 2 fails on the requirements file, it is the UTF-16 encoding noted
+above, not a bad dependency list. Re-save it as UTF-8 and retry.
+
 First start is slow: it downloads and loads GPT-2. `local_dev.py` serves the
 frontend and the API from one origin, standing in for the nginx setup the
 hosted version used. It binds to `127.0.0.1` only.
@@ -101,20 +174,31 @@ anyone having to send you a database.
 **Every number here is layer 5.** ℓ is a parameter, not a discovery. Change it
 and every figure changes while no definition does. See §0.1.
 
-**The stack is pinned and the pin is load-bearing.** §7 fixes the model
-revision, the weight hash, torch 2.9.0+cu128, transformers 4.57.1, fp32, and
-TF32 disabled. TF32 left on is the one configuration known to change `D`
-silently. If your destinations disagree with the spec, check §7 first.
+**TF32 is the one setting known to change `D` silently.** §7 requires it
+disabled and `tools/replay_cache.py` sets the flags explicitly; most other
+entry points inherit whatever your environment defaults to. `pin_stack.py`
+prints the three relevant values. If your destinations disagree with the spec,
+check those before anything else.
 
 ---
 
 ## What is not here
 
-**The WikiText-103 full coverage run (§8.2.1).** Recovered partial run data only. 
+**The WikiText-103 full coverage run (§8.2.1).** Recovered partial run data
+only — 172 coverage points to 860,000 units, from an interrupted run's
+checkpoint. The curve survived because the run did not finish.
+
+**The 407,475-sentence corpus behind §8.3.** Its coverage export ships as
+`results/master_hit_counts.tsv` and reproduces exactly; the corpus file itself
+has not been located.
 
 **The live instance's database.** It holds operator activity from the hosted
 prototype. The one table the spec's claims depend on is exported instead, as
 `results/master_hit_counts.tsv`.
+
+**Per-unit destinations for WikiText-103.** WikiText-103 is CC BY-SA and does
+not sit inside this repository's Apache-2.0 licence. The sample, the checkpoint
+hit arrays and the coverage log do ship, and those are what §8.2.1 rests on.
 
 ---
 
@@ -130,8 +214,10 @@ run**. Until it has, read every occurrence of *system*, *destination*,
 are cheap. Corrections and results are welcome, especially ones that break
 something.
 
-`SPEC.md` also maintains a list of claims withdrawn from earlier drafts. That
-list is part of the document, not an appendix to it.
+`SPEC.md` also maintains a list of claims withdrawn from earlier drafts, and
+`MANIFEST.md` records where the tree and the document have disagreed and how
+each disagreement was settled. Both lists are part of the documentation, not
+appendices to it.
 
 ---
 
@@ -145,11 +231,13 @@ work came from Gurnee & Tegmark, *Language Models Represent Space and Time*
 (arXiv:2310.02207).
 
 This is an independent proposal. It is not affiliated with, endorsed by, or a
-product of Anthropic, CCP Games / Fenris Creations, or anyone else.
+product of Anthropic, MIT, CCP Games / Fenris Creations, or anyone else. The
+authors cited above are cited as sources of an idea and a name; they have no
+involvement in this work and no responsibility for it.
 
 The corpus is derived from *Moby-Dick*, public domain, with Project Gutenberg's
-apparatus removed. Model weights are the original 2019 GPT-2 small release and
-are not redistributed here.
+apparatus removed from the evaluated range. Model weights are the original 2019
+GPT-2 small release and are not redistributed here.
 
 ---
 
@@ -164,7 +252,10 @@ repository:
 - GPT-2 small weights — released by OpenAI, not redistributed here; the
   scripts download them from Hugging Face.
 - *Moby-Dick* — public domain. Project Gutenberg's apparatus has been removed
-  from the derived corpus.
+  from the derived corpus's evaluated range; forty licence sentences remain in
+  the untrimmed file at `data/caches/the_sea.json`, unevaluated.
+- WikiText-103 — CC BY-SA, not redistributed here beyond a sample and derived
+  count arrays.
 - Names and trademarks of EVE Online, EVE Frontier, CCP Games / Fenris
   Creations, Anthropic and Midjourney are the property of their respective
   owners. They are referred to descriptively; no affiliation or endorsement is
