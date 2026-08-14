@@ -1,5 +1,7 @@
 # znou / J-Space
 
+(Work in progress! Currently recovering/restoring functionality from months-old work and prototypes.)
+
 A deterministic function from strings to neurons, and a game built on it.
 
 `D(s)` takes a string, runs it through frozen GPT-2 small, reads the MLP
