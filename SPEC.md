@@ -1672,7 +1672,8 @@ data/
   moby_dick.txt                     the source text, 1,246,660 bytes, so
                                     that §8's provenance diff is checkable
                                     rather than asserted
-  the_sea_raw.json                  the corpus, 7394 entries, untrimmed
+  the_sea_raw.json                  the corpus as evaluated, 7354 entries
+                                    — the input to precompute_cache.py
   the_sea.json                      the same corpus, evaluated range only,
                                     with destinations — the computed cache
   the_sea_implicit_resonance.json   the cache replayed in §8
@@ -1786,7 +1787,7 @@ Preparation was: split into sentences, prepend five opening phrases. Both
 states ship (§7.2), so the following is checkable rather than recalled.
 
 ```
-the_sea_raw.json        7394 entries — 7393 strings and one malformed []
+data/caches/the_sea.json       7394 entries — 7393 strings and one malformed []
   [0:5]                 the five added openers, verbatim:
                           "Mellybean"
                           "Where the cosmic winds whisper secrets."
@@ -1800,6 +1801,12 @@ the_sea_raw.json        7394 entries — 7393 strings and one malformed []
 
 evaluated               [0:7353] — the openers and the complete novel.
                         Gutenberg mentions inside that range: zero.
+                        This range is realised as data/the_sea_raw.json,
+                        which ships trimmed at exactly that boundary and
+                        is what precompute_cache.py reads. The slice is a
+                        property of the shipped file, not a guard in the
+                        code: precompute_cache.py iterates every string
+                        entry it is given.
 
 the_sea.json            the same 7353 evaluated entries, each carrying its
                         destination. Produced from the above by
