@@ -1697,6 +1697,12 @@ results/
                             §8.3    3072 × 4 rows. Both sections rest on it
 
 data/caches/
+  the_sea.json                      the untrimmed corpus, 7394 entries,
+                                    kept for provenance. This is the *raw*
+                                    file — the opposite sense to
+                                    data/the_sea.json above
+  the_sea_sailed.json               a prototype Atlas save state, not a
+                                    measurement. §5; also the Q10 stimuli
   prepare_caches.py                 inventories, verifies and stages the
                                     corpus caches; recomputes each report's
                                     coverage from its own .bin files
