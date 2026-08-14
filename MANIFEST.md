@@ -67,14 +67,14 @@ and the highest `(n)` is normally the one to keep.
 | claim | script | evidence | status |
 |---|---|---|---|
 | sweep over all of J | `tools/Coordinate_ascent.py` `8b815cf238d1` | `tools/ascent_all.tsv` `a9e01d4957ce`, 3,075 lines | OK — note **spec says `coordinate_ascent.py`, file is `Coordinate_ascent.py`** |
-| calibration, 100 systems | same | `tools/control.tsv` `7f0ec6ca6482`, `tools/control2.tsv` `d736d51bb79b`, 103 lines each | ? `control2` is presumably the second run; confirm which §4.5 reports |
+| calibration, 100 systems | same | `tools/control.tsv` `7f0ec6ca6482`, `tools/control.tsv` `d736d51bb79b`, 103 lines each | OK - renamed from original Control2 run (second iteration).  |
 | the hard 172 | same | `tools/hard172.txt` `d3a06d9d8e7b`, 172 lines | OK |
-| residue detail | same | `tools/residue2.tsv` `2fdfcc782c0c`, 175 lines | ? |
+| residue detail | same | `tools/residue.tsv` `2fdfcc782c0c`, 175 lines | OK |
 | round-trip-safe token pool (49,905) | same | `tools/safe_tokens.pt` `17b7e8ef6a4f` | OK |
 | systems reached, imp_r | same | `tools/reached_imp_r.txt` `1029d8a1fa80`, 545 lines | OK |
 | systems reached, hard budget | same | `tools/reached_imp_r_hard.txt` `09e80de0318d`, 187 lines | OK |
 | Melville routes, n=545 | — | `tools/melville_routes_imp_r.txt` `f13530e399e0`, 545 lines | OK |
-| median Δ by budget class | — | `tools/margins.tsv` `92134b394ab3`, 1,093 lines | ? |
+| median Δ by budget class | — | `tools/margins.tsv` `92134b394ab3`, 1,093 lines | OK |
 
 ## §8 — cross-environment replay
 
