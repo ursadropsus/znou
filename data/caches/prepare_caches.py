@@ -79,7 +79,10 @@ TITLES = {
 MISPLACED = {
     "moby_dick.txt": "source corpus - belongs at data/moby_dick.txt (SPEC 8 "
                      "says both states ship; currently only one does)",
-    "the_sea.json": "duplicate of data/the_sea.json one level up",
+    "the_sea.json": "the UNTRIMMED 7394-entry raw corpus - NOT a duplicate of "
+                    "data/the_sea.json, which is the 7353-row computed cache. "
+                    "The two names mean opposite things here. Provenance only; "
+                    "do not delete",
     "the_sea_sailed.json": "prototype save file, contains 13 hand-typed "
                            "arrivals incl. neuron 2256 ('as', 'asdf')",
 }
