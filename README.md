@@ -34,6 +34,11 @@ results/         their outputs
 starmap/         the prototype server and the model runner
 discover/        the atlas frontend
 exchange/        the discovery ledger
+
+apocrypha/       intervention pilots and axis maps. Not cited as results;
+                 read the note under Status before drawing anything from them
+frontier/        one addendum on J-space as a player-instantiated substrate
+assets/          video, images, fonts
 ```
 
 ---
@@ -69,6 +74,7 @@ count, never by name:
 | `data/the_sea_raw.json` | 7354 | the corpus as evaluated — input to `precompute_cache.py` |
 | `data/the_sea.json` | 7353 rows | the computed cache — each row carries a destination |
 | `data/caches/the_sea.json` | 7394 | the untrimmed corpus, provenance only |
+| `discover/data/the_sea_raw.json` | 7394 | an orphan duplicate of the untrimmed corpus, under the trimmed file's name |
 
 The 40 entries the untrimmed file holds beyond the evaluated range are Project
 Gutenberg licence boilerplate, sitting past the last line of the novel.
@@ -76,6 +82,12 @@ Gutenberg licence boilerplate, sitting past the last line of the novel.
 trimmed at that boundary. Substituting the untrimmed file would produce 7393
 rows and the published cache would stop reproducing. SPEC §8 documents the
 range; MANIFEST documents why it holds.
+
+Watch the last row. `discover/data/precompute_cache.py` reads
+`'./data/the_sea_raw.json'` as a *relative* path, and two files answer to that
+name — so running it from the repository root reads the correct corpus and
+running it from `discover/` reads the untrimmed one and writes 7393 rows. Run
+it from the root, or delete the orphan.
 
 **Two shipped files are UTF-16LE.** `starmap/requirements.txt` and
 `results/margins.tsv`. The first sits directly on the install path below, and
@@ -207,8 +219,18 @@ hit arrays and the coverage log do ship, and those are what §8.2.1 rests on.
 This is a proposal with measurements attached, not a finished result. The
 foundational question — whether winning an argmax at layer 5 corresponds to
 anything the network computes with — is listed as Q10 and **has not been
-run**. Until it has, read every occurrence of *system*, *destination*,
+answered**. Until it is, read every occurrence of *system*, *destination*,
 *locus* and *space* as "the neuron that won", which is what §1 says they mean.
+
+A pilot *was* run, and its output is published under `apocrypha/` so it isn't
+hidden. It does not answer Q10 and is cited nowhere as a result. Those reports
+amplify neuron teams at +10.0 and print `CONCLUSION: Causal alteration
+detected` for every team — including the ones that collapse into repetition.
+The line detects any change in output, not a targeted effect, so it cannot
+separate "this neuron carries the concept" from "amplifying anything by +10.0
+breaks generation." Answering Q10 needs one neuron at a time, matched controls
+sampled to the target's activation magnitude, `mlp.act` rather than `mlp.c_fc`,
+and blind scoring. That has not been done.
 
 §9 lists thirteen open questions in the order worth attacking them. Several
 are cheap. Corrections and results are welcome, especially ones that break

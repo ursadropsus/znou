@@ -116,6 +116,7 @@ archive. This table is the authoritative reading for the **published tree**.
 | `data/the_sea.json` | **the computed cache.** Output of `precompute_cache.py`; each row carries a destination | 7353 rows | `a5cdf1bdfe75` |
 | `data/caches/the_sea.json` | **the untrimmed source corpus**, kept for provenance. Not an input to anything published | 7394 — 7393 strings and one malformed `[]` | `27219032df8d` |
 | `data/caches/the_sea_sailed.json` | a prototype Atlas save state. **Not a measurement** | — | `d1af4bbd8a50` |
+| `discover/data/the_sea_raw.json` | **an orphan duplicate of the untrimmed corpus**, byte-identical to `data/caches/the_sea.json`, under the name that everywhere else means the trimmed file. See the trap below | 7394 | `27219032df8d` |
 
 Read that top to bottom: `data/caches/the_sea.json` is *raw*, and
 `data/the_sea.json` is *computed*, which is the exact opposite of what the
@@ -142,6 +143,23 @@ produce 7393 rows — forty of them Gutenberg licence text carrying real
 destinations — and the published cache would no longer reproduce. The
 `[0:7353]` range in §8 should be read as a description of the shipped corpus,
 not as a runtime guard.
+
+**The trap, and it is live rather than hypothetical.**
+`discover/data/precompute_cache.py:8` sets
+`RAW_INPUT_FILE = './data/the_sea_raw.json'` — a *relative* path. Two files in
+this repository answer to that name:
+
+```
+run from repo root   →  data/the_sea_raw.json           7354 entries  correct
+run from discover/   →  discover/data/the_sea_raw.json  7394 entries  wrong
+```
+
+The second produces 7393 rows including forty Gutenberg licence sentences with
+destinations, and the published cache stops reproducing. Nothing in the
+repository references `the_sea_raw.json` except this one line — the frontend
+does not load it — so `discover/data/the_sea_raw.json` is an orphan and
+deleting it removes the ambiguity outright. **Recommended.** Until it is
+deleted, run `precompute_cache.py` from the repository root only.
 
 ---
 
@@ -272,7 +290,7 @@ restored on 2026-08-13. Verified 2026-08-14: twenty directories under
 | four-quadrant atlas, save migration | same, `discover/js/stateManager.js` | — | OK |
 | `b_j ~ Unif`, unseeded, per client | `main.js:302-308`, `distributionSize = 70` | verified against `the_sea_sailed.json`: x spans −34.998 to 34.986 | OK — no projection of θ, so §5's "no metric on J" stands. That the draw is *unseeded* is disclosed in §5 as an open design question: every operator holds a different sky, screenshots are not comparable, and a data purge destroys any learned constellation. Deriving `b_j` from a hash of `j` would keep exactly zero information from θ, so §5 is unaffected either way |
 | rarity index | `starmap/seed_database.py` | `starmap/rarity_index.json` `e51f517ade1c` | NEW — not referenced in spec |
-| `AXIS_OF_TEMPERATURE` similarity matrices | `apocrypha/cold/` | — | **OPEN.** A similarity matrix over neurons is a metric-shaped object and §5 claims no metric on J is asserted by any lens. Say what these measure, or amend §5. Now the only such object in the tree — the `starmap/constellations/` outputs are not published |
+| similarity matrices over J | `apocrypha/cold/const_mapper_*.py`, `constellation_mapper2.py` | `AXIS_OF_TEMPERATURE_inf/`, `AXIS_OF_TEMPERATURE_res/`, `AXIS_OF_TSALAL/` — each holding `*_similarity_matrix.txt`, `*_heatmap.png`, per-pole `*_fingerprint.png`, `*_report.txt` | **OPEN, and larger than §5 accounts for.** A similarity matrix over neurons is a metric-shaped object and §5 claims no metric on J is asserted by any lens. §5's open note names `AXIS_OF_TEMPERATURE` only; there are **three** axes published, two of them temperature under different quadrants and one, TSALAL, that §5 does not mention at all. Say what all three measure, or amend §5 |
 
 ## §6 — reward, exchange
 
@@ -315,8 +333,10 @@ Small, cosmetic, and each one costs a stranger ten confused minutes.
 | `results/margins.tsv` | UTF-16LE, CRLF, no BOM | Readers must pass `encoding='utf-16'`. A UTF-8 reader sees interleaved null bytes. This is the source of the retired 1,093-line figure |
 | `starmap/requirements.txt` | UTF-16LE, CRLF, no BOM | **Likely to break `pip install -r`.** The most consequential of these, since it sits directly on the path a stranger follows to reproduce anything. Re-saving as UTF-8 changes no content |
 | CRLF terminators | `ascent_all.tsv`, `control.tsv`, `replay_results.tsv`, `sweep_tokens.tsv`, `sweep_neurons.tsv`, `residue.tsv` | Harmless to Python's `csv` and to pandas; noted so nobody diffs against an LF copy and reports a mismatch |
-| `starmap/__pycache__/` | four `.pyc` files tracked | `.gitignore` lists `__pycache__/`, but ignore rules do not untrack files already committed. `git rm -r --cached starmap/__pycache__` clears them |
-| `results/` vs `tools/` | `control.tsv` and `margins.tsv` exist byte-identically in both | This manifest cites `results/` as the primary path for both. The `tools/` copies are duplicates and can be deleted |
+| `results/` vs `tools/` | `control.tsv` and `margins.tsv` existed byte-identically in both | Resolved 2026-08-14 — the `tools/` copies were deleted. This manifest cites `results/` |
+| `discover/data/datasets.json` | points at `data/caches/alice_full_2025-11-05/` and `data/caches/moby_dick_full_2025-11-05/` | **BROKEN.** The published directories are `data/caches/_extracted/alice-in-wonderland_2025-11-05/` and `_extracted/moby-dick_2025-11-05/`. Both the rename to readable slugs and the move into `_extracted/` post-date this file, so the in-game dataset viewer 404s on each entry. Functional, not cosmetic |
+| `discover/data/the_sea_raw.json` | orphan duplicate of the untrimmed corpus | **DELETE.** See the trap under *Navigating the sea files* |
+| `starmap/__pycache__/` | four `.pyc` files were tracked | Resolved 2026-08-14 — untracked. They embedded the author's local Windows path |
 
 ---
 
@@ -325,16 +345,56 @@ Small, cosmetic, and each one costs a stranger ten confused minutes.
 These are not gaps in the manifest; they are work the document does not
 mention, listed so it can be either cited or explicitly set aside.
 
-**Q10 confirmed untouched.** `starmap/test_intervention.py` and the two
-`intervention_report_tsalal_*.txt` files belong to an abandoned line of work
-that is out of scope for this document, and are not published. §4's statement
-that ℛ* has no results in it stands as written. Nothing tsalal-shaped is
-published or cited.
+**Correction, 2026-08-14.** An earlier revision of this section stated that the
+intervention work was not published and that "nothing tsalal-shaped is
+published or cited." **That was wrong.** It was checked against the `starmap/`
+paths an older inventory named; the files had since moved to `apocrypha/`. The
+accurate position is below.
 
-Verified 2026-08-14 as **not published**: `starmap/constellation_mapper*.py`,
-`starmap/const_mapper_*.py`, `starmap/constellations/`,
-`starmap/verify_landmarks.py`, `test_cold*.py`, `test_lensing*.py`,
-`game/`, `old/`, `oldsite/`, `assets/sfx/`.
+### The intervention work is published, under `apocrypha/`
+
+| what | where | status |
+|---|---|---|
+| eight intervention reports | `apocrypha/cold/intervention_report_surgical_2025-11-12_20-40-43.txt`, six more under `cold/barrage/` dated 2025-11-14, and `cold/AXIS_OF_TSALAL/intervention_report_tsalal_2025-11-13_06-59-28.txt` | **PUBLISHED, uncited.** Pilot data, not a result |
+| the harness | `apocrypha/cold/coldchat.py`, `polarity_override_team.py`, `barrage/polarity_override_team_L.py` | PUBLISHED, uncited |
+| the axis mappers | `apocrypha/cold/const_mapper_inference.py`, `const_mapper_resonance.py`, `const_mapper_resonance_ts.py`, `constellation_mapper2.py`, `verify_landmarks.py` | PUBLISHED, uncited. Produce the similarity matrices — see §5 above |
+| an EVE forum thread as PDF | `apocrypha/not-our-creation.pdf` | **PUBLISHED — licence question, see below** |
+
+**What the reports actually contain, and why they are not a Q10 answer.** Each
+runs a fixed master prompt through a baseline pass and then through several
+amplified neuron teams at strength +10.0, printing baseline and intervened
+continuations. The surgical set tests four teams — *Minimalist Coordinators*
+(2 neurons), *Specialists Only* (3), *Brute Force / Top 8* (8), *Full Roster*
+(11). This is the pilot behind the Q10 note: the 3-neuron team stays fluent and
+shifts toward cold and stillness, while the 2- and 8-neuron teams collapse into
+repetition at the same amplification.
+
+The reports print `CONCLUSION: Causal alteration detected` for **every** team,
+including the ones that merely degenerate into repetition. That line detects
+*any* change in output, not a targeted semantic effect, so it cannot distinguish
+"this neuron carries the concept" from "amplifying anything by +10.0 breaks
+generation." **That is precisely why Q10 is still open**, and why its four
+required changes are one neuron at a time, k matched controls per target
+sampled to the target's activation magnitude, hooking `mlp.act` rather than
+`mlp.c_fc`, and blind scoring against a fixed lexicon. `coldchat.py` is most of
+the harness needed to do it properly.
+
+§4's statement that ℛ* has no results in it stands — none of this is cited as a
+result anywhere in SPEC. But the artifacts are in the repository, so the
+document should say they exist and say why they are not evidence, rather than
+being silent and letting a reader find them unaccompanied.
+
+**Licence question — `apocrypha/not-our-creation.pdf`.** Five pages,
+Print-to-PDF of an EVE Online forum thread on Jove lore, captured 2026-08-12.
+Forum posts belong to their authors under CCP's terms and are not the
+repository's to redistribute under Apache-2.0. Either drop it and cite the
+thread by URL, or keep it and add it explicitly to README's third-party list.
+It is currently in neither.
+
+Verified 2026-08-14 as **not published**: `game/`, `old/`, `oldsite/`,
+`assets/sfx/`, `starmap/test_intervention.py`, `starmap/constellations/`,
+`starmap/test_cold*.py`, `starmap/test_lensing*.py`, and all three
+`znou_exchange*.db`.
 
 Published and not referenced by SPEC:
 
@@ -343,14 +403,12 @@ tools/locus_check.py         superseded by token_sweep.py's ghost_test()
 tools/cache_analyzer.py      from the 2025-11 corpus run
 starmap/rarity_index.json    seed input
 starmap/live_mapper.py · mapper_L5_quadrant.py · utils_game.py
-apocrypha/cold/              AXIS_OF_TEMPERATURE — see §5 above
-assets/vid/                  11MB, four scene clips and exchange banners
+apocrypha/                   3.3MB — see the table above
+frontier/                    one addendum, "J-Space as a Player-Instantiated
+                             Computational Substrate", nothing references it
+assets/                      15MB video, images, fonts, screens
+discover/assets/             3.5MB calibration and codex video
 ```
-
-`apocrypha/cold/coldchat.py` is most of the harness Q10 needs: one neuron at a
-time, k matched controls per target sampled to the target's activation
-magnitude, hook `mlp.act` not `mlp.c_fc`, and blind scoring against a fixed
-lexicon.
 
 ---
 
@@ -396,7 +454,9 @@ RESOLVED:
 
 STILL OPEN:
 
-7. What does `AXIS_OF_TEMPERATURE` measure, and does §5 need amending?
+7. What do the **three** published similarity matrices measure —
+   `AXIS_OF_TEMPERATURE_inf`, `AXIS_OF_TEMPERATURE_res`, `AXIS_OF_TSALAL` —
+   and does §5 need amending? §5's note names one axis; the tree holds three.
 8. `token_sweep.py` contains a `c_fc + F.gelu` fallback that would compute
    **exact GELU, not gelu_new**, if `mlp.act` were ever absent. It never fires
    on GPT-2. Delete it or make it raise — this is the same confusion that put
@@ -414,3 +474,13 @@ STILL OPEN:
    redirected run would close it.
 16. The 18 hand-written §8 fixture strings are printed in the document but the
    input file that produced them is not published.
+17. The intervention reports under `apocrypha/` are published and uncited.
+   Decide: cite them in §4 as pilot data with the "causal alteration detected"
+   caveat stated, or move them out of the published tree. Silence is the one
+   option that reads badly, since a reader who finds them unaccompanied cannot
+   tell whether they were overlooked or withheld.
+18. `apocrypha/not-our-creation.pdf` is third-party forum content with no
+   licence note. Drop it or list it in README's third-party section.
+19. `discover/data/datasets.json` points at pre-rename cache paths and 404s.
+20. `discover/data/the_sea_raw.json` is an orphan duplicate that makes
+   `precompute_cache.py`'s output depend on the working directory. Delete it.
