@@ -1,115 +1,241 @@
 # MANIFEST — claims to artifacts
 
-Maps every MEASURED claim in SPEC_THREE to the script that produced it and the
-file that holds the result. Built from `inventory.md`, root
-`znou/code/v1/znou`, 507 files, 2026-08-12. Revised 2026-08-13: §8.2.1
-recovered, §8.4 added, caches published.
+Maps every MEASURED claim in SPEC to the script that produced it and the file
+that holds the result. Built from `inventory.md`, root `znou/code/v1/znou`,
+507 files, 2026-08-12. Revised 2026-08-13: §8.2.1 recovered, §8.4 added, caches
+published. Revised 2026-08-14: every row below re-verified against a fresh
+clone of the published repository; missing artifacts uploaded and renamed to
+canonical names; zip references retired; reproducibility posture stated.
 
 Status key: `OK` mapped and consistent · `?` mapping uncertain, named below ·
 `GAP` no file found · `NEW` file exists, not referenced by the spec
 
-Paths are relative to the repository root as published, which may differ from
-the working tree. Sha256 prefixes are the first 12 hex characters.
+All paths are relative to the repository root **as published**, and as of
+2026-08-14 they have been checked to exist at those paths. Sha256 prefixes are
+the first 12 hex characters and were recomputed from the published files on
+2026-08-14; where a prefix here disagrees with one printed in SPEC, this file
+is the later measurement.
+
+---
+
+## Reproducibility posture — read this first
+
+Reproducibility was not a design goal during construction. These scripts were
+written to answer questions, not to be re-run by strangers. The document was
+assembled afterwards, from artifacts that already existed. That ordering is
+visible in the tree and it is better stated than discovered.
+
+Three consequences, all of them live:
+
+**The pin is normative in SPEC §7 and unenforced in the code.** Eight load
+sites call `from_pretrained` without a `revision` argument, so they fetch
+whatever HuggingFace currently serves at `gpt2` rather than the specific
+snapshot every published number was measured against. See *The pin* below for
+the sites and for the verification path that works today without any code
+change.
+
+**Filename conventions were not stable across the project's life.** The same
+two names, `the_sea.json` and `the_sea_raw.json`, mean opposite things in the
+published tree and in the local archive at `eve/data/01_archives`. This has
+already caused one error. See *Navigating the sea files* below.
+
+**Several artifacts carry Windows-era encodings.** Two shipped files are
+UTF-16LE with CRLF terminators, which naive readers mis-parse. See *Encoding
+and hygiene* below.
+
+None of these invalidate a published number. All of them cost a stranger time,
+and one of them — the pin — could in principle cost correctness if the upstream
+weights ever moved.
 
 **Filename convention.** Suffixes like `foo (1).py`, `foo (2).py` are browser
 download artifacts, not variants: the plain name is the *first* download and
 higher `(n)` is *later*. Confirmed against the v15 sequence — `SPEC_THREE_v15.md`
 1,757 lines, `(1)` 1,959, `(2)` and `(3)` 2,034 with identical hashes, i.e. the
-last one downloaded twice. Published files must carry one canonical name each,
-and the highest `(n)` is normally the one to keep.
+last one downloaded twice. As of 2026-08-14 every published file carries one
+canonical name; the `(n)` forms are gone from the tree.
 
 ---
 
-## Reference stack — §7
+## The pin
 
 | claim | script | evidence | status |
 |---|---|---|---|
-| pinned artifacts, `sha256(theta)`, file hashes | `tools/pin_stack.py` `a53c526aa7a0` | §7 tables | OK |
-| hashing helper | `tools/hasher.py` `375c68ab3132` | — | OK |
-| reference `D` | inline in §7 | — | OK — **revision now pinned in the snippet** |
-| `transformer_lens` 2.15.0, `nltk` 3.9.2 + punkt | — | pinned in §7 | OK — added 2026-08-13. TransformerLens weight processing means the prototype's `state_dict` does not hash to `sha256(theta)`; §7 says so |
+| pinned artifacts, `sha256(theta)`, file hashes | `tools/pin_stack.py` `a53c526aa7a0`, 88 lines | §7 tables | OK — see the circularity note below |
+| hashing helper | `tools/hasher.py` `375c68ab3132`, 13 lines | — | OK — pins via `hf_hub_download(..., revision=sha)`, the one loader that reads its revision from a variable |
+| reference `D` | inline in §7 | — | OK — **revision pinned in the snippet** |
+| `transformer_lens` 2.15.0, `nltk` 3.9.2 + punkt | — | pinned in §7 | OK. TransformerLens weight processing means the prototype's `state_dict` does not hash to `sha256(theta)`; §7 says so |
 | third environment | `data/caches/*/report.md` | torch 2.4.0+cu121, transformers 4.57.1, RTX A4500, Ubuntu 24.04 | NEW — the §8.4 runs. Not produced under §7's discipline; disclosed in §8.4. A replay of `the_sea` on this stack would widen §8's invariance claim from two environments to three |
+| **the pin is not enforced at load** | eight sites, listed below | — | **DISCLOSED, open.** Documented here and in §7 rather than silently fixed |
+
+The eight unpinned load sites, verified 2026-08-14:
+
+```
+starmap/experiment_runner.py:25      tools/pin_stack.py:77
+tools/coordinate_ascent.py:48-49     tools/unreachable_certificate.py:101
+tools/replay_cache.py:36-37          apocrypha/cold/coldchat.py:33-34
+tools/token_sweep.py:102-103
+```
+
+`data/caches/prepare_caches.py:288-289` is the only loader in the tree that
+passes a `revision`, at `607a30d783dfa663caf39e06633721c8d4cfcd7e`.
+
+**The circularity.** `pin_stack.py` computes `sha256(theta)` — the value
+everything else is checked against — from an unpinned load. On its own it would
+certify whatever it happened to download. It is a ruler that measures itself.
+
+**Why this is nonetheless verifiable today.** SPEC §7 publishes the fingerprint
+as a written constant. A reader runs `pin_stack.py`, reads the hash it prints,
+and compares it by eye against the number in §7. Agreement means they hold the
+same θ; disagreement is visible immediately. That path requires no change to
+any of the eight sites and is the recommended check — but it is a *manual*
+check, performed by a reader who knows to perform it, not a guarantee enforced
+by the code. Anyone re-running a measurement should do it first.
+
+**If the eight sites are ever fixed**, the shape is: lift `pin_stack.py`'s
+hashing loop into a shared `verify_theta()` and have the other seven call it.
+`experiment_runner.py` is not a one-liner —
+`HookedTransformer.from_pretrained` takes no revision, so the HF model must be
+loaded pinned and passed as `hf_model=` with an explicit tokenizer, and the
+resulting `state_dict` will not hash to §7's value because of TransformerLens
+weight processing. Assert a derived fingerprint and document it, or the first
+run looks like a failed pin. §7 already says this.
+
+**This must land before any re-run of §8.4**, or nineteen fresh caches are
+generated against an unpinned model and the work is done twice.
+
+---
+
+## Navigating the sea files
+
+Four filenames, two of which swap meaning between the repository and the local
+archive. This table is the authoritative reading for the **published tree**.
+
+| file | what it is | entries | sha256 |
+|---|---|---|---|
+| `data/the_sea_raw.json` | **the corpus as evaluated.** Input to `precompute_cache.py` | 7354 — 7353 strings and one malformed `[]` | `12625decc7b6` |
+| `data/the_sea.json` | **the computed cache.** Output of `precompute_cache.py`; each row carries a destination | 7353 rows | `a5cdf1bdfe75` |
+| `data/caches/the_sea.json` | **the untrimmed source corpus**, kept for provenance. Not an input to anything published | 7394 — 7393 strings and one malformed `[]` | `27219032df8d` |
+| `data/caches/the_sea_sailed.json` | a prototype Atlas save state. **Not a measurement** | — | `d1af4bbd8a50` |
+
+Read that top to bottom: `data/caches/the_sea.json` is *raw*, and
+`data/the_sea.json` is *computed*, which is the exact opposite of what the
+names suggest. In `eve/data/01_archives` the two names again mean the opposite
+things. Check the entry count before moving any of these files. The entry count
+is the reliable discriminator: 7394 is untrimmed, 7354 is the evaluated corpus,
+7353 rows of dictionaries is the computed cache.
+
+**The relationship between them, verified 2026-08-14.** The evaluated corpus is
+a strict prefix of the untrimmed one — its 7353 strings are byte-identical to
+the first 7353 of the untrimmed file, in order. The 40 entries that follow are
+Project Gutenberg licence and donation boilerplate, beginning immediately after
+the closing sentence of the novel. The trim removed a contiguous tail and
+nothing else.
+
+**Why the trimmed file is the shipped input, and must stay that way.** The
+published `data/the_sea.json` was computed from the trimmed corpus and its 7353
+sentences match one-for-one. `discover/data/precompute_cache.py`
+`e7e74a47b2a6` iterates every string entry and skips only non-strings and empty
+strings; **it does not implement the `[0:7353]` slice that SPEC §8 describes.**
+The boundary holds because the shipped file ends there, not because the code
+enforces it. Substituting the untrimmed file without changing the code would
+produce 7393 rows — forty of them Gutenberg licence text carrying real
+destinations — and the published cache would no longer reproduce. The
+`[0:7353]` range in §8 should be read as a description of the shipped corpus,
+not as a runtime guard.
+
+---
 
 ## Corpus — §8, B2a
 
 | claim | script | evidence | status |
 |---|---|---|---|
-| source text | — | `data/moby_dick.txt`, 1,246,660 bytes | OK — added 2026-08-13 so §8's provenance diff is checkable rather than asserted |
-| the corpus, untrimmed | — | `data/the_sea_raw.json`, 7394 entries | OK — **rehashed after 2026-08-13.** The published file previously held 7353; §8 describes 7394 and the untrimmed file is now the shipped one |
-| the corpus with destinations | `discover/data/precompute_cache.py` | `data/the_sea.json`, 7353 rows | OK — this is the *computed cache*, not the corpus. §7.2 and §8 now say so; the two filenames read the opposite way round in `eve/data/01_archives` and that has caused one error already |
-| corpus derivation (apparatus stripped, openers added) | — | diff of `moby_dick.txt` against `the_sea_raw.json` | OK — B2a closed. 5 openers + 7348 Melville = 7353 evaluated, then 40 licence sentences and one malformed `[]`. *Call me Ishmael.* absent, BOM defect, disclosed in §8 |
-| prototype Atlas / save state | `discover/js/main.js` | `data/the_sea_sailed.json`, 2.8MB | NEW — a completed autoscan save in the pre-quadrant atlas format. **Not a measurement:** 546 discovered systems against §8's 545, the extra being neuron 2256 reached by hand-typed `as` / `asdf`, and 13 of its 7366 hits are manual. Ships because the cache system needs it; must not be cited |
-| cache, imp_r — hash pinned in §8 as `e2e0c5166a5a0518` | — | `data/the_sea_implicit_resonance.json` `e2e0c5166a5a` | OK — **verified against §8** |
+| source text | — | `data/moby_dick.txt` `c6a5a7d69345`, 1,246,660 bytes | OK — added 2026-08-13 so §8's provenance diff is checkable rather than asserted. Byte count re-verified 2026-08-14, matches §8's pin exactly |
+| the corpus as evaluated | — | `data/the_sea_raw.json` `12625decc7b6`, 7354 entries | OK — **corrected 2026-08-14.** An earlier revision of this manifest claimed the untrimmed 7394-entry file had been swapped in. It had not, and it should not be: see *Navigating the sea files*. SPEC's inventory lines are being amended to match the tree rather than the tree amended to match SPEC |
+| the corpus, untrimmed | — | `data/caches/the_sea.json` `27219032df8d`, 7394 entries | OK — provenance only. Not an input to any published result |
+| the corpus with destinations | `discover/data/precompute_cache.py` `e7e74a47b2a6` | `data/the_sea.json` `a5cdf1bdfe75`, 7353 rows | OK — this is the *computed cache*, not the corpus. Verified 2026-08-14 to reproduce from `the_sea_raw.json` one-for-one |
+| corpus derivation (apparatus stripped, openers added) | — | diff of `moby_dick.txt` against `data/caches/the_sea.json` | OK — B2a closed. 5 openers + 7348 Melville = 7353 evaluated, then 40 licence sentences and one malformed `[]`. *Call me Ishmael.* absent, BOM defect, disclosed in §8 |
+| prototype Atlas / save state | `discover/js/main.js` | `data/caches/the_sea_sailed.json` `d1af4bbd8a50`, 2.8MB | NEW — a completed autoscan save in the pre-quadrant atlas format. **Not a measurement:** 546 discovered systems against §8's 545, the extra being neuron 2256 reached by hand-typed `as` / `asdf`, and 13 of its 7366 hits are manual. Ships because the cache system needs it; must not be cited. Usable as Q10 stimulus material — it records three natural Melville sentences reaching neuron 38 |
+| cache, imp_r — hash pinned in §8 as `e2e0c5166a5a0518` | — | `data/the_sea_implicit_resonance.json` `e2e0c5166a5a` | OK — **re-verified against §8, 2026-08-14** |
 | caches, other three quadrants | — | `data/the_sea_{explicit_inference,explicit_resonance,implicit_inference}.json` | OK |
 
 ## §4.1.1 — certificate vacuous at ℓ=5
 
 | claim | script | evidence | status |
 |---|---|---|---|
-| pre-activation range, Θ, `|{j : L_j > x⋆}| = 0` | `tools/unreachable_certificate.py` `00278e7180e5` | printed output only? | ? no result file found |
+| pre-activation range, Θ, `\|{j : L_j > x⋆}\| = 0` | `tools/unreachable_certificate.py` `00278e7180e5`, 138 lines | printed output only | `GAP` — no result file. The claim rests on a console figure nobody can re-read without re-running. Redirecting one run to a committed file would close it |
 
 ## §4.3 — one-token census
 
 | claim | script | evidence | status |
 |---|---|---|---|
-| all 50,257 tokens, four quadrants | `tools/token_sweep.py` `571236e34af0` (317 lines) | `tools/sweep_tokens.tsv` `a96c0a6502d3`, 50,259 lines | ? |
-| — | **or** `tools/token_sweep (1).py` `e13d0c70d14a` (322 lines) | — | download-order artifact: `(1)` is the later iteration. Confirm which matches the tsv's columns, keep one, drop the other |
+| all 50,257 tokens, four quadrants | `tools/token_sweep.py` `e13d0c70d14a`, 322 lines | `results/sweep_tokens.tsv` `a96c0a6502d3`, 50,259 lines | OK — **resolved 2026-08-14.** The 322-line file is the one published, under its canonical name. The 317-line earlier iteration is not in the tree |
 
 ## §4.4 — activation suppression
 
 | claim | script | evidence | status |
 |---|---|---|---|
-| per-neuron max over single tokens, reached vs unreached | `tools/token_sweep.py`? `tools/locus_check.py` `decd9d62c637`? | `tools/sweep_neurons.tsv` `1cfb11b56559`, 3,074 lines | ? script attribution unconfirmed |
-| Cliff's δ (B4, open) | not written | would derive from the same tsv | GAP — open TODO |
+| per-neuron max over single tokens, reached vs unreached | `tools/token_sweep.py` `e13d0c70d14a` | `results/sweep_neurons.tsv` `1cfb11b56559`, 3,074 lines | OK — attribution resolved. `token_sweep.py` writes both tsvs from one run and its `ghost_test()` **is** §4.4 |
+| — | `tools/locus_check.py` `decd9d62c637`, 306 lines | — | NEW — published for completeness. Superseded by `token_sweep.py`'s `ghost_test()`; not the source of any published figure |
+| Cliff's δ (B4, open) | `tools/cliffs_delta.py` | would derive from `sweep_neurons.tsv` | `GAP` — open TODO |
 
 ## §4.5 / §4.5.1 / §4.5.2 — coordinate ascent
 
+All outputs consolidated under `results/` on 2026-08-14. Earlier revisions of
+this manifest used `tools/` prefixes carried over from the working tree.
+
 | claim | script | evidence | status |
 |---|---|---|---|
-| sweep over all of J | `tools/Coordinate_ascent.py` `8b815cf238d1` | `tools/ascent_all.tsv` `a9e01d4957ce`, 3,075 lines | OK — note **spec says `coordinate_ascent.py`, file is `Coordinate_ascent.py`** |
-| calibration, 100 systems | same | `tools/control.tsv` `7f0ec6ca6482`, `tools/control.tsv` `d736d51bb79b`, 103 lines each | OK - renamed from original Control2 run (second iteration).  |
-| the hard 172 | same | `tools/hard172.txt` `d3a06d9d8e7b`, 172 lines | OK |
-| residue detail | same | `tools/residue.tsv` `2fdfcc782c0c`, 175 lines | OK |
-| round-trip-safe token pool (49,905) | same | `tools/safe_tokens.pt` `17b7e8ef6a4f` | OK |
-| systems reached, imp_r | same | `tools/reached_imp_r.txt` `1029d8a1fa80`, 545 lines | OK |
+| sweep over all of J | `tools/coordinate_ascent.py` `8b815cf238d1`, 286 lines | `results/ascent_all.tsv` `a9e01d4957ce`, 3,075 lines | OK — the capitalisation discrepancy is retired; the published file is lowercase, matching SPEC |
+| calibration, 100 systems | same | `results/control.tsv` `d736d51bb79b`, 103 lines | OK — this is the second-iteration run, formerly `control2.tsv`, published under the canonical name. Its footer reads `# targets 100  hit_tok 96  hit_str 88 (306s)`, which is §4.5's second budget row and the 88% denominator |
+| the hard 172 | same | `results/hard172.txt` `d3a06d9d8e7b`, 172 lines | OK |
+| residue detail | same | `tools/residue.tsv` `2fdfcc782c0c`, 175 lines | OK — formerly `residue2.tsv` |
+| round-trip-safe token pool (49,905) | same | `results/safe_tokens.pt` `17b7e8ef6a4f` | OK |
+| systems reached, imp_r | same | `results/reached_imp_r.txt` `1029d8a1fa80`, 545 lines | OK |
 | systems reached, hard budget | same | `tools/reached_imp_r_hard.txt` `09e80de0318d`, 187 lines | OK |
-| Melville routes, n=545 | — | `tools/melville_routes_imp_r.txt` `f13530e399e0`, 545 lines | OK |
-| median Δ by budget class | — | `tools/margins.tsv` `92134b394ab3`, 1,093 lines | OK |
+| Melville routes, n=545 | — | `results/melville_routes_imp_r.txt` `f13530e399e0`, 545 lines | OK — the Q5 sample frame |
+| median Δ by budget class | — | `results/margins.tsv` `92134b394ab3`, 546 lines | OK — **line count corrected 2026-08-14.** Earlier revisions said 1,093. The file is UTF-16LE with CRLF terminators; a counter treating `\r` and `\n` as separate breaks doubles the count. 546 = one header plus the 545 rows, consistent with n=545 |
 
 ## §8 — cross-environment replay
 
 | claim | script | evidence | status |
 |---|---|---|---|
-| 7353/7353 agreement | `tools/replay_cache.py` `6ccd7f4fa7ae` | `tools/replay_results.tsv` `cf7fa2ddac60`, 7,354 lines | OK |
+| 7353/7353 agreement | `tools/replay_cache.py` `6ccd7f4fa7ae`, 134 lines | `results/replay_results.tsv` `cf7fa2ddac60`, 7,354 lines | OK |
 | tightest arrival Δ=1e-6 | same | same | OK |
-| the 18 below Δ<0.001 | same | `tools/fixtures18.txt` `04155f73da8b`, 18 lines | OK |
-| the 211 below Δ<0.01 | same | derived from `replay_results.tsv` | ? no standalone file |
-| §8 fixture table (18 hand-written strings) | `--fixtures` flag | `tools/typed_lines.txt` `d09fdcf353bb` (21)? `tools/say_lines.txt` (38)? | ? |
+| the 18 below Δ<0.001 | same | `results/fixtures18.txt` `04155f73da8b`, 18 lines | OK |
+| the 211 below Δ<0.01 | same | derived from `replay_results.tsv` | `?` no standalone file; recoverable by filtering |
+| §8 fixture table (18 hand-written strings) | `--fixtures` flag | — | `GAP` — `typed_lines.txt` and `say_lines.txt` are not in the published tree. The 18 strings are printed verbatim in §8, so the table is readable; the input file that generated them is not published |
+| TF32 flags set explicitly | `tools/replay_cache.py` | — | OK — the one place in the tree where numerical-precision state is pinned rather than inherited. Worth imitating elsewhere |
 
 ## §8.1 — margin distributions
 
 | claim | script | evidence | status |
 |---|---|---|---|
-| n=545 first arrivals | — | `tools/margins.tsv` | ? |
-| n=7353 all sentences | `tools/replay_cache.py` | `tools/replay_results.tsv` | OK |
+| n=545 first arrivals | — | `results/margins.tsv` `92134b394ab3` | OK — read with `encoding='utf-16'` |
+| n=7353 all sentences | `tools/replay_cache.py` | `results/replay_results.tsv` | OK |
 
 ## §8.2 / §8.2.1 / §8.3 — coverage
 
 | claim | script | evidence | status |
 |---|---|---|---|
-| imp_r 545 vs imp_i 57, terminal-char table | — | the four `data/the_sea_*.json` caches | ? script not identified |
-| WikiText-103, `wiki103test_511`, 40k, four quadrants | lost | lost | **CLOSED, superseded.** The original run took its drive with it and is not in any backup. §8.2.1 no longer rests on it: its figures are retired and replaced from the run below. The lost data stays lost; nothing now depends on it. |
-| WikiText-103 coverage curve, 172 points to 860,000 units | `data_pipeline.py` | `data/caches/wiki103_partial870k_2025-11-05/checkpoint.json`, 42KB | OK — **the recovery.** The run was interrupted before writing `report.md`, but `coverage_log` is appended every 5,000 units and flushed every 20,000, so the curve survived *because* the run did not finish. Resolves Q6 to composition: at 400,000 units imp_r/imp_i = 1.79 against §8.3's 0.65 at 407,475, and the curves have not crossed by 860,000. |
-| corpus coverage, 407,475 sentences | `tools/export_hits.py` | `results/master_hit_counts.tsv` `2724a6dbea76`; `starmap/master_hits_{quadrant}.bin`, 12,288 bytes each = 3072 × uint32 | OK — confirmed. Reproduces §8.3 exactly (1452 / 1339 / 2225 / 2151) and a freshly seeded database exports byte-identically |
-| nineteen book corpora, §8.4 | `data_pipeline.py` | `data/caches/*_2025-11-05.zip` | OK — see §8.4 below |
+| imp_r 545 vs imp_i 57, terminal-char table | — | the four `data/the_sea_*.json` caches | `?` script not identified |
+| WikiText-103, `wiki103test_511`, 40k, four quadrants | lost | lost | **CLOSED, superseded.** The original run took its drive with it and is not in any backup. §8.2.1 no longer rests on it: its figures are retired and replaced from the run below. The lost data stays lost; nothing now depends on it |
+| WikiText-103 coverage curve, 172 points to 860,000 units | `tools/data_pipeline.py` `f941b75bf1f3` | `data/caches/_extracted/wiki103_partial870k_2025-11-05/checkpoint.json`, 42KB | OK — **the recovery.** The run was interrupted before writing `report.md`, but `coverage_log` is appended every 5,000 units and flushed every 20,000, so the curve survived *because* the run did not finish. Resolves Q6 to composition: at 400,000 units imp_r/imp_i = 1.79 against §8.3's 0.65 at 407,475, and the curves have not crossed by 860,000 |
+| corpus coverage, 407,475 sentences | `tools/export_hits.py` `84095d985007`, 129 lines | `results/master_hit_counts.tsv` `2724a6dbea76`, 12,292 lines; `starmap/master_hits_{exp_i,exp_r,imp_i,imp_r}.bin`, 12,288 bytes each = 3072 × uint32 | OK — confirmed. Reproduces §8.3 exactly (1452 / 1339 / 2225 / 2151) and a freshly seeded database exports byte-identically |
+| the §8.3 corpus itself | — | — | `GAP` — the 407,475-sentence corpus has not been located. Its terminal-character entropy is the cheapest open measurement in the project and cannot be taken until the file is found |
+| nineteen book corpora, §8.4 | `tools/data_pipeline.py` `f941b75bf1f3` | `data/caches/_extracted/<corpus>_2025-11-05/` | OK — see §8.4 below |
+| cache analysis | `tools/cache_analyzer.py` `960308a6098d`, 230 lines | — | NEW — published 2026-08-14 alongside `data_pipeline.py`. From the same 2025-11 run; not the source of a published figure |
 
 ## §8.4 — corpus composition, nineteen books
 
-Published under `data/caches/_extracted/`, one directory per corpus, all
-2025-11-05. Held locally at `eve/data/01_archives` as `.zip`, **not** at
-`discover/data/caches/` — the stale path is why the publish step missed them
-until 2026-08-13. The extracted form is published rather than the archives so
-that the files are readable and diffable in place.
+Published under `data/caches/_extracted/`, one directory per corpus, all dated
+2025-11-05. Twenty directories: the nineteen books plus `wiki103_full`.
+
+The extracted tree is published rather than archives, so the files are readable
+and diffable in place. Earlier revisions of this manifest and of SPEC §7.2
+described zipped archives; that described the local holding at
+`eve/data/01_archives`, not the repository, and those references are retired.
+The stale path `discover/data/caches/` is why the publish step missed these
+until 2026-08-13.
 
 ```
 Shakespeare · Ulysses · War and Peace · Swann's Way (EN) ·
@@ -124,14 +250,18 @@ missing one was **Du Côté de chez Swann** — French, the same novel as
 `swanns-way`, and now the most useful single item in the set: it holds author,
 content, scale and preparation constant and varies only language.
 
+`alice-in-wonderland_2025-11-05` failed to upload in the first publish and was
+restored on 2026-08-13. Verified 2026-08-14: twenty directories under
+`_extracted/`, twenty data rows in `_reports/summary.tsv`.
+
 | claim | script | evidence | status |
 |---|---|---|---|
-| per-corpus coverage, four quadrants | `data_pipeline.py` | `<corpus>_{quadrant}.bin`, 3072 × uint32, plus `report.md` | OK — `prepare_caches.py` recomputes coverage from each `.bin` and checks it against that corpus's own report |
+| per-corpus coverage, four quadrants | `tools/data_pipeline.py` | `<corpus>_{quadrant}.bin`, 3072 × uint32, plus `report.md` | OK — `prepare_caches.py` recomputes coverage from each `.bin` and checks it against that corpus's own report |
 | per-unit destinations | same | `<corpus>.jsonl` | OK for the books. **Withheld for wiki103** — WikiText-103 is CC BY-SA and does not sit inside this repository's Apache-2.0 licence. `sample.jsonl`, the checkpoint hit arrays and the coverage log do ship, and those are what §8.2.1 rests on |
 | wiki103 hit arrays | same | `checkpoint_hits_{quadrant}.bin` | OK — note these are the *checkpoint* arrays, not `<corpus>_{quadrant}.bin`. The run was interrupted, so finalisation never wrote the latter. The last checkpoint is at 860,000 units |
-| staging and verification | `data/caches/prepare_caches.py` | `_reports/summary.tsv`, `_reports/CACHES.md` | OK |
-| units are line fragments, not sentences | `data_pipeline.py:261-267` | punkt applied per physical line | **DEFECT, DISCLOSED in §8.4.** Not comparable with §8.2, §8.2.1 or §8.3. The fix is to unwrap paragraphs before splitting and checkpoint on paragraph index rather than line index — resume must survive |
-| under-3-words filter | `data_pipeline.py:159` | report count minus jsonl rows | Discards 38.3% of *A Doll's House* and 26.7% of *Shakespeare*. Both excluded from any regression |
+| staging and verification | `data/caches/prepare_caches.py` `ba1ddbb1f716` | `_reports/summary.tsv`, `_reports/CACHES.md` | OK — the only loader in the tree that pins a `revision` |
+| units are line fragments, not sentences | `tools/data_pipeline.py:262-267` | punkt applied per physical line | **DEFECT, DISCLOSED in §8.4.** Line numbers corrected 2026-08-14 against the published file. The loop at 262 iterates physical lines and calls `nltk.sent_tokenize` on each at 267, so hard-wrapped sources yield line fragments. Not comparable with §8.2, §8.2.1 or §8.3. The fix is to unwrap paragraphs before splitting and checkpoint on paragraph index rather than line index — `state.line_index` at 263-265 is *why* the bug exists, since resume must survive |
+| under-3-words filter | `tools/data_pipeline.py:159` | report count minus jsonl rows | Verified at line 159. Discards 38.3% of *A Doll's House* and 26.7% of *Shakespeare*. Both excluded from any regression |
 | French collapse | — | `du-cote-de-chez-swann-FR` vs `swanns-way-EN` | OK — 3.7–6.0× fewer destinations at 0.92× the units. Reported in §8.4 as a property of θ and its training distribution |
 
 ## §5 — map and lenses
@@ -140,27 +270,53 @@ content, scale and preparation constant and varies only language.
 |---|---|---|---|
 | λ_raw, λ_grav, λ_norm, λ_orr | `discover/js/main.js` `3b7818d5bab2`, 1,293 lines | — | OK |
 | four-quadrant atlas, save migration | same, `discover/js/stateManager.js` | — | OK |
-| `b_j ~ Unif`, unseeded, per client | `main.js:302-308`, `distributionSize = 70` | verified against `the_sea_sailed.json`: x spans −34.998 to 34.986 | OK — no projection of θ, so §5's "no metric on J" stands. That the draw is *unseeded* is now disclosed in §5 as an open design question: every operator holds a different sky |
+| `b_j ~ Unif`, unseeded, per client | `main.js:302-308`, `distributionSize = 70` | verified against `the_sea_sailed.json`: x spans −34.998 to 34.986 | OK — no projection of θ, so §5's "no metric on J" stands. That the draw is *unseeded* is disclosed in §5 as an open design question: every operator holds a different sky, screenshots are not comparable, and a data purge destroys any learned constellation. Deriving `b_j` from a hash of `j` would keep exactly zero information from θ, so §5 is unaffected either way |
 | rarity index | `starmap/seed_database.py` | `starmap/rarity_index.json` `e51f517ade1c` | NEW — not referenced in spec |
+| `AXIS_OF_TEMPERATURE` similarity matrices | `apocrypha/cold/` | — | **OPEN.** A similarity matrix over neurons is a metric-shaped object and §5 claims no metric on J is asserted by any lens. Say what these measure, or amend §5. Now the only such object in the tree — the `starmap/constellations/` outputs are not published |
 
 ## §6 — reward, exchange
 
 | claim | script | evidence | status |
 |---|---|---|---|
-| exchange / claim / leaderboard | `starmap/api_server.py` `b3b49354befe`, `starmap/market_ticker.py` | `exchange/` | OK |
-| — | **also** `game/starmap/api_server.py` | — | **AMBIGUOUS: two trees. Identify the live one.** |
-| live instance data | — | `starmap/znou_exchange.db`, `starmap/znou_exchange_backup.db`, `tools/znou_exchange.db` — three files, three hashes | **DO NOT PUBLISH without inspection — may contain player data** |
+| exchange / claim / leaderboard | `starmap/api_server.py` `b3b49354befe`, `starmap/market_ticker.py` | `exchange/` | OK — **ambiguity resolved.** `game/starmap/` was a stale duplicate and is not published. `local_dev.py` computes SITE_ROOT one level above itself and expects `index.html`, `discover/`, `exchange/` there, which is only true of `starmap/` |
+| live instance data | — | — | OK — **resolved.** No database is published. `*.db` is gitignored and no `znou_exchange*.db` is tracked. `seed_database.py` rebuilds the database from the four `master_hits_*.bin` files plus `rarity_index.json`, so none needs to ship |
 
 ## Running the thing
 
 | purpose | file | status |
 |---|---|---|
 | local launcher | `starmap/local_dev.py` `e317ffde5bda` | OK |
-| server | `starmap/api_server.py` | OK |
-| experiment runner (loads GPT-2) | `starmap/experiment_runner.py` `27139924f1e1`, 461 lines | OK |
+| server | `starmap/api_server.py` `b3b49354befe` | OK |
+| experiment runner (loads GPT-2) | `starmap/experiment_runner.py` `27139924f1e1`, 461 lines | OK — line 25 is unpinned; see *The pin* |
 | config | `starmap/config.py` | OK |
-| deps | `starmap/requirements.txt` `c358cc977f8f` | **7 public-IP matches — inspect before publishing** |
-| db init | `starmap/initialize_database.py`, `verify_db.py` | OK |
+| deps | `starmap/requirements.txt` `2f3be635a03f` | OK on content — **the seven public-IP matches were false positives**, version strings like `torch==2.9.0+cu128` matching an IPv4 pattern. No non-local address appears anywhere in the published tree. But see *Encoding and hygiene*: this file is UTF-16LE |
+| db init | `starmap/initialize_database.py`, `starmap/verify_db.py` | OK |
+| db seed from published bins | `starmap/seed_database.py` | OK — the reason no database needs shipping |
+
+Startup, verified against the published tree:
+
+```
+cd znou-publish/starmap
+python seed_database.py      # once
+python local_dev.py          # then http://127.0.0.1:5000/discover/
+```
+
+Torch must come from the PyTorch index, not PyPI:
+`pip install torch==2.9.0 --index-url https://download.pytorch.org/whl/cu128`
+
+---
+
+## Encoding and hygiene
+
+Small, cosmetic, and each one costs a stranger ten confused minutes.
+
+| item | detail | status |
+|---|---|---|
+| `results/margins.tsv` | UTF-16LE, CRLF, no BOM | Readers must pass `encoding='utf-16'`. A UTF-8 reader sees interleaved null bytes. This is the source of the retired 1,093-line figure |
+| `starmap/requirements.txt` | UTF-16LE, CRLF, no BOM | **Likely to break `pip install -r`.** The most consequential of these, since it sits directly on the path a stranger follows to reproduce anything. Re-saving as UTF-8 changes no content |
+| CRLF terminators | `ascent_all.tsv`, `control.tsv`, `replay_results.tsv`, `sweep_tokens.tsv`, `sweep_neurons.tsv`, `residue.tsv` | Harmless to Python's `csv` and to pandas; noted so nobody diffs against an LF copy and reports a mismatch |
+| `starmap/__pycache__/` | four `.pyc` files tracked | `.gitignore` lists `__pycache__/`, but ignore rules do not untrack files already committed. `git rm -r --cached starmap/__pycache__` clears them |
+| `results/` vs `tools/` | `control.tsv` and `margins.tsv` exist byte-identically in both | This manifest cites `results/` as the primary path for both. The `tools/` copies are duplicates and can be deleted |
 
 ---
 
@@ -171,37 +327,30 @@ mention, listed so it can be either cited or explicitly set aside.
 
 **Q10 confirmed untouched.** `starmap/test_intervention.py` and the two
 `intervention_report_tsalal_*.txt` files belong to an abandoned line of work
-that is out of scope for this document. §4's statement that ℛ* has no results
-in it stands as written. Nothing tsalal-shaped is published or cited.
+that is out of scope for this document, and are not published. §4's statement
+that ℛ* has no results in it stands as written. Nothing tsalal-shaped is
+published or cited.
+
+Verified 2026-08-14 as **not published**: `starmap/constellation_mapper*.py`,
+`starmap/const_mapper_*.py`, `starmap/constellations/`,
+`starmap/verify_landmarks.py`, `test_cold*.py`, `test_lensing*.py`,
+`game/`, `old/`, `oldsite/`, `assets/sfx/`.
+
+Published and not referenced by SPEC:
 
 ```
-starmap/constellation_mapper.py · constellation_mapper2.py
-starmap/const_mapper_inference.py · const_mapper_resonance.py
-starmap/constellations/1st run/AXIS_OF_TEMPERATURE_*/
-starmap/constellations/1st run/Physical_Cold/
-  → *_similarity_matrix.txt, *_heatmap.png, *_fingerprint.png, *_report.txt
-starmap/verify_landmarks.py · test_cold.py · test_cold2.py
-starmap/test_lensing.py · test_lensing2.py
+tools/locus_check.py         superseded by token_sweep.py's ghost_test()
+tools/cache_analyzer.py      from the 2025-11 corpus run
+starmap/rarity_index.json    seed input
+starmap/live_mapper.py · mapper_L5_quadrant.py · utils_game.py
+apocrypha/cold/              AXIS_OF_TEMPERATURE — see §5 above
+assets/vid/                  11MB, four scene clips and exchange banners
 ```
-§5 claims no metric on J is asserted by any lens, and names λ_edit as the only
-candidate. A similarity matrix over neurons is a metric-shaped object, and the
-temperature axis is the same family as §8's `it was cold` fixtures. Resolve:
-say what these measure, or amend §5. Low priority — but it is the one place
-the archive and the document disagree about what has been tried.
 
----
-
-## Not for publication
-
-```
-old/ · oldsite/ · game/starmap/old/ · starmap/old/    legacy trees
-assets/sfx/ · assets/vid/                             ~21MB media
-tools/GPTCritique.pdf · GPTCritique2.pdf              11MB peer review
-tools/*feedback*.txt · Critique from Gemini.txt       review correspondence
-tools/SPEC*.md × 20 · TODO*.md × 8                    drafts; ship one of each
-znou_exchange*.db × 3                                 inspect first
-starmap/nohup.out                                     stray log
-```
+`apocrypha/cold/coldchat.py` is most of the harness Q10 needs: one neuron at a
+time, k matched controls per target sampled to the target's activation
+magnitude, hook `mlp.act` not `mlp.c_fc`, and blind scoring against a fixed
+lexicon.
 
 ---
 
@@ -209,24 +358,21 @@ starmap/nohup.out                                     stray log
 
 RESOLVED:
 
-1. ~~Which `token_sweep`?~~ The 322-line file (`token_sweep (1).py`). It writes
-   both `sweep_tokens.tsv` and `sweep_neurons.tsv` from one run, and its
-   `ghost_test()` **is** §4.4 — so `locus_check.py` is not needed.
-2. ~~Which `control`?~~ `control2.tsv`. Its footer reads
-   `# targets 100  hit_tok 96  hit_str 88 (306s)`, which is §4.5's second
-   budget row and the 88% denominator.
-3. ~~Which `api_server.py`?~~ `starmap/`. `local_dev.py` computes SITE_ROOT one
-   level above itself and expects `index.html`, `discover/`, `exchange/` there,
-   which is only true of `starmap/`. `game/starmap/` is a stale duplicate.
+1. ~~Which `token_sweep`?~~ The 322-line file, `e13d0c70d14a`, now published
+   under the canonical name. It writes both `sweep_tokens.tsv` and
+   `sweep_neurons.tsv` from one run, and its `ghost_test()` **is** §4.4.
+2. ~~Which `control`?~~ The second-iteration run, `d736d51bb79b`, published as
+   `results/control.tsv`. Footer `# targets 100  hit_tok 96  hit_str 88 (306s)`.
+3. ~~Which `api_server.py`?~~ `starmap/`. `game/starmap/` was stale and is not
+   published.
 4. ~~Coverage counts?~~ Exported from `MasterHitCounts` to
-   `results/master_hit_counts.tsv` `2724a6dbea76…`. Reproduces §8.3 exactly
+   `results/master_hit_counts.tsv` `2724a6dbea76`. Reproduces §8.3 exactly
    (1452 / 1339 / 2225 / 2151) and §4.4's `n_unreached` (1620, 847), with
    407,475 hits in every quadrant. Live and backup databases produce a
-   byte-identical export, so the coverage table never drifted.
-   The four `master_hits_{quadrant}.bin` files (3072 × uint32) ARE published:
+   byte-identical export, so the coverage table never drifted. The four
+   `master_hits_{quadrant}.bin` files (3072 × uint32) ARE published;
    `seed_database.py` rebuilds the whole database from them plus
-   `rarity_index.json`. Confirmed — a freshly seeded database exports the
-   identical table, same sha256. No database is shipped.
+   `rarity_index.json`. No database is shipped.
 5. ~~§8.2.1?~~ **Recovered 2026-08-13**, not re-run. The interrupted
    `wiki103_partial870k` run's `checkpoint.json` holds 172 coverage points to
    860,000 units. §8.2.1 is now tagged MEASURED and the "cannot be reproduced
@@ -239,28 +385,32 @@ RESOLVED:
    design question, now disclosed in §5.
 10. ~~What is `the_sea_sailed.json`?~~ A prototype save state. See the corpus
    table above.
+13. ~~Which `the_sea` file is which?~~ Resolved by entry count, tabulated in
+   *Navigating the sea files*. The trimmed 7354-entry file is the shipped
+   input and stays that way; SPEC's inventory lines are amended to match.
+14. ~~Are the §4.5 outputs missing?~~ No. `residue.tsv`,
+   `reached_imp_r_hard.txt`, `margins.tsv`, `locus_check.py`,
+   `data_pipeline.py` and `cache_analyzer.py` were uploaded 2026-08-14 under
+   canonical names. Every artifact this manifest names now exists at the path
+   it names, with the exception of the two `GAP` rows below.
 
 STILL OPEN:
 
 7. What does `AXIS_OF_TEMPERATURE` measure, and does §5 need amending?
 8. `token_sweep.py` contains a `c_fc + F.gelu` fallback that would compute
    **exact GELU, not gelu_new**, if `mlp.act` were ever absent. It never fires
-   on GPT-2. Delete it or make it raise before publishing — this is the same
-   confusion that put x⋆ = −0.7517 in the document until v6. Still present at
+   on GPT-2. Delete it or make it raise — this is the same confusion that put
+   x⋆ = −0.7517 in the document until v6. Still present at
    `tools/token_sweep.py:113`, dead behind the `mlp.act` branch at line 110.
 11. **§7 is normative in the document and unenforced in the code.** Eight load
-   sites call `from_pretrained` with no `revision`: the §7 snippet (now fixed),
-   `starmap/experiment_runner.py:25`, `tools/coordinate_ascent.py:48-49`,
-   `tools/replay_cache.py:36-37`, `tools/token_sweep.py:102-103`,
-   `tools/pin_stack.py:77`, `tools/unreachable_certificate.py:101`,
-   `apocrypha/cold/coldchat.py:33-34`. `pin_stack.py` is the circular one — it
-   computes `sha256(theta)` from an unpinned load, so the tool that certifies
-   the pin does not use it. `experiment_runner.py` needs the HF model loaded
-   pinned and passed as `hf_model=`, since `HookedTransformer.from_pretrained`
-   takes no revision. **This must land before any re-run of §8.4**, or nineteen
-   fresh caches are generated against an unpinned model.
+   sites, listed in *The pin*. Documented rather than fixed, and the manual
+   verification path is stated there. Must be closed before any re-run of §8.4.
 12. What is the terminal-character entropy of §8.3's own 407,475-sentence
    corpus? WikiText-103's is 0.910 bits and §8.4's nineteen run 3.198–4.020.
    One pass over the file, no forward pass. It decides whether entropy alone
    predicts the coverage ratio or merely orders corpora. **Requires locating
    that corpus, which has not been done.**
+15. §4.1.1 rests on printed console output with no committed result file. One
+   redirected run would close it.
+16. The 18 hand-written §8 fixture strings are printed in the document but the
+   input file that produced them is not published.
