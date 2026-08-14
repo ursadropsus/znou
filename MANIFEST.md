@@ -6,6 +6,9 @@ that holds the result. Built from `inventory.md`, root `znou/code/v1/znou`,
 published. Revised 2026-08-14: every row below re-verified against a fresh
 clone of the published repository; missing artifacts uploaded and renamed to
 canonical names; zip references retired; reproducibility posture stated.
+Further revised 2026-08-14 (evening): `apocrypha/` audited after an earlier
+pass checked the wrong paths, the duplicate raw corpus deleted, encodings
+corrected, and `prepare_caches.py`'s misleading MISPLACED note rewritten.
 
 Status key: `OK` mapped and consistent · `?` mapping uncertain, named below ·
 `GAP` no file found · `NEW` file exists, not referenced by the spec
@@ -39,9 +42,12 @@ two names, `the_sea.json` and `the_sea_raw.json`, mean opposite things in the
 published tree and in the local archive at `eve/data/01_archives`. This has
 already caused one error. See *Navigating the sea files* below.
 
-**Several artifacts carry Windows-era encodings.** Two shipped files are
-UTF-16LE with CRLF terminators, which naive readers mis-parse. See *Encoding
-and hygiene* below.
+**One shipped artifact carries a Windows-era encoding.** `results/margins.tsv`
+is UTF-16LE with CRLF terminators, which naive readers mis-parse. It stays that
+way deliberately — its sha256 is published, and re-encoding would break the
+pin. `starmap/requirements.txt` had the same defect and was corrected on
+2026-08-14, since nothing depends on its hash and it sits on the install path.
+See *Encoding and hygiene* below.
 
 None of these invalidate a published number. All of them cost a stranger time,
 and one of them — the pin — could in principle cost correctness if the upstream
@@ -116,7 +122,11 @@ archive. This table is the authoritative reading for the **published tree**.
 | `data/the_sea.json` | **the computed cache.** Output of `precompute_cache.py`; each row carries a destination | 7353 rows | `a5cdf1bdfe75` |
 | `data/caches/the_sea.json` | **the untrimmed source corpus**, kept for provenance. Not an input to anything published | 7394 — 7393 strings and one malformed `[]` | `27219032df8d` |
 | `data/caches/the_sea_sailed.json` | a prototype Atlas save state. **Not a measurement** | — | `d1af4bbd8a50` |
-| `discover/data/the_sea_raw.json` | **an orphan duplicate of the untrimmed corpus**, byte-identical to `data/caches/the_sea.json`, under the name that everywhere else means the trimmed file. See the trap below | 7394 | `27219032df8d` |
+
+A fifth file, `discover/data/the_sea_raw.json`, held a byte-identical copy of
+the untrimmed corpus under the name that everywhere else means the trimmed one.
+**Deleted 2026-08-14.** The trap it created is recorded below, because clones
+taken before that date still contain it.
 
 Read that top to bottom: `data/caches/the_sea.json` is *raw*, and
 `data/the_sea.json` is *computed*, which is the exact opposite of what the
@@ -154,12 +164,16 @@ run from repo root   →  data/the_sea_raw.json           7354 entries  correct
 run from discover/   →  discover/data/the_sea_raw.json  7394 entries  wrong
 ```
 
-The second produces 7393 rows including forty Gutenberg licence sentences with
-destinations, and the published cache stops reproducing. Nothing in the
-repository references `the_sea_raw.json` except this one line — the frontend
-does not load it — so `discover/data/the_sea_raw.json` is an orphan and
-deleting it removes the ambiguity outright. **Recommended.** Until it is
-deleted, run `precompute_cache.py` from the repository root only.
+The second produced 7393 rows including forty Gutenberg licence sentences with
+destinations, and the published cache stopped reproducing.
+
+**Resolved 2026-08-14** by deleting the duplicate. Only one file now answers to
+that name, so a run from the wrong directory fails loudly with
+`FileNotFoundError` instead of silently writing a different corpus. Verified:
+`precompute_cache.py:8` is the sole reference to `the_sea_raw.json` anywhere in
+the tree, and the atlas never loads a raw corpus at all — `main.js` fetches the
+four quadrant caches from a root-absolute `/data/`, and those already carry
+destinations.
 
 ---
 
@@ -277,7 +291,7 @@ restored on 2026-08-13. Verified 2026-08-14: twenty directories under
 | per-corpus coverage, four quadrants | `tools/data_pipeline.py` | `<corpus>_{quadrant}.bin`, 3072 × uint32, plus `report.md` | OK — `prepare_caches.py` recomputes coverage from each `.bin` and checks it against that corpus's own report |
 | per-unit destinations | same | `<corpus>.jsonl` | OK for the books. **Withheld for wiki103** — WikiText-103 is CC BY-SA and does not sit inside this repository's Apache-2.0 licence. `sample.jsonl`, the checkpoint hit arrays and the coverage log do ship, and those are what §8.2.1 rests on |
 | wiki103 hit arrays | same | `checkpoint_hits_{quadrant}.bin` | OK — note these are the *checkpoint* arrays, not `<corpus>_{quadrant}.bin`. The run was interrupted, so finalisation never wrote the latter. The last checkpoint is at 860,000 units |
-| staging and verification | `data/caches/prepare_caches.py` `ba1ddbb1f716` | `_reports/summary.tsv`, `_reports/CACHES.md` | OK — the only loader in the tree that pins a `revision` |
+| staging and verification | `data/caches/prepare_caches.py` `16fe635ac69c` | `_reports/summary.tsv`, `_reports/CACHES.md` | OK — the only loader in the tree that pins a `revision` |
 | units are line fragments, not sentences | `tools/data_pipeline.py:262-267` | punkt applied per physical line | **DEFECT, DISCLOSED in §8.4.** Line numbers corrected 2026-08-14 against the published file. The loop at 262 iterates physical lines and calls `nltk.sent_tokenize` on each at 267, so hard-wrapped sources yield line fragments. Not comparable with §8.2, §8.2.1 or §8.3. The fix is to unwrap paragraphs before splitting and checkpoint on paragraph index rather than line index — `state.line_index` at 263-265 is *why* the bug exists, since resume must survive |
 | under-3-words filter | `tools/data_pipeline.py:159` | report count minus jsonl rows | Verified at line 159. Discards 38.3% of *A Doll's House* and 26.7% of *Shakespeare*. Both excluded from any regression |
 | French collapse | — | `du-cote-de-chez-swann-FR` vs `swanns-way-EN` | OK — 3.7–6.0× fewer destinations at 0.92× the units. Reported in §8.4 as a property of θ and its training distribution |
@@ -307,7 +321,7 @@ restored on 2026-08-13. Verified 2026-08-14: twenty directories under
 | server | `starmap/api_server.py` `b3b49354befe` | OK |
 | experiment runner (loads GPT-2) | `starmap/experiment_runner.py` `27139924f1e1`, 461 lines | OK — line 25 is unpinned; see *The pin* |
 | config | `starmap/config.py` | OK |
-| deps | `starmap/requirements.txt` `2f3be635a03f` | OK on content — **the seven public-IP matches were false positives**, version strings like `torch==2.9.0+cu128` matching an IPv4 pattern. No non-local address appears anywhere in the published tree. But see *Encoding and hygiene*: this file is UTF-16LE |
+| deps | `starmap/requirements.txt` `75c825647e17` | OK — **the seven public-IP matches were false positives**, version strings like `torch==2.9.0+cu128` matching an IPv4 pattern. No non-local address appears anywhere in the published tree. Re-encoded to plain ASCII on 2026-08-14 and verified through pip's parser |
 | db init | `starmap/initialize_database.py`, `starmap/verify_db.py` | OK |
 | db seed from published bins | `starmap/seed_database.py` | OK — the reason no database needs shipping |
 
@@ -331,11 +345,12 @@ Small, cosmetic, and each one costs a stranger ten confused minutes.
 | item | detail | status |
 |---|---|---|
 | `results/margins.tsv` | UTF-16LE, CRLF, no BOM | Readers must pass `encoding='utf-16'`. A UTF-8 reader sees interleaved null bytes. This is the source of the retired 1,093-line figure |
-| `starmap/requirements.txt` | UTF-16LE, CRLF, no BOM | **Likely to break `pip install -r`.** The most consequential of these, since it sits directly on the path a stranger follows to reproduce anything. Re-saving as UTF-8 changes no content |
+| `starmap/requirements.txt` | now ASCII, CRLF, no BOM, `75c825647e17` | **RESOLVED 2026-08-14.** Previously UTF-16LE, then briefly UTF-8-with-BOM — both break `pip install -r`, the BOM by folding three bytes into the first package name so pip searches for `\ufeffaccelerate`. Verified through pip's own parser: the current file parses |
 | CRLF terminators | `ascent_all.tsv`, `control.tsv`, `replay_results.tsv`, `sweep_tokens.tsv`, `sweep_neurons.tsv`, `residue.tsv` | Harmless to Python's `csv` and to pandas; noted so nobody diffs against an LF copy and reports a mismatch |
+| `data/caches/prepare_caches.py` MISPLACED note | described `data/caches/the_sea.json` as a "duplicate of data/the_sea.json one level up" | **RESOLVED 2026-08-14.** It was not a duplicate — it is the untrimmed 7394-entry raw corpus, and the file it was called redundant against is the 7353-row computed cache. Anyone acting on that string would have deleted the only surviving copy of the untrimmed corpus. The note now states which file is which and says do not delete. This was the last place in the tree still asserting the old reading |
 | `results/` vs `tools/` | `control.tsv` and `margins.tsv` existed byte-identically in both | Resolved 2026-08-14 — the `tools/` copies were deleted. This manifest cites `results/` |
-| `discover/data/datasets.json` | points at `data/caches/alice_full_2025-11-05/` and `data/caches/moby_dick_full_2025-11-05/` | **BROKEN.** The published directories are `data/caches/_extracted/alice-in-wonderland_2025-11-05/` and `_extracted/moby-dick_2025-11-05/`. Both the rename to readable slugs and the move into `_extracted/` post-date this file, so the in-game dataset viewer 404s on each entry. Functional, not cosmetic |
-| `discover/data/the_sea_raw.json` | orphan duplicate of the untrimmed corpus | **DELETE.** See the trap under *Navigating the sea files* |
+| `discover/data/datasets.json` | lists `alice_full_2025-11-05` and `moby_dick_full_2025-11-05` under `data/caches/` | **DEAD CONFIG, not a bug** — corrected 2026-08-14 after an earlier revision here called it functionally broken. Nothing in the tree reads this file. The atlas loads a single precomputed cache via `CACHE_BASE_URL` in `main.js`; multi-corpus browsing in-game was never built, and the twenty corpus runs were coverage and rarity experiments, not game content. The paths also predate the rename to readable slugs and the move into `_extracted/`. Delete it, or keep it as a record of an unbuilt direction and say so |
+| `discover/data/the_sea_raw.json` | orphan duplicate of the untrimmed corpus | Resolved 2026-08-14 — deleted. See *Navigating the sea files* |
 | `starmap/__pycache__/` | four `.pyc` files were tracked | Resolved 2026-08-14 — untracked. They embedded the author's local Windows path |
 
 ---
@@ -446,6 +461,11 @@ RESOLVED:
 13. ~~Which `the_sea` file is which?~~ Resolved by entry count, tabulated in
    *Navigating the sea files*. The trimmed 7354-entry file is the shipped
    input and stays that way; SPEC's inventory lines are amended to match.
+20. ~~The duplicate raw corpus?~~ Deleted 2026-08-14. `precompute_cache.py`'s
+   output no longer depends on the working directory.
+21. ~~Is `starmap/requirements.txt` installable?~~ Yes, since 2026-08-14. It
+   was UTF-16LE, then UTF-8-with-BOM; both break `pip install -r`. Now plain
+   ASCII and verified through pip's parser.
 14. ~~Are the §4.5 outputs missing?~~ No. `residue.tsv`,
    `reached_imp_r_hard.txt`, `margins.tsv`, `locus_check.py`,
    `data_pipeline.py` and `cache_analyzer.py` were uploaded 2026-08-14 under
@@ -481,6 +501,5 @@ STILL OPEN:
    tell whether they were overlooked or withheld.
 18. `apocrypha/not-our-creation.pdf` is third-party forum content with no
    licence note. Drop it or list it in README's third-party section.
-19. `discover/data/datasets.json` points at pre-rename cache paths and 404s.
-20. `discover/data/the_sea_raw.json` is an orphan duplicate that makes
-   `precompute_cache.py`'s output depend on the working directory. Delete it.
+19. `discover/data/datasets.json` is dead config listing pre-rename cache
+   paths. Nothing reads it. Delete it, or keep it and say what it was for.
