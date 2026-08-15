@@ -1,0 +1,48 @@
+# generated_utc	2026-08-15T01:16:04+00:00
+# script	probe_v14.py
+# python	3.11.15
+# torch	2.9.0+cu128
+# transformers	4.57.1
+# device	cuda:0
+# gpu	NVIDIA GeForce RTX 5060 Laptop GPU
+# revision	607a30d783dfa663caf39e06633721c8d4cfcd7e
+# layer	5
+# tf32_matmul	False
+# tf32_cudnn	False
+# theta_sha256	113687a222f8cf98039222c27b39aaf716493e5e8c1db94ea4e6544e0814088c
+# n_rows	34
+selection_type	neuron	dose_label	dose_value	selection_rule	case_id	branch	family	prefix	outcome	text	n_tok	tokens	token_ids	intervention_pos	intervention_token	previous_pos	outcome_positions	outcome_tokens	clean_38_activation	clean_outcome_logprob	clean_first_outcome_prob	clean_first_outcome_rank	notes
+NATURAL_DOSE	38	LOW	2.076799	nearest-rank quantile of positive clean N38 declared-position activations																			
+NATURAL_DOSE	38	MED	2.650153	nearest-rank quantile of positive clean N38 declared-position activations																			
+NATURAL_DOSE	38	HIGH	2.870399	nearest-rank quantile of positive clean N38 declared-position activations																			
+NATURAL_DOSE	38	MAX	3.433706	nearest-rank quantile of positive clean N38 declared-position activations																			
+CASE					N_IT_WAS_COLD	NATURAL_ABLATION	COLD_EXACT	It was cold	 and windy	It was cold and windy	6	["It", " was", " cold", " and", " wind", "y"]	[1026, 373, 4692, 290, 2344, 88]	3	 cold	2	[4, 5, 6]	[" and", " wind", "y"]	3.433706	-3.69825	0.207892528	1	recovered N38 Atlas route
+CASE					N_IT_IS_COLD	NATURAL_ABLATION	COPULA_TENSE	It is cold	 outside	It is cold outside	4	["It", " is", " cold", " outside"]	[1026, 318, 4692, 2354]	3	 cold	2	[4]	[" outside"]	2.976745	-1.962936	0.140445444	2	
+CASE					N_IT_FELT_COLD	NATURAL_ABLATION	SENSATION	It felt cold	 to the touch	It felt cold to the touch	6	["It", " felt", " cold", " to", " the", " touch"]	[1026, 2936, 4692, 284, 262, 3638]	3	 cold	2	[4, 5, 6]	[" to", " the", " touch"]	2.890084	-8.006283	0.067612118	5	
+CASE					N_AIR_WAS_COLD	NATURAL_ABLATION	PHYSICAL	The air was cold	 and still	The air was cold and still	6	["The", " air", " was", " cold", " and", " still"]	[464, 1633, 373, 4692, 290, 991]	4	 cold	3	[5, 6]	[" and", " still"]	3.142888	-7.670838	0.380623339	1	
+CASE					N_ROOM_WAS_COLD	NATURAL_ABLATION	PHYSICAL	The room was cold	 and dark	The room was cold and dark	6	["The", " room", " was", " cold", " and", " dark"]	[464, 2119, 373, 4692, 290, 3223]	4	 cold	3	[5, 6]	[" and", " dark"]	2.472686	-3.559353	0.349947402	1	
+CASE					N_SKIN_FELT_COLD	NATURAL_ABLATION	BODILY	Her skin felt cold	 and clammy	Her skin felt cold and clammy	7	["Her", " skin", " felt", " cold", " and", " clam", "my"]	[9360, 4168, 2936, 4692, 290, 30726, 1820]	4	 cold	3	[5, 6, 7]	[" and", " clam", "my"]	2.076799	-5.605852	0.418517144	1	
+CASE					N_VOICE_WAS_COLD	NATURAL_ABLATION	METAPHORICAL	His voice was cold	 and flat	His voice was cold and flat	6	["His", " voice", " was", " cold", " and", " flat"]	[6653, 3809, 373, 4692, 290, 6228]	4	 cold	3	[5, 6]	[" and", " flat"]	2.650153	-6.197702	0.490539098	1	
+CASE					N_DECISION_WAS_COLD	NATURAL_ABLATION	METAPHORICAL	It was a cold decision	.	It was a cold decision.	6	["It", " was", " a", " cold", " decision", "."]	[1026, 373, 257, 4692, 2551, 13]	5	 decision	4	[6]	["."]	0.883653	-1.748883	0.173968135	1	
+CASE					N_CAUGHT_A_COLD	NATURAL_ABLATION	NOUN_ILLNESS	He caught a cold	 last winter	He caught a cold last winter	6	["He", " caught", " a", " cold", " last", " winter"]	[1544, 4978, 257, 4692, 938, 7374]	4	 cold	3	[5, 6]	[" last", " winter"]	0.977773	-7.989273	0.025072882	8	
+CASE					N_COLD_WAR	NATURAL_ABLATION	PROPER_NAME	The Cold War	 ended	The Cold War ended	4	["The", " Cold", " War", " ended"]	[464, 10250, 1810, 4444]	3	 War	2	[4]	[" ended"]	-0.077681	-2.721605	0.06576909	3	
+CASE					N_COLD_START	NATURAL_ABLATION	ATTRIBUTIVE	The engine made a cold start	.	The engine made a cold start.	7	["The", " engine", " made", " a", " cold", " start", "."]	[464, 3113, 925, 257, 4692, 923, 13]	6	 start	5	[7]	["."]	-0.014436	-3.494625	0.030360129	6	
+CASE					N_IT_WAS_FRIGID	NATURAL_ABLATION	SYNONYM	It was frigid	 outside	It was frigid outside	5	["It", " was", " frig", "id", " outside"]	[1026, 373, 36780, 312, 2354]	4	id	3	[5]	[" outside"]	2.641008	-3.287604	0.037343204	5	
+CASE					N_IT_WAS_FREEZING	NATURAL_ABLATION	SYNONYM	It was freezing	 outside	It was freezing outside	4	["It", " was", " freezing", " outside"]	[1026, 373, 20884, 2354]	3	 freezing	2	[4]	[" outside"]	2.870399	-1.898471	0.149797449	2	
+CASE					N_IT_WAS_ICY	NATURAL_ABLATION	SYNONYM	It was icy	 underfoot	It was icy underfoot	5	["It", " was", " icy", " under", "foot"]	[1026, 373, 30284, 739, 5898]	3	 icy	2	[4, 5]	[" under", "foot"]	2.31001	-9.425215	0.001744609	43	
+CASE					N_IT_WAS_CHILLY	NATURAL_ABLATION	SYNONYM	It was chilly	 that morning	It was chilly that morning	5	["It", " was", " chilly", " that", " morning"]	[1026, 373, 49018, 326, 3329]	3	 chilly	2	[4, 5]	[" that", " morning"]	2.834904	-8.018379	0.002306923	29	
+CASE					N_IT_WAS_COOL	NATURAL_ABLATION	TEMPERATURE_NEIGHBOUR	It was cool	 in the shade	It was cool in the shade	6	["It", " was", " cool", " in", " the", " shade"]	[1026, 373, 3608, 287, 262, 17979]	3	 cool	2	[4, 5, 6]	[" in", " the", " shade"]	1.539216	-12.344845	0.016098936	7	
+CASE					N_IT_WAS_WARM	NATURAL_ABLATION	ANTONYM	It was warm	 in the sun	It was warm in the sun	6	["It", " was", " warm", " in", " the", " sun"]	[1026, 373, 5814, 287, 262, 4252]	3	 warm	2	[4, 5, 6]	[" in", " the", " sun"]	2.830596	-7.168329	0.191659485	1	
+CASE					N_IT_WAS_HOT	NATURAL_ABLATION	ANTONYM	It was hot	 in the room	It was hot in the room	6	["It", " was", " hot", " in", " the", " room"]	[1026, 373, 3024, 287, 262, 2119]	3	 hot	2	[4, 5, 6]	[" in", " the", " room"]	1.887147	-6.945732	0.12993748	2	
+CASE					P_IT_WAS_COLD	PRE_ADJECTIVE_STEERING	COLD_TARGET	It was	 cold	It was cold	3	["It", " was", " cold"]	[1026, 373, 4692]	2	 was	1	[3]	[" cold"]	2.023736	-7.926956	0.000360883	283	
+CASE					P_IT_WAS_WARM	PRE_ADJECTIVE_STEERING	ANTONYM_TARGET	It was	 warm	It was warm	3	["It", " was", " warm"]	[1026, 373, 5814]	2	 was	1	[3]	[" warm"]	2.023736	-8.662247	0.000172995	481	
+CASE					P_AIR_IS_COLD	PRE_ADJECTIVE_STEERING	COLD_TARGET	The air is	 cold	The air is cold	4	["The", " air", " is", " cold"]	[464, 1633, 318, 4692]	3	 is	2	[4]	[" cold"]	1.100045	-3.498373	0.030246561	5	
+CASE					P_AIR_IS_HOT	PRE_ADJECTIVE_STEERING	ANTONYM_TARGET	The air is	 hot	The air is hot	4	["The", " air", " is", " hot"]	[464, 1633, 318, 3024]	3	 is	2	[4]	[" hot"]	1.100045	-3.420912	0.032682629	4	
+CASE					P_ROOM_WAS_COLD	PRE_ADJECTIVE_STEERING	COLD_TARGET	The room was	 cold	The room was cold	4	["The", " room", " was", " cold"]	[464, 2119, 373, 4692]	3	 was	2	[4]	[" cold"]	0.817266	-5.842061	0.002902854	53	
+CASE					P_ROOM_WAS_DARK	PRE_ADJECTIVE_STEERING	ORTHOGONAL_TARGET	The room was	 dark	The room was dark	4	["The", " room", " was", " dark"]	[464, 2119, 373, 3223]	3	 was	2	[4]	[" dark"]	0.817266	-4.001935	0.018280232	10	
+CASE					P_SKIN_FELT_COLD	PRE_ADJECTIVE_STEERING	COLD_TARGET	Her skin felt	 cold	Her skin felt cold	4	["Her", " skin", " felt", " cold"]	[9360, 4168, 2936, 4692]	3	 felt	2	[4]	[" cold"]	0.748474	-4.028315	0.017804312	8	
+CASE					P_VOICE_WAS_COLD	PRE_ADJECTIVE_STEERING	METAPHORICAL_TARGET	His voice was	 cold	His voice was cold	4	["His", " voice", " was", " cold"]	[6653, 3809, 373, 4692]	3	 was	2	[4]	[" cold"]	0.683113	-5.182462	0.005614166	31	
+CASE					P_SEASON_IS_COLD	PRE_ADJECTIVE_STEERING	COLD_TARGET	The season is	 cold	The season is cold	4	["The", " season", " is", " cold"]	[464, 1622, 318, 4692]	3	 is	2	[4]	[" cold"]	1.184975	-7.187117	0.000756266	104	
+CASE					P_SEASON_IS_WARM	PRE_ADJECTIVE_STEERING	ANTONYM_TARGET	The season is	 warm	The season is warm	4	["The", " season", " is", " warm"]	[464, 1622, 318, 5814]	3	 is	2	[4]	[" warm"]	1.184975	-7.840544	0.000393455	166	
+CASE					P_WORLD_IS_COLD	PRE_ADJECTIVE_STEERING	BROAD_TARGET	The world is	 cold	The world is cold	4	["The", " world", " is", " cold"]	[464, 995, 318, 4692]	3	 is	2	[4]	[" cold"]	0.679806	-7.221925	0.000730395	175	
+CASE					P_WORLD_IS_STRANGE	PRE_ADJECTIVE_STEERING	ORTHOGONAL_TARGET	The world is	 strange	The world is strange	4	["The", " world", " is", " strange"]	[464, 995, 318, 6283]	3	 is	2	[4]	[" strange"]	0.679806	-8.852571	0.000143014	637	

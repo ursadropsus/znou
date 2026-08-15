@@ -1,0 +1,29 @@
+# generated_utc	2026-08-15T02:06:36+00:00
+# script	probe_v15.py
+# python	3.11.15
+# torch	2.9.0+cu128
+# transformers	4.57.1
+# device	cuda:0
+# gpu	NVIDIA GeForce RTX 5060 Laptop GPU
+# revision	607a30d783dfa663caf39e06633721c8d4cfcd7e
+# layer	5
+# tf32_matmul	False
+# tf32_cudnn	False
+# theta_sha256	113687a222f8cf98039222c27b39aaf716493e5e8c1db94ea4e6544e0814088c
+# n_rows	15
+route_id	method	criterion	full_text	full_destination	full_target_peak	certificate_found	certificate	source_start	source_end	source_width	realised_n_tok	intended_token_ids	realised_token_ids	roundtrip_stable	destination	runner_up	margin	target_peak	target_peak_pos	target_peak_drift	target_local_winner	target_local_rank	target_local_margin
+MELVILLE_ICELAND	PREFIX	right truncation ending at full-route target peak	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	38	3.433706	1	It was cold	0	3	3	3	[1026, 373, 4692]	[1026, 373, 4692]	1	38	1888	0.301421	3.433706	3	0.0	1	1	1.253898
+MELVILLE_ICELAND	ANCHORED	shortest destination-38 span ending at full-route target peak	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	38	3.433706	1	It was cold	0	3	3	3	[1026, 373, 4692]	[1026, 373, 4692]	1	38	1888	0.301422	3.433705	3	-1e-06	1	1	1.253896
+MELVILLE_ICELAND	CONTIG	shortest destination-38 contiguous source-token span	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	38	3.433706	1	It was cold	0	3	3	3	[1026, 373, 4692]	[1026, 373, 4692]	1	38	1888	0.301422	3.433705	3	-1e-06	1	1	1.253896
+MELVILLE_ICELAND	LOCAL_WINNER	shortest span where N38 wins at its own peak token	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	38	3.433706	1	It was cold	0	3	3	3	[1026, 373, 4692]	[1026, 373, 4692]	1	38	1888	0.301422	3.433705	3	-1e-06	1	1	1.253896
+MELVILLE_ICELAND	PEAK_90	shortest span reaching at least 90% of full-route N38 peak	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	38	3.433706	1	It was cold	0	3	3	3	[1026, 373, 4692]	[1026, 373, 4692]	1	38	1888	0.301422	3.433705	3	-1e-06	1	1	1.253896
+MELVILLE_CREAKING	PREFIX	right truncation ending at full-route target peak	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	38	3.257905	1	We all heard a faint creaking	0	7	7	7	[1135, 477, 2982, 257, 18107, 1126, 868]	[1135, 477, 2982, 257, 18107, 1126, 868]	1	38	1888	0.335204	3.257905	7	0.0	1	1	1.058959
+MELVILLE_CREAKING	ANCHORED	shortest destination-38 span ending at full-route target peak	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	38	3.257905	1	 heard a faint creaking	2	7	5	5	[2982, 257, 18107, 1126, 868]	[2982, 257, 18107, 1126, 868]	1	38	1790	0.282958	3.212888	5	-0.045017	1	1	0.75485
+MELVILLE_CREAKING	CONTIG	shortest destination-38 contiguous source-token span	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	38	3.257905	1	 heard a faint creaking	2	7	5	5	[2982, 257, 18107, 1126, 868]	[2982, 257, 18107, 1126, 868]	1	38	1790	0.282958	3.212888	5	-0.045017	1	1	0.75485
+MELVILLE_CREAKING	LOCAL_WINNER	shortest span where N38 wins at its own peak token	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	38	3.257905	1	 heard a faint	2	5	3	3	[2982, 257, 18107]	[2982, 257, 18107]	1	1790	464	0.001512	2.188485	3	-1.06942	1	1	0.425515
+MELVILLE_CREAKING	PEAK_90	shortest span reaching at least 90% of full-route N38 peak	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	38	3.257905	1	 heard a faint creaking	2	7	5	5	[2982, 257, 18107, 1126, 868]	[2982, 257, 18107, 1126, 868]	1	38	1790	0.282958	3.212888	5	-0.045017	1	1	0.75485
+MELVILLE_GREY_DAWN	PREFIX	right truncation ending at full-route target peak	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	38	3.623844	1	The grey dawn came	0	4	4	4	[464, 13791, 17577, 1625]	[464, 13791, 17577, 1625]	1	38	1888	0.369016	3.623845	4	1e-06	1	1	1.850254
+MELVILLE_GREY_DAWN	ANCHORED	shortest destination-38 span ending at full-route target peak	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	38	3.623844	1	The grey dawn came	0	4	4	4	[464, 13791, 17577, 1625]	[464, 13791, 17577, 1625]	1	38	1888	0.369016	3.623846	4	2e-06	1	1	1.850256
+MELVILLE_GREY_DAWN	CONTIG	shortest destination-38 contiguous source-token span	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	38	3.623844	1	The grey dawn came	0	4	4	4	[464, 13791, 17577, 1625]	[464, 13791, 17577, 1625]	1	38	1888	0.369016	3.623846	4	2e-06	1	1	1.850256
+MELVILLE_GREY_DAWN	LOCAL_WINNER	shortest span where N38 wins at its own peak token	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	38	3.623844	1	 dawn came	2	4	2	2	[17577, 1625]	[17577, 1625]	1	1888	38	0.248812	2.869829	2	-0.754015	1	1	1.082868
+MELVILLE_GREY_DAWN	PEAK_90	shortest span reaching at least 90% of full-route N38 peak	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	38	3.623844	1	The grey dawn came	0	4	4	4	[464, 13791, 17577, 1625]	[464, 13791, 17577, 1625]	1	38	1888	0.369016	3.623846	4	2e-06	1	1	1.850256

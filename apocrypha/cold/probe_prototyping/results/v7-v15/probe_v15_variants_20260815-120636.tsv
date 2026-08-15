@@ -1,0 +1,21 @@
+# generated_utc	2026-08-15T02:06:36+00:00
+# script	probe_v15.py
+# python	3.11.15
+# torch	2.9.0+cu128
+# transformers	4.57.1
+# device	cuda:0
+# gpu	NVIDIA GeForce RTX 5060 Laptop GPU
+# revision	607a30d783dfa663caf39e06633721c8d4cfcd7e
+# layer	5
+# tf32_matmul	False
+# tf32_cudnn	False
+# theta_sha256	113687a222f8cf98039222c27b39aaf716493e5e8c1db94ea4e6544e0814088c
+# n_rows	7
+route_id	variant	text	notes	destination	runner_up	margin	winner_peak	target_peak	target_peak_pos	target_local_winner	target_local_rank	target_local_margin	n_tok	target_retained	target_peak_change_from_original	destination_changed
+MELVILLE_ICELAND	ORIGINAL	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	primary exact supplied string	38	8	0.136566	3.433704	3.433704	3	1	1	1.253898	22	1	0.0	0
+MELVILLE_ICELAND	ASCII_APOSTROPHE	It was cold as Iceland—no fire at all—the landlord said he couldn't afford it.	curly apostrophe replaced by ASCII apostrophe	38	1888	0.301419	3.433704	3.433704	3	1	1	1.253898	20	1	0.0	0
+MELVILLE_ICELAND	ASCII_DASH	It was cold as Iceland -- no fire at all -- the landlord said he couldn’t afford it.	em dash replaced by space-double-hyphen-space	8	38	0.07777	3.511474	3.433704	3	1	1	1.253898	22	0	0.0	1
+MELVILLE_ICELAND	ASCII_BOTH	It was cold as Iceland -- no fire at all -- the landlord said he couldn't afford it.	apostrophe and em dash normalized	38	1888	0.301419	3.433704	3.433704	3	1	1	1.253898	20	1	0.0	0
+MELVILLE_CREAKING	ORIGINAL	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	primary exact supplied string	38	1790	0.270219	3.257905	3.257905	7	1	1	1.058957	20	1	0.0	0
+MELVILLE_GREY_DAWN	ORIGINAL	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	primary exact supplied string	38	2874	0.181505	3.623846	3.623846	4	1	1	1.850254	34	1	0.0	0
+MELVILLE_GREY_DAWN	ASCII_APOSTROPHE	The grey dawn came on, and the slumbering crew arose from the boat's bottom, and ere noon the dead whale was brought to the ship.	curly apostrophe replaced by ASCII apostrophe	38	2874	0.201442	3.623846	3.623846	4	1	1	1.850254	32	1	0.0	0

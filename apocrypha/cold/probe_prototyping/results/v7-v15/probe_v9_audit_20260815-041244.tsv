@@ -1,0 +1,26 @@
+# generated_utc	2026-08-14T18:12:44+00:00
+# script	probe_v9.py
+# python	3.11.15
+# torch	2.9.0+cu128
+# transformers	4.57.1
+# device	cuda:0
+# gpu	NVIDIA GeForce RTX 5060 Laptop GPU
+# revision	607a30d783dfa663caf39e06633721c8d4cfcd7e
+# layer	5
+# tf32_matmul	False
+# tf32_cudnn	False
+# theta_sha256	113687a222f8cf98039222c27b39aaf716493e5e8c1db94ea4e6544e0814088c
+# n_rows	12
+route_id	target_neuron	source_index	method	found	string	source_start	source_end	source_span_n_tok	realised_n_tok	dest	target_wins	target_peak	target_peakpos	target_peak_token	target_peak_drift	best_other	best_other_peak	signed_target_margin	reported_delta	runner_up	roundtrip_stable	realised_token_ids	candidates_evaluated	successful_candidates	max_source_span	agrees_token_min
+J5-541-001	541	1	CONTIG_AUDIT	1	Right and left	0	3	3	3	541	1	3.903591	3	 left	1e-06	2659	3.359438	0.544153	0.544153	2659	1	[11028, 290, 1364]	66	9	0	1
+J5-541-004	541	4	CONTIG_AUDIT	1	You and I	0	3	3	3	541	1	3.424233	3	 I	-1e-06	1210	2.909998	0.514234	0.514234	1210	1	[1639, 290, 314]	105	12	0	1
+J5-541-007	541	7	CONTIG_AUDIT	1	 one by one	16	19	3	3	541	1	4.760406	3	 one	0.982202	1888	3.44368	1.316727	1.316727	1888	1	[530, 416, 530]	666	252	0	1
+J5-541-014	541	14	CONTIG_AUDIT	1	 seldom or never	24	27	3	3	541	1	3.666392	3	 never	0.186843	2898	3.41793	0.248462	0.248462	2898	1	[25129, 393, 1239]	990	324	0	1
+J5-541-017	541	17	CONTIG_AUDIT	1	 right and left	175	178	3	3	541	1	3.856181	3	 left	-1.096026	2659	3.379556	0.476625	0.476625	2659	1	[826, 290, 1364]	41905	19218	0	1
+J5-541-019	541	19	CONTIG_AUDIT	1	 old and new	9	12	3	3	541	1	3.441271	3	 new	-0.420659	1888	3.397594	0.043677	0.043677	1888	1	[1468, 290, 649]	528	210	0	1
+J5-541-037	541	37	CONTIG_AUDIT	1	 old and new	42	45	3	3	541	1	3.441273	3	 new	-0.274561	1888	3.397594	0.043679	0.043679	1888	1	[1468, 290, 649]	2701	667	0	1
+J5-541-048	541	48	CONTIG_AUDIT	1	Human or animal	0	3	3	3	541	1	3.373326	3	 animal	0.0	2659	3.325371	0.047955	0.047955	2659	1	[20490, 393, 5044]	325	23	0	1
+J5-541-052	541	52	CONTIG_AUDIT	1	 here and there	49	52	3	3	541	1	3.824307	3	 there	0.127999	464	2.896076	0.928231	0.928231	464	1	[994, 290, 612]	3655	1632	0	1
+J5-541-054	541	54	CONTIG_AUDIT	1	now and then	76	79	3	3	541	1	3.322906	3	 then	-0.276165	1888	2.696291	0.626615	0.626615	1888	1	[2197, 290, 788]	7140	2286	0	1
+J5-541-073	541	73	CONTIG_AUDIT	1	 water there, wheeling round and round	38	46	8	8	541	1	3.613801	8	 round	-0.485748	2659	3.50016	0.113641	0.113641	2659	1	[1660, 612, 11, 7825, 278, 2835, 290, 2835]	1540	390	0	1
+J5-541-076	541	76	CONTIG_AUDIT	1	y Dick swam swiftly round and round	9	17	8	8	541	1	3.692631	8	 round	-0.792545	2659	3.692281	0.000351	0.000351	2659	1	[88, 11740, 1509, 321, 23994, 2835, 290, 2835]	1128	217	0	1

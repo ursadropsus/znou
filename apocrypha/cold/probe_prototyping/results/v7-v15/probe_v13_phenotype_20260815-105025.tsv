@@ -1,0 +1,41 @@
+# generated_utc	2026-08-15T00:50:25+00:00
+# script	probe_v13.py
+# python	3.11.15
+# torch	2.9.0+cu128
+# transformers	4.57.1
+# device	cuda:0
+# gpu	NVIDIA GeForce RTX 5060 Laptop GPU
+# revision	607a30d783dfa663caf39e06633721c8d4cfcd7e
+# layer	5
+# tf32_matmul	False
+# tf32_cudnn	False
+# theta_sha256	113687a222f8cf98039222c27b39aaf716493e5e8c1db94ea4e6544e0814088c
+# n_rows	27
+case_index	text	n_tok	tokens	token_ids	destination	runner_up	margin	winner_peak	target_peak	target_peak_pos	target_retained
+1	It was cold	3	["It", " was", " cold"]	[1026, 373, 4692]	38	1888	0.301421	3.433706	3.433706	3	1
+2	It is cold	3	["It", " is", " cold"]	[1026, 318, 4692]	1888	38	0.15554	3.132285	2.976745	3	0
+3	It felt cold	3	["It", " felt", " cold"]	[1026, 2936, 4692]	1888	38	0.242201	3.132285	2.890084	3	0
+4	The air was cold	4	["The", " air", " was", " cold"]	[464, 1633, 373, 4692]	1888	38	0.111941	3.254829	3.142888	4	0
+5	The room was cold	4	["The", " room", " was", " cold"]	[464, 2119, 373, 4692]	1888	2073	0.51954	3.254829	2.472686	4	0
+6	Her skin felt cold	4	["Her", " skin", " felt", " cold"]	[9360, 4168, 2936, 4692]	1888	1790	0.367639	3.019273	2.076799	4	0
+7	His voice was cold	4	["His", " voice", " was", " cold"]	[6653, 3809, 373, 4692]	1888	38	0.461011	3.111165	2.650153	4	0
+8	It was a cold decision	5	["It", " was", " a", " cold", " decision"]	[1026, 373, 257, 4692, 2551]	1888	38	0.191412	3.132285	2.940873	4	0
+9	He caught a cold	4	["He", " caught", " a", " cold"]	[1544, 4978, 257, 4692]	1888	1790	0.213977	2.925473	1.009083	1	0
+10	The Cold War	3	["The", " Cold", " War"]	[464, 10250, 1810]	1888	2073	0.208871	3.254829	0.642811	2	0
+11	The engine made a cold start	6	["The", " engine", " made", " a", " cold", " start"]	[464, 3113, 925, 257, 4692, 923]	1888	1790	0.629413	3.254829	0.28946	5	0
+12	It was frigid	4	["It", " was", " frig", "id"]	[1026, 373, 36780, 312]	1888	727	0.224496	3.132285	2.641008	4	0
+13	It was freezing	3	["It", " was", " freezing"]	[1026, 373, 20884]	1888	38	0.261886	3.132285	2.870399	3	0
+14	It was icy	3	["It", " was", " icy"]	[1026, 373, 30284]	1888	2256	0.771415	3.132285	2.31001	3	0
+15	It was chilly	3	["It", " was", " chilly"]	[1026, 373, 49018]	1888	38	0.297381	3.132285	2.834904	3	0
+16	It was cool	3	["It", " was", " cool"]	[1026, 373, 3608]	1888	2256	0.771415	3.132285	2.023736	2	0
+17	It was warm	3	["It", " was", " warm"]	[1026, 373, 5814]	1888	38	0.301689	3.132285	2.830596	3	0
+18	It was hot	3	["It", " was", " hot"]	[1026, 373, 3024]	1888	3028	0.563753	3.132285	2.023736	2	0
+19	cold	1	["cold"]	[36673]	1888	2256	0.172177	2.533047	0.11632	0	0
+20	 cold	1	[" cold"]	[4692]	1888	464	0.045347	2.857553	0.11632	0	0
+21	a cold	2	["a", " cold"]	[64, 4692]	1888	2256	0.31373	2.6746	0.644632	2	0
+22	cold shoulder	2	["cold", " shoulder"]	[36673, 8163]	1790	1888	0.590969	3.124016	0.11632	0	0
+23	cold and windy	4	["cold", " and", " wind", "y"]	[36673, 290, 2344, 88]	2659	1888	0.845469	3.378515	0.734053	3	0
+24	warm	1	["warm"]	[31975]	1888	2256	0.200537	2.561407	0.11632	0	0
+25	hot	1	["hot"]	[8940]	1888	1790	0.634575	3.095543	0.11632	0	0
+26	temperature	2	["tem", "perature"]	[11498, 21069]	1888	2256	0.445916	2.806786	0.11632	0	0
+27	The first line of the novel is	7	["The", " first", " line", " of", " the", " novel", " is"]	[464, 717, 1627, 286, 262, 5337, 318]	1888	2073	0.102411	3.254829	0.299157	2	0

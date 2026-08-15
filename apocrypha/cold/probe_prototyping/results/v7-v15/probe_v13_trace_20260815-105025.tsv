@@ -1,0 +1,127 @@
+# generated_utc	2026-08-15T00:50:25+00:00
+# script	probe_v13.py
+# python	3.11.15
+# torch	2.9.0+cu128
+# transformers	4.57.1
+# device	cuda:0
+# gpu	NVIDIA GeForce RTX 5060 Laptop GPU
+# revision	607a30d783dfa663caf39e06633721c8d4cfcd7e
+# layer	5
+# tf32_matmul	False
+# tf32_cudnn	False
+# theta_sha256	113687a222f8cf98039222c27b39aaf716493e5e8c1db94ea4e6544e0814088c
+# n_rows	113
+case_index	text	position	token_id	token	target_activation	position_winner	position_winner_activation
+1	It was cold	0	50256	<BOS>	0.11632	2256	2.36087
+1	It was cold	1	1026	It	0.778226	1888	3.132285
+1	It was cold	2	373	 was	2.023736	1888	2.29004
+1	It was cold	3	4692	 cold	3.433706	38	3.433706
+2	It is cold	0	50256	<BOS>	0.11632	2256	2.36087
+2	It is cold	1	1026	It	0.778226	1888	3.132285
+2	It is cold	2	318	 is	0.365554	1888	2.620062
+2	It is cold	3	4692	 cold	2.976745	38	2.976745
+3	It felt cold	0	50256	<BOS>	0.11632	2256	2.36087
+3	It felt cold	1	1026	It	0.778226	1888	3.132285
+3	It felt cold	2	2936	 felt	2.707496	38	2.707496
+3	It felt cold	3	4692	 cold	2.890084	38	2.890084
+4	The air was cold	0	50256	<BOS>	0.11632	2256	2.36087
+4	The air was cold	1	464	The	-0.003507	1888	3.254829
+4	The air was cold	2	1633	 air	0.686986	2073	3.009328
+4	The air was cold	3	373	 was	1.828277	1951	2.117728
+4	The air was cold	4	4692	 cold	3.142888	38	3.142888
+5	The room was cold	0	50256	<BOS>	0.11632	2256	2.36087
+5	The room was cold	1	464	The	-0.003507	1888	3.254829
+5	The room was cold	2	2119	 room	-0.057157	2073	2.735289
+5	The room was cold	3	373	 was	0.817266	2265	1.799675
+5	The room was cold	4	4692	 cold	2.472686	2761	2.593999
+6	Her skin felt cold	0	50256	<BOS>	0.11632	2256	2.36087
+6	Her skin felt cold	1	9360	Her	0.407008	1888	3.019273
+6	Her skin felt cold	2	4168	 skin	0.243498	1888	2.36588
+6	Her skin felt cold	3	2936	 felt	0.748474	373	1.675419
+6	Her skin felt cold	4	4692	 cold	2.076799	143	2.156587
+7	His voice was cold	0	50256	<BOS>	0.11632	2256	2.36087
+7	His voice was cold	1	6653	His	0.232131	1888	3.111165
+7	His voice was cold	2	3809	 voice	0.731003	1790	1.721038
+7	His voice was cold	3	373	 was	0.683113	1790	2.221934
+7	His voice was cold	4	4692	 cold	2.650153	38	2.650153
+8	It was a cold decision	0	50256	<BOS>	0.11632	2256	2.36087
+8	It was a cold decision	1	1026	It	0.778226	1888	3.132285
+8	It was a cold decision	2	373	 was	2.023736	1888	2.29004
+8	It was a cold decision	3	257	 a	2.343377	38	2.343377
+8	It was a cold decision	4	4692	 cold	2.940873	38	2.940873
+8	It was a cold decision	5	2551	 decision	0.883653	1398	2.005675
+9	He caught a cold	0	50256	<BOS>	0.11632	2256	2.36087
+9	He caught a cold	1	1544	He	1.009083	1888	2.925473
+9	He caught a cold	2	4978	 caught	0.914451	1041	2.341042
+9	He caught a cold	3	257	 a	0.12365	360	2.133913
+9	He caught a cold	4	4692	 cold	0.977773	143	1.722005
+10	The Cold War	0	50256	<BOS>	0.11632	2256	2.36087
+10	The Cold War	1	464	The	-0.003507	1888	3.254829
+10	The Cold War	2	10250	 Cold	0.642811	2073	3.045958
+10	The Cold War	3	1810	 War	-0.077681	1187	2.249757
+11	The engine made a cold start	0	50256	<BOS>	0.11632	2256	2.36087
+11	The engine made a cold start	1	464	The	-0.003507	1888	3.254829
+11	The engine made a cold start	2	3113	 engine	0.100334	1129	2.46163
+11	The engine made a cold start	3	925	 made	-0.097822	2076	1.696142
+11	The engine made a cold start	4	257	 a	-0.163525	292	2.573208
+11	The engine made a cold start	5	4692	 cold	0.28946	1790	1.58817
+11	The engine made a cold start	6	923	 start	-0.014436	1791	2.382435
+12	It was frigid	0	50256	<BOS>	0.11632	2256	2.36087
+12	It was frigid	1	1026	It	0.778226	1888	3.132285
+12	It was frigid	2	373	 was	2.023736	1888	2.29004
+12	It was frigid	3	36780	 frig	1.268456	1888	2.630325
+12	It was frigid	4	312	id	2.641008	727	2.907789
+13	It was freezing	0	50256	<BOS>	0.11632	2256	2.36087
+13	It was freezing	1	1026	It	0.778226	1888	3.132285
+13	It was freezing	2	373	 was	2.023736	1888	2.29004
+13	It was freezing	3	20884	 freezing	2.870399	38	2.870399
+14	It was icy	0	50256	<BOS>	0.11632	2256	2.36087
+14	It was icy	1	1026	It	0.778226	1888	3.132285
+14	It was icy	2	373	 was	2.023736	1888	2.29004
+14	It was icy	3	30284	 icy	2.31001	38	2.31001
+15	It was chilly	0	50256	<BOS>	0.11632	2256	2.36087
+15	It was chilly	1	1026	It	0.778226	1888	3.132285
+15	It was chilly	2	373	 was	2.023736	1888	2.29004
+15	It was chilly	3	49018	 chilly	2.834904	38	2.834904
+16	It was cool	0	50256	<BOS>	0.11632	2256	2.36087
+16	It was cool	1	1026	It	0.778226	1888	3.132285
+16	It was cool	2	373	 was	2.023736	1888	2.29004
+16	It was cool	3	3608	 cool	1.539216	2394	1.867835
+17	It was warm	0	50256	<BOS>	0.11632	2256	2.36087
+17	It was warm	1	1026	It	0.778226	1888	3.132285
+17	It was warm	2	373	 was	2.023736	1888	2.29004
+17	It was warm	3	5814	 warm	2.830596	38	2.830596
+18	It was hot	0	50256	<BOS>	0.11632	2256	2.36087
+18	It was hot	1	1026	It	0.778226	1888	3.132285
+18	It was hot	2	373	 was	2.023736	1888	2.29004
+18	It was hot	3	3024	 hot	1.887147	3028	2.568532
+19	cold	0	50256	<BOS>	0.11632	2256	2.36087
+19	cold	1	36673	cold	-0.149651	1888	2.533047
+20	 cold	0	50256	<BOS>	0.11632	2256	2.36087
+20	 cold	1	4692	 cold	0.011247	1888	2.857553
+21	a cold	0	50256	<BOS>	0.11632	2256	2.36087
+21	a cold	1	64	a	-0.128592	1888	2.6746
+21	a cold	2	4692	 cold	0.644632	2073	1.671799
+22	cold shoulder	0	50256	<BOS>	0.11632	2256	2.36087
+22	cold shoulder	1	36673	cold	-0.149651	1888	2.533047
+22	cold shoulder	2	8163	 shoulder	-0.106467	1790	3.124016
+23	cold and windy	0	50256	<BOS>	0.11632	2256	2.36087
+23	cold and windy	1	36673	cold	-0.149651	1888	2.533047
+23	cold and windy	2	290	 and	0.208792	1054	1.807661
+23	cold and windy	3	2344	 wind	0.734053	2659	3.378515
+23	cold and windy	4	88	y	0.09523	2659	2.628929
+24	warm	0	50256	<BOS>	0.11632	2256	2.36087
+24	warm	1	31975	warm	-0.162073	1888	2.561407
+25	hot	0	50256	<BOS>	0.11632	2256	2.36087
+25	hot	1	8940	hot	-0.058306	1888	3.095543
+26	temperature	0	50256	<BOS>	0.11632	2256	2.36087
+26	temperature	1	11498	tem	-0.105699	1888	2.806786
+26	temperature	2	21069	perature	-0.099811	1790	1.868383
+27	The first line of the novel is	0	50256	<BOS>	0.11632	2256	2.36087
+27	The first line of the novel is	1	464	The	-0.003507	1888	3.254829
+27	The first line of the novel is	2	717	 first	0.299157	2073	3.152418
+27	The first line of the novel is	3	1627	 line	-0.165342	1399	2.205051
+27	The first line of the novel is	4	286	 of	-0.17004	2977	2.229348
+27	The first line of the novel is	5	262	 the	-0.032848	2977	2.064173
+27	The first line of the novel is	6	5337	 novel	-0.163201	2073	2.366246
+27	The first line of the novel is	7	318	 is	0.089924	1888	2.222328

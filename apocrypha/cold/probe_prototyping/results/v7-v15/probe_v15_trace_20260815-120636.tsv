@@ -1,0 +1,93 @@
+# generated_utc	2026-08-15T02:06:36+00:00
+# script	probe_v15.py
+# python	3.11.15
+# torch	2.9.0+cu128
+# transformers	4.57.1
+# device	cuda:0
+# gpu	NVIDIA GeForce RTX 5060 Laptop GPU
+# revision	607a30d783dfa663caf39e06633721c8d4cfcd7e
+# layer	5
+# tf32_matmul	False
+# tf32_cudnn	False
+# theta_sha256	113687a222f8cf98039222c27b39aaf716493e5e8c1db94ea4e6544e0814088c
+# n_rows	79
+route_id	text	position	token_id	token	target_activation	position_winner	position_winner_activation	target_local_rank	target_local_margin	is_target_peak
+MELVILLE_ICELAND	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	0	50256	<BOS>	0.116321	2256	2.360871	985	-2.24455	0
+MELVILLE_ICELAND	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	1	1026	It	0.778225	1888	3.132285	17	-2.35406	0
+MELVILLE_ICELAND	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	2	373	 was	2.023738	1888	2.290041	2	-0.266304	0
+MELVILLE_ICELAND	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	3	4692	 cold	3.433706	38	3.433706	1	1.2539	1
+MELVILLE_ICELAND	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	4	355	 as	1.615323	2864	3.043905	5	-1.428582	0
+MELVILLE_ICELAND	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	5	17333	 Iceland	-0.077709	1888	2.196495	1413	-2.274204	0
+MELVILLE_ICELAND	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	6	960	—	0.5614	1888	2.240071	51	-1.678672	0
+MELVILLE_ICELAND	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	7	3919	no	-0.065176	298	1.63109	1225	-1.696266	0
+MELVILLE_ICELAND	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	8	2046	 fire	0.511484	1888	2.098067	47	-1.586583	0
+MELVILLE_ICELAND	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	9	379	 at	0.248693	671	1.842741	193	-1.594049	0
+MELVILLE_ICELAND	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	10	477	 all	-0.133092	550	2.351452	2056	-2.484544	0
+MELVILLE_ICELAND	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	11	960	—	0.005033	232	2.647706	482	-2.642672	0
+MELVILLE_ICELAND	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	12	1169	the	0.74518	1888	2.53537	14	-1.79019	0
+MELVILLE_ICELAND	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	13	17335	 landlord	-0.136593	2073	2.304651	2123	-2.441244	0
+MELVILLE_ICELAND	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	14	531	 said	0.373063	935	2.033479	94	-1.660417	0
+MELVILLE_ICELAND	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	15	339	 he	-0.110425	1100	2.563313	1773	-2.673738	0
+MELVILLE_ICELAND	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	16	3521	 couldn	-0.082931	1790	2.251518	1438	-2.334449	0
+MELVILLE_ICELAND	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	17	447	�	-0.162826	8	3.29714	2634	-3.459966	0
+MELVILLE_ICELAND	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	18	247	�	-0.164846	1790	2.726287	2656	-2.891134	0
+MELVILLE_ICELAND	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	19	83	t	-0.133844	2711	2.944247	2095	-3.07809	0
+MELVILLE_ICELAND	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	20	5368	 afford	-0.122736	2432	1.82843	1968	-1.951166	0
+MELVILLE_ICELAND	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	21	340	 it	-0.059692	1790	2.298602	1118	-2.358294	0
+MELVILLE_ICELAND	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	22	13	.	0.331237	1821	2.674171	66	-2.342934	0
+MELVILLE_CREAKING	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	0	50256	<BOS>	0.116321	2256	2.360871	985	-2.24455	0
+MELVILLE_CREAKING	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	1	1135	We	-0.170021	1888	2.922701	3044	-3.092723	0
+MELVILLE_CREAKING	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	2	477	 all	0.310239	936	2.432639	225	-2.122399	0
+MELVILLE_CREAKING	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	3	2982	 heard	0.191813	521	2.431526	299	-2.239713	0
+MELVILLE_CREAKING	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	4	257	 a	1.34725	2456	2.087409	6	-0.74016	0
+MELVILLE_CREAKING	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	5	18107	 faint	2.054071	38	2.054071	1	0.153748	0
+MELVILLE_CREAKING	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	6	1126	 cre	1.00354	1790	1.805234	13	-0.801694	0
+MELVILLE_CREAKING	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	7	868	aking	3.257905	38	3.257905	1	1.058957	1
+MELVILLE_CREAKING	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	8	11	,	1.968992	38	1.968992	1	0.191658	0
+MELVILLE_CREAKING	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	9	355	 as	0.856619	690	2.389301	22	-1.532683	0
+MELVILLE_CREAKING	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	10	286	 of	0.220616	1790	1.74268	236	-1.522064	0
+MELVILLE_CREAKING	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	11	31001	 ropes	-0.092534	1888	2.214632	1473	-2.307166	0
+MELVILLE_CREAKING	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	12	290	 and	0.263204	1790	2.039264	109	-1.77606	0
+MELVILLE_CREAKING	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	13	5695	 yards	0.090752	1888	2.088024	248	-1.997273	0
+MELVILLE_CREAKING	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	14	45053	 hitherto	-0.157472	1594	2.766918	2478	-2.92439	0
+MELVILLE_CREAKING	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	15	27563	 muff	0.205955	1790	2.551789	154	-2.345834	0
+MELVILLE_CREAKING	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	16	992	led	0.267786	1790	2.654858	130	-2.387073	0
+MELVILLE_CREAKING	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	17	416	 by	-0.160536	1790	2.422755	2567	-2.583291	0
+MELVILLE_CREAKING	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	18	262	 the	0.611236	1790	2.987686	17	-2.376449	0
+MELVILLE_CREAKING	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	19	6388	 storm	1.056308	2073	2.545968	9	-1.48966	0
+MELVILLE_CREAKING	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	20	13	.	1.61683	1790	2.328785	4	-0.711955	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	0	50256	<BOS>	0.116321	2256	2.360869	985	-2.244549	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	1	464	The	-0.003507	1888	3.25483	334	-3.258336	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	2	13791	 grey	0.058169	2331	2.433594	270	-2.375426	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	3	17577	 dawn	2.142298	38	2.142298	1	0.15219	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	4	1625	 came	3.623844	38	3.623844	1	1.850253	1
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	5	319	 on	3.453443	38	3.453443	1	1.140115	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	6	11	,	2.52412	38	2.52412	1	0.913248	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	7	290	 and	1.89605	38	1.89605	1	0.285196	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	8	262	 the	1.579434	1504	2.670153	3	-1.090718	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	9	1017	 sl	0.888679	170	2.751643	15	-1.862963	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	10	4494	umber	0.399611	1790	2.314253	86	-1.914642	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	11	278	ing	1.277753	1790	1.917775	7	-0.640022	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	12	5462	 crew	0.385156	2807	2.411145	79	-2.02599	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	13	21172	 arose	-0.06331	935	2.222881	1338	-2.286191	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	14	422	 from	-0.169828	1311	2.195768	3005	-2.365596	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	15	262	 the	-0.120194	1790	2.351682	1732	-2.471876	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	16	8848	 boat	0.176232	2073	2.396934	168	-2.220702	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	17	447	�	-0.136723	8	3.296408	2123	-3.433131	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	18	247	�	-0.083546	1790	3.117407	1266	-3.200953	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	19	82	s	0.063652	1790	2.87754	264	-2.813889	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	20	4220	 bottom	0.136358	1815	2.515252	209	-2.378894	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	21	11	,	0.35952	1790	2.182587	70	-1.823067	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	22	290	 and	0.389753	1790	1.691584	92	-1.301831	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	23	304	 e	0.217487	2874	3.442343	173	-3.224856	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	24	260	re	0.302353	661	2.688691	209	-2.386338	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	25	19613	 noon	1.846303	171	2.694387	4	-0.848084	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	26	262	 the	1.366053	1790	2.0472	4	-0.681147	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	27	2636	 dead	0.34626	2287	2.766173	117	-2.419914	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	28	22206	 whale	0.110282	1790	2.188814	229	-2.078532	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	29	373	 was	0.58778	1790	2.573874	24	-1.986094	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	30	3181	 brought	-0.061698	2761	2.35405	1231	-2.415748	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	31	284	 to	-0.026559	1130	2.259991	814	-2.28655	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	32	262	 the	-0.061422	1790	2.279117	1055	-2.34054	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	33	4074	 ship	0.165689	2073	2.351363	188	-2.185674	0
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	34	13	.	1.101503	1790	2.323108	4	-1.221605	0

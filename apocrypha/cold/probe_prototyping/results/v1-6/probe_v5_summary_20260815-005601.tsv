@@ -1,0 +1,18 @@
+# generated_utc	2026-08-14T14:56:01+00:00
+# script	probe_v5.py
+# python	3.11.15
+# torch	2.9.0+cu128
+# transformers	4.57.1
+# device	cuda
+# gpu	NVIDIA GeForce RTX 5060 Laptop GPU
+# revision	607a30d783dfa663caf39e06633721c8d4cfcd7e
+# layer	5
+# tf32_matmul	False
+# tf32_cudnn	False
+# theta_sha256	113687a222f8cf98039222c27b39aaf716493e5e8c1db94ea4e6544e0814088c
+# n_rows	4
+arm	n	distinct	novel	null_2256_1888	median_delta	non_canonical	dests
+A_carrier	59	4	4	4	0.30717	0	20 1430 1888 1960
+B_gate	52	13	11	32	0.116225	0	20 25 281 750 858 1787 1790 1888 1956 1970 2044 2256 2874
+C_local	60	11	4	9	0.322105	0	20 281 705 858 1011 1249 1430 1790 1888 1898 2256
+D_random	60	3	1	56	0.491029	0	464 1790 1888

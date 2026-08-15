@@ -1,0 +1,17 @@
+# generated_utc	2026-08-15T02:06:36+00:00
+# script	probe_v15.py
+# python	3.11.15
+# torch	2.9.0+cu128
+# transformers	4.57.1
+# device	cuda:0
+# gpu	NVIDIA GeForce RTX 5060 Laptop GPU
+# revision	607a30d783dfa663caf39e06633721c8d4cfcd7e
+# layer	5
+# tf32_matmul	False
+# tf32_cudnn	False
+# theta_sha256	113687a222f8cf98039222c27b39aaf716493e5e8c1db94ea4e6544e0814088c
+# n_rows	3
+route_id	text	notes	n_tok	tokens	token_ids	destination	runner_up	margin	winner_peak	target_peak	target_peak_pos	target_local_winner	target_local_rank	target_local_margin	target_retained	n_unique_contiguous_spans	n_destination_38_spans	n_local_winner_spans	n_peak90_spans
+MELVILLE_ICELAND	It was cold as Iceland—no fire at all—the landlord said he couldn’t afford it.	explicit cold route; exact Unicode em dashes and curly apostrophe	22	["It", " was", " cold", " as", " Iceland", "—", "no", " fire", " at", " all", "—", "the", " landlord", " said", " he", " couldn", "�", "�", "t", " afford", " it", "."]	[1026, 373, 4692, 355, 17333, 960, 3919, 2046, 379, 477, 960, 1169, 17335, 531, 339, 3521, 447, 247, 83, 5368, 340, 13]	38	8	0.136566	3.433706	3.433706	3	1	1	1.2539	1	251	20	20	20
+MELVILLE_CREAKING	We all heard a faint creaking, as of ropes and yards hitherto muffled by the storm.	held-out route without explicit temperature lexeme	20	["We", " all", " heard", " a", " faint", " cre", "aking", ",", " as", " of", " ropes", " and", " yards", " hitherto", " muff", "led", " by", " the", " storm", "."]	[1135, 477, 2982, 257, 18107, 1126, 868, 11, 355, 286, 31001, 290, 5695, 45053, 27563, 992, 416, 262, 6388, 13]	38	1790	0.270219	3.257905	3.257905	7	1	1	1.058957	1	210	42	76	42
+MELVILLE_GREY_DAWN	The grey dawn came on, and the slumbering crew arose from the boat’s bottom, and ere noon the dead whale was brought to the ship.	held-out route without explicit temperature lexeme; curly apostrophe preserved	34	["The", " grey", " dawn", " came", " on", ",", " and", " the", " sl", "umber", "ing", " crew", " arose", " from", " the", " boat", "�", "�", "s", " bottom", ",", " and", " e", "re", " noon", " the", " dead", " whale", " was", " brought", " to", " the", " ship", "."]	[464, 13791, 17577, 1625, 319, 11, 290, 262, 1017, 4494, 278, 5462, 21172, 422, 262, 8848, 447, 247, 82, 4220, 11, 290, 304, 260, 19613, 262, 2636, 22206, 373, 3181, 284, 262, 4074, 13]	38	2874	0.181501	3.623844	3.623844	4	1	1	1.850253	1	588	31	94	31

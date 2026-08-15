@@ -1,0 +1,21 @@
+# generated_utc	2026-08-14T16:29:14+00:00
+# script	probe_v7.py
+# python	3.11.15
+# torch	2.9.0+cu128
+# transformers	4.57.1
+# device	cuda:0
+# gpu	NVIDIA GeForce RTX 5060 Laptop GPU
+# revision	607a30d783dfa663caf39e06633721c8d4cfcd7e
+# layer	5
+# tf32_matmul	False
+# tf32_cudnn	False
+# theta_sha256	113687a222f8cf98039222c27b39aaf716493e5e8c1db94ea4e6544e0814088c
+# n_rows	7
+target_neuron	source	source_index	method	found	string	source_start	source_end	source_span_n_tok	realised_n_tok	dest	delta	runner_up	target_peak	target_peakpos	target_peak_drift	roundtrip_stable	realised_token_ids
+508	atlas:candidates for probe v7.txt	1	PREFIX	1	Returning to the Spouter-Inn	0	9	9	9	508	0.825966	2375	3.464927	9	3e-06	1	[13615, 278, 284, 262, 1338, 39605, 12, 818, 77]
+508	atlas:candidates for probe v7.txt	1	ANCHORED	1	Inn	7	9	2	2	508	0.223343	1888	3.668618	2	0.203694	1	[818, 77]
+508	atlas:candidates for probe v7.txt	1	CONTIG	1	Inn	7	9	2	2	508	0.223344	1888	3.668618	2	0.203694	1	[818, 77]
+906	acceptance_fixture_906	1	PREFIX	1	Rising from a little cabin-boy in short clothes of the drabbest drab, to a harpooneer in a broad shad	0	30	30	30	906	0.136537	1888	3.503901	30	0.0	1	[49, 1710, 422, 257, 1310, 9351, 12, 7081, 287, 1790, 8242, 286, 262, 1553, 6485, 395, 1553, 397, 11, 284, 257, 3971, 7501, 505, 263, 287, 257, 3154, 427, 324]
+906	acceptance_fixture_906	1	ANCHORED	1	er in a broad shad	24	30	6	6	906	0.162126	1888	3.095656	6	-0.408245	1	[263, 287, 257, 3154, 427, 324]
+906	acceptance_fixture_906	1	CONTIG	1	er in a broad shad	24	30	6	6	906	0.162123	1888	3.095655	6	-0.408246	1	[263, 287, 257, 3154, 427, 324]
+906	acceptance_fixture_906	1	MANUAL	1	the drabbest drab, to a harpooneer in a broad shad-bellied	NA	NA	NA	21	906	0.01523	1830	3.207114	18	-0.296787	1	[1169, 1553, 6485, 395, 1553, 397, 11, 284, 257, 3971, 7501, 505, 263, 287, 257, 3154, 427, 324, 12, 7923, 798]

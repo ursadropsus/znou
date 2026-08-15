@@ -1,0 +1,46 @@
+# generated_utc	2026-08-14T20:27:46+00:00
+# script	probe_v12.py
+# python	3.11.15
+# torch	2.9.0+cu128
+# transformers	4.57.1
+# device	cuda:0
+# gpu	NVIDIA GeForce RTX 5060 Laptop GPU
+# revision	607a30d783dfa663caf39e06633721c8d4cfcd7e
+# layer	5
+# tf32_matmul	False
+# tf32_cudnn	False
+# theta_sha256	113687a222f8cf98039222c27b39aaf716493e5e8c1db94ea4e6544e0814088c
+# n_rows	32
+selection_type	neuron	distance	output_direction_norm	mean_abs_natural_activation	target_output_direction_norm	target_mean_abs_natural_activation	selection_rule	control_mean_activation	case_id	branch	family	prefix	outcome	text	donor_id	n_tok	tokens	token_ids	intervention_pos	intervention_token	previous_pos	outcome_positions	outcome_tokens	outcome_token_ids	clean_541_activation	clean_outcome_logprob	clean_first_outcome_prob	clean_first_outcome_rank	notes
+MATCHED_CONTROL	1738	1.052324	4.509369	1.459149	3.92332	3.636271	nearest log-ratio distance on norm and mean abs activation																						
+MATCHED_CONTROL	1691	1.105862	2.382432	1.981616	3.92332	3.636271	nearest log-ratio distance on norm and mean abs activation																						
+MATCHED_CONTROL	2292	1.110095	3.060039	1.536296	3.92332	3.636271	nearest log-ratio distance on norm and mean abs activation																						
+DECLARED_RIVAL	2659		2.9367	2.70327	3.92332	3.636271	v11 recurring winner declared before v12 inference																						
+CONTROL_MEAN	541						mean clean 541 activation across completion-injection controls	0.69569																					
+CASE									N_ONE_AFTER_ANOTHER	NATURAL_COMPLETION	PRONOMINAL	one after another	 arrived	one after another arrived		4	["one", " after", " another", " arrived"]	[505, 706, 1194, 5284]	3	 another	2	[4]	[" arrived"]	[5284]	4.607873	-9.275339	9.3707e-05	409	strong v11 slot frame
+CASE									N_ONE_BY_ONE	NATURAL_COMPLETION	RECURRENT	one by one	 they came	one by one they came		5	["one", " by", " one", " they", " came"]	[505, 416, 530, 484, 1625]	3	 one	2	[4, 5]	[" they", " came"]	[484, 1625]	4.372558	-8.027054	0.036140803	4	strong v9/v11 recurrent frame
+CASE									N_HAND_TO_HAND	NATURAL_COMPLETION	RECURRENT	hand to hand	 combat	hand to hand combat		4	["hand", " to", " hand", " combat"]	[4993, 284, 1021, 5249]	3	 hand	2	[4]	[" combat"]	[5249]	3.722814	-1.503959	0.222248627	1	strong v9/v11 recurrent frame
+CASE									N_UP_AND_DOWN	NATURAL_COMPLETION	PAIRED	up and down	 the road	up and down the road		5	["up", " and", " down", " the", " road"]	[929, 290, 866, 262, 2975]	3	 down	2	[4, 5]	[" the", " road"]	[262, 2975]	4.121797	-4.835761	0.124352646	1	strong v9/v10 distinct-member frame
+CASE									N_AGAIN_AND_AGAIN	NATURAL_COMPLETION	RECURRENT	again and again	 he tried	again and again he tried		5	["again", " and", " again", " he", " tried"]	[17776, 290, 757, 339, 3088]	3	 again	2	[4, 5]	[" he", " tried"]	[339, 3088]	3.340913	-9.304833	0.009151861	15	strong v9/v11 recurrent frame
+CASE									N_WAVE_AFTER_WAVE	NATURAL_COMPLETION	RECURRENT	wave after wave	 struck	wave after wave struck		4	["wave", " after", " wave", " struck"]	[19204, 706, 6769, 7425]	3	 wave	2	[4]	[" struck"]	[7425]	3.210715	-11.006979	1.6586e-05	981	v9-attested after frame
+CASE									N_SHOULDER_TO_SHOULDER	NATURAL_COMPLETION	RECURRENT	shoulder to shoulder	 they stood	shoulder to shoulder they stood		6	["sh", "oulder", " to", " shoulder", " they", " stood"]	[1477, 17601, 284, 8163, 484, 6204]	4	 shoulder	3	[5, 6]	[" they", " stood"]	[484, 6204]	3.535976	-16.100866	0.000266779	374	strong v9/v11 recurrent frame
+CASE									N_ROUND_BARE	NATURAL_COMPLETION	CONTEXT_FRAGILE	round and round	 the ring	round and round the ring		5	["round", " and", " round", " the", " ring"]	[744, 290, 2835, 262, 5858]	3	 round	2	[4, 5]	[" the", " ring"]	[262, 5858]	2.794885	-10.017813	0.024023968	5	v11 bare form; v9 predicts context dependence
+CASE									N_ROUND_CONTEXT	NATURAL_COMPLETION	CONTEXT_ASSISTED	 and thus round and round	 the ship	 and thus round and round the ship		7	[" and", " thus", " round", " and", " round", " the", " ship"]	[290, 4145, 2835, 290, 2835, 262, 4074]	5	 round	4	[6, 7]	[" the", " ship"]	[262, 4074]	3.470138	-10.684746	0.049735235	4	exact v9 token-minimum context-assisted form
+CASE									N_GO_ROUND_CONTEXT	NATURAL_COMPLETION	CONTEXT_ASSISTED	, go round and round	.	, go round and round.		6	[",", " go", " round", " and", " round", "."]	[11, 467, 2835, 290, 2835, 13]	5	 round	4	[6]	["."]	[13]	3.18504	-2.404848	0.090279187	2	exact v9 token-minimum context-assisted form
+CASE									I_GRAVEL_AFTER_GRAVEL	COMPLETION_INJECTION	NOVEL_REPEAT	gravel after gravel	 again	gravel after gravel again	N_WAVE_AFTER_WAVE	5	["g", "ravel", " after", " gravel", " again"]	[70, 25843, 706, 34375, 757]	4	 gravel	3	[5]	[" again"]	[757]	0.283337	-8.864603	0.000141303	702	novel connected repetition
+CASE									I_GRAVEL_AFTER_WINDOW	COMPLETION_INJECTION	ARBITRARY_DISTINCT	gravel after window	 again	gravel after window again	N_WAVE_AFTER_WAVE	5	["g", "ravel", " after", " window", " again"]	[70, 25843, 706, 4324, 757]	4	 window	3	[5]	[" again"]	[757]	0.455872	-8.723633	0.000162695	706	novel distinct connected control
+CASE									I_GRAVEL_GRAVEL	COMPLETION_INJECTION	NO_CONNECTOR	gravel gravel	 again	gravel gravel again	N_WAVE_AFTER_WAVE	4	["g", "ravel", " gravel", " again"]	[70, 25843, 34375, 757]	3	 gravel	2	[4]	[" again"]	[757]	-0.060308	-10.407288	3.0212e-05	2844	novel connectorless repetition
+CASE									I_HAMMER_AND_HAMMER	COMPLETION_INJECTION	NOVEL_REPEAT	hammer and hammer	 again	hammer and hammer again	N_AGAIN_AND_AGAIN	4	["hammer", " and", " hammer", " again"]	[17980, 290, 15554, 757]	3	 hammer	2	[4]	[" again"]	[757]	3.04324	-6.946719	0.000961786	111	v11 moderate novel repetition
+CASE									I_HAMMER_AND_VIOLIN	COMPLETION_INJECTION	ARBITRARY_DISTINCT	hammer and violin	 again	hammer and violin again	N_AGAIN_AND_AGAIN	4	["hammer", " and", " violin", " again"]	[17980, 290, 38283, 757]	3	 violin	2	[4]	[" again"]	[757]	1.29109	-9.59664	6.7957e-05	1257	v11 arbitrary distinct control
+CASE									I_HAMMER_HAMMER	COMPLETION_INJECTION	NO_CONNECTOR	hammer hammer	 again	hammer hammer again	N_AGAIN_AND_AGAIN	3	["hammer", " hammer", " again"]	[17980, 15554, 757]	2	 hammer	1	[3]	[" again"]	[757]	-0.113259	-9.449605	7.8721e-05	1285	connectorless repetition
+CASE									I_WAVE_AFTER_TIDE	COMPLETION_INJECTION	RELATED_DISTINCT	wave after tide	 again	wave after tide again	N_WAVE_AFTER_WAVE	4	["wave", " after", " tide", " again"]	[19204, 706, 20013, 757]	3	 tide	2	[4]	[" again"]	[757]	1.231434	-7.60089	0.000500006	155	v11 related distinct control
+CASE									I_GRAVEL_AFTER_ANOTHER	COMPLETION_INJECTION	PRONOMINAL_LEXICAL_CONTROL	gravel after another	 arrived	gravel after another arrived	N_ONE_AFTER_ANOTHER	5	["g", "ravel", " after", " another", " arrived"]	[70, 25843, 706, 1194, 5284]	4	 another	3	[5]	[" arrived"]	[5284]	0.090306	-11.281676	1.2602e-05	6395	v11 first-slot destruction
+CASE									I_ONE_ANOTHER	COMPLETION_INJECTION	PRONOMINAL_CONNECTOR_CONTROL	one another	 arrived	one another arrived	N_ONE_AFTER_ANOTHER	3	["one", " another", " arrived"]	[505, 1194, 5284]	2	 another	1	[3]	[" arrived"]	[5284]	0.039501	-10.928484	1.794e-05	1734	v11 connector removal
+CASE									P_ONE_AFTER_ANOTHER	PRECOMPLETION_STEERING	PRONOMINAL	one after	 another	one after another	N_ONE_AFTER_ANOTHER	3	["one", " after", " another"]	[505, 706, 1194]	2	 after	1	[3]	[" another"]	[1194]	-0.060178	-0.558639	0.571987219	1	
+CASE									P_ONE_AFTER_ONE	PRECOMPLETION_STEERING	PRONOMINAL	one after	 one	one after one	N_ONE_AFTER_ANOTHER	3	["one", " after", " one"]	[505, 706, 530]	2	 after	1	[3]	[" one"]	[530]	-0.060178	-4.002906	0.018262494	3	
+CASE									P_ONE_AFTER_THE_OTHER	PRECOMPLETION_STEERING	PRONOMINAL	one after	 the other	one after the other	N_ONE_AFTER_ANOTHER	4	["one", " after", " the", " other"]	[505, 706, 262, 584]	2	 after	1	[3, 4]	[" the", " other"]	[262, 584]	-0.060178	-1.60679	0.232295186	2	
+CASE									P_WAVE_AFTER_WAVE	PRECOMPLETION_STEERING	RECURRENT	wave after	 wave	wave after wave	N_WAVE_AFTER_WAVE	3	["wave", " after", " wave"]	[19204, 706, 6769]	2	 after	1	[3]	[" wave"]	[6769]	-0.073614	-0.252125	0.777147801	1	
+CASE									P_ONE_BY_ONE	PRECOMPLETION_STEERING	RECURRENT	one by	 one	one by one	N_ONE_BY_ONE	3	["one", " by", " one"]	[505, 416, 530]	2	 by	1	[3]	[" one"]	[530]	-0.157734	-0.736818	0.478634731	1	
+CASE									P_HAND_TO_HAND	PRECOMPLETION_STEERING	RECURRENT	hand to	 hand	hand to hand	N_HAND_TO_HAND	3	["hand", " to", " hand"]	[4993, 284, 1021]	2	 to	1	[3]	[" hand"]	[1021]	-0.042822	-0.64131	0.526601884	1	
+CASE									P_UP_AND_DOWN	PRECOMPLETION_STEERING	PAIRED	up and	 down	up and down	N_UP_AND_DOWN	3	["up", " and", " down"]	[929, 290, 866]	2	 and	1	[3]	[" down"]	[866]	-0.056431	-1.522622	0.218139256	1	
+CASE									P_NOW_OR_THEN	PRECOMPLETION_STEERING	PAIRED	now or	 then	now or then	N_UP_AND_DOWN	3	["now", " or", " then"]	[2197, 393, 788]	2	 or	1	[3]	[" then"]	[788]	-0.00122	-6.606385	0.001351709	80	related paired-family donor declared in advance

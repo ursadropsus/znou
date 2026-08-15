@@ -1,0 +1,16 @@
+# generated_utc	2026-08-14T16:29:13+00:00
+# script	probe_v7.py
+# python	3.11.15
+# torch	2.9.0+cu128
+# transformers	4.57.1
+# device	cuda:0
+# gpu	NVIDIA GeForce RTX 5060 Laptop GPU
+# revision	607a30d783dfa663caf39e06633721c8d4cfcd7e
+# layer	5
+# tf32_matmul	False
+# tf32_cudnn	False
+# theta_sha256	113687a222f8cf98039222c27b39aaf716493e5e8c1db94ea4e6544e0814088c
+# n_rows	2
+target_neuron	source	source_index	declared_hits	full_string	full_n_tok	full_dest	full_delta	full_runner_up	full_t_star	full_target_peak	verified	prefix_string	prefix_n_tok	prefix_delta	anchored_string	anchored_n_tok	anchored_delta	anchored_target_peak	anchored_peak_drift	anchored_candidates_evaluated	anchored_hits	contiguous_string	contiguous_n_tok	contiguous_delta	contiguous_target_peak	contiguous_peak_drift	contiguous_source_start	contiguous_source_end	contiguous_candidates_evaluated	contiguous_hits	contiguous_reduction	status	manual_string	manual_n_tok	manual_dest	manual_delta	fixture_pass
+508	atlas:candidates for probe v7.txt	1	17	Returning to the Spouter-Inn from the Chapel, I found Queequeg there quite alone; he having left the Chapel before the benediction some time.	35	508	0.355668	2609	9	3.464924	1	Returning to the Spouter-Inn	9	0.825966	Inn	2	0.223343	3.668618	0.203694	9	5	Inn	2	0.223344	3.668618	0.203694	7	9	610	128	0.057143	OK					
+906	acceptance_fixture_906	1	1	Rising from a little cabin-boy in short clothes of the drabbest drab, to a harpooneer in a broad shad-bellied waistcoat; from that becoming boat-header, chief-mate, and captain, and finally a ship owner; Bildad, as I hinted before, had concluded his adventurous career by wholly retiring from active life at the goodly age of sixty, and dedicating his remaining days to the quiet receiving of his well-earned income.	100	906	0.052941	1790	30	3.503901	1	Rising from a little cabin-boy in short clothes of the drabbest drab, to a harpooneer in a broad shad	30	0.136537	er in a broad shad	6	0.162126	3.095656	-0.408245	30	14	er in a broad shad	6	0.162123	3.095655	-0.408246	24	30	2535	52	0.06	OK	the drabbest drab, to a harpooneer in a broad shad-bellied	21	906	0.01523	1

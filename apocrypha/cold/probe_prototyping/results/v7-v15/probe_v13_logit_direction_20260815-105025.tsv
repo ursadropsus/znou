@@ -1,0 +1,34 @@
+# generated_utc	2026-08-15T00:50:25+00:00
+# script	probe_v13.py
+# python	3.11.15
+# torch	2.9.0+cu128
+# transformers	4.57.1
+# device	cuda:0
+# gpu	NVIDIA GeForce RTX 5060 Laptop GPU
+# revision	607a30d783dfa663caf39e06633721c8d4cfcd7e
+# layer	5
+# tf32_matmul	False
+# tf32_cudnn	False
+# theta_sha256	113687a222f8cf98039222c27b39aaf716493e5e8c1db94ea4e6544e0814088c
+# n_rows	20
+neuron	direction	rank	token_id	token	unnormalised_logit_direction	caveat
+38	PROMOTED	1	38598	 creeping	1.685264	state-free c_proj-to-unembedding screen; final layer norm omitted
+38	PROMOTED	2	35984	 brisk	1.607426	state-free c_proj-to-unembedding screen; final layer norm omitted
+38	PROMOTED	3	34048	 Thou	1.559732	state-free c_proj-to-unembedding screen; final layer norm omitted
+38	PROMOTED	4	33663	lein	1.554149	state-free c_proj-to-unembedding screen; final layer norm omitted
+38	PROMOTED	5	14870	uez	1.54269	state-free c_proj-to-unembedding screen; final layer norm omitted
+38	PROMOTED	6	16121	 whistle	1.53875	state-free c_proj-to-unembedding screen; final layer norm omitted
+38	PROMOTED	7	42580	steen	1.537756	state-free c_proj-to-unembedding screen; final layer norm omitted
+38	PROMOTED	8	41011	 Dying	1.530899	state-free c_proj-to-unembedding screen; final layer norm omitted
+38	PROMOTED	9	16965	 overhead	1.515456	state-free c_proj-to-unembedding screen; final layer norm omitted
+38	PROMOTED	10	26557	 screams	1.502545	state-free c_proj-to-unembedding screen; final layer norm omitted
+38	SUPPRESSED	1	49643	DERR	-2.11239	state-free c_proj-to-unembedding screen; final layer norm omitted
+38	SUPPRESSED	2	10269	umbn	-1.881996	state-free c_proj-to-unembedding screen; final layer norm omitted
+38	SUPPRESSED	3	4575	unction	-1.649812	state-free c_proj-to-unembedding screen; final layer norm omitted
+38	SUPPRESSED	4	38989	FU	-1.647048	state-free c_proj-to-unembedding screen; final layer norm omitted
+38	SUPPRESSED	5	15566	umblr	-1.626097	state-free c_proj-to-unembedding screen; final layer norm omitted
+38	SUPPRESSED	6	21705	unker	-1.569581	state-free c_proj-to-unembedding screen; final layer norm omitted
+38	SUPPRESSED	7	48873	Discuss	-1.553159	state-free c_proj-to-unembedding screen; final layer norm omitted
+38	SUPPRESSED	8	1859	itional	-1.540704	state-free c_proj-to-unembedding screen; final layer norm omitted
+38	SUPPRESSED	9	7168	ixel	-1.519861	state-free c_proj-to-unembedding screen; final layer norm omitted
+38	SUPPRESSED	10	42579	shown	-1.519799	state-free c_proj-to-unembedding screen; final layer norm omitted

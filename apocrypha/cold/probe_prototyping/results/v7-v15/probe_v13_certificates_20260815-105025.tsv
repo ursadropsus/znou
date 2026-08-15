@@ -1,0 +1,41 @@
+# generated_utc	2026-08-15T00:50:25+00:00
+# script	probe_v13.py
+# python	3.11.15
+# torch	2.9.0+cu128
+# transformers	4.57.1
+# device	cuda:0
+# gpu	NVIDIA GeForce RTX 5060 Laptop GPU
+# revision	607a30d783dfa663caf39e06633721c8d4cfcd7e
+# layer	5
+# tf32_matmul	False
+# tf32_cudnn	False
+# theta_sha256	113687a222f8cf98039222c27b39aaf716493e5e8c1db94ea4e6544e0814088c
+# n_rows	27
+case_index	source_text	source_destination	certificate_found	certificate	source_start	source_width	realised_n_tok	realised_token_ids	certificate_target_peak	target_peak_drift
+1	It was cold	38	1	It was cold	0	3	3	[1026, 373, 4692]	3.433706	0.0
+2	It is cold	1888	0							
+3	It felt cold	1888	0							
+4	The air was cold	1888	0							
+5	The room was cold	1888	0							
+6	Her skin felt cold	1888	0							
+7	His voice was cold	1888	0							
+8	It was a cold decision	1888	0							
+9	He caught a cold	1888	0							
+10	The Cold War	1888	0							
+11	The engine made a cold start	1888	0							
+12	It was frigid	1888	0							
+13	It was freezing	1888	0							
+14	It was icy	1888	0							
+15	It was chilly	1888	0							
+16	It was cool	1888	0							
+17	It was warm	1888	0							
+18	It was hot	1888	0							
+19	cold	1888	0							
+20	 cold	1888	0							
+21	a cold	1888	0							
+22	cold shoulder	1790	0							
+23	cold and windy	2659	0							
+24	warm	1888	0							
+25	hot	1888	0							
+26	temperature	1888	0							
+27	The first line of the novel is	1888	0							
